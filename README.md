@@ -28,6 +28,40 @@ bash deploy/box_full_publish_loop.sh     # pack what has finished, check it, upl
 python scripts/full_progress.py ...      # how far it is; scripts/cluster_load.py: where the GPU time goes
 ```
 
+## Models
+
+Every model the pipeline runs is public except two sets of weights you train yourself (see Getting started): the five
+emotion heads and the frame head behind the inline sound tags. Each card states its licence in full.
+
+Released with Melati:
+
+| model | what it does | stage | licence |
+|---|---|---|---|
+| [Melati-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-Whisper-Large-V3) | transcription that writes nothing over audio with no speech in it | asr, fill | CC BY-NC 4.0 |
+| [Melati-NonVerbal-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-NonVerbal-Whisper-Large-V3) | breaths, laughs and coughs, with their times | tag | non-commercial research |
+| [Melati-Emotion-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-Emotion-Whisper-Large-V3) | seven emotions: the Whisper emotion head, retrained on the corpora whose licence allows a release | not run: the pipeline's heads train on more corpora | non-commercial research |
+| [Melati-AudioSet-EAT-Large](https://huggingface.co/Scicom-intl/Melati-AudioSet-EAT-Large) | which of AudioSet's 527 sounds a clip holds | sounds | MIT |
+| [Melati-AudioSet-Ensemble](https://huggingface.co/Scicom-intl/Melati-AudioSet-Ensemble) | six AudioSet taggers averaged | sounds, with `serve/cluster_sounds_ensemble.json` | MIT |
+
+Scicom's models it runs:
+
+| model | what it does | stage | licence |
+|---|---|---|---|
+| [Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged](https://huggingface.co/Scicom-intl/Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged) | speaker turns | diar | CC BY-NC 4.0 |
+| [Where-Words-Begin-and-End-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Where-Words-Begin-and-End-Whisper-Large-V3) | where every word starts and ends | align | CC BY-NC 4.0 |
+| [SOTA-MOS](https://huggingface.co/Scicom-intl/SOTA-MOS) | mean opinion score, 1 to 5 | quality | MIT |
+
+And from elsewhere: [DBS-TIGER-DnR](https://huggingface.co/JusperLee/DBS-TIGER-DnR) separates speech from music and
+effects where [PANNs Cnn14](https://zenodo.org/records/3987831) hears background (front), [Silero
+VAD](https://github.com/snakers4/silero-vad) finds the pauses segments are cut in (seg),
+[DNSMOS](https://github.com/microsoft/DNS-Challenge) scores quality beside SOTA-MOS, and
+[MERaLiON-SER](https://huggingface.co/MERaLiON/MERaLiON-SER-v1) and
+[emotion2vec+](https://huggingface.co/emotion2vec/emotion2vec_plus_large) are two of the seven emotion models. The
+other five, Melati's emotion heads, read [whisper-large-v3](https://huggingface.co/openai/whisper-large-v3),
+Melati-Whisper-Large-V3, [w2v-BERT 2.0](https://huggingface.co/facebook/w2v-bert-2.0),
+[WavLM-large](https://huggingface.co/microsoft/wavlm-large) and emotion2vec+'s features; the non-verbal heads read
+whisper-large-v3.
+
 ## The pipeline
 
 Every GPU model sits behind its own server, and the pipeline is a client of them (`melati/pipeline.py`, driven by
@@ -98,8 +132,8 @@ release on a GPU). `deploy/box_nv_rel4.sh` and `deploy/box_nv_frames3.sh` train 
 
 - the five emotion heads (`melati/ser.py`), since several of their 21 training corpora forbid passing a derivative on:
   `deploy/box_emo_setup.sh`, then `deploy/box_emo_retrain.sh`, which downloads the corpora (about 28 GB). Without
-  them the tag server serves only MERaLiON-SER and emotion2vec+, and the export averages those two at thresholds
-  chosen for all seven;
+  them the tag server serves only MERaLiON-SER and emotion2vec+, and the export tags their average at the thresholds
+  measured for that pair, which hold the seven models' precision for happy, angry and surprised only;
 - the frame head behind the inline sound tags (`serve/sounds_server.py`, `FRAMES_CKPT`), trained beside the AudioSet
   tagger's v3 by `audioset/frames_train.py` (`deploy/box_audioset_frames.sh`), which needs AudioSet itself. Without
   it the sounds stage still gives every segment its sounds (the `sounds` column) and writes no inline sound tags.

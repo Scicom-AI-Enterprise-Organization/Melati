@@ -26,8 +26,10 @@ def test_a_full_segment():
            # a cough in the first word gap and a laugh after the last word, as Qwen3-Omni labelled them
            "nv_gaps": [{"slot": 1, "s": 0.9, "e": 1.3, "dist": {"cough": 0.97, "speech": 0.03}},
                        {"slot": 5, "s": 3.4, "e": 4.0, "dist": {"laugh": 0.6, "speech": 0.4}}],
-           "emotion": {"meralion": {"segment": [0.02, 0.9, 0.02, 0.02, 0.02, 0.01, 0.01],
-                                    "phrases": [[0, 4, 0.25, 3.15, [0.02, 0.9, 0.02, 0.02, 0.02, 0.01, 0.01]]]}},
+           # the two released classifiers, all a cluster without Melati's own emotion heads serves
+           "emotion": {m: {"segment": [0.02, 0.9, 0.02, 0.02, 0.02, 0.01, 0.01],
+                           "phrases": [[0, 4, 0.25, 3.15, [0.02, 0.9, 0.02, 0.02, 0.02, 0.01, 0.01]]]}
+                       for m in ("meralion", "e2v")},
            "rate": []}
     fill = {"seg": "r1_0001", "gaps": [{"s": 2.1, "e": 2.45, "text": "Erm.", "kind": "filler"}]}
     row, (a, b), version = build(seg, asr, al, mos, tag, fill, stems(), dict(DEFAULTS))
@@ -69,6 +71,25 @@ def test_an_uncalibrated_emotion_is_not_tagged():
     happy = [0.02, 0.9, 0.02, 0.02, 0.02, 0.01, 0.01]
     assert spans_from_phrases([(0, 2, 0.0, 1.0)], [happy], DEFAULTS["emotion_thresholds"],
                               DEFAULTS["emotion_default_threshold"])[0][0] == "happy"
+
+
+def test_emotion_is_tagged_at_the_thresholds_of_the_models_averaged():
+    seg = {"seg": "r1_0003", "rec": "r1", "speaker": "S01", "start": 0.0, "end": 3.0}
+    words = [{"w": "that", "s": 0.3, "e": 0.6, "c": 0.9}, {"w": "is", "s": 0.6, "e": 0.8, "c": 0.9},
+             {"w": "great", "s": 0.8, "e": 1.3, "c": 0.9}]
+    al = {"seg": "r1_0003", "words": words, "score": 0.9, "first_word_s": 0.3, "tail_s": 1.7}
+    asr = {"seg": "r1_0003", "text": "that is great", "language": "en"}
+
+    def tagged(models, happy):
+        p = [0.9 - happy, happy, 0.02, 0.02, 0.02, 0.02, 0.02]
+        tag = {"seg": "r1_0003", "emotion": {m: {"segment": p, "phrases": [[0, 2, 0.25, 1.45, p]]} for m in models}}
+        row = build(seg, asr, al, {}, tag, None, stems(3.0), dict(DEFAULTS))[0]
+        return row["tagged_text"], row["emotion_segment"]
+    assert tagged(DEFAULTS["emotion_models"], 0.7) == ("<happy>that is great</happy>", "happy")
+    assert tagged(["meralion", "e2v"], 0.7) == ("that is great", "happy")        # the pair tags happy at 0.88
+    assert tagged(["meralion", "e2v"], 0.89)[0] == "<happy>that is great</happy>"
+    assert tagged(["meralion"], 0.89)[0] == "that is great"                     # MERaLiON alone never tags happy
+    assert tagged(["h_whisper", "meralion"], 0.89) == ("that is great", "happy")   # a set nobody measured
 
 
 def test_detector_events_are_not_tags_unless_asked():

@@ -75,11 +75,15 @@ DEFAULTS = {
     # on): each threshold is the lowest giving 0.75 precision at an assumed podcast rate
     # (results/emotion/retrain/ensemble_all.json; chosen on one half and measured on the other it holds 0.72-0.84,
     # recall happy 56%, sad 51%, angry 40%, surprised 13%, fearful 30%). Disgusted has no held-out positives and is
-    # never tagged; every label's probability is still in the manifest. The two released classifiers alone could tag
-    # only happy, angry and surprised (results/emotion/retrain/current.json). The published dataset was tagged by the
+    # never tagged; every label's probability is still in the manifest. The published dataset was tagged by the
     # first heads at happy 0.51, angry 0.48 and fearful 0.44 (results/dataset/export_config.json).
     "emotion_models": ["h_whisper", "h_whisper_ft", "h_w2vbert", "h_wavlm", "h_e2v", "meralion", "e2v"],
     "emotion_thresholds": {"happy": 0.52, "sad": 0.64, "angry": 0.50, "surprised": 0.30, "fearful": 0.43},
+    # where only some of the models tagged a segment, the thresholds measured the same way for that set: the two
+    # released classifiers, alone and together (results/emotion/retrain/current.json), are what a reader without the
+    # five heads can serve, and together they tag only happy, angry and surprised. Any other set is not tagged.
+    "emotion_set_thresholds": {"meralion+e2v": {"happy": 0.88, "angry": 0.51, "surprised": 0.44},
+                               "meralion": {"angry": 0.88, "surprised": 0.90}, "e2v": {"surprised": 0.49}},
     "emotion_default_threshold": None,  # a label without a measured threshold is not tagged
     "rate_spans": False,                # until fast/slow spans are checked by ear (melati.gaps.rate_spans)
     # rows left out of the release (release_drop). Tamil and Mandarin only where the ASR model heard them itself, in a
@@ -275,9 +279,11 @@ def build(seg, asr, al, mos, tag, fill, stems, cfg):
         ann.events.append(ev)
     ann.delivery = delivery
 
-    # emotion: average the chosen models' phrase probabilities, then threshold
+    # emotion: average the chosen models' phrase probabilities, then threshold them at what was measured for that set
     emo = (tag or {}).get("emotion") or {}
     models = [m for m in cfg["emotion_models"] if m in emo]
+    thr = (cfg["emotion_thresholds"] if models == list(cfg["emotion_models"])
+           else (cfg.get("emotion_set_thresholds") or {}).get("+".join(models), {}))
     seg_probs = None
     if models and words:
         base = {tuple(p[:2]): (p[2], p[3], np.array(p[4])) for p in emo[models[0]]["phrases"]}
@@ -288,8 +294,8 @@ def build(seg, asr, al, mos, tag, fill, stems, cfg):
                     base[tuple(p[:2])] = (s_, e_, v + np.array(p[4]))
         phr = sorted(base.items())
         spans = EMO.spans_from_phrases([(a_, b_, s_, e_) for (a_, b_), (s_, e_, _) in phr],
-                                       [v / len(models) for _, (_, _, v) in phr],
-                                       cfg["emotion_thresholds"], cfg["emotion_default_threshold"])
+                                       [v / len(models) for _, (_, _, v) in phr], thr,
+                                       cfg["emotion_default_threshold"])
         for lab, f, l, conf in spans:
             if f < len(idx_map) and l < len(idx_map):
                 ann.emotion.append(Span(lab, idx_map[f], idx_map[l], conf, "+".join(models)))
