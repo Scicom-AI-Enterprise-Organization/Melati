@@ -1,0 +1,47 @@
+{
+ "podcastfillers/test": {
+  "filler": 5520,
+  "speech": 2341,
+  "noise": 1034,
+  "breath": 732,
+  "laugh": 579
+ },
+ "podcastfillers/train": {
+  "filler": 31962,
+  "speech": 19449,
+  "breath": 7421,
+  "noise": 6622,
+  "laugh": 5751
+ },
+ "podcastfillers/validation": {
+  "filler": 1258,
+  "speech": 768,
+  "laugh": 293,
+  "noise": 139,
+  "breath": 135
+ },
+ "vocalsound/test": {
+  "cough": 543,
+  "laugh": 543,
+  "sigh": 543,
+  "sneeze": 543,
+  "sniff": 543,
+  "throat clearing": 543
+ },
+ "vocalsound/train": {
+  "cough": 2578,
+  "laugh": 2578,
+  "sigh": 2578,
+  "sneeze": 2578,
+  "sniff": 2578,
+  "throat clearing": 2578
+ },
+ "vocalsound/validation": {
+  "cough": 383,
+  "laugh": 383,
+  "sigh": 383,
+  "sneeze": 383,
+  "sniff": 383,
+  "throat clearing": 383
+ }
+}

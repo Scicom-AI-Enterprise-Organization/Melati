@@ -1,0 +1,26 @@
+{
+  "run_dir": "${MELATI_DATA}/serve_tag2",
+  "endpoints": "${MELATI_DATA}/serve_tag2/endpoints.json",
+  "startup_timeout_s": 900,
+  "env": {
+    "HF_HOME": "${MELATI_DATA}/hf",
+    "HF_HUB_DISABLE_XET": "1",
+    "VLLM_CONFIGURE_LOGGING": "1"
+  },
+  "services": {
+    "tag": {
+      "kind": "app",
+      "app": "serve.tag_server:app",
+      "port": 17610,
+      "replicas": [
+        [
+          3
+        ]
+      ],
+      "env": {
+        "EMOTION_MODELS": "meralion,e2v,h_whisper,h_whisper_ft,h_w2vbert,h_wavlm,h_e2v,nv_whisper,nvf_whisper",
+        "MAX_BATCH": 32
+      }
+    }
+  }
+}

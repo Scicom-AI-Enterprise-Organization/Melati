@@ -1,0 +1,21 @@
+{
+ "recordings": 1452,
+ "hours": 121.4,
+ "per_hour": {
+  "with AudioSet": {
+   "breathes (heads-gap)": 43.74,
+   "laughs (heads-frames)": 17.7,
+   "laughs (audioset)": 14.02,
+   "sniffs (audioset)": 0.69,
+   "coughs (audioset)": 0.2,
+   "clears throat (audioset)": 0.12,
+   "coughs (heads-frames)": 0.07,
+   "<whisper>": 0.02
+  },
+  "without AudioSet": {
+   "breathes (heads-gap)": 43.79,
+   "laughs (heads-frames)": 17.72,
+   "coughs (heads-frames)": 0.07
+  }
+ }
+}

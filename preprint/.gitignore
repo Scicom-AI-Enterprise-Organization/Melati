@@ -1,0 +1,15 @@
+# LaTeX build artefacts. The source (.tex, .bib, .sty, img/, plot_figs.py) is tracked.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.gz
+*.log
+*.out
+*.toc
+*.synctex*
+# the PDF is 1.2 MB and rebuilds from source in three pdflatex passes
+*Screenshot*
+latexmk.log
+arxiv.zip

@@ -1,0 +1,19 @@
+{
+ "run_dir": "${MELATI_DATA}/serve_align",
+ "endpoints": "${MELATI_DATA}/serve_align/endpoints.json",
+ "startup_timeout_s": 900,
+ "env": {
+  "HF_HOME": "${MELATI_DATA}/hf",
+  "HF_HUB_DISABLE_XET": "1"
+ },
+ "services": {
+  "align": {
+   "kind": "app",
+   "app": "serve.align_server:app",
+   "port": 17450,
+   "replicas": [[5]],
+   "env": {"MAX_BATCH": 16},
+   "venv": "${MELATI_ROOT}/.venv-align"
+  }
+ }
+}

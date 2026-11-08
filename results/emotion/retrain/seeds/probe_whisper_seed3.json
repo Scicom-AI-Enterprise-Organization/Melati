@@ -1,0 +1,140 @@
+{
+ "encoder": "whisper",
+ "n": 75634,
+ "layers": 33,
+ "dim": 1280,
+ "train_corpora": [
+  "ased",
+  "cafe",
+  "crema_d",
+  "emns",
+  "emodb",
+  "emovdb",
+  "emozionalmente",
+  "enterface",
+  "expresso",
+  "jl_corpus",
+  "meld",
+  "mesd",
+  "nvtts_expresso",
+  "oreau",
+  "pavoque",
+  "ravdess",
+  "resd",
+  "shemo",
+  "subesco",
+  "turevdb",
+  "urdu"
+ ],
+ "held_out_corpora": [
+  "nemo",
+  "nvtts_voxceleb"
+ ],
+ "seed": 3,
+ "loco": {},
+ "held_out": {
+  "nemo": {
+   "n": 4481,
+   "acc": 0.6173,
+   "uar": 0.6054,
+   "recall": {
+    "neutral": 0.864,
+    "happy": 0.8972,
+    "sad": 0.6398,
+    "angry": 0.5113,
+    "surprised": 0.1495,
+    "fearful": 0.5707
+   }
+  },
+  "nvtts_voxceleb": {
+   "n": 3310,
+   "acc": 0.6565,
+   "uar": 0.5308,
+   "recall": {
+    "neutral": 0.6769,
+    "happy": 0.6475,
+    "sad": 0.268
+   }
+  },
+  "all": {
+   "n": 7791,
+   "acc": 0.6339,
+   "uar": 0.5537,
+   "recall": {
+    "neutral": 0.7255,
+    "happy": 0.7619,
+    "sad": 0.5982,
+    "angry": 0.5146,
+    "surprised": 0.1519,
+    "fearful": 0.5705
+   }
+  }
+ },
+ "thresholds": {
+  "happy": {
+   "threshold": 0.93,
+   "recall": 0.1659,
+   "precision_at_prior": 0.7629,
+   "n_pos": 1634
+  },
+  "sad": {
+   "threshold": 0.85,
+   "recall": 0.0866,
+   "precision_at_prior": 0.7781,
+   "n_pos": 866
+  },
+  "angry": {
+   "threshold": 0.58,
+   "recall": 0.3294,
+   "precision_at_prior": 0.7672,
+   "n_pos": 756
+  },
+  "surprised": {
+   "threshold": 0.38,
+   "recall": 0.1372,
+   "precision_at_prior": 0.7739,
+   "n_pos": 678
+  },
+  "fearful": {
+   "threshold": 0.71,
+   "recall": 0.2818,
+   "precision_at_prior": 0.7867,
+   "n_pos": 738
+  }
+ },
+ "layer_mix": [
+  0.0206,
+  0.0235,
+  0.0227,
+  0.0231,
+  0.0212,
+  0.0209,
+  0.0219,
+  0.0231,
+  0.026,
+  0.0264,
+  0.0255,
+  0.0236,
+  0.03,
+  0.0348,
+  0.0347,
+  0.0345,
+  0.0258,
+  0.034,
+  0.0345,
+  0.036,
+  0.04,
+  0.0367,
+  0.0356,
+  0.0345,
+  0.0371,
+  0.0385,
+  0.0375,
+  0.0349,
+  0.0334,
+  0.0329,
+  0.0346,
+  0.0337,
+  0.0277
+ ]
+}

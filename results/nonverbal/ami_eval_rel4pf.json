@@ -1,0 +1,84 @@
+{
+ "heads": "/mnt/data/melati/models/nv_heads_rel4",
+ "rule": {
+  "floor_db": 2
+ },
+ "tol_s": 0.1,
+ "target_precision": 0.8,
+ "meetings": {
+  "validation": 18,
+  "test": 16
+ },
+ "candidates": {
+  "validation": 4417,
+  "test": 3776
+ },
+ "nonverbaltts_thresholds": {
+  "breath": 0.7,
+  "laugh": 0.7
+ },
+ "ami_thresholds": {
+  "laugh": null,
+  "cough": null
+ },
+ "test": {
+  "nonverbaltts_thresholds": {
+   "laugh": {
+    "marks": 763,
+    "in_speech": 611,
+    "with_candidate": 159,
+    "no_candidate_in_speech": 566,
+    "found": 95,
+    "tags": 202,
+    "right": 80,
+    "precision": 0.396,
+    "recall": 0.1245,
+    "recall_outside_speech": 0.625
+   },
+   "cough": {
+    "marks": 78,
+    "in_speech": 50,
+    "with_candidate": 23,
+    "no_candidate_in_speech": 44,
+    "found": 0,
+    "tags": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_outside_speech": 0.0
+   },
+   "breath": {
+    "tags": 2
+   }
+  },
+  "ami_thresholds": {
+   "laugh": {
+    "marks": 763,
+    "in_speech": 611,
+    "with_candidate": 159,
+    "no_candidate_in_speech": 566,
+    "found": 0,
+    "tags": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_outside_speech": 0.0
+   },
+   "cough": {
+    "marks": 78,
+    "in_speech": 50,
+    "with_candidate": 23,
+    "no_candidate_in_speech": 44,
+    "found": 0,
+    "tags": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_outside_speech": 0.0
+   },
+   "breath": {
+    "tags": 0
+   }
+  }
+ }
+}

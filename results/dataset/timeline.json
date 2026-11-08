@@ -1,0 +1,633 @@
+{
+ "recordings": 7640,
+ "events": [
+  {
+   "wall_h": 0.582,
+   "label": "w2v-BERT, WavLM batched"
+  },
+  {
+   "wall_h": 0.916,
+   "label": "four diarization servers, least-loaded routing"
+  },
+  {
+   "wall_h": 1.516,
+   "label": "a third ASR server"
+  },
+  {
+   "wall_h": 2.049,
+   "label": "ASR batch budget, gaps sent at once"
+  },
+  {
+   "wall_h": 2.649,
+   "label": "DNSMOS one thread a call"
+  },
+  {
+   "wall_h": 10.282,
+   "label": "longer diarization timeout"
+  },
+  {
+   "wall_h": 10.882,
+   "label": "timeout restored, two tries then windows"
+  },
+  {
+   "wall_h": 11.782,
+   "label": "over 45 min diarized in windows"
+  },
+  {
+   "wall_h": 15.632,
+   "label": "ASR error replies retried"
+  }
+ ],
+ "audio_h": 914.0,
+ "wall_h": 19.18,
+ "x_realtime": 47.7,
+ "start": 1792931103.1284244,
+ "step_min": 10,
+ "points": [
+  {
+   "wall_h": 0.0,
+   "audio_h": 0.0,
+   "x_realtime": null
+  },
+  {
+   "wall_h": 0.167,
+   "audio_h": 4.24,
+   "x_realtime": 25.4
+  },
+  {
+   "wall_h": 0.333,
+   "audio_h": 9.55,
+   "x_realtime": 31.9
+  },
+  {
+   "wall_h": 0.5,
+   "audio_h": 16.15,
+   "x_realtime": 39.6
+  },
+  {
+   "wall_h": 0.667,
+   "audio_h": 22.57,
+   "x_realtime": 38.5
+  },
+  {
+   "wall_h": 0.833,
+   "audio_h": 26.78,
+   "x_realtime": 25.2
+  },
+  {
+   "wall_h": 1.0,
+   "audio_h": 27.01,
+   "x_realtime": 1.4
+  },
+  {
+   "wall_h": 1.167,
+   "audio_h": 30.87,
+   "x_realtime": 23.2
+  },
+  {
+   "wall_h": 1.333,
+   "audio_h": 34.81,
+   "x_realtime": 23.6
+  },
+  {
+   "wall_h": 1.5,
+   "audio_h": 34.89,
+   "x_realtime": 0.5
+  },
+  {
+   "wall_h": 1.667,
+   "audio_h": 39.76,
+   "x_realtime": 29.2
+  },
+  {
+   "wall_h": 1.833,
+   "audio_h": 45.41,
+   "x_realtime": 33.9
+  },
+  {
+   "wall_h": 2.0,
+   "audio_h": 51.26,
+   "x_realtime": 35.1
+  },
+  {
+   "wall_h": 2.167,
+   "audio_h": 57.11,
+   "x_realtime": 35.1
+  },
+  {
+   "wall_h": 2.333,
+   "audio_h": 70.53,
+   "x_realtime": 80.6
+  },
+  {
+   "wall_h": 2.5,
+   "audio_h": 74.86,
+   "x_realtime": 26.0
+  },
+  {
+   "wall_h": 2.667,
+   "audio_h": 78.67,
+   "x_realtime": 22.8
+  },
+  {
+   "wall_h": 2.833,
+   "audio_h": 82.15,
+   "x_realtime": 20.9
+  },
+  {
+   "wall_h": 3.0,
+   "audio_h": 87.36,
+   "x_realtime": 31.2
+  },
+  {
+   "wall_h": 3.167,
+   "audio_h": 98.15,
+   "x_realtime": 64.7
+  },
+  {
+   "wall_h": 3.333,
+   "audio_h": 105.01,
+   "x_realtime": 41.2
+  },
+  {
+   "wall_h": 3.5,
+   "audio_h": 115.41,
+   "x_realtime": 62.4
+  },
+  {
+   "wall_h": 3.667,
+   "audio_h": 129.18,
+   "x_realtime": 82.6
+  },
+  {
+   "wall_h": 3.833,
+   "audio_h": 135.17,
+   "x_realtime": 35.9
+  },
+  {
+   "wall_h": 4.0,
+   "audio_h": 148.82,
+   "x_realtime": 81.9
+  },
+  {
+   "wall_h": 4.167,
+   "audio_h": 156.62,
+   "x_realtime": 46.8
+  },
+  {
+   "wall_h": 4.333,
+   "audio_h": 161.42,
+   "x_realtime": 28.8
+  },
+  {
+   "wall_h": 4.5,
+   "audio_h": 163.41,
+   "x_realtime": 12.0
+  },
+  {
+   "wall_h": 4.667,
+   "audio_h": 175.86,
+   "x_realtime": 74.7
+  },
+  {
+   "wall_h": 4.833,
+   "audio_h": 184.32,
+   "x_realtime": 50.8
+  },
+  {
+   "wall_h": 5.0,
+   "audio_h": 191.1,
+   "x_realtime": 40.7
+  },
+  {
+   "wall_h": 5.167,
+   "audio_h": 200.72,
+   "x_realtime": 57.7
+  },
+  {
+   "wall_h": 5.333,
+   "audio_h": 206.71,
+   "x_realtime": 35.9
+  },
+  {
+   "wall_h": 5.5,
+   "audio_h": 215.76,
+   "x_realtime": 54.3
+  },
+  {
+   "wall_h": 5.667,
+   "audio_h": 223.56,
+   "x_realtime": 46.8
+  },
+  {
+   "wall_h": 5.833,
+   "audio_h": 231.18,
+   "x_realtime": 45.7
+  },
+  {
+   "wall_h": 6.0,
+   "audio_h": 237.06,
+   "x_realtime": 35.3
+  },
+  {
+   "wall_h": 6.167,
+   "audio_h": 251.82,
+   "x_realtime": 88.6
+  },
+  {
+   "wall_h": 6.333,
+   "audio_h": 257.0,
+   "x_realtime": 31.0
+  },
+  {
+   "wall_h": 6.5,
+   "audio_h": 262.01,
+   "x_realtime": 30.1
+  },
+  {
+   "wall_h": 6.667,
+   "audio_h": 271.22,
+   "x_realtime": 55.3
+  },
+  {
+   "wall_h": 6.833,
+   "audio_h": 276.2,
+   "x_realtime": 29.9
+  },
+  {
+   "wall_h": 7.0,
+   "audio_h": 283.93,
+   "x_realtime": 46.4
+  },
+  {
+   "wall_h": 7.167,
+   "audio_h": 288.15,
+   "x_realtime": 25.3
+  },
+  {
+   "wall_h": 7.333,
+   "audio_h": 301.92,
+   "x_realtime": 82.6
+  },
+  {
+   "wall_h": 7.5,
+   "audio_h": 313.57,
+   "x_realtime": 69.9
+  },
+  {
+   "wall_h": 7.667,
+   "audio_h": 321.2,
+   "x_realtime": 45.8
+  },
+  {
+   "wall_h": 7.833,
+   "audio_h": 325.15,
+   "x_realtime": 23.7
+  },
+  {
+   "wall_h": 8.0,
+   "audio_h": 334.27,
+   "x_realtime": 54.7
+  },
+  {
+   "wall_h": 8.167,
+   "audio_h": 345.34,
+   "x_realtime": 66.4
+  },
+  {
+   "wall_h": 8.333,
+   "audio_h": 349.34,
+   "x_realtime": 24.0
+  },
+  {
+   "wall_h": 8.5,
+   "audio_h": 360.8,
+   "x_realtime": 68.8
+  },
+  {
+   "wall_h": 8.667,
+   "audio_h": 369.8,
+   "x_realtime": 54.0
+  },
+  {
+   "wall_h": 8.833,
+   "audio_h": 379.64,
+   "x_realtime": 59.0
+  },
+  {
+   "wall_h": 9.0,
+   "audio_h": 383.16,
+   "x_realtime": 21.1
+  },
+  {
+   "wall_h": 9.167,
+   "audio_h": 393.82,
+   "x_realtime": 64.0
+  },
+  {
+   "wall_h": 9.333,
+   "audio_h": 396.27,
+   "x_realtime": 14.7
+  },
+  {
+   "wall_h": 9.5,
+   "audio_h": 404.32,
+   "x_realtime": 48.3
+  },
+  {
+   "wall_h": 9.667,
+   "audio_h": 415.08,
+   "x_realtime": 64.6
+  },
+  {
+   "wall_h": 9.833,
+   "audio_h": 424.32,
+   "x_realtime": 55.4
+  },
+  {
+   "wall_h": 10.0,
+   "audio_h": 432.13,
+   "x_realtime": 46.9
+  },
+  {
+   "wall_h": 10.167,
+   "audio_h": 444.23,
+   "x_realtime": 72.5
+  },
+  {
+   "wall_h": 10.333,
+   "audio_h": 449.45,
+   "x_realtime": 31.4
+  },
+  {
+   "wall_h": 10.5,
+   "audio_h": 457.14,
+   "x_realtime": 46.1
+  },
+  {
+   "wall_h": 10.667,
+   "audio_h": 458.11,
+   "x_realtime": 5.8
+  },
+  {
+   "wall_h": 10.833,
+   "audio_h": 461.33,
+   "x_realtime": 19.3
+  },
+  {
+   "wall_h": 11.0,
+   "audio_h": 464.88,
+   "x_realtime": 21.3
+  },
+  {
+   "wall_h": 11.167,
+   "audio_h": 465.36,
+   "x_realtime": 2.9
+  },
+  {
+   "wall_h": 11.333,
+   "audio_h": 466.41,
+   "x_realtime": 6.3
+  },
+  {
+   "wall_h": 11.5,
+   "audio_h": 468.67,
+   "x_realtime": 13.6
+  },
+  {
+   "wall_h": 11.667,
+   "audio_h": 468.67,
+   "x_realtime": 0.0
+  },
+  {
+   "wall_h": 11.833,
+   "audio_h": 469.04,
+   "x_realtime": 2.2
+  },
+  {
+   "wall_h": 12.0,
+   "audio_h": 473.34,
+   "x_realtime": 25.8
+  },
+  {
+   "wall_h": 12.167,
+   "audio_h": 474.84,
+   "x_realtime": 9.0
+  },
+  {
+   "wall_h": 12.333,
+   "audio_h": 480.32,
+   "x_realtime": 32.9
+  },
+  {
+   "wall_h": 12.5,
+   "audio_h": 489.49,
+   "x_realtime": 55.0
+  },
+  {
+   "wall_h": 12.667,
+   "audio_h": 502.37,
+   "x_realtime": 77.3
+  },
+  {
+   "wall_h": 12.833,
+   "audio_h": 511.54,
+   "x_realtime": 55.0
+  },
+  {
+   "wall_h": 13.0,
+   "audio_h": 525.51,
+   "x_realtime": 83.8
+  },
+  {
+   "wall_h": 13.167,
+   "audio_h": 540.6,
+   "x_realtime": 90.5
+  },
+  {
+   "wall_h": 13.333,
+   "audio_h": 555.78,
+   "x_realtime": 91.1
+  },
+  {
+   "wall_h": 13.5,
+   "audio_h": 568.7,
+   "x_realtime": 77.5
+  },
+  {
+   "wall_h": 13.667,
+   "audio_h": 583.13,
+   "x_realtime": 86.6
+  },
+  {
+   "wall_h": 13.833,
+   "audio_h": 593.89,
+   "x_realtime": 64.6
+  },
+  {
+   "wall_h": 14.0,
+   "audio_h": 600.7,
+   "x_realtime": 40.9
+  },
+  {
+   "wall_h": 14.167,
+   "audio_h": 604.65,
+   "x_realtime": 23.7
+  },
+  {
+   "wall_h": 14.333,
+   "audio_h": 613.65,
+   "x_realtime": 54.0
+  },
+  {
+   "wall_h": 14.5,
+   "audio_h": 625.14,
+   "x_realtime": 68.9
+  },
+  {
+   "wall_h": 14.667,
+   "audio_h": 634.9,
+   "x_realtime": 58.6
+  },
+  {
+   "wall_h": 14.833,
+   "audio_h": 650.29,
+   "x_realtime": 92.4
+  },
+  {
+   "wall_h": 15.0,
+   "audio_h": 660.08,
+   "x_realtime": 58.7
+  },
+  {
+   "wall_h": 15.167,
+   "audio_h": 668.15,
+   "x_realtime": 48.4
+  },
+  {
+   "wall_h": 15.333,
+   "audio_h": 678.79,
+   "x_realtime": 63.8
+  },
+  {
+   "wall_h": 15.5,
+   "audio_h": 689.9,
+   "x_realtime": 66.7
+  },
+  {
+   "wall_h": 15.667,
+   "audio_h": 697.12,
+   "x_realtime": 43.3
+  },
+  {
+   "wall_h": 15.833,
+   "audio_h": 708.45,
+   "x_realtime": 68.0
+  },
+  {
+   "wall_h": 16.0,
+   "audio_h": 719.23,
+   "x_realtime": 64.7
+  },
+  {
+   "wall_h": 16.167,
+   "audio_h": 726.74,
+   "x_realtime": 45.0
+  },
+  {
+   "wall_h": 16.333,
+   "audio_h": 732.32,
+   "x_realtime": 33.5
+  },
+  {
+   "wall_h": 16.5,
+   "audio_h": 742.23,
+   "x_realtime": 59.4
+  },
+  {
+   "wall_h": 16.667,
+   "audio_h": 752.74,
+   "x_realtime": 63.1
+  },
+  {
+   "wall_h": 16.833,
+   "audio_h": 761.16,
+   "x_realtime": 50.6
+  },
+  {
+   "wall_h": 17.0,
+   "audio_h": 772.3,
+   "x_realtime": 66.8
+  },
+  {
+   "wall_h": 17.167,
+   "audio_h": 783.96,
+   "x_realtime": 69.9
+  },
+  {
+   "wall_h": 17.333,
+   "audio_h": 795.37,
+   "x_realtime": 68.5
+  },
+  {
+   "wall_h": 17.5,
+   "audio_h": 810.46,
+   "x_realtime": 90.5
+  },
+  {
+   "wall_h": 17.667,
+   "audio_h": 820.42,
+   "x_realtime": 59.8
+  },
+  {
+   "wall_h": 17.833,
+   "audio_h": 827.21,
+   "x_realtime": 40.8
+  },
+  {
+   "wall_h": 18.0,
+   "audio_h": 837.11,
+   "x_realtime": 59.4
+  },
+  {
+   "wall_h": 18.167,
+   "audio_h": 849.56,
+   "x_realtime": 74.7
+  },
+  {
+   "wall_h": 18.333,
+   "audio_h": 862.97,
+   "x_realtime": 80.5
+  },
+  {
+   "wall_h": 18.5,
+   "audio_h": 868.38,
+   "x_realtime": 32.5
+  },
+  {
+   "wall_h": 18.667,
+   "audio_h": 878.73,
+   "x_realtime": 62.1
+  },
+  {
+   "wall_h": 18.833,
+   "audio_h": 888.88,
+   "x_realtime": 60.9
+  },
+  {
+   "wall_h": 19.0,
+   "audio_h": 901.12,
+   "x_realtime": 73.5
+  },
+  {
+   "wall_h": 19.167,
+   "audio_h": 911.06,
+   "x_realtime": 59.6
+  },
+  {
+   "wall_h": 19.333,
+   "audio_h": 914.04,
+   "x_realtime": 17.9
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "work": "/mnt/data/melati/bench/pf_test/work_nvrel4f",
+ "exported_with": {
+  "heads": [
+   "whisper"
+  ],
+  "variant": "{\"floor_db\": 2}",
+  "thresholds": {
+   "breath": 0.7
+  },
+  "thresholds_from": "/mnt/data/melati/results/nonverbal/gap_eval_rel4pf.json",
+  "frames": {
+   "laugh": 0.9,
+   "cough": 0.999
+  }
+ },
+ "laugh": {
+  "0.9": {
+   "recall": 0.7073,
+   "precision_labelled": 0.7748091603053435,
+   "pred": 390,
+   "ref": 287,
+   "recall_all": 0.3679
+  },
+  "0.95": {
+   "recall": 0.657,
+   "precision_labelled": 0.8310502283105022,
+   "pred": 311,
+   "ref": 277,
+   "recall_all": 0.3247
+  },
+  "0.97": {
+   "recall": 0.5962,
+   "precision_labelled": 0.8681318681318682,
+   "pred": 251,
+   "ref": 265,
+   "recall_all": 0.2832
+  },
+  "0.98": {
+   "recall": 0.5328,
+   "precision_labelled": 0.8734177215189873,
+   "pred": 208,
+   "ref": 259,
+   "recall_all": 0.2453
+  },
+  "0.99": {
+   "recall": 0.3942,
+   "precision_labelled": 0.9223300970873787,
+   "pred": 139,
+   "ref": 241,
+   "recall_all": 0.171
+  },
+  "0.995": {
+   "recall": 0.2356,
+   "precision_labelled": 0.9137931034482759,
+   "pred": 80,
+   "ref": 225,
+   "recall_all": 0.0967
+  },
+  "0.998": {
+   "recall": 0.1773,
+   "precision_labelled": 0.9069767441860465,
+   "pred": 52,
+   "ref": 220,
+   "recall_all": 0.0708
+  },
+  "0.999": {
+   "recall": 0.1116,
+   "precision_labelled": 0.96,
+   "pred": 30,
+   "ref": 215,
+   "recall_all": 0.0432
+  }
+ },
+ "others": {
+  "previous release": {
+   "recall": 0.5986,
+   "precision_labelled": 0.8585858585858586,
+   "pred": 267,
+   "ref": 284,
+   "recall_all": 0.3109
+  },
+  "Qwen3-Omni": {
+   "recall": 0.4682,
+   "precision_labelled": 0.9124087591240876,
+   "pred": 163,
+   "ref": 267,
+   "recall_all": 0.2245
+  }
+ }
+}

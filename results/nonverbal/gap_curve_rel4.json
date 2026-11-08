@@ -1,0 +1,417 @@
+{
+ "heads": "/mnt/data/melati/models/nv_heads_rel4",
+ "curves": {
+  "calib": {
+   "breath": {
+    "0.3": {
+     "hyp": 572,
+     "tag_precision": 0.5997,
+     "tag_recall": 0.37,
+     "ref": 908
+    },
+    "0.5": {
+     "hyp": 430,
+     "tag_precision": 0.6209,
+     "tag_recall": 0.2885,
+     "ref": 908
+    },
+    "0.6": {
+     "hyp": 334,
+     "tag_precision": 0.6317,
+     "tag_recall": 0.2346,
+     "ref": 908
+    },
+    "0.65": {
+     "hyp": 288,
+     "tag_precision": 0.6285,
+     "tag_recall": 0.2059,
+     "ref": 908
+    },
+    "0.7": {
+     "hyp": 245,
+     "tag_precision": 0.6327,
+     "tag_recall": 0.1795,
+     "ref": 908
+    },
+    "0.75": {
+     "hyp": 197,
+     "tag_precision": 0.6447,
+     "tag_recall": 0.1465,
+     "ref": 908
+    },
+    "0.8": {
+     "hyp": 148,
+     "tag_precision": 0.6824,
+     "tag_recall": 0.1167,
+     "ref": 908
+    },
+    "0.85": {
+     "hyp": 109,
+     "tag_precision": 0.6972,
+     "tag_recall": 0.087,
+     "ref": 908
+    },
+    "0.9": {
+     "hyp": 65,
+     "tag_precision": 0.7077,
+     "tag_recall": 0.054,
+     "ref": 908
+    },
+    "0.95": {
+     "hyp": 16,
+     "tag_precision": 0.9375,
+     "tag_recall": 0.0176,
+     "ref": 908
+    },
+    "0.98": {
+     "hyp": 2,
+     "tag_precision": 1.0,
+     "tag_recall": 0.0022,
+     "ref": 908
+    }
+   },
+   "laugh": {
+    "0.3": {
+     "hyp": 635,
+     "tag_precision": 0.222,
+     "tag_recall": 0.566,
+     "ref": 235
+    },
+    "0.5": {
+     "hyp": 408,
+     "tag_precision": 0.2868,
+     "tag_recall": 0.4766,
+     "ref": 235
+    },
+    "0.6": {
+     "hyp": 304,
+     "tag_precision": 0.3355,
+     "tag_recall": 0.4213,
+     "ref": 235
+    },
+    "0.65": {
+     "hyp": 253,
+     "tag_precision": 0.3794,
+     "tag_recall": 0.4,
+     "ref": 235
+    },
+    "0.7": {
+     "hyp": 213,
+     "tag_precision": 0.4225,
+     "tag_recall": 0.3745,
+     "ref": 235
+    },
+    "0.75": {
+     "hyp": 157,
+     "tag_precision": 0.465,
+     "tag_recall": 0.3106,
+     "ref": 235
+    },
+    "0.8": {
+     "hyp": 114,
+     "tag_precision": 0.5,
+     "tag_recall": 0.2468,
+     "ref": 235
+    },
+    "0.85": {
+     "hyp": 84,
+     "tag_precision": 0.5238,
+     "tag_recall": 0.1872,
+     "ref": 235
+    },
+    "0.9": {
+     "hyp": 36,
+     "tag_precision": 0.6667,
+     "tag_recall": 0.1021,
+     "ref": 235
+    },
+    "0.95": {
+     "hyp": 5,
+     "tag_precision": 0.8,
+     "tag_recall": 0.017,
+     "ref": 235
+    },
+    "0.98": {
+     "hyp": 1,
+     "tag_precision": 1.0,
+     "tag_recall": 0.0043,
+     "ref": 235
+    }
+   },
+   "cough": {
+    "0.3": {
+     "hyp": 159,
+     "tag_precision": 0.1509,
+     "tag_recall": 0.5476,
+     "ref": 42
+    },
+    "0.5": {
+     "hyp": 109,
+     "tag_precision": 0.1835,
+     "tag_recall": 0.4524,
+     "ref": 42
+    },
+    "0.6": {
+     "hyp": 84,
+     "tag_precision": 0.2024,
+     "tag_recall": 0.381,
+     "ref": 42
+    },
+    "0.65": {
+     "hyp": 77,
+     "tag_precision": 0.2208,
+     "tag_recall": 0.381,
+     "ref": 42
+    },
+    "0.7": {
+     "hyp": 64,
+     "tag_precision": 0.25,
+     "tag_recall": 0.3571,
+     "ref": 42
+    },
+    "0.75": {
+     "hyp": 47,
+     "tag_precision": 0.2553,
+     "tag_recall": 0.2857,
+     "ref": 42
+    },
+    "0.8": {
+     "hyp": 37,
+     "tag_precision": 0.2432,
+     "tag_recall": 0.2381,
+     "ref": 42
+    },
+    "0.85": {
+     "hyp": 27,
+     "tag_precision": 0.2593,
+     "tag_recall": 0.1905,
+     "ref": 42
+    },
+    "0.9": {
+     "hyp": 22,
+     "tag_precision": 0.2273,
+     "tag_recall": 0.119,
+     "ref": 42
+    },
+    "0.95": {
+     "hyp": 10,
+     "tag_precision": 0.4,
+     "tag_recall": 0.0952,
+     "ref": 42
+    },
+    "0.98": {
+     "hyp": 1,
+     "tag_precision": 1.0,
+     "tag_recall": 0.0238,
+     "ref": 42
+    }
+   }
+  },
+  "test": {
+   "breath": {
+    "0.3": {
+     "hyp": 172,
+     "tag_precision": 0.6512,
+     "tag_recall": 0.2419,
+     "ref": 492
+    },
+    "0.5": {
+     "hyp": 114,
+     "tag_precision": 0.6667,
+     "tag_recall": 0.1707,
+     "ref": 492
+    },
+    "0.6": {
+     "hyp": 81,
+     "tag_precision": 0.6543,
+     "tag_recall": 0.1179,
+     "ref": 492
+    },
+    "0.65": {
+     "hyp": 70,
+     "tag_precision": 0.6857,
+     "tag_recall": 0.1057,
+     "ref": 492
+    },
+    "0.7": {
+     "hyp": 65,
+     "tag_precision": 0.6923,
+     "tag_recall": 0.0976,
+     "ref": 492
+    },
+    "0.75": {
+     "hyp": 54,
+     "tag_precision": 0.6667,
+     "tag_recall": 0.0813,
+     "ref": 492
+    },
+    "0.8": {
+     "hyp": 43,
+     "tag_precision": 0.7209,
+     "tag_recall": 0.0711,
+     "ref": 492
+    },
+    "0.85": {
+     "hyp": 34,
+     "tag_precision": 0.7353,
+     "tag_recall": 0.0589,
+     "ref": 492
+    },
+    "0.9": {
+     "hyp": 21,
+     "tag_precision": 0.6667,
+     "tag_recall": 0.0346,
+     "ref": 492
+    },
+    "0.95": {
+     "hyp": 7,
+     "tag_precision": 0.7143,
+     "tag_recall": 0.0142,
+     "ref": 492
+    },
+    "0.98": {
+     "hyp": 1,
+     "tag_precision": 1.0,
+     "tag_recall": 0.002,
+     "ref": 492
+    }
+   },
+   "laugh": {
+    "0.3": {
+     "hyp": 326,
+     "tag_precision": 0.1135,
+     "tag_recall": 0.6429,
+     "ref": 56
+    },
+    "0.5": {
+     "hyp": 196,
+     "tag_precision": 0.1582,
+     "tag_recall": 0.5357,
+     "ref": 56
+    },
+    "0.6": {
+     "hyp": 148,
+     "tag_precision": 0.1959,
+     "tag_recall": 0.5179,
+     "ref": 56
+    },
+    "0.65": {
+     "hyp": 119,
+     "tag_precision": 0.2353,
+     "tag_recall": 0.5,
+     "ref": 56
+    },
+    "0.7": {
+     "hyp": 94,
+     "tag_precision": 0.2872,
+     "tag_recall": 0.4821,
+     "ref": 56
+    },
+    "0.75": {
+     "hyp": 69,
+     "tag_precision": 0.3623,
+     "tag_recall": 0.4464,
+     "ref": 56
+    },
+    "0.8": {
+     "hyp": 48,
+     "tag_precision": 0.4583,
+     "tag_recall": 0.3929,
+     "ref": 56
+    },
+    "0.85": {
+     "hyp": 35,
+     "tag_precision": 0.4571,
+     "tag_recall": 0.2857,
+     "ref": 56
+    },
+    "0.9": {
+     "hyp": 12,
+     "tag_precision": 0.5,
+     "tag_recall": 0.1071,
+     "ref": 56
+    },
+    "0.95": {
+     "hyp": 3,
+     "tag_precision": 1.0,
+     "tag_recall": 0.0536,
+     "ref": 56
+    },
+    "0.98": {
+     "hyp": 0,
+     "tag_precision": null,
+     "tag_recall": 0.0,
+     "ref": 56
+    }
+   },
+   "cough": {
+    "0.3": {
+     "hyp": 33,
+     "tag_precision": 0.3333,
+     "tag_recall": 0.3793,
+     "ref": 29
+    },
+    "0.5": {
+     "hyp": 12,
+     "tag_precision": 0.5833,
+     "tag_recall": 0.2414,
+     "ref": 29
+    },
+    "0.6": {
+     "hyp": 8,
+     "tag_precision": 0.75,
+     "tag_recall": 0.2069,
+     "ref": 29
+    },
+    "0.65": {
+     "hyp": 8,
+     "tag_precision": 0.75,
+     "tag_recall": 0.2069,
+     "ref": 29
+    },
+    "0.7": {
+     "hyp": 7,
+     "tag_precision": 0.7143,
+     "tag_recall": 0.1724,
+     "ref": 29
+    },
+    "0.75": {
+     "hyp": 4,
+     "tag_precision": 0.75,
+     "tag_recall": 0.1034,
+     "ref": 29
+    },
+    "0.8": {
+     "hyp": 2,
+     "tag_precision": 0.5,
+     "tag_recall": 0.0345,
+     "ref": 29
+    },
+    "0.85": {
+     "hyp": 2,
+     "tag_precision": 0.5,
+     "tag_recall": 0.0345,
+     "ref": 29
+    },
+    "0.9": {
+     "hyp": 1,
+     "tag_precision": 1.0,
+     "tag_recall": 0.0345,
+     "ref": 29
+    },
+    "0.95": {
+     "hyp": 1,
+     "tag_precision": 1.0,
+     "tag_recall": 0.0345,
+     "ref": 29
+    },
+    "0.98": {
+     "hyp": 0,
+     "tag_precision": null,
+     "tag_recall": 0.0,
+     "ref": 29
+    }
+   }
+  }
+ }
+}

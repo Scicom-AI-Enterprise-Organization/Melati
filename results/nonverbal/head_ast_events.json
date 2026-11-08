@@ -1,0 +1,283 @@
+{
+ "encoder": "ast",
+ "labels": [
+  "speech",
+  "filler",
+  "breath",
+  "laugh",
+  "cough",
+  "sigh",
+  "sniff",
+  "throat clearing",
+  "sneeze",
+  "noise"
+ ],
+ "features": [
+  13,
+  768
+ ],
+ "train": {
+  "podcastfillers/filler": 31962,
+  "podcastfillers/speech": 19449,
+  "podcastfillers/noise": 6622,
+  "podcastfillers/laugh": 5751,
+  "podcastfillers/breath": 7421,
+  "vocalsound/cough": 2578,
+  "vocalsound/laugh": 2578,
+  "vocalsound/sigh": 2578,
+  "vocalsound/sneeze": 2578,
+  "vocalsound/sniff": 2578,
+  "vocalsound/throat clearing": 2578
+ },
+ "validation_curve": [
+  [
+   1,
+   0.8003
+  ],
+  [
+   2,
+   0.8045
+  ],
+  [
+   3,
+   0.8322
+  ],
+  [
+   4,
+   0.8381
+  ],
+  [
+   5,
+   0.8302
+  ],
+  [
+   6,
+   0.8368
+  ],
+  [
+   7,
+   0.8299
+  ],
+  [
+   8,
+   0.8284
+  ],
+  [
+   9,
+   0.8285
+  ],
+  [
+   10,
+   0.8294
+  ],
+  [
+   11,
+   0.8357
+  ],
+  [
+   12,
+   0.8306
+  ],
+  [
+   13,
+   0.8347
+  ],
+  [
+   14,
+   0.8339
+  ],
+  [
+   15,
+   0.8344
+  ],
+  [
+   16,
+   0.833
+  ]
+ ],
+ "test": {
+  "all": {
+   "per_class": {
+    "speech": {
+     "n": 2341,
+     "precision": 0.7205,
+     "recall": 0.751,
+     "f1": 0.7354,
+     "ap": 0.7839
+    },
+    "filler": {
+     "n": 5520,
+     "precision": 0.9188,
+     "recall": 0.8841,
+     "f1": 0.9011,
+     "ap": 0.967
+    },
+    "breath": {
+     "n": 732,
+     "precision": 0.8032,
+     "recall": 0.903,
+     "f1": 0.8502,
+     "ap": 0.9304
+    },
+    "laugh": {
+     "n": 1122,
+     "precision": 0.8077,
+     "recall": 0.8832,
+     "f1": 0.8438,
+     "ap": 0.9242
+    },
+    "cough": {
+     "n": 543,
+     "precision": 0.834,
+     "recall": 0.8232,
+     "f1": 0.8285,
+     "ap": 0.9133
+    },
+    "sigh": {
+     "n": 543,
+     "precision": 0.8924,
+     "recall": 0.8858,
+     "f1": 0.8891,
+     "ap": 0.9545
+    },
+    "sniff": {
+     "n": 543,
+     "precision": 0.8702,
+     "recall": 0.9263,
+     "f1": 0.8974,
+     "ap": 0.9531
+    },
+    "throat clearing": {
+     "n": 543,
+     "precision": 0.8483,
+     "recall": 0.8343,
+     "f1": 0.8412,
+     "ap": 0.9156
+    },
+    "sneeze": {
+     "n": 543,
+     "precision": 0.9072,
+     "recall": 0.8637,
+     "f1": 0.8849,
+     "ap": 0.9436
+    },
+    "noise": {
+     "n": 1034,
+     "precision": 0.879,
+     "recall": 0.8153,
+     "f1": 0.846,
+     "ap": 0.9173
+    }
+   },
+   "macro_f1": 0.8517596633938848,
+   "accuracy": 0.8531,
+   "n": 13464
+  },
+  "podcastfillers": {
+   "per_class": {
+    "speech": {
+     "n": 2341,
+     "precision": 0.7211,
+     "recall": 0.751,
+     "f1": 0.7357,
+     "ap": 0.7843
+    },
+    "filler": {
+     "n": 5520,
+     "precision": 0.9199,
+     "recall": 0.8841,
+     "f1": 0.9016,
+     "ap": 0.9674
+    },
+    "breath": {
+     "n": 732,
+     "precision": 0.8051,
+     "recall": 0.903,
+     "f1": 0.8513,
+     "ap": 0.9313
+    },
+    "laugh": {
+     "n": 579,
+     "precision": 0.7141,
+     "recall": 0.8411,
+     "f1": 0.7724,
+     "ap": 0.8655
+    },
+    "noise": {
+     "n": 1034,
+     "precision": 0.8836,
+     "recall": 0.8153,
+     "f1": 0.8481,
+     "ap": 0.9188
+    }
+   },
+   "macro_f1": 0.8218164836226153,
+   "accuracy": 0.8455,
+   "n": 10206
+  },
+  "vocalsound": {
+   "per_class": {
+    "laugh": {
+     "n": 543,
+     "precision": 0.9248,
+     "recall": 0.9282,
+     "f1": 0.9265,
+     "ap": 0.9756
+    },
+    "cough": {
+     "n": 543,
+     "precision": 0.834,
+     "recall": 0.8232,
+     "f1": 0.8285,
+     "ap": 0.9146
+    },
+    "sigh": {
+     "n": 543,
+     "precision": 0.8924,
+     "recall": 0.8858,
+     "f1": 0.8891,
+     "ap": 0.958
+    },
+    "sniff": {
+     "n": 543,
+     "precision": 0.8718,
+     "recall": 0.9263,
+     "f1": 0.8982,
+     "ap": 0.9546
+    },
+    "throat clearing": {
+     "n": 543,
+     "precision": 0.8531,
+     "recall": 0.8343,
+     "f1": 0.8436,
+     "ap": 0.9174
+    },
+    "sneeze": {
+     "n": 543,
+     "precision": 0.9107,
+     "recall": 0.8637,
+     "f1": 0.8866,
+     "ap": 0.9473
+    }
+   },
+   "macro_f1": 0.8787463269578271,
+   "accuracy": 0.8769,
+   "n": 3258
+  }
+ },
+ "layer_mix": [
+  0.0657,
+  0.0652,
+  0.0656,
+  0.0659,
+  0.0652,
+  0.067,
+  0.0793,
+  0.09,
+  0.0898,
+  0.0915,
+  0.0886,
+  0.0837,
+  0.0824
+ ]
+}

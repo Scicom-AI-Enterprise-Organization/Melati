@@ -1,0 +1,890 @@
+{
+ "base": {
+  "hf": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.619,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      16
+     ],
+     [
+      "you",
+      15
+     ],
+     [
+      "Thank you.",
+      3
+     ],
+     [
+      "Takk for at du så med.",
+      3
+     ],
+     [
+      "Amen.",
+      2
+     ],
+     [
+      "Gracias.",
+      1
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.9683,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      "Thank you.",
+      173
+     ],
+     [
+      "¶¶",
+      86
+     ],
+     [
+      ".",
+      17
+     ],
+     [
+      "© BF-WATCH TV 2021",
+      13
+     ],
+     [
+      "Bye.",
+      6
+     ],
+     [
+      "Oh",
+      6
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.8981,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      "you",
+      333
+     ],
+     [
+      "Thank you.",
+      183
+     ],
+     [
+      ".",
+      95
+     ],
+     [
+      "Bye.",
+      39
+     ],
+     [
+      "...",
+      23
+     ],
+     [
+      "ご視聴ありがとうございました",
+      21
+     ]
+    ]
+   }
+  },
+  "vllm": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.619,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      16
+     ],
+     [
+      "you",
+      15
+     ],
+     [
+      "Thank you.",
+      3
+     ],
+     [
+      "Takk for at du så med.",
+      3
+     ],
+     [
+      "Amen.",
+      2
+     ],
+     [
+      "Gracias.",
+      1
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.99,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      "Thank you.",
+      147
+     ],
+     [
+      "♪♪",
+      134
+     ],
+     [
+      "♪♪♪",
+      42
+     ],
+     [
+      "© BF-WATCH TV 2021",
+      12
+     ],
+     [
+      "Bye.",
+      6
+     ],
+     [
+      "THE END",
+      5
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.9726,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      "you",
+      237
+     ],
+     [
+      "Thank you.",
+      134
+     ],
+     [
+      "♪ ♪",
+      101
+     ],
+     [
+      "Bye.",
+      31
+     ],
+     [
+      ".",
+      22
+     ],
+     [
+      "♪",
+      21
+     ]
+    ]
+   }
+  }
+ },
+ "d25bl": {
+  "hf": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.3095,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      29
+     ],
+     [
+      "you",
+      13
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.7367,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      158
+     ],
+     [
+      "Thank you.",
+      80
+     ],
+     [
+      "Oh",
+      64
+     ],
+     [
+      "© BF-WATCH TV 2021",
+      53
+     ],
+     [
+      "¶",
+      52
+     ],
+     [
+      "© transcript Emily Beynon",
+      16
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.3579,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      607
+     ],
+     [
+      "you",
+      221
+     ],
+     [
+      "...",
+      123
+     ],
+     [
+      "!",
+      20
+     ],
+     [
+      "oh",
+      18
+     ],
+     [
+      "do",
+      15
+     ]
+    ]
+   }
+  },
+  "vllm": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.0,
+    "any_output_rate": 0.0,
+    "top": [
+     [
+      "",
+      42
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.0017,
+    "any_output_rate": 0.0017,
+    "top": [
+     [
+      "",
+      599
+     ],
+     [
+      "and Beatport, the, I mean, the online version, you know, but the CD, the hard copy CD is going to be out on January. Then I have to, I mean, now we are booking some gigs for doing the, to present to perform live this new album in Germany and some other places in Europe.",
+      1
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.0009,
+    "any_output_rate": 0.0009,
+    "top": [
+     [
+      "",
+      1167
+     ],
+     [
+      "निया",
+      1
+     ]
+    ]
+   }
+  }
+ },
+ "distill25": {
+  "hf": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.2381,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      32
+     ],
+     [
+      "you",
+      10
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.6433,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      211
+     ],
+     [
+      "Thank you.",
+      98
+     ],
+     [
+      "Oh",
+      28
+     ],
+     [
+      "Yeah.",
+      27
+     ],
+     [
+      "© BF-WATCH TV 2021",
+      14
+     ],
+     [
+      "¶¶",
+      10
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.3639,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      695
+     ],
+     [
+      "you",
+      241
+     ],
+     [
+      "...",
+      45
+     ],
+     [
+      "p",
+      17
+     ],
+     [
+      "Thank you.",
+      15
+     ],
+     [
+      "ご視聴ありがとうございました",
+      12
+     ]
+    ]
+   }
+  },
+  "vllm": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.0,
+    "any_output_rate": 0.0,
+    "top": [
+     [
+      "",
+      42
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.01,
+    "any_output_rate": 0.01,
+    "top": [
+     [
+      "",
+      594
+     ],
+     [
+      "and Beatport, the, the, I mean, the online version, you know, but the, the CD, the hard copy CD is going to be out on January. Then, I have to, I mean, now we are booking some, some gigs for doing the, the, the, the two percent to, to perform live this new album in, in, in Germany and some other places in Europe.",
+      1
+     ],
+     [
+      "girls in tennis outfits. Right. That's why you should go to Lux. And the following Wednesday, my band, The Blank Stairs, is playing at Lux. Uh-huh. On Wednesday. Another member of that band is in the house with us right now, too. That's right. There's a couple of us. You better watch it. You better lock your doors. And, uh, wow. Thanks so much, guys, for coming again to Make Alongs. We only have seven minutes left in the program. Hey, thanks a lot. And, of course, thanks to Chris Stubbs and Mike Kowalek for helping out and making you guys sound terrific.",
+      1
+     ],
+     [
+      "Oh, yeah, exactly. And you do have a MySpace account, which is myspace.com slash... Actually, I'm on it right now. That's why. I'm typing, typing the login in. Tighten up the log up about this show. I'm in your extended network. That's awesome. Yeah, we, somebody else has our, actually has Moody Lemon. I don't even know if he's like a, has his web, MySpace web address, but I don't even know if he's a fan. Somebody else has Moody Lemon at Hotmail.",
+      1
+     ],
+     [
+      "Todos llegamos de países y planeros y eso nunca debemos olvidar, no debemos olvidar.",
+      1
+     ],
+     [
+      "Yeah, I really hope that the, you know, next time you and your wife are, uh, your wife Mary are here in New York, you come play my program. Oh, yeah. You really have to. I mean,",
+      1
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.0,
+    "any_output_rate": 0.0,
+    "top": [
+     [
+      "",
+      1168
+     ]
+    ]
+   }
+  }
+ },
+ "fix": {
+  "hf": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.1905,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      33
+     ],
+     [
+      "you",
+      7
+     ],
+     [
+      "...",
+      1
+     ],
+     [
+      "Música",
+      1
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.1367,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      479
+     ],
+     [
+      "...",
+      38
+     ],
+     [
+      "¡",
+      6
+     ],
+     [
+      "Música",
+      4
+     ],
+     [
+      "Okay.",
+      3
+     ],
+     [
+      "I",
+      3
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.1652,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      937
+     ],
+     [
+      "you",
+      66
+     ],
+     [
+      "...",
+      37
+     ],
+     [
+      "Субтитры создавал DimaTorzok",
+      24
+     ],
+     [
+      "。",
+      15
+     ],
+     [
+      "T",
+      8
+     ]
+    ]
+   }
+  },
+  "vllm": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.0,
+    "any_output_rate": 0.0,
+    "top": [
+     [
+      "",
+      42
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.0033,
+    "any_output_rate": 0.0033,
+    "top": [
+     [
+      "",
+      598
+     ],
+     [
+      "Oh, yeah, exactly. And you do have a MySpace account, which is myspace.com slash. Actually, I'm on it right now. That's why I'm typing, typing a login and tightening a blog up about this show. I'm in your extended network. That's awesome. Yeah, we, somebody else has our, actually has Mody Lemon. I don't even know if he's like a, has his web, MySpace web address, but I don't even know if he's a fan. Somebody else has Mody Lemon at Hotmail.",
+      1
+     ],
+     [
+      "Oh, Johnny. Don't cry, Johnny. We've all done something, Johnny boy. Johnny, if heaven exists, what would you like to hear God say when you arrive at the pearly gate? Not all of us are dealing with our demons, Johnny. Some of us are the demons. I'm sorry I got you into this, Johnny. No, don't. I didn't know. Don't, Johnny. Oh, we're living, Johnny. We're living. So let's make it count. Oh, Johnny. But it'll be different now.",
+      1
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.0017,
+    "any_output_rate": 0.0017,
+    "top": [
+     [
+      "",
+      1166
+     ],
+     [
+      "h m m",
+      1
+     ],
+     [
+      "gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu gu",
+      1
+     ]
+    ]
+   }
+  }
+ },
+ "fix25": {
+  "hf": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.2381,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      31
+     ],
+     [
+      "you",
+      10
+     ],
+     [
+      "...",
+      1
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.7067,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      164
+     ],
+     [
+      "Thank you.",
+      91
+     ],
+     [
+      "Oh",
+      47
+     ],
+     [
+      "¶¶",
+      39
+     ],
+     [
+      "© BF-WATCH TV 2021",
+      18
+     ],
+     [
+      "so",
+      13
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.7038,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      "you",
+      311
+     ],
+     [
+      ".",
+      214
+     ],
+     [
+      "...",
+      128
+     ],
+     [
+      "pfft",
+      102
+     ],
+     [
+      "p",
+      77
+     ],
+     [
+      "m",
+      31
+     ]
+    ]
+   }
+  },
+  "vllm": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.0,
+    "any_output_rate": 0.0,
+    "top": [
+     [
+      "",
+      42
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.01,
+    "any_output_rate": 0.01,
+    "top": [
+     [
+      "",
+      594
+     ],
+     [
+      "and Beatport, the, the, I mean, the online version, you know, but the, the, the CD, the hard copy CD is going to be out on January. Then, I have to, I mean, now we are booking some, some gigs for doing the, the, the, the, to present to, to perform live this new album in, in, in Germany and some other places in Europe.",
+      1
+     ],
+     [
+      "back soon actually we we're supposed to make a tour this time but uh we decided just to focus on new york and just came here here for a week and but we're going we're going soon to chicago and la and san francisco and san diego you know we're gonna we were supposed to to play spaceland uh next week and uh the elbow in san francisco but we we can't live so we're gonna do that later maybe in the fall or",
+      1
+     ],
+     [
+      "girls in tennis outfits. Right. That's why you should go to Lux. And the following Wednesday, my band, The Blank Stairs, is playing at Lux. Uh-huh. On Wednesday. Another member of that band is in the house with us right now, too. That's right. There's a couple of us. You better watch it. You better lock your doors. And, uh, wow. Thanks so much, guys, for coming again. The Mink Longs. We only have seven minutes left in the program. Hey, thanks a lot. And, of course, thanks to Chris Stubbs and Mike Kwalek for helping out and making you guys sound terrific.",
+      1
+     ],
+     [
+      "Oh, yeah, exactly. And you do have a MySpace account, which is myspace.com slash... Actually, I'm on it right now. That's why I'm typing, typing the login in, typing a blog up about this show. I'm in your extended network. That's awesome. Yeah, we, somebody else has our, actually has Mody Lemon. I don't even know if he's like a, has his web, MySpace web address, but I don't even know if he's a fan. Somebody else has Mody Lemon at Hotmail.",
+      1
+     ],
+     [
+      "De um repasso. De um repasso. De um repasso.",
+      1
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.0026,
+    "any_output_rate": 0.0026,
+    "top": [
+     [
+      "",
+      1165
+     ],
+     [
+      "hu hu hu hu",
+      1
+     ],
+     [
+      "bo bo",
+      1
+     ],
+     [
+      "pu pu pu pu pu pu pu pu pu pu",
+      1
+     ]
+    ]
+   }
+  }
+ },
+ "label25": {
+  "hf": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.1667,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      35
+     ],
+     [
+      "you",
+      7
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.5567,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      257
+     ],
+     [
+      "Thank you.",
+      86
+     ],
+     [
+      "Yeah.",
+      28
+     ],
+     [
+      "Oh",
+      20
+     ],
+     [
+      "¶¶",
+      16
+     ],
+     [
+      "© BF-WATCH TV 2021",
+      10
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.5497,
+    "any_output_rate": 1.0,
+    "top": [
+     [
+      ".",
+      497
+     ],
+     [
+      "you",
+      187
+     ],
+     [
+      "pfft",
+      154
+     ],
+     [
+      "p",
+      35
+     ],
+     [
+      "...",
+      29
+     ],
+     [
+      "Thank you.",
+      20
+     ]
+    ]
+   }
+  },
+  "vllm": {
+   "silence": {
+    "n": 42,
+    "words_rate": 0.0,
+    "any_output_rate": 0.0,
+    "top": [
+     [
+      "",
+      42
+     ]
+    ]
+   },
+   "music": {
+    "n": 600,
+    "words_rate": 0.0117,
+    "any_output_rate": 0.0117,
+    "top": [
+     [
+      "",
+      593
+     ],
+     [
+      "and Beatport, the, the, I mean, the online version, you know, but the, the, the CD, the hard copy CD is going to be out on January. Then, I have to, I mean, now we are booking some, some gigs for doing the, the, the, the, to present to, to perform live this new album in, in, in Germany and some other places in Europe.",
+      1
+     ],
+     [
+      "Um, you know, I wouldn't mind if we'll run out of time to, to get on some, to play something. Yeah, you want to play some, uh, something from More and Sons or something else? Yeah, I'd rather play stuff that I brought in from the other guys' projects and things. We have plenty of time. Okay. So, um, you, you tell me where you'd like it to go next. That's, uh, my music here. Okay. Maybe I'll do, um, one more tune. Okay. Live, is that all right?",
+      1
+     ],
+     [
+      "back soon actually we we supposed to made a tour at this time but uh we decided just to focus on new york and just came here here for a week and but we're gonna we're going soon to chicago and leon san francisco and san diego you know we're gonna we were supposed to to play spaceland uh next week and uh the elbow in san francisco but we we can't live so we're gonna do that later maybe in the fall or exactly",
+      1
+     ],
+     [
+      "Oh, yeah, exactly. And you do have a MySpace account, which is myspace.com slash. Actually, I'm on it right now. That's why I'm typing, typing the login in, typing a blog up about this show. I'm in your extended network. That's awesome. Yeah, we, somebody else has our, actually has Mody Lemon. I don't even know if he's like a, has his web, MySpace web address, but I don't even know if he's a fan. Somebody else has Mody Lemon at Hotmail.",
+      1
+     ],
+     [
+      "Todos llegamos de países extranjeros y eso nunca debemos olvidar, no debemos olvidar.",
+      1
+     ]
+    ]
+   },
+   "nonspeech": {
+    "n": 1168,
+    "words_rate": 0.0017,
+    "any_output_rate": 0.0017,
+    "top": [
+     [
+      "",
+      1166
+     ],
+     [
+      "hu hu hu hu",
+      1
+     ],
+     [
+      "guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh guh",
+      1
+     ]
+    ]
+   }
+  }
+ }
+}

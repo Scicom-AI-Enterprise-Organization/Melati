@@ -1,0 +1,78 @@
+{
+ "live": {
+  "all": {
+   "n": 7791,
+   "acc": 0.7036,
+   "uar": 0.5968,
+   "recall": {
+    "neutral": 0.831,
+    "happy": 0.8415,
+    "sad": 0.8083,
+    "angry": 0.5952,
+    "surprised": 0.1239,
+    "fearful": 0.3808
+   }
+  },
+  "cameo": {
+   "n": 4481,
+   "acc": 0.6226,
+   "uar": 0.608,
+   "recall": {
+    "neutral": 0.9308,
+    "happy": 0.8104,
+    "sad": 0.8166,
+    "angry": 0.5915,
+    "surprised": 0.1181,
+    "fearful": 0.3804
+   }
+  },
+  "nvtts": {
+   "n": 3310,
+   "acc": 0.8133,
+   "uar": 0.802,
+   "recall": {
+    "neutral": 0.796,
+    "happy": 0.8678,
+    "sad": 0.7423
+   }
+  }
+ },
+ "with_mer2023": {
+  "all": {
+   "n": 7791,
+   "acc": 0.7003,
+   "uar": 0.5903,
+   "recall": {
+    "neutral": 0.8323,
+    "happy": 0.8427,
+    "sad": 0.8014,
+    "angry": 0.5608,
+    "surprised": 0.1209,
+    "fearful": 0.3835
+   }
+  },
+  "cameo": {
+   "n": 4481,
+   "acc": 0.6164,
+   "uar": 0.6016,
+   "recall": {
+    "neutral": 0.937,
+    "happy": 0.8091,
+    "sad": 0.8088,
+    "angry": 0.5567,
+    "surprised": 0.1151,
+    "fearful": 0.3832
+   }
+  },
+  "nvtts": {
+   "n": 3310,
+   "acc": 0.8139,
+   "uar": 0.803,
+   "recall": {
+    "neutral": 0.7956,
+    "happy": 0.8712,
+    "sad": 0.7423
+   }
+  }
+ }
+}

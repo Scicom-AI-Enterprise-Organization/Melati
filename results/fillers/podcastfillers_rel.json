@@ -1,0 +1,78 @@
+{
+ "split": "test",
+ "episodes": 20,
+ "not_found": [],
+ "tol_s": 0.2,
+ "scopes": {
+  "inside": {
+   "filler": {
+    "precision": 0.8664,
+    "recall": 0.704,
+    "ref": 4257,
+    "ref_found": 2997,
+    "pred": 3459,
+    "pred_right": 2997
+   },
+   "laughter": {
+    "precision": 0.7669,
+    "recall": 0.4682,
+    "ref": 267,
+    "ref_found": 125,
+    "pred": 163,
+    "pred_right": 125
+   },
+   "breath": {
+    "precision": null,
+    "recall": 0.0,
+    "ref": 534,
+    "ref_found": 0,
+    "pred": 0,
+    "pred_right": 0
+   }
+  },
+  "all": {
+   "filler": {
+    "precision": 0.8711,
+    "recall": 0.5973,
+    "ref": 5044,
+    "ref_found": 3013,
+    "pred": 3459,
+    "pred_right": 3013
+   },
+   "laughter": {
+    "precision": 0.7975,
+    "recall": 0.2245,
+    "ref": 579,
+    "ref_found": 130,
+    "pred": 163,
+    "pred_right": 130
+   },
+   "breath": {
+    "precision": null,
+    "recall": 0.0,
+    "ref": 732,
+    "ref_found": 0,
+    "pred": 0,
+    "pred_right": 0
+   }
+  }
+ },
+ "unmatched_predictions_overlap": {
+  "filler": {
+   "(no label)": 273,
+   "Words": 68,
+   "None": 65,
+   "filler": 25,
+   "breath": 9,
+   "laughter": 5,
+   "Music": 1
+  },
+  "laughter": {
+   "(no label)": 21,
+   "breath": 6,
+   "filler": 3,
+   "laughter": 2,
+   "Words": 1
+  }
+ }
+}

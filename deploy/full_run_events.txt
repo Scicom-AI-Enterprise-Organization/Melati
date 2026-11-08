@@ -1,0 +1,11 @@
+# Changes made to the cluster while deploy/box_full.sh ran (box local time, from the run's session log), for
+# scripts/full_timeline.py --events, which marks them on the paper's throughput figure (fig_full_run).
+2026-10-25T21:00 w2v-BERT, WavLM batched
+2026-10-25T21:20 four diarization servers, least-loaded routing
+2026-10-25T21:56 a third ASR server
+2026-10-25T22:28 ASR batch budget, gaps sent at once
+2026-10-25T23:04 DNSMOS one thread a call
+2026-10-26T06:42 longer diarization timeout
+2026-10-26T07:18 timeout restored, two tries then windows
+2026-10-26T08:12 over 45 min diarized in windows
+2026-10-26T12:03 ASR error replies retried

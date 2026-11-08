@@ -1,0 +1,190 @@
+{
+ "model": "/mnt/data/melati/models/nv_frames4/whisper.pt",
+ "target_precision": 0.8,
+ "ami": {
+  "laugh": {
+   "threshold": 0.95,
+   "dev": {
+    "events": 286,
+    "right": 238,
+    "marks": 951,
+    "found": 342,
+    "marks_in_speech": 724,
+    "found_in_speech": 274,
+    "precision": 0.8322,
+    "recall": 0.3596,
+    "recall_in_speech": 0.3785
+   },
+   "test": {
+    "events": 333,
+    "right": 240,
+    "marks": 763,
+    "found": 345,
+    "marks_in_speech": 611,
+    "found_in_speech": 289,
+    "precision": 0.7207,
+    "recall": 0.4522,
+    "recall_in_speech": 0.473
+   },
+   "test_at_pf_threshold": {
+    "events": 725,
+    "right": 422,
+    "marks": 763,
+    "found": 677,
+    "marks_in_speech": 611,
+    "found_in_speech": 547,
+    "precision": 0.5821,
+    "recall": 0.8873,
+    "recall_in_speech": 0.8953
+   }
+  },
+  "cough": {
+   "threshold": 0.97,
+   "dev": {
+    "events": 7,
+    "right": 6,
+    "marks": 70,
+    "found": 6,
+    "marks_in_speech": 56,
+    "found_in_speech": 3,
+    "precision": 0.8571,
+    "recall": 0.0857,
+    "recall_in_speech": 0.0536
+   },
+   "test": {
+    "events": 14,
+    "right": 12,
+    "marks": 78,
+    "found": 13,
+    "marks_in_speech": 50,
+    "found_in_speech": 4,
+    "precision": 0.8571,
+    "recall": 0.1667,
+    "recall_in_speech": 0.08
+   }
+  }
+ },
+ "podcastfillers": {
+  "threshold": 0.55,
+  "validation": {
+   "events": 233,
+   "right": 113,
+   "wrong": 28,
+   "refs": 187,
+   "found": 183,
+   "labelled": 141,
+   "precision": 0.8014,
+   "recall": 0.9786
+  },
+  "test": {
+   "events": 678,
+   "right": 352,
+   "wrong": 95,
+   "refs": 579,
+   "found": 570,
+   "labelled": 447,
+   "precision": 0.7875,
+   "recall": 0.9845
+  },
+  "test_at_ami_threshold": {
+   "events": 461,
+   "right": 300,
+   "wrong": 32,
+   "refs": 579,
+   "found": 468,
+   "labelled": 332,
+   "precision": 0.9036,
+   "recall": 0.8083
+  }
+ },
+ "nonverbaltts": {
+  "gap_thresholds": {
+   "breath": 0.7,
+   "laugh": 0.7
+  },
+  "laugh": {
+   "gap_head": {
+    "calib": {
+     "ref": 235,
+     "found": 88,
+     "hyp": 213,
+     "right": 90,
+     "precision": 0.4225,
+     "recall": 0.3745
+    },
+    "test": {
+     "ref": 56,
+     "found": 27,
+     "hyp": 94,
+     "right": 27,
+     "precision": 0.2872,
+     "recall": 0.4821
+    }
+   },
+   "alone": {
+    "threshold": 0.95,
+    "calib": {
+     "ref": 235,
+     "found": 88,
+     "hyp": 109,
+     "right": 88,
+     "precision": 0.8073,
+     "recall": 0.3745
+    },
+    "test": {
+     "ref": 56,
+     "found": 15,
+     "hyp": 19,
+     "right": 15,
+     "precision": 0.7895,
+     "recall": 0.2679
+    }
+   },
+   "over_speech": {
+    "threshold": null,
+    "calib": null,
+    "test": null
+   },
+   "union": {
+    "threshold": null,
+    "calib": null,
+    "test": null
+   }
+  },
+  "cough": {
+   "gap_head": {
+    "calib": {
+     "ref": 42,
+     "found": 0,
+     "hyp": 0,
+     "right": 0,
+     "precision": null,
+     "recall": 0.0
+    },
+    "test": {
+     "ref": 29,
+     "found": 0,
+     "hyp": 0,
+     "right": 0,
+     "precision": null,
+     "recall": 0.0
+    }
+   },
+   "alone": {
+    "threshold": null,
+    "calib": null,
+    "test": null
+   },
+   "over_speech": {
+    "threshold": null,
+    "calib": null,
+    "test": null
+   },
+   "union": {
+    "threshold": null,
+    "calib": null,
+    "test": null
+   }
+  }
+ }
+}

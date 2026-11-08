@@ -1,0 +1,9 @@
+{
+ "split": "eval",
+ "clips": 17141,
+ "classes_scored": 527,
+ "models": {
+  "melati:/mnt/data/melati/models/audioset/dasheng_big/best.pt": 0.4108
+ },
+ "averages": {}
+}

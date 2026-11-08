@@ -1,0 +1,88 @@
+{
+ "n_clips": 359,
+ "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+ "prompt_name": "strict",
+ "prompt": "Listen carefully for non-verbal sounds made by the speaker: breaths, laughter, coughs, sighs, sniffs, throat clearing, gasps, crying, groans, sneezes, yawns. Transcribe the audio verbatim, word for word, and insert a tag exactly where each such sound occurs: [breath] [laughs] [coughs] [sighs] [sniffs] [clears throat] [gasps] [cries] [groans] [sneezes] [yawns]. Breaths between phrases count. Do not tag a sound that is not there. Output only the tagged transcript.",
+ "per_class": {
+  "throat_clear": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "placement": 0.0,
+   "tp": 0,
+   "fp": 222,
+   "fn": 0
+  },
+  "breath": {
+   "precision": 0.893,
+   "recall": 0.5458,
+   "placement": 0.1288,
+   "tp": 167,
+   "fp": 20,
+   "fn": 139,
+   "placed": 6009,
+   "placed_ok": 774
+  },
+  "sniff": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "placement": 0.0,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0
+  },
+  "gasp": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "placement": 0.0,
+   "tp": 0,
+   "fp": 3,
+   "fn": 0
+  },
+  "cough": {
+   "precision": 0.5556,
+   "recall": 0.1724,
+   "placement": 0.8333,
+   "tp": 5,
+   "fp": 4,
+   "fn": 24,
+   "placed": 6,
+   "placed_ok": 5
+  },
+  "laugh": {
+   "precision": 0.7292,
+   "recall": 0.625,
+   "placement": 0.5,
+   "tp": 35,
+   "fp": 13,
+   "fn": 21,
+   "placed": 36,
+   "placed_ok": 18
+  },
+  "sigh": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "placement": 0.0,
+   "tp": 0,
+   "fp": 21,
+   "fn": 0
+  },
+  "groan": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "placement": 0.0,
+   "tp": 0,
+   "fp": 0,
+   "fn": 3,
+   "placed": 0,
+   "placed_ok": 0
+  },
+  "cry": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "placement": 0.0,
+   "tp": 0,
+   "fp": 2,
+   "fn": 0
+  }
+ }
+}

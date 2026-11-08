@@ -1,0 +1,85 @@
+{
+  "run_dir": "${MELATI_DATA}/serve_eval",
+  "endpoints": "${MELATI_DATA}/serve_eval/endpoints.json",
+  "startup_timeout_s": 1500,
+  "env": {
+    "HF_HOME": "${MELATI_DATA}/hf",
+    "HF_HUB_DISABLE_XET": "1",
+    "VLLM_CONFIGURE_LOGGING": "1"
+  },
+  "services": {
+    "front": {
+      "kind": "app",
+      "app": "serve.front_server:app",
+      "port": 17300,
+      "replicas": [
+        [
+          5
+        ]
+      ],
+      "env": {
+        "SEP_MAX_BATCH": 4,
+        "SED_MAX_BATCH": 8
+      }
+    },
+    "align": {
+      "kind": "app",
+      "app": "serve.align_server:app",
+      "port": 17400,
+      "replicas": [
+        [
+          5
+        ]
+      ],
+      "env": {
+        "MAX_BATCH": 16
+      },
+      "venv": "${MELATI_ROOT}/.venv-align"
+    },
+    "mos": {
+      "kind": "app",
+      "app": "server:app",
+      "cwd": "${MELATI_ROOT}/ext/SOTA-MOS/serving",
+      "port": 17500,
+      "pythonpath": "${MELATI_ROOT}/ext/SOTA-MOS:${MELATI_ROOT}/ext/SOTA-MOS/serving",
+      "replicas": [
+        [
+          5
+        ]
+      ],
+      "env": {
+        "SYSTEM": "${MELATI_DATA}/models/sotamos/model/system.json",
+        "MAX_BATCH": 16,
+        "PP_WORKERS": 8
+      }
+    },
+    "tag": {
+      "kind": "app",
+      "app": "serve.tag_server:app",
+      "port": 17600,
+      "replicas": [
+        [
+          5
+        ]
+      ],
+      "env": {
+        "EMOTION_MODELS": "meralion,e2v,h_whisper,h_whisper_ft,h_w2vbert,h_wavlm,h_e2v,nv_whisper,nvf_whisper",
+        "MAX_BATCH": 32
+      }
+    },
+    "uvr": {
+      "kind": "app",
+      "app": "serve.uvr_server:app",
+      "venv": "${MELATI_ROOT}/.venv-uvr",
+      "port": 17700,
+      "replicas": [
+        [
+          5
+        ]
+      ],
+      "env": {
+        "LD_LIBRARY_PATH": "${MELATI_ROOT}/.venv-uvr/lib/python3.12/site-packages/nvidia/cudnn/lib:${MELATI_ROOT}/.venv-uvr/lib/python3.12/site-packages/nvidia/cublas/lib:${MELATI_ROOT}/.venv-uvr/lib/python3.12/site-packages/nvidia/cufft/lib:${MELATI_ROOT}/.venv-uvr/lib/python3.12/site-packages/nvidia/cuda_runtime/lib"
+      }
+    }
+  }
+}

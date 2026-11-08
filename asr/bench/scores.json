@@ -1,0 +1,1191 @@
+{
+  "Malaysian-whisper-large-v3-turbo-v3": {
+    "fleurs": {
+      "n": 1160,
+      "loop_rate": 0.0534,
+      "max_run": 434,
+      "lexicon_rate": 0.0,
+      "empty_rate": 0.0,
+      "wer": 2.765,
+      "cer": 1.6808,
+      "n_langs": 58,
+      "cer_macro": 1.6808,
+      "wer_macro": 2.765,
+      "per_lang_cer": {
+        "am": 1.6981,
+        "ar": 1.6125,
+        "az": 0.7165,
+        "bg": 1.1869,
+        "bn": 1.0673,
+        "cs": 1.134,
+        "da": 2.1258,
+        "de": 0.7728,
+        "el": 0.9992,
+        "en": 0.7016,
+        "es": 1.3232,
+        "et": 0.2591,
+        "fi": 1.9525,
+        "fr": 0.6004,
+        "gu": 1.5785,
+        "ha": 0.5237,
+        "hi": 1.635,
+        "hu": 2.1381,
+        "hy": 3.2454,
+        "id": 0.1318,
+        "it": 0.4562,
+        "ja": 2.6085,
+        "ka": 1.3505,
+        "kk": 1.5916,
+        "km": 2.3398,
+        "kn": 1.7304,
+        "ko": 8.802,
+        "lo": 1.1051,
+        "lt": 1.9765,
+        "ml": 1.3046,
+        "mn": 2.2995,
+        "mr": 1.9185,
+        "ms": 0.1661,
+        "my": 2.9858,
+        "ne": 1.5677,
+        "nl": 1.0176,
+        "pa": 1.1729,
+        "pl": 0.7162,
+        "ps": 1.4427,
+        "pt": 0.8711,
+        "ro": 0.5808,
+        "sd": 1.8897,
+        "sk": 1.7861,
+        "sl": 0.4709,
+        "sn": 0.6523,
+        "so": 0.6011,
+        "sv": 0.9606,
+        "sw": 0.3781,
+        "ta": 1.0386,
+        "te": 1.2378,
+        "th": 1.2808,
+        "tr": 0.8761,
+        "ur": 2.4731,
+        "uz": 0.7057,
+        "vi": 3.3165,
+        "yo": 0.5414,
+        "yue": 7.5245,
+        "zh": 8.3453
+      }
+    },
+    "genuine": {
+      "n": 4694,
+      "loop_rate": 0.0094,
+      "max_run": 427,
+      "lexicon_rate": 0.0011,
+      "empty_rate": 0.0168,
+      "wer": 0.6067,
+      "cer": 0.3359
+    },
+    "genuine_isolated": {
+      "n": 88,
+      "loop_rate": 0.0,
+      "max_run": 2,
+      "lexicon_rate": 0.6591,
+      "empty_rate": 0.1136,
+      "wer": 0.4659,
+      "cer": 2.3503
+    },
+    "lexicon_synth": {
+      "n": 6267,
+      "loop_rate": 0.0077,
+      "max_run": 440,
+      "lexicon_rate": 0.115,
+      "empty_rate": 0.0282,
+      "wer": 1.9982,
+      "cer": 1.5078
+    },
+    "lexicon_synth__tone2": {
+      "n": 6267,
+      "loop_rate": 0.0177,
+      "max_run": 440,
+      "lexicon_rate": 0.1072,
+      "empty_rate": 0.0112,
+      "wer": 4.1573,
+      "cer": 3.7487
+    },
+    "lexicon_synth__zeros2": {
+      "n": 6267,
+      "loop_rate": 0.0155,
+      "max_run": 440,
+      "lexicon_rate": 0.1075,
+      "empty_rate": 0.0054,
+      "wer": 3.4992,
+      "cer": 3.2477
+    },
+    "librispeech_test_clean": {
+      "n": 2620,
+      "loop_rate": 0.0008,
+      "max_run": 219,
+      "lexicon_rate": 0.0008,
+      "empty_rate": 0.0,
+      "wer": 0.1064,
+      "cer": 0.0591
+    },
+    "music": {
+      "n": 600,
+      "loop_rate": 0.095,
+      "max_run": 220,
+      "lexicon_rate": 0.03,
+      "empty_rate": 0.69,
+      "hallucination_rate_any_output": 0.3167,
+      "hallucination_rate": 0.31,
+      "top_hallucinations": [
+        {
+          "text": "Oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, ",
+          "count": 10
+        },
+        {
+          "text": "Terima kasih kerana menonton!",
+          "count": 7
+        },
+        {
+          "text": "Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan ",
+          "count": 7
+        },
+        {
+          "text": "Terima kasih.",
+          "count": 5
+        },
+        {
+          "text": "... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ",
+          "count": 4
+        }
+      ]
+    },
+    "nonspeech": {
+      "n": 1168,
+      "loop_rate": 0.042,
+      "max_run": 440,
+      "lexicon_rate": 0.0154,
+      "empty_rate": 0.9067,
+      "hallucination_rate_any_output": 0.0942,
+      "hallucination_rate": 0.0933,
+      "top_hallucinations": [
+        {
+          "text": "I am I am I am I am I am I am I am I am I am I am I am I am I am I am I am I am ",
+          "count": 28
+        },
+        {
+          "text": "Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan Tuan ",
+          "count": 27
+        },
+        {
+          "text": "Terima kasih kerana menonton!",
+          "count": 17
+        },
+        {
+          "text": "Hai, hai, hai, hai, hai, hai, hai, hai, hai, hai, hai, hai, hai, hai, hai, hai, ",
+          "count": 4
+        },
+        {
+          "text": "Tidak, tidak, tidak, tidak, tidak, tidak, tidak, tidak, tidak, tidak, tidak, tid",
+          "count": 3
+        }
+      ]
+    },
+    "reduplication": {
+      "n": 1440,
+      "loop_rate": 0.3201,
+      "max_run": 440,
+      "lexicon_rate": 0.0104,
+      "empty_rate": 0.5799,
+      "overgen_p50": 0.0,
+      "overgen_p95": 73.333,
+      "overgen_max": 240.75,
+      "runaway_rate": 0.1451
+    },
+    "silence": {
+      "n": 42,
+      "loop_rate": 0.0,
+      "max_run": 1,
+      "lexicon_rate": 0.0,
+      "empty_rate": 0.8333,
+      "hallucination_rate_any_output": 0.1667,
+      "hallucination_rate": 0.1667,
+      "top_hallucinations": [
+        {
+          "text": "I watch I watch I watch I watch I am I am I am I am I am I am I am I am I am I a",
+          "count": 7
+        }
+      ]
+    },
+    "speech_in_noise": {
+      "n": 1200,
+      "loop_rate": 0.01,
+      "max_run": 220,
+      "lexicon_rate": 0.0008,
+      "empty_rate": 0.0217,
+      "wer": 0.5871,
+      "cer": 0.3652
+    }
+  },
+  "malaysian-whisper-large-v2": {
+    "fleurs": {
+      "n": 1160,
+      "loop_rate": 0.006,
+      "max_run": 219,
+      "lexicon_rate": 0.0034,
+      "empty_rate": 0.0,
+      "wer": 3.2431,
+      "cer": 1.7807,
+      "n_langs": 58,
+      "cer_macro": 1.7807,
+      "wer_macro": 3.2431,
+      "per_lang_cer": {
+        "am": 6.0102,
+        "ar": 1.2475,
+        "az": 0.8595,
+        "bg": 1.025,
+        "bn": 1.0303,
+        "cs": 0.8277,
+        "da": 0.6991,
+        "de": 0.6939,
+        "el": 0.9881,
+        "en": 0.0277,
+        "es": 0.6576,
+        "et": 1.0553,
+        "fi": 1.5671,
+        "fr": 0.6326,
+        "gu": 1.3523,
+        "ha": 6.0764,
+        "hi": 1.0721,
+        "hu": 0.8036,
+        "hy": 1.9265,
+        "id": 0.2127,
+        "it": 0.6629,
+        "ja": 2.1203,
+        "ka": 5.246,
+        "kk": 2.8475,
+        "km": 2.9941,
+        "kn": 1.0155,
+        "ko": 2.3782,
+        "lo": 1.7493,
+        "lt": 0.7833,
+        "ml": 0.9968,
+        "mn": 2.9202,
+        "mr": 1.4934,
+        "ms": 0.0264,
+        "my": 5.6336,
+        "ne": 1.0334,
+        "nl": 0.6487,
+        "pa": 1.0528,
+        "pl": 0.7866,
+        "ps": 4.2783,
+        "pt": 0.6725,
+        "ro": 0.7083,
+        "sd": 2.5011,
+        "sk": 1.5693,
+        "sl": 0.8142,
+        "sn": 3.9646,
+        "so": 4.0107,
+        "sv": 0.6566,
+        "sw": 0.6548,
+        "ta": 1.029,
+        "te": 1.2747,
+        "th": 1.0498,
+        "tr": 0.864,
+        "ur": 1.1755,
+        "uz": 1.6055,
+        "vi": 0.9519,
+        "yo": 5.942,
+        "yue": 3.2702,
+        "zh": 3.1348
+      }
+    },
+    "genuine": {
+      "n": 4694,
+      "loop_rate": 0.0009,
+      "max_run": 220,
+      "lexicon_rate": 0.0092,
+      "empty_rate": 0.0,
+      "wer": 0.4233,
+      "cer": 0.2762
+    },
+    "genuine_isolated": {
+      "n": 88,
+      "loop_rate": 0.0,
+      "max_run": 1,
+      "lexicon_rate": 0.6932,
+      "empty_rate": 0.0,
+      "wer": 0.4205,
+      "cer": 0.7627
+    },
+    "lexicon_synth": {
+      "n": 6267,
+      "loop_rate": 0.0005,
+      "max_run": 220,
+      "lexicon_rate": 0.235,
+      "empty_rate": 0.0,
+      "wer": 1.0206,
+      "cer": 0.7704
+    },
+    "lexicon_synth__tone2": {
+      "n": 6267,
+      "loop_rate": 0.0021,
+      "max_run": 410,
+      "lexicon_rate": 0.2315,
+      "empty_rate": 0.0,
+      "wer": 1.4204,
+      "cer": 1.1514
+    },
+    "lexicon_synth__zeros2": {
+      "n": 6267,
+      "loop_rate": 0.001,
+      "max_run": 220,
+      "lexicon_rate": 0.2267,
+      "empty_rate": 0.0,
+      "wer": 1.1617,
+      "cer": 0.9377
+    },
+    "librispeech_test_clean": {
+      "n": 2620,
+      "loop_rate": 0.0,
+      "max_run": 3,
+      "lexicon_rate": 0.0008,
+      "empty_rate": 0.0,
+      "wer": 0.0351,
+      "cer": 0.0143
+    },
+    "music": {
+      "n": 600,
+      "loop_rate": 0.0467,
+      "max_run": 440,
+      "lexicon_rate": 0.17,
+      "empty_rate": 0.3033,
+      "hallucination_rate_any_output": 0.73,
+      "hallucination_rate": 0.6967,
+      "top_hallucinations": [
+        {
+          "text": "¶¶",
+          "count": 62
+        },
+        {
+          "text": "Do it.",
+          "count": 16
+        },
+        {
+          "text": "Sir!",
+          "count": 12
+        },
+        {
+          "text": "'",
+          "count": 11
+        },
+        {
+          "text": "Thank you.",
+          "count": 11
+        }
+      ]
+    },
+    "nonspeech": {
+      "n": 1168,
+      "loop_rate": 0.0377,
+      "max_run": 440,
+      "lexicon_rate": 0.4563,
+      "empty_rate": 0.2397,
+      "hallucination_rate_any_output": 0.7783,
+      "hallucination_rate": 0.7603,
+      "top_hallucinations": [
+        {
+          "text": "Terima kasih kerana menonton!",
+          "count": 129
+        },
+        {
+          "text": "Sari kata oleh SDI Media",
+          "count": 122
+        },
+        {
+          "text": "Thank you.",
+          "count": 83
+        },
+        {
+          "text": "Thank you for watching!",
+          "count": 34
+        },
+        {
+          "text": "© BF-WATCH TV 2021",
+          "count": 23
+        }
+      ]
+    },
+    "reduplication": {
+      "n": 1440,
+      "loop_rate": 0.2938,
+      "max_run": 440,
+      "lexicon_rate": 0.0681,
+      "empty_rate": 0.1688,
+      "overgen_p50": 0.0,
+      "overgen_p95": 55.0,
+      "overgen_max": 351.4,
+      "runaway_rate": 0.1472
+    },
+    "silence": {
+      "n": 42,
+      "loop_rate": 0.0,
+      "max_run": 1,
+      "lexicon_rate": 0.1905,
+      "empty_rate": 0.6429,
+      "hallucination_rate_any_output": 0.6429,
+      "hallucination_rate": 0.3571,
+      "top_hallucinations": [
+        {
+          "text": ".",
+          "count": 12
+        },
+        {
+          "text": "I watch I watch I watch",
+          "count": 7
+        },
+        {
+          "text": "Okay.",
+          "count": 5
+        },
+        {
+          "text": "Terima kasih.",
+          "count": 1
+        },
+        {
+          "text": "Thank you.",
+          "count": 1
+        }
+      ]
+    },
+    "speech_in_noise": {
+      "n": 1200,
+      "loop_rate": 0.0008,
+      "max_run": 430,
+      "lexicon_rate": 0.015,
+      "empty_rate": 0.0,
+      "wer": 0.5111,
+      "cer": 0.3455
+    }
+  },
+  "whisper-large-v2": {
+    "fleurs": {
+      "n": 1160,
+      "loop_rate": 0.0095,
+      "max_run": 216,
+      "lexicon_rate": 0.0,
+      "empty_rate": 0.0,
+      "wer": 0.8393,
+      "cer": 0.422,
+      "n_langs": 58,
+      "cer_macro": 0.422,
+      "wer_macro": 0.8393,
+      "per_lang_cer": {
+        "am": 1.9179,
+        "ar": 0.0449,
+        "az": 0.0572,
+        "bg": 0.027,
+        "bn": 1.0465,
+        "cs": 0.0412,
+        "da": 0.0626,
+        "de": 0.0182,
+        "el": 0.0534,
+        "en": 0.0323,
+        "es": 0.0065,
+        "et": 0.0317,
+        "fi": 0.0225,
+        "fr": 0.0384,
+        "gu": 1.0336,
+        "ha": 0.5825,
+        "hi": 0.3564,
+        "hu": 0.0706,
+        "hy": 0.1104,
+        "id": 0.0263,
+        "it": 0.0102,
+        "ja": 0.0905,
+        "ka": 1.1432,
+        "kk": 0.2071,
+        "km": 1.0656,
+        "kn": 0.3717,
+        "ko": 0.0225,
+        "lo": 1.0196,
+        "lt": 0.0932,
+        "ml": 1.0209,
+        "mn": 1.5209,
+        "mr": 0.2925,
+        "ms": 0.0817,
+        "my": 1.1163,
+        "ne": 0.3571,
+        "nl": 0.0226,
+        "pa": 0.9933,
+        "pl": 0.0258,
+        "ps": 0.6683,
+        "pt": 0.0202,
+        "ro": 0.0468,
+        "sd": 0.9148,
+        "sk": 0.0346,
+        "sl": 0.0899,
+        "sn": 1.8911,
+        "so": 2.1757,
+        "sv": 0.0555,
+        "sw": 0.085,
+        "ta": 0.1666,
+        "te": 1.0619,
+        "th": 0.1071,
+        "tr": 0.0234,
+        "ur": 0.306,
+        "uz": 1.0052,
+        "vi": 0.0489,
+        "yo": 0.4766,
+        "yue": 0.1006,
+        "zh": 0.1628
+      }
+    },
+    "genuine": {
+      "n": 4694,
+      "loop_rate": 0.0,
+      "max_run": 3,
+      "lexicon_rate": 0.0096,
+      "empty_rate": 0.0,
+      "wer": 0.3536,
+      "cer": 0.4387
+    },
+    "genuine_isolated": {
+      "n": 88,
+      "loop_rate": 0.0,
+      "max_run": 1,
+      "lexicon_rate": 0.7273,
+      "empty_rate": 0.0,
+      "wer": 0.2386,
+      "cer": 0.2695
+    },
+    "lexicon_synth": {
+      "n": 6267,
+      "loop_rate": 0.0014,
+      "max_run": 218,
+      "lexicon_rate": 0.1612,
+      "empty_rate": 0.0,
+      "wer": 0.5853,
+      "cer": 0.3778
+    },
+    "lexicon_synth__tone2": {
+      "n": 6267,
+      "loop_rate": 0.001,
+      "max_run": 110,
+      "lexicon_rate": 0.1639,
+      "empty_rate": 0.0,
+      "wer": 0.5841,
+      "cer": 0.3837
+    },
+    "lexicon_synth__zeros2": {
+      "n": 6267,
+      "loop_rate": 0.0014,
+      "max_run": 218,
+      "lexicon_rate": 0.1588,
+      "empty_rate": 0.0002,
+      "wer": 0.5937,
+      "cer": 0.3881
+    },
+    "librispeech_test_clean": {
+      "n": 2620,
+      "loop_rate": 0.0004,
+      "max_run": 209,
+      "lexicon_rate": 0.0011,
+      "empty_rate": 0.0,
+      "wer": 0.0451,
+      "cer": 0.0228
+    },
+    "music": {
+      "n": 600,
+      "loop_rate": 0.03,
+      "max_run": 440,
+      "lexicon_rate": 0.2917,
+      "empty_rate": 0.0133,
+      "hallucination_rate_any_output": 1.0,
+      "hallucination_rate": 0.9867,
+      "top_hallucinations": [
+        {
+          "text": "so",
+          "count": 49
+        },
+        {
+          "text": "បានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានានា",
+          "count": 23
+        },
+        {
+          "text": "you",
+          "count": 18
+        },
+        {
+          "text": "Oh",
+          "count": 17
+        },
+        {
+          "text": "I",
+          "count": 16
+        }
+      ]
+    },
+    "nonspeech": {
+      "n": 1168,
+      "loop_rate": 0.0171,
+      "max_run": 440,
+      "lexicon_rate": 0.6592,
+      "empty_rate": 0.012,
+      "hallucination_rate_any_output": 1.0,
+      "hallucination_rate": 0.988,
+      "top_hallucinations": [
+        {
+          "text": "you",
+          "count": 431
+        },
+        {
+          "text": "You",
+          "count": 46
+        },
+        {
+          "text": "I",
+          "count": 40
+        },
+        {
+          "text": "Thanks for watching!",
+          "count": 19
+        },
+        {
+          "text": "bell",
+          "count": 16
+        }
+      ]
+    },
+    "reduplication": {
+      "n": 1440,
+      "loop_rate": 0.0271,
+      "max_run": 440,
+      "lexicon_rate": 0.8778,
+      "empty_rate": 0.0,
+      "overgen_p50": 0.0,
+      "overgen_p95": 0.833,
+      "overgen_max": 81.875,
+      "runaway_rate": 0.0049
+    },
+    "silence": {
+      "n": 42,
+      "loop_rate": 0.0,
+      "max_run": 1,
+      "lexicon_rate": 0.4286,
+      "empty_rate": 0.1429,
+      "hallucination_rate_any_output": 1.0,
+      "hallucination_rate": 0.8571,
+      "top_hallucinations": [
+        {
+          "text": "you",
+          "count": 18
+        },
+        {
+          "text": ". .",
+          "count": 4
+        },
+        {
+          "text": "Yn ystod y 20. mlynedd, mae'r cyfrifiadau a'r cyfrifiadau a'r cyfrifiadau a'r cy",
+          "count": 4
+        },
+        {
+          "text": ".",
+          "count": 2
+        },
+        {
+          "text": "Yn ystod y blynyddoedd, mae'r cyflwyniad yn ymwneud â'r cyflwyniad yma.",
+          "count": 2
+        }
+      ]
+    },
+    "speech_in_noise": {
+      "n": 1200,
+      "loop_rate": 0.0025,
+      "max_run": 422,
+      "lexicon_rate": 0.0042,
+      "empty_rate": 0.0,
+      "wer": 0.416,
+      "cer": 0.2964
+    }
+  },
+  "whisper-large-v3": {
+    "fleurs": {
+      "n": 1160,
+      "loop_rate": 0.0095,
+      "max_run": 217,
+      "lexicon_rate": 0.0,
+      "empty_rate": 0.0017,
+      "wer": 0.5897,
+      "cer": 0.3055,
+      "n_langs": 58,
+      "cer_macro": 0.3055,
+      "wer_macro": 0.5897,
+      "per_lang_cer": {
+        "am": 1.8112,
+        "ar": 0.0457,
+        "az": 0.0451,
+        "bg": 0.0258,
+        "bn": 0.2793,
+        "cs": 0.0352,
+        "da": 0.0502,
+        "de": 0.0154,
+        "el": 0.0406,
+        "en": 0.0261,
+        "es": 0.0063,
+        "et": 0.0258,
+        "fi": 0.0228,
+        "fr": 0.0367,
+        "gu": 0.3403,
+        "ha": 0.9308,
+        "hi": 0.3393,
+        "hu": 0.0647,
+        "hy": 0.0955,
+        "id": 0.0203,
+        "it": 0.0091,
+        "ja": 0.0751,
+        "ka": 0.2446,
+        "kk": 0.0654,
+        "km": 1.5774,
+        "kn": 0.148,
+        "ko": 0.0326,
+        "lo": 1.0202,
+        "lt": 0.0844,
+        "ml": 0.9769,
+        "mn": 0.35,
+        "mr": 0.2752,
+        "ms": 0.0428,
+        "my": 1.1522,
+        "ne": 0.2608,
+        "nl": 0.0124,
+        "pa": 0.6332,
+        "pl": 0.0276,
+        "ps": 0.429,
+        "pt": 0.016,
+        "ro": 0.0311,
+        "sd": 0.7826,
+        "sk": 0.0338,
+        "sl": 0.0752,
+        "sn": 0.246,
+        "so": 1.4431,
+        "sv": 0.0492,
+        "sw": 0.0677,
+        "ta": 0.2089,
+        "te": 1.0653,
+        "th": 0.0692,
+        "tr": 0.0206,
+        "ur": 0.4787,
+        "uz": 0.7253,
+        "vi": 0.0331,
+        "yo": 0.4925,
+        "yue": 0.128,
+        "zh": 0.0777
+      }
+    },
+    "genuine": {
+      "n": 4694,
+      "loop_rate": 0.0004,
+      "max_run": 175,
+      "lexicon_rate": 0.0075,
+      "empty_rate": 0.0002,
+      "wer": 0.3175,
+      "cer": 0.1898
+    },
+    "genuine_isolated": {
+      "n": 88,
+      "loop_rate": 0.0,
+      "max_run": 1,
+      "lexicon_rate": 0.7386,
+      "empty_rate": 0.0,
+      "wer": 0.2386,
+      "cer": 0.3158
+    },
+    "lexicon_synth": {
+      "n": 6267,
+      "loop_rate": 0.0,
+      "max_run": 5,
+      "lexicon_rate": 0.1733,
+      "empty_rate": 0.0,
+      "wer": 0.5087,
+      "cer": 0.2879
+    },
+    "lexicon_synth__tone2": {
+      "n": 6267,
+      "loop_rate": 0.0006,
+      "max_run": 218,
+      "lexicon_rate": 0.1763,
+      "empty_rate": 0.0,
+      "wer": 0.5137,
+      "cer": 0.302
+    },
+    "lexicon_synth__zeros2": {
+      "n": 6267,
+      "loop_rate": 0.0005,
+      "max_run": 47,
+      "lexicon_rate": 0.1719,
+      "empty_rate": 0.0002,
+      "wer": 0.5218,
+      "cer": 0.3116
+    },
+    "librispeech_test_clean": {
+      "n": 2620,
+      "loop_rate": 0.0,
+      "max_run": 3,
+      "lexicon_rate": 0.0008,
+      "empty_rate": 0.0,
+      "wer": 0.0347,
+      "cer": 0.0143
+    },
+    "music": {
+      "n": 600,
+      "loop_rate": 0.0133,
+      "max_run": 147,
+      "lexicon_rate": 0.42,
+      "empty_rate": 0.03,
+      "hallucination_rate_any_output": 1.0,
+      "hallucination_rate": 0.97,
+      "top_hallucinations": [
+        {
+          "text": "Thank you.",
+          "count": 173
+        },
+        {
+          "text": "¶¶",
+          "count": 86
+        },
+        {
+          "text": ".",
+          "count": 16
+        },
+        {
+          "text": "© BF-WATCH TV 2021",
+          "count": 13
+        },
+        {
+          "text": "Bye.",
+          "count": 6
+        }
+      ]
+    },
+    "nonspeech": {
+      "n": 1168,
+      "loop_rate": 0.0274,
+      "max_run": 440,
+      "lexicon_rate": 0.6687,
+      "empty_rate": 0.101,
+      "hallucination_rate_any_output": 1.0,
+      "hallucination_rate": 0.899,
+      "top_hallucinations": [
+        {
+          "text": "you",
+          "count": 334
+        },
+        {
+          "text": "Thank you.",
+          "count": 182
+        },
+        {
+          "text": ".",
+          "count": 94
+        },
+        {
+          "text": "Bye.",
+          "count": 39
+        },
+        {
+          "text": ". . .",
+          "count": 22
+        }
+      ]
+    },
+    "reduplication": {
+      "n": 1440,
+      "loop_rate": 0.1826,
+      "max_run": 440,
+      "lexicon_rate": 0.3757,
+      "empty_rate": 0.0007,
+      "overgen_p50": 0.0,
+      "overgen_p95": 1.0,
+      "overgen_max": 136.5,
+      "runaway_rate": 0.0292
+    },
+    "silence": {
+      "n": 42,
+      "loop_rate": 0.0,
+      "max_run": 1,
+      "lexicon_rate": 0.5952,
+      "empty_rate": 0.381,
+      "hallucination_rate_any_output": 1.0,
+      "hallucination_rate": 0.619,
+      "top_hallucinations": [
+        {
+          "text": ".",
+          "count": 16
+        },
+        {
+          "text": "you",
+          "count": 15
+        },
+        {
+          "text": "Thank you.",
+          "count": 3
+        },
+        {
+          "text": "Takk for at du så med.",
+          "count": 3
+        },
+        {
+          "text": "Amen.",
+          "count": 2
+        }
+      ]
+    },
+    "speech_in_noise": {
+      "n": 1200,
+      "loop_rate": 0.0008,
+      "max_run": 67,
+      "lexicon_rate": 0.0167,
+      "empty_rate": 0.0,
+      "wer": 0.3446,
+      "cer": 0.2058
+    }
+  },
+  "whisper-large-v3-turbo": {
+    "fleurs": {
+      "n": 1160,
+      "loop_rate": 0.0474,
+      "max_run": 439,
+      "lexicon_rate": 0.0017,
+      "empty_rate": 0.0,
+      "wer": 0.8989,
+      "cer": 0.511,
+      "n_langs": 58,
+      "cer_macro": 0.511,
+      "wer_macro": 0.8989,
+      "per_lang_cer": {
+        "am": 5.278,
+        "ar": 0.0439,
+        "az": 0.0569,
+        "bg": 0.0211,
+        "bn": 0.8868,
+        "cs": 0.0386,
+        "da": 0.0556,
+        "de": 0.0176,
+        "el": 0.0394,
+        "en": 0.0294,
+        "es": 0.0083,
+        "et": 0.0335,
+        "fi": 0.0232,
+        "fr": 0.0316,
+        "gu": 0.8565,
+        "ha": 2.1386,
+        "hi": 0.188,
+        "hu": 0.0587,
+        "hy": 0.0898,
+        "id": 0.0278,
+        "it": 0.0061,
+        "ja": 0.0654,
+        "ka": 1.1891,
+        "kk": 0.0372,
+        "km": 1.3027,
+        "kn": 1.0813,
+        "ko": 0.0336,
+        "lo": 1.0112,
+        "lt": 0.0956,
+        "ml": 1.0574,
+        "mn": 1.4755,
+        "mr": 0.5304,
+        "ms": 0.0246,
+        "my": 1.4019,
+        "ne": 1.0233,
+        "nl": 0.0167,
+        "pa": 1.0129,
+        "pl": 0.0229,
+        "ps": 1.4169,
+        "pt": 0.018,
+        "ro": 0.0317,
+        "sd": 0.831,
+        "sk": 0.0308,
+        "sl": 0.0722,
+        "sn": 0.273,
+        "so": 1.423,
+        "sv": 0.0504,
+        "sw": 0.0814,
+        "ta": 0.1756,
+        "te": 1.1755,
+        "th": 0.1284,
+        "tr": 0.0233,
+        "ur": 0.4332,
+        "uz": 1.4515,
+        "vi": 0.045,
+        "yo": 0.442,
+        "yue": 0.1481,
+        "zh": 0.0742
+      }
+    },
+    "genuine": {
+      "n": 4694,
+      "loop_rate": 0.0006,
+      "max_run": 396,
+      "lexicon_rate": 0.0087,
+      "empty_rate": 0.0,
+      "wer": 0.3175,
+      "cer": 0.177
+    },
+    "genuine_isolated": {
+      "n": 88,
+      "loop_rate": 0.0,
+      "max_run": 1,
+      "lexicon_rate": 0.7386,
+      "empty_rate": 0.0,
+      "wer": 0.2955,
+      "cer": 0.3372
+    },
+    "lexicon_synth": {
+      "n": 6267,
+      "loop_rate": 0.0034,
+      "max_run": 62,
+      "lexicon_rate": 0.1803,
+      "empty_rate": 0.0,
+      "wer": 0.5504,
+      "cer": 0.3482
+    },
+    "lexicon_synth__tone2": {
+      "n": 6267,
+      "loop_rate": 0.0049,
+      "max_run": 146,
+      "lexicon_rate": 0.1784,
+      "empty_rate": 0.0,
+      "wer": 0.5971,
+      "cer": 0.382
+    },
+    "lexicon_synth__zeros2": {
+      "n": 6267,
+      "loop_rate": 0.0037,
+      "max_run": 220,
+      "lexicon_rate": 0.18,
+      "empty_rate": 0.0,
+      "wer": 0.5571,
+      "cer": 0.354
+    },
+    "librispeech_test_clean": {
+      "n": 2620,
+      "loop_rate": 0.0,
+      "max_run": 3,
+      "lexicon_rate": 0.0008,
+      "empty_rate": 0.0,
+      "wer": 0.0352,
+      "cer": 0.0148
+    },
+    "music": {
+      "n": 600,
+      "loop_rate": 0.0183,
+      "max_run": 220,
+      "lexicon_rate": 0.5433,
+      "empty_rate": 0.0333,
+      "hallucination_rate_any_output": 1.0,
+      "hallucination_rate": 0.9667,
+      "top_hallucinations": [
+        {
+          "text": "Thank you.",
+          "count": 149
+        },
+        {
+          "text": "so",
+          "count": 38
+        },
+        {
+          "text": "The End",
+          "count": 31
+        },
+        {
+          "text": "¶¶",
+          "count": 23
+        },
+        {
+          "text": ".",
+          "count": 14
+        }
+      ]
+    },
+    "nonspeech": {
+      "n": 1168,
+      "loop_rate": 0.0077,
+      "max_run": 440,
+      "lexicon_rate": 0.6926,
+      "empty_rate": 0.1926,
+      "hallucination_rate_any_output": 1.0,
+      "hallucination_rate": 0.8074,
+      "top_hallucinations": [
+        {
+          "text": "you",
+          "count": 449
+        },
+        {
+          "text": ".",
+          "count": 182
+        },
+        {
+          "text": "Thank you.",
+          "count": 90
+        },
+        {
+          "text": "Продолжение следует...",
+          "count": 25
+        },
+        {
+          "text": "ご視聴ありがとうございました",
+          "count": 25
+        }
+      ]
+    },
+    "reduplication": {
+      "n": 1440,
+      "loop_rate": 0.0951,
+      "max_run": 440,
+      "lexicon_rate": 0.516,
+      "empty_rate": 0.0521,
+      "overgen_p50": 0.0,
+      "overgen_p95": 18.333,
+      "overgen_max": 585.667,
+      "runaway_rate": 0.0583
+    },
+    "silence": {
+      "n": 42,
+      "loop_rate": 0.0,
+      "max_run": 1,
+      "lexicon_rate": 0.5952,
+      "empty_rate": 0.4048,
+      "hallucination_rate_any_output": 1.0,
+      "hallucination_rate": 0.5952,
+      "top_hallucinations": [
+        {
+          "text": ".",
+          "count": 16
+        },
+        {
+          "text": "Thank you.",
+          "count": 16
+        },
+        {
+          "text": "you",
+          "count": 7
+        },
+        {
+          "text": "so",
+          "count": 2
+        },
+        {
+          "text": "...",
+          "count": 1
+        }
+      ]
+    },
+    "speech_in_noise": {
+      "n": 1200,
+      "loop_rate": 0.0033,
+      "max_run": 215,
+      "lexicon_rate": 0.0167,
+      "empty_rate": 0.0,
+      "wer": 0.3606,
+      "cer": 0.2111
+    }
+  }
+}

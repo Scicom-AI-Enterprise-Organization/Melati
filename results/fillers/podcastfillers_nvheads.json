@@ -1,0 +1,104 @@
+{
+ "split": "test",
+ "episodes": 20,
+ "not_found": [],
+ "tol_s": 0.2,
+ "scopes": {
+  "inside": {
+   "filler": {
+    "precision": 0.8664,
+    "recall": 0.7037,
+    "ref": 4259,
+    "ref_found": 2997,
+    "pred": 3459,
+    "pred_right": 2997
+   },
+   "laughter": {
+    "precision": 0.636,
+    "recall": 0.6092,
+    "ref": 284,
+    "ref_found": 173,
+    "pred": 272,
+    "pred_right": 173
+   },
+   "breath": {
+    "precision": 0.197,
+    "recall": 0.5443,
+    "ref": 575,
+    "ref_found": 313,
+    "pred": 1589,
+    "pred_right": 313
+   }
+  },
+  "all": {
+   "filler": {
+    "precision": 0.8711,
+    "recall": 0.5973,
+    "ref": 5044,
+    "ref_found": 3013,
+    "pred": 3459,
+    "pred_right": 3013
+   },
+   "laughter": {
+    "precision": 0.6654,
+    "recall": 0.3126,
+    "ref": 579,
+    "ref_found": 181,
+    "pred": 272,
+    "pred_right": 181
+   },
+   "breath": {
+    "precision": 0.2001,
+    "recall": 0.4344,
+    "ref": 732,
+    "ref_found": 318,
+    "pred": 1589,
+    "pred_right": 318
+   }
+  }
+ },
+ "unmatched_predictions_overlap": {
+  "breath": {
+   "(no label)": 1229,
+   "filler": 12,
+   "None": 10,
+   "Music": 9,
+   "Words": 6,
+   "laughter": 3,
+   "breath": 2
+  },
+  "filler": {
+   "(no label)": 273,
+   "Words": 68,
+   "None": 65,
+   "filler": 25,
+   "breath": 9,
+   "laughter": 5,
+   "Music": 1
+  },
+  "laughter": {
+   "(no label)": 58,
+   "breath": 13,
+   "laughter": 6,
+   "Words": 6,
+   "filler": 5,
+   "None": 3
+  }
+ },
+ "nv_labeller": {
+  "heads": [
+   "whisper",
+   "wavlm",
+   "ast"
+  ],
+  "variant": "whisper+wavlm+ast",
+  "thresholds": {
+   "breath": 0.8,
+   "cough": 0.45,
+   "laugh": 0.6,
+   "sniff": 0.45,
+   "throat_clear": 0.6
+  },
+  "thresholds_from": "/mnt/data/melati/results/nonverbal/nonverbaltts_gaps_heads.json"
+ }
+}

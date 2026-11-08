@@ -1,0 +1,50 @@
+{
+ "model": "melati:/mnt/data/melati/models/audioset/frames1_fw0/clip.pt",
+ "clips": 16896,
+ "classes_shared": 364,
+ "classes_labelled": 381,
+ "hop_s": 0.32,
+ "step_s": 0.16,
+ "pretrainedsed": {
+  "shared": 0.4261
+ },
+ "windows": {
+  "1s/max": {
+   "shared": 0.27
+  },
+  "1s/mean": {
+   "shared": 0.2854
+  },
+  "1s/min": {
+   "shared": 0.2667
+  },
+  "2s/max": {
+   "shared": 0.2769
+  },
+  "2s/mean": {
+   "shared": 0.297,
+   "labelled": 0.2932
+  },
+  "2s/min": {
+   "shared": 0.2816
+  },
+  "4s/max": {
+   "shared": 0.2727
+  },
+  "4s/mean": {
+   "shared": 0.289
+  },
+  "4s/min": {
+   "shared": 0.2792
+  },
+  "clip": {
+   "shared": 0.2688
+  }
+ },
+ "best": "2s/mean",
+ "best_probs": "/mnt/data/melati/audioset/probs/strong_test_frames1_fw0_2s_mean.npy",
+ "frame_head": {
+  "shared": 0.4102,
+  "labelled": 0.4053
+ }
+}

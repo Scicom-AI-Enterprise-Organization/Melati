@@ -1,0 +1,52 @@
+{
+ "vox_ft": {
+  "work": "/mnt/data/melati/dev/vox/work_ft",
+  "segments": 822,
+  "empty": 113,
+  "empty_share": 0.1375,
+  "hours": 1.998,
+  "hours_empty": 0.32,
+  "empty_by_language": {
+   "ms": 37,
+   "en": 76
+  }
+ },
+ "vox_rel": {
+  "work": "/mnt/data/melati/dev/vox/work_rel",
+  "segments": 822,
+  "empty": 35,
+  "empty_share": 0.0426,
+  "hours": 1.998,
+  "hours_empty": 0.105,
+  "empty_by_language": {
+   "ms": 32,
+   "en": 3
+  }
+ },
+ "pil_ft": {
+  "work": "/mnt/data/melati/pilot/work_ft",
+  "segments": 8080,
+  "empty": 280,
+  "empty_share": 0.0347,
+  "hours": 16.178,
+  "hours_empty": 0.427,
+  "empty_by_language": {
+   "en": 71,
+   "ms": 207,
+   "ta": 2
+  }
+ },
+ "pil_rel": {
+  "work": "/mnt/data/melati/pilot/work_rel",
+  "segments": 8080,
+  "empty": 126,
+  "empty_share": 0.0156,
+  "hours": 16.178,
+  "hours_empty": 0.147,
+  "empty_by_language": {
+   "ms": 120,
+   "en": 5,
+   "ta": 1
+  }
+ }
+}

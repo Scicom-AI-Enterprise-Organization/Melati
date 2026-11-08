@@ -1,0 +1,200 @@
+{
+ "old": {
+  "heads": {
+   "whisper": {
+    "loco_mean_uar": 0.5689,
+    "held_out_nemo": 0.5988,
+    "held_out_nvtts_voxceleb": 0.5372,
+    "held_out_all": 0.5566
+   },
+   "whisper_ft": {
+    "loco_mean_uar": 0.5562,
+    "held_out_nemo": 0.5902,
+    "held_out_nvtts_voxceleb": 0.5364,
+    "held_out_all": 0.5421
+   },
+   "w2vbert": {
+    "loco_mean_uar": 0.5354,
+    "held_out_nemo": 0.5378,
+    "held_out_nvtts_voxceleb": 0.535,
+    "held_out_all": 0.5231
+   },
+   "wavlm": {
+    "loco_mean_uar": 0.5379,
+    "held_out_nemo": 0.5311,
+    "held_out_nvtts_voxceleb": 0.4543,
+    "held_out_all": 0.4819
+   },
+   "e2v": {
+    "loco_mean_uar": 0.7684,
+    "held_out_nemo": 0.5024,
+    "held_out_nvtts_voxceleb": 0.8104,
+    "held_out_all": 0.52
+   }
+  },
+  "average": {
+   "meralion": {
+    "held_out_uar": 0.4638,
+    "thresholds": {
+     "happy": null,
+     "sad": null,
+     "angry": 0.88,
+     "surprised": 0.9,
+     "fearful": null
+    }
+   },
+   "e2v": {
+    "held_out_uar": 0.5219,
+    "thresholds": {
+     "happy": null,
+     "sad": null,
+     "angry": null,
+     "surprised": 0.54,
+     "fearful": null
+    }
+   },
+   "meralion+e2v": {
+    "held_out_uar": 0.5289,
+    "thresholds": {
+     "happy": 0.88,
+     "sad": null,
+     "angry": 0.51,
+     "surprised": 0.44,
+     "fearful": null
+    }
+   },
+   "seven": {
+    "held_out_uar": 0.5968,
+    "held_out_acc": 0.7036,
+    "thresholds": {
+     "happy": 0.51,
+     "sad": 0.64,
+     "angry": 0.48,
+     "surprised": 0.3,
+     "fearful": 0.44
+    },
+    "thresholds_cv": {
+     "happy": {
+      "recall": 0.5875,
+      "precision_at_prior": 0.7466
+     },
+     "sad": {
+      "recall": 0.4862,
+      "precision_at_prior": 0.7566
+     },
+     "angry": {
+      "recall": 0.3864,
+      "precision_at_prior": 0.7395
+     },
+     "surprised": {
+      "recall": 0.1319,
+      "precision_at_prior": 0.8146
+     },
+     "fearful": {
+      "recall": 0.2949,
+      "precision_at_prior": 0.7647
+     }
+    }
+   }
+  }
+ },
+ "new": {
+  "heads": {
+   "whisper": {
+    "loco_mean_uar": 0.5676,
+    "held_out_nemo": 0.5893,
+    "held_out_nvtts_voxceleb": 0.5277,
+    "held_out_all": 0.5504
+   },
+   "whisper_ft": {
+    "loco_mean_uar": 0.5608,
+    "held_out_nemo": 0.5961,
+    "held_out_nvtts_voxceleb": 0.5569,
+    "held_out_all": 0.5572
+   },
+   "w2vbert": {
+    "loco_mean_uar": 0.5348,
+    "held_out_nemo": 0.5258,
+    "held_out_nvtts_voxceleb": 0.5525,
+    "held_out_all": 0.5227
+   },
+   "wavlm": {
+    "loco_mean_uar": 0.5393,
+    "held_out_nemo": 0.5296,
+    "held_out_nvtts_voxceleb": 0.4738,
+    "held_out_all": 0.485
+   },
+   "e2v": {
+    "loco_mean_uar": 0.7675,
+    "held_out_nemo": 0.5055,
+    "held_out_nvtts_voxceleb": 0.8095,
+    "held_out_all": 0.5229
+   }
+  },
+  "average": {
+   "meralion": {
+    "held_out_uar": 0.4635,
+    "thresholds": {
+     "happy": null,
+     "sad": null,
+     "angry": 0.88,
+     "surprised": 0.9,
+     "fearful": null
+    }
+   },
+   "e2v": {
+    "held_out_uar": 0.5224,
+    "thresholds": {
+     "happy": null,
+     "sad": null,
+     "angry": null,
+     "surprised": 0.49,
+     "fearful": null
+    }
+   },
+   "meralion+e2v": {
+    "held_out_uar": 0.5292,
+    "thresholds": {
+     "happy": 0.88,
+     "sad": null,
+     "angry": 0.51,
+     "surprised": 0.44,
+     "fearful": null
+    }
+   },
+   "seven": {
+    "held_out_uar": 0.5979,
+    "held_out_acc": 0.7044,
+    "thresholds": {
+     "happy": 0.52,
+     "sad": 0.64,
+     "angry": 0.5,
+     "surprised": 0.3,
+     "fearful": 0.43
+    },
+    "thresholds_cv": {
+     "happy": {
+      "recall": 0.5605,
+      "precision_at_prior": 0.7528
+     },
+     "sad": {
+      "recall": 0.5101,
+      "precision_at_prior": 0.7584
+     },
+     "angry": {
+      "recall": 0.3982,
+      "precision_at_prior": 0.723
+     },
+     "surprised": {
+      "recall": 0.129,
+      "precision_at_prior": 0.8396
+     },
+     "fearful": {
+      "recall": 0.3031,
+      "precision_at_prior": 0.7697
+     }
+    }
+   }
+  }
+ }
+}

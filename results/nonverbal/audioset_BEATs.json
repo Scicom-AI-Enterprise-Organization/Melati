@@ -1,0 +1,9269 @@
+{
+ "model": "BEATs",
+ "classes": {
+  "laughs": [
+   "Laughter",
+   "Giggle",
+   "Snicker",
+   "Belly laugh",
+   "Chuckle, chortle"
+  ],
+  "sighs": [
+   "Sigh"
+  ],
+  "gasps": [
+   "Gasp"
+  ],
+  "coughs": [
+   "Cough"
+  ],
+  "sneezes": [
+   "Sneeze"
+  ],
+  "sniffs": [
+   "Sniff"
+  ],
+  "clears throat": [
+   "Throat clearing"
+  ],
+  "breathes": [
+   "Breathing"
+  ],
+  "cries": [
+   "Crying, sobbing",
+   "Whimper"
+  ],
+  "hums": [
+   "Humming"
+  ],
+  "screams": [
+   "Screaming"
+  ],
+  "groans": [
+   "Groan"
+  ],
+  "grunts": [
+   "Grunt"
+  ],
+  "snorts": [
+   "Snort"
+  ],
+  "yawns": [
+   "Yawn"
+  ],
+  "whisper": [
+   "Whispering"
+  ],
+  "shout": [
+   "Shout",
+   "Yell",
+   "Bellow"
+  ],
+  "sings": [
+   "Singing"
+  ]
+ },
+ "missing": [],
+ "grid": [
+  0.05,
+  0.1,
+  0.15,
+  0.2,
+  0.25,
+  0.3,
+  0.35,
+  0.4,
+  0.45,
+  0.5,
+  0.55,
+  0.6,
+  0.65,
+  0.7,
+  0.75,
+  0.8,
+  0.85,
+  0.9,
+  0.95,
+  0.97,
+  0.98,
+  0.99,
+  0.995,
+  0.998,
+  0.999
+ ],
+ "vocalsound": {
+  "clips": {
+   "Cough": 598,
+   "Sigh": 598,
+   "Throat clearing": 599,
+   "Sneeze": 598,
+   "Laughter": 599,
+   "Sniff": 599
+  },
+  "fires": {
+   "laughs": {
+    "0.05": {
+     "Cough": 0.0385,
+     "Sigh": 0.0234,
+     "Throat clearing": 0.0851,
+     "Sneeze": 0.0234,
+     "Laughter": 0.9583,
+     "Sniff": 0.0184
+    },
+    "0.1": {
+     "Cough": 0.0167,
+     "Sigh": 0.0134,
+     "Throat clearing": 0.0384,
+     "Sneeze": 0.01,
+     "Laughter": 0.9482,
+     "Sniff": 0.0083
+    },
+    "0.15": {
+     "Cough": 0.0151,
+     "Sigh": 0.01,
+     "Throat clearing": 0.0234,
+     "Sneeze": 0.0084,
+     "Laughter": 0.9482,
+     "Sniff": 0.005
+    },
+    "0.2": {
+     "Cough": 0.0134,
+     "Sigh": 0.0084,
+     "Throat clearing": 0.015,
+     "Sneeze": 0.005,
+     "Laughter": 0.9432,
+     "Sniff": 0.005
+    },
+    "0.25": {
+     "Cough": 0.0084,
+     "Sigh": 0.005,
+     "Throat clearing": 0.0117,
+     "Sneeze": 0.0017,
+     "Laughter": 0.9382,
+     "Sniff": 0.0033
+    },
+    "0.3": {
+     "Cough": 0.0084,
+     "Sigh": 0.005,
+     "Throat clearing": 0.0083,
+     "Sneeze": 0.0017,
+     "Laughter": 0.9332,
+     "Sniff": 0.0033
+    },
+    "0.35": {
+     "Cough": 0.0084,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.0067,
+     "Sneeze": 0.0017,
+     "Laughter": 0.9199,
+     "Sniff": 0.0033
+    },
+    "0.4": {
+     "Cough": 0.005,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.005,
+     "Sneeze": 0.0017,
+     "Laughter": 0.9082,
+     "Sniff": 0.0033
+    },
+    "0.45": {
+     "Cough": 0.005,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0033,
+     "Sneeze": 0.0,
+     "Laughter": 0.8932,
+     "Sniff": 0.0017
+    },
+    "0.5": {
+     "Cough": 0.0033,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0,
+     "Laughter": 0.8648,
+     "Sniff": 0.0017
+    },
+    "0.55": {
+     "Cough": 0.0033,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0,
+     "Laughter": 0.8331,
+     "Sniff": 0.0017
+    },
+    "0.6": {
+     "Cough": 0.0017,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.778,
+     "Sniff": 0.0017
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.7129,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.6144,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.4608,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.2204,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0317,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "sighs": {
+    "0.05": {
+     "Cough": 0.0,
+     "Sigh": 0.7943,
+     "Throat clearing": 0.0401,
+     "Sneeze": 0.0452,
+     "Laughter": 0.0117,
+     "Sniff": 0.0818
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.7224,
+     "Throat clearing": 0.0117,
+     "Sneeze": 0.0151,
+     "Laughter": 0.0017,
+     "Sniff": 0.0217
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.6321,
+     "Throat clearing": 0.0033,
+     "Sneeze": 0.0067,
+     "Laughter": 0.0,
+     "Sniff": 0.005
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.5151,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0033,
+     "Laughter": 0.0,
+     "Sniff": 0.0033
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.4448,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0,
+     "Sniff": 0.0017
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.3378,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.2508,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.1622,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0987,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0385,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0084,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "gasps": {
+    "0.05": {
+     "Cough": 0.4164,
+     "Sigh": 0.5301,
+     "Throat clearing": 0.177,
+     "Sneeze": 0.2559,
+     "Laughter": 0.5075,
+     "Sniff": 0.0735
+    },
+    "0.1": {
+     "Cough": 0.1338,
+     "Sigh": 0.0702,
+     "Throat clearing": 0.0317,
+     "Sneeze": 0.0502,
+     "Laughter": 0.3673,
+     "Sniff": 0.005
+    },
+    "0.15": {
+     "Cough": 0.0084,
+     "Sigh": 0.0084,
+     "Throat clearing": 0.005,
+     "Sneeze": 0.01,
+     "Laughter": 0.2387,
+     "Sniff": 0.0017
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0017,
+     "Laughter": 0.1102,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0534,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.015,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.005,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "coughs": {
+    "0.05": {
+     "Cough": 0.9783,
+     "Sigh": 0.0217,
+     "Throat clearing": 0.8481,
+     "Sneeze": 0.2993,
+     "Laughter": 0.1686,
+     "Sniff": 0.02
+    },
+    "0.1": {
+     "Cough": 0.9749,
+     "Sigh": 0.0084,
+     "Throat clearing": 0.7796,
+     "Sneeze": 0.2124,
+     "Laughter": 0.1085,
+     "Sniff": 0.01
+    },
+    "0.15": {
+     "Cough": 0.9682,
+     "Sigh": 0.005,
+     "Throat clearing": 0.7295,
+     "Sneeze": 0.1589,
+     "Laughter": 0.0668,
+     "Sniff": 0.01
+    },
+    "0.2": {
+     "Cough": 0.9682,
+     "Sigh": 0.005,
+     "Throat clearing": 0.6945,
+     "Sneeze": 0.1254,
+     "Laughter": 0.0584,
+     "Sniff": 0.0067
+    },
+    "0.25": {
+     "Cough": 0.9615,
+     "Sigh": 0.005,
+     "Throat clearing": 0.6561,
+     "Sneeze": 0.1137,
+     "Laughter": 0.0518,
+     "Sniff": 0.0067
+    },
+    "0.3": {
+     "Cough": 0.9548,
+     "Sigh": 0.005,
+     "Throat clearing": 0.621,
+     "Sneeze": 0.102,
+     "Laughter": 0.0451,
+     "Sniff": 0.005
+    },
+    "0.35": {
+     "Cough": 0.9482,
+     "Sigh": 0.005,
+     "Throat clearing": 0.5927,
+     "Sneeze": 0.092,
+     "Laughter": 0.0351,
+     "Sniff": 0.0033
+    },
+    "0.4": {
+     "Cough": 0.9431,
+     "Sigh": 0.005,
+     "Throat clearing": 0.5576,
+     "Sneeze": 0.0769,
+     "Laughter": 0.0267,
+     "Sniff": 0.0033
+    },
+    "0.45": {
+     "Cough": 0.9415,
+     "Sigh": 0.005,
+     "Throat clearing": 0.5192,
+     "Sneeze": 0.0652,
+     "Laughter": 0.0167,
+     "Sniff": 0.0033
+    },
+    "0.5": {
+     "Cough": 0.9314,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.4741,
+     "Sneeze": 0.0535,
+     "Laughter": 0.015,
+     "Sniff": 0.0033
+    },
+    "0.55": {
+     "Cough": 0.9231,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.4357,
+     "Sneeze": 0.0385,
+     "Laughter": 0.0134,
+     "Sniff": 0.0033
+    },
+    "0.6": {
+     "Cough": 0.8997,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.3823,
+     "Sneeze": 0.0334,
+     "Laughter": 0.0117,
+     "Sniff": 0.0017
+    },
+    "0.65": {
+     "Cough": 0.8763,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.3022,
+     "Sneeze": 0.0268,
+     "Laughter": 0.0083,
+     "Sniff": 0.0017
+    },
+    "0.7": {
+     "Cough": 0.8294,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.2304,
+     "Sneeze": 0.0184,
+     "Laughter": 0.0083,
+     "Sniff": 0.0017
+    },
+    "0.75": {
+     "Cough": 0.6589,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.1619,
+     "Sneeze": 0.0134,
+     "Laughter": 0.0083,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.2943,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0534,
+     "Sneeze": 0.005,
+     "Laughter": 0.005,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0117,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "sneezes": {
+    "0.05": {
+     "Cough": 0.0585,
+     "Sigh": 0.1171,
+     "Throat clearing": 0.1486,
+     "Sneeze": 0.8528,
+     "Laughter": 0.0301,
+     "Sniff": 0.6194
+    },
+    "0.1": {
+     "Cough": 0.0217,
+     "Sigh": 0.0468,
+     "Throat clearing": 0.0868,
+     "Sneeze": 0.8227,
+     "Laughter": 0.015,
+     "Sniff": 0.4608
+    },
+    "0.15": {
+     "Cough": 0.0151,
+     "Sigh": 0.0251,
+     "Throat clearing": 0.0651,
+     "Sneeze": 0.7776,
+     "Laughter": 0.0067,
+     "Sniff": 0.3589
+    },
+    "0.2": {
+     "Cough": 0.01,
+     "Sigh": 0.0184,
+     "Throat clearing": 0.0501,
+     "Sneeze": 0.7609,
+     "Laughter": 0.0033,
+     "Sniff": 0.2788
+    },
+    "0.25": {
+     "Cough": 0.0084,
+     "Sigh": 0.0117,
+     "Throat clearing": 0.0351,
+     "Sneeze": 0.7375,
+     "Laughter": 0.0017,
+     "Sniff": 0.2287
+    },
+    "0.3": {
+     "Cough": 0.005,
+     "Sigh": 0.0117,
+     "Throat clearing": 0.0301,
+     "Sneeze": 0.7157,
+     "Laughter": 0.0017,
+     "Sniff": 0.192
+    },
+    "0.35": {
+     "Cough": 0.005,
+     "Sigh": 0.01,
+     "Throat clearing": 0.0234,
+     "Sneeze": 0.6839,
+     "Laughter": 0.0017,
+     "Sniff": 0.172
+    },
+    "0.4": {
+     "Cough": 0.0033,
+     "Sigh": 0.0084,
+     "Throat clearing": 0.0167,
+     "Sneeze": 0.6605,
+     "Laughter": 0.0017,
+     "Sniff": 0.1336
+    },
+    "0.45": {
+     "Cough": 0.0033,
+     "Sigh": 0.0067,
+     "Throat clearing": 0.0117,
+     "Sneeze": 0.6321,
+     "Laughter": 0.0017,
+     "Sniff": 0.0851
+    },
+    "0.5": {
+     "Cough": 0.0017,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.01,
+     "Sneeze": 0.592,
+     "Laughter": 0.0017,
+     "Sniff": 0.0601
+    },
+    "0.55": {
+     "Cough": 0.0017,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0067,
+     "Sneeze": 0.5585,
+     "Laughter": 0.0017,
+     "Sniff": 0.0434
+    },
+    "0.6": {
+     "Cough": 0.0017,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0033,
+     "Sneeze": 0.5134,
+     "Laughter": 0.0017,
+     "Sniff": 0.0267
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.4515,
+     "Laughter": 0.0017,
+     "Sniff": 0.0184
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.3829,
+     "Laughter": 0.0,
+     "Sniff": 0.0117
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.2793,
+     "Laughter": 0.0,
+     "Sniff": 0.0033
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.1856,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0418,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "sniffs": {
+    "0.05": {
+     "Cough": 0.01,
+     "Sigh": 0.2023,
+     "Throat clearing": 0.0501,
+     "Sneeze": 0.1856,
+     "Laughter": 0.0518,
+     "Sniff": 0.7896
+    },
+    "0.1": {
+     "Cough": 0.0033,
+     "Sigh": 0.0686,
+     "Throat clearing": 0.0284,
+     "Sneeze": 0.0836,
+     "Laughter": 0.0184,
+     "Sniff": 0.6711
+    },
+    "0.15": {
+     "Cough": 0.0017,
+     "Sigh": 0.0368,
+     "Throat clearing": 0.0167,
+     "Sneeze": 0.0535,
+     "Laughter": 0.0134,
+     "Sniff": 0.5543
+    },
+    "0.2": {
+     "Cough": 0.0017,
+     "Sigh": 0.0151,
+     "Throat clearing": 0.01,
+     "Sneeze": 0.0301,
+     "Laughter": 0.0083,
+     "Sniff": 0.4441
+    },
+    "0.25": {
+     "Cough": 0.0017,
+     "Sigh": 0.01,
+     "Throat clearing": 0.0067,
+     "Sneeze": 0.0217,
+     "Laughter": 0.0033,
+     "Sniff": 0.3272
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0067,
+     "Throat clearing": 0.0033,
+     "Sneeze": 0.0134,
+     "Laughter": 0.0033,
+     "Sniff": 0.2237
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0033,
+     "Laughter": 0.0033,
+     "Sniff": 0.1336
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0,
+     "Sniff": 0.0584
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.02
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.005
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "clears throat": {
+    "0.05": {
+     "Cough": 0.0334,
+     "Sigh": 0.0452,
+     "Throat clearing": 0.384,
+     "Sneeze": 0.0385,
+     "Laughter": 0.0033,
+     "Sniff": 0.0067
+    },
+    "0.1": {
+     "Cough": 0.0017,
+     "Sigh": 0.0067,
+     "Throat clearing": 0.0835,
+     "Sneeze": 0.005,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.01,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "breathes": {
+    "0.05": {
+     "Cough": 0.7157,
+     "Sigh": 0.9314,
+     "Throat clearing": 0.5793,
+     "Sneeze": 0.8094,
+     "Laughter": 0.7462,
+     "Sniff": 0.8047
+    },
+    "0.1": {
+     "Cough": 0.6756,
+     "Sigh": 0.8946,
+     "Throat clearing": 0.4858,
+     "Sneeze": 0.7441,
+     "Laughter": 0.6828,
+     "Sniff": 0.6912
+    },
+    "0.15": {
+     "Cough": 0.6455,
+     "Sigh": 0.8294,
+     "Throat clearing": 0.4441,
+     "Sneeze": 0.7191,
+     "Laughter": 0.6427,
+     "Sniff": 0.5826
+    },
+    "0.2": {
+     "Cough": 0.6187,
+     "Sigh": 0.7742,
+     "Throat clearing": 0.4057,
+     "Sneeze": 0.6906,
+     "Laughter": 0.6194,
+     "Sniff": 0.4674
+    },
+    "0.25": {
+     "Cough": 0.5953,
+     "Sigh": 0.7074,
+     "Throat clearing": 0.374,
+     "Sneeze": 0.6672,
+     "Laughter": 0.591,
+     "Sniff": 0.379
+    },
+    "0.3": {
+     "Cough": 0.5819,
+     "Sigh": 0.6622,
+     "Throat clearing": 0.3456,
+     "Sneeze": 0.6488,
+     "Laughter": 0.5459,
+     "Sniff": 0.2955
+    },
+    "0.35": {
+     "Cough": 0.5635,
+     "Sigh": 0.6154,
+     "Throat clearing": 0.3306,
+     "Sneeze": 0.6204,
+     "Laughter": 0.5008,
+     "Sniff": 0.2437
+    },
+    "0.4": {
+     "Cough": 0.5485,
+     "Sigh": 0.5334,
+     "Throat clearing": 0.3122,
+     "Sneeze": 0.597,
+     "Laughter": 0.4641,
+     "Sniff": 0.2104
+    },
+    "0.45": {
+     "Cough": 0.5234,
+     "Sigh": 0.4548,
+     "Throat clearing": 0.2755,
+     "Sneeze": 0.5585,
+     "Laughter": 0.4124,
+     "Sniff": 0.1636
+    },
+    "0.5": {
+     "Cough": 0.495,
+     "Sigh": 0.3545,
+     "Throat clearing": 0.2454,
+     "Sneeze": 0.5234,
+     "Laughter": 0.3539,
+     "Sniff": 0.1336
+    },
+    "0.55": {
+     "Cough": 0.4699,
+     "Sigh": 0.2542,
+     "Throat clearing": 0.2137,
+     "Sneeze": 0.4967,
+     "Laughter": 0.2805,
+     "Sniff": 0.0968
+    },
+    "0.6": {
+     "Cough": 0.4314,
+     "Sigh": 0.1605,
+     "Throat clearing": 0.182,
+     "Sneeze": 0.4498,
+     "Laughter": 0.2053,
+     "Sniff": 0.0718
+    },
+    "0.65": {
+     "Cough": 0.3696,
+     "Sigh": 0.0803,
+     "Throat clearing": 0.1586,
+     "Sneeze": 0.4013,
+     "Laughter": 0.1336,
+     "Sniff": 0.0317
+    },
+    "0.7": {
+     "Cough": 0.2793,
+     "Sigh": 0.0318,
+     "Throat clearing": 0.1152,
+     "Sneeze": 0.3261,
+     "Laughter": 0.0634,
+     "Sniff": 0.0167
+    },
+    "0.75": {
+     "Cough": 0.1873,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.0651,
+     "Sneeze": 0.2291,
+     "Laughter": 0.0217,
+     "Sniff": 0.0017
+    },
+    "0.8": {
+     "Cough": 0.0569,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0134,
+     "Sneeze": 0.1237,
+     "Laughter": 0.0017,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0017,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0251,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "cries": {
+    "0.05": {
+     "Cough": 0.005,
+     "Sigh": 0.0201,
+     "Throat clearing": 0.02,
+     "Sneeze": 0.0017,
+     "Laughter": 0.1853,
+     "Sniff": 0.0434
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0134,
+     "Throat clearing": 0.0033,
+     "Sneeze": 0.0,
+     "Laughter": 0.0835,
+     "Sniff": 0.01
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.01,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0,
+     "Laughter": 0.0434,
+     "Sniff": 0.0033
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.01,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.025,
+     "Sniff": 0.0033
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0084,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.01,
+     "Sniff": 0.0017
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0083,
+     "Sniff": 0.0017
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0033,
+     "Sniff": 0.0017
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0033,
+     "Sniff": 0.0017
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0017
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0017
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0017
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "hums": {
+    "0.05": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "screams": {
+    "0.05": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0017,
+     "Sniff": 0.0
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "groans": {
+    "0.05": {
+     "Cough": 0.0,
+     "Sigh": 0.1572,
+     "Throat clearing": 0.015,
+     "Sneeze": 0.0,
+     "Laughter": 0.0033,
+     "Sniff": 0.0
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0585,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.0234,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0167,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0117,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0084,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0084,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.005,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "grunts": {
+    "0.05": {
+     "Cough": 0.0,
+     "Sigh": 0.0318,
+     "Throat clearing": 0.0134,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0084,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.005,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "snorts": {
+    "0.05": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0083,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0,
+     "Sniff": 0.02
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0033
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "yawns": {
+    "0.05": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "whisper": {
+    "0.05": {
+     "Cough": 0.0,
+     "Sigh": 0.005,
+     "Throat clearing": 0.0033,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0,
+     "Sniff": 0.0083
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0,
+     "Sniff": 0.0033
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0017
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0017,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0017
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "shout": {
+    "0.05": {
+     "Cough": 0.0,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.0033,
+     "Sneeze": 0.0167,
+     "Laughter": 0.0033,
+     "Sniff": 0.0
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0017,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0084,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0033,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   },
+   "sings": {
+    "0.05": {
+     "Cough": 0.0033,
+     "Sigh": 0.0033,
+     "Throat clearing": 0.0033,
+     "Sneeze": 0.0033,
+     "Laughter": 0.0017,
+     "Sniff": 0.0067
+    },
+    "0.1": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0017,
+     "Laughter": 0.0017,
+     "Sniff": 0.0017
+    },
+    "0.15": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0017,
+     "Sniff": 0.0
+    },
+    "0.2": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.25": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.3": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.35": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.4": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.45": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.5": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.55": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.6": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.65": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.7": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.75": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.8": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.85": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.9": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.95": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.97": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.98": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.99": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.995": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.998": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    },
+    "0.999": {
+     "Cough": 0.0,
+     "Sigh": 0.0,
+     "Throat clearing": 0.0,
+     "Sneeze": 0.0,
+     "Laughter": 0.0,
+     "Sniff": 0.0
+    }
+   }
+  }
+ },
+ "expresso": {
+  "utterances": {
+   "confused": 1520,
+   "default": 1519,
+   "emphasis": 800,
+   "essentials": 160,
+   "longform": 8,
+   "enunciated": 1520,
+   "happy": 1520,
+   "laughing": 1520,
+   "sad": 1519,
+   "singing": 11,
+   "whisper": 1518
+  },
+  "covers_half": {
+   "whisper": {
+    "0.05": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.998
+    },
+    "0.1": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9974
+    },
+    "0.15": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9967
+    },
+    "0.2": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.996
+    },
+    "0.25": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9947
+    },
+    "0.3": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9941
+    },
+    "0.35": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9928
+    },
+    "0.4": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9901
+    },
+    "0.45": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9868
+    },
+    "0.5": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9822
+    },
+    "0.55": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9776
+    },
+    "0.6": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9704
+    },
+    "0.65": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9565
+    },
+    "0.7": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.9289
+    },
+    "0.75": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.8669
+    },
+    "0.8": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.6904
+    },
+    "0.85": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.2635
+    },
+    "0.9": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0033
+    },
+    "0.95": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.97": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.98": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.99": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.995": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.998": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.999": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    }
+   },
+   "laughs": {
+    "0.05": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.1362,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.1": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0776,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.15": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0487,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.2": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0316,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.25": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0211,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.3": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0145,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.35": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0118,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.4": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0079,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.45": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0046,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.5": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0026,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.55": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0013,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.6": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.65": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.7": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.75": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.8": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.85": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.9": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.95": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.97": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.98": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.99": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.995": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.998": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.999": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    }
+   },
+   "shout": {
+    "0.05": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.1": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.15": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.2": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.25": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.3": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.35": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.4": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.45": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.5": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.55": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.6": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.65": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.7": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.75": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.8": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.85": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.9": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.95": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.97": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.98": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.99": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.995": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.998": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.999": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    }
+   },
+   "sings": {
+    "0.05": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.1": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.15": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.2": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.25": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.3": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.35": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.4": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.45": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.5": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.55": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.6": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.65": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.7": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.75": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.8": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.85": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.9": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.95": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.97": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.98": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.99": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.995": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.998": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    },
+    "0.999": {
+     "confused": 0.0,
+     "default": 0.0,
+     "emphasis": 0.0,
+     "essentials": 0.0,
+     "longform": 0.0,
+     "enunciated": 0.0,
+     "happy": 0.0,
+     "laughing": 0.0,
+     "sad": 0.0,
+     "singing": 0.0,
+     "whisper": 0.0
+    }
+   }
+  }
+ },
+ "podcasts": {
+  "episodes": 20,
+  "hours": 16.73,
+  "per_hour": {
+   "laughs": {
+    "0.05": 48.894,
+    "0.1": 40.466,
+    "0.15": 36.401,
+    "0.2": 34.668,
+    "0.25": 31.142,
+    "0.3": 28.99,
+    "0.35": 25.224,
+    "0.4": 21.399,
+    "0.45": 16.497,
+    "0.5": 12.194,
+    "0.55": 9.265,
+    "0.6": 6.097,
+    "0.65": 3.646,
+    "0.7": 1.793,
+    "0.75": 0.956,
+    "0.8": 0.239,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "sighs": {
+    "0.05": 2.69,
+    "0.1": 0.717,
+    "0.15": 0.359,
+    "0.2": 0.06,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "gasps": {
+    "0.05": 15.003,
+    "0.1": 3.467,
+    "0.15": 0.777,
+    "0.2": 0.239,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "coughs": {
+    "0.05": 5.2,
+    "0.1": 2.869,
+    "0.15": 1.913,
+    "0.2": 1.136,
+    "0.25": 0.897,
+    "0.3": 0.598,
+    "0.35": 0.418,
+    "0.4": 0.299,
+    "0.45": 0.239,
+    "0.5": 0.179,
+    "0.55": 0.179,
+    "0.6": 0.06,
+    "0.65": 0.06,
+    "0.7": 0.06,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "sneezes": {
+    "0.05": 2.092,
+    "0.1": 0.657,
+    "0.15": 0.239,
+    "0.2": 0.12,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "sniffs": {
+    "0.05": 6.396,
+    "0.1": 2.391,
+    "0.15": 1.494,
+    "0.2": 0.717,
+    "0.25": 0.299,
+    "0.3": 0.12,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "clears throat": {
+    "0.05": 1.972,
+    "0.1": 0.478,
+    "0.15": 0.299,
+    "0.2": 0.12,
+    "0.25": 0.06,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "breathes": {
+    "0.05": 1015.297,
+    "0.1": 881.227,
+    "0.15": 812.249,
+    "0.2": 764.132,
+    "0.25": 726.715,
+    "0.3": 691.568,
+    "0.35": 661.563,
+    "0.4": 628.867,
+    "0.45": 590.254,
+    "0.5": 545.723,
+    "0.55": 492.167,
+    "0.6": 428.211,
+    "0.65": 344.947,
+    "0.7": 247.458,
+    "0.75": 145.666,
+    "0.8": 66.826,
+    "0.85": 19.366,
+    "0.9": 0.657,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "cries": {
+    "0.05": 0.598,
+    "0.1": 0.179,
+    "0.15": 0.06,
+    "0.2": 0.06,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "hums": {
+    "0.05": 0.418,
+    "0.1": 0.06,
+    "0.15": 0.0,
+    "0.2": 0.0,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "screams": {
+    "0.05": 0.0,
+    "0.1": 0.0,
+    "0.15": 0.0,
+    "0.2": 0.0,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "groans": {
+    "0.05": 0.179,
+    "0.1": 0.0,
+    "0.15": 0.0,
+    "0.2": 0.0,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "grunts": {
+    "0.05": 0.179,
+    "0.1": 0.0,
+    "0.15": 0.0,
+    "0.2": 0.0,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "snorts": {
+    "0.05": 0.0,
+    "0.1": 0.0,
+    "0.15": 0.0,
+    "0.2": 0.0,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "yawns": {
+    "0.05": 0.0,
+    "0.1": 0.0,
+    "0.15": 0.0,
+    "0.2": 0.0,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "whisper": {
+    "0.05": 6.754,
+    "0.1": 3.168,
+    "0.15": 1.733,
+    "0.2": 1.076,
+    "0.25": 0.538,
+    "0.3": 0.359,
+    "0.35": 0.239,
+    "0.4": 0.179,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "shout": {
+    "0.05": 0.478,
+    "0.1": 0.179,
+    "0.15": 0.12,
+    "0.2": 0.0,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   },
+   "sings": {
+    "0.05": 0.299,
+    "0.1": 0.0,
+    "0.15": 0.0,
+    "0.2": 0.0,
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.0,
+    "0.45": 0.0,
+    "0.5": 0.0,
+    "0.55": 0.0,
+    "0.6": 0.0,
+    "0.65": 0.0,
+    "0.7": 0.0,
+    "0.75": 0.0,
+    "0.8": 0.0,
+    "0.85": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0,
+    "0.97": 0.0,
+    "0.98": 0.0,
+    "0.99": 0.0,
+    "0.995": 0.0,
+    "0.998": 0.0,
+    "0.999": 0.0
+   }
+  },
+  "lands_on": {
+   "laughs": {
+    "0.05": {
+     "Laughter": 337,
+     "(no label)": 309,
+     "Breath": 94,
+     "Words": 73,
+     "Uh": 44,
+     "Um": 38,
+     "Agree": 33,
+     "Repetitions": 32
+    },
+    "0.1": {
+     "Laughter": 335,
+     "(no label)": 216,
+     "Breath": 81,
+     "Words": 56,
+     "Um": 32,
+     "Uh": 30,
+     "Repetitions": 22,
+     "Overlap": 17
+    },
+    "0.15": {
+     "Laughter": 332,
+     "(no label)": 179,
+     "Breath": 66,
+     "Words": 47,
+     "Um": 24,
+     "Uh": 22,
+     "Overlap": 16,
+     "Repetitions": 14
+    },
+    "0.2": {
+     "Laughter": 337,
+     "(no label)": 165,
+     "Breath": 57,
+     "Words": 43,
+     "Um": 21,
+     "Uh": 17,
+     "Overlap": 14,
+     "Agree": 10
+    },
+    "0.25": {
+     "Laughter": 326,
+     "(no label)": 139,
+     "Breath": 50,
+     "Words": 35,
+     "Um": 16,
+     "Uh": 12,
+     "Overlap": 11,
+     "Agree": 8
+    },
+    "0.3": {
+     "Laughter": 307,
+     "(no label)": 129,
+     "Breath": 40,
+     "Words": 31,
+     "Um": 12,
+     "Uh": 9,
+     "Overlap": 9,
+     "Agree": 5
+    },
+    "0.35": {
+     "Laughter": 287,
+     "(no label)": 95,
+     "Breath": 32,
+     "Words": 26,
+     "Uh": 8,
+     "Um": 8,
+     "Overlap": 8,
+     "Noise": 4
+    },
+    "0.4": {
+     "Laughter": 256,
+     "(no label)": 71,
+     "Breath": 21,
+     "Words": 18,
+     "Uh": 7,
+     "Um": 7,
+     "Overlap": 7,
+     "Noise": 4
+    },
+    "0.45": {
+     "Laughter": 210,
+     "(no label)": 45,
+     "Breath": 15,
+     "Words": 12,
+     "Overlap": 6,
+     "Uh": 4,
+     "Um": 4,
+     "Noise": 4
+    },
+    "0.5": {
+     "Laughter": 162,
+     "(no label)": 34,
+     "Breath": 8,
+     "Words": 5,
+     "Overlap": 4,
+     "Uh": 3,
+     "Noise": 2,
+     "Um": 2
+    },
+    "0.55": {
+     "Laughter": 124,
+     "(no label)": 24,
+     "Words": 4,
+     "Overlap": 4,
+     "Uh": 3,
+     "Breath": 3,
+     "Other": 1,
+     "Repetitions": 1
+    },
+    "0.6": {
+     "Laughter": 83,
+     "(no label)": 13,
+     "Words": 4,
+     "Overlap": 4,
+     "Other": 1,
+     "Repetitions": 1,
+     "Uh": 1,
+     "Breath": 1
+    },
+    "0.65": {
+     "Laughter": 50,
+     "(no label)": 11,
+     "Words": 1,
+     "Repetitions": 1,
+     "Uh": 1,
+     "Breath": 1,
+     "Overlap": 1
+    },
+    "0.7": {
+     "Laughter": 27,
+     "(no label)": 3,
+     "Uh": 1,
+     "Breath": 1
+    },
+    "0.75": {
+     "Laughter": 14,
+     "(no label)": 2,
+     "Uh": 1,
+     "Breath": 1
+    },
+    "0.8": {
+     "Laughter": 3,
+     "(no label)": 1
+    },
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "sighs": {
+    "0.05": {
+     "(no label)": 25,
+     "Agree": 9,
+     "Breath": 5,
+     "Repetitions": 2,
+     "Um": 2,
+     "Uh": 2,
+     "Noise": 1
+    },
+    "0.1": {
+     "(no label)": 9,
+     "Breath": 2,
+     "Agree": 1,
+     "Noise": 1
+    },
+    "0.15": {
+     "(no label)": 4,
+     "Breath": 1,
+     "Agree": 1,
+     "Noise": 1
+    },
+    "0.2": {
+     "(no label)": 1
+    },
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "gasps": {
+    "0.05": {
+     "Breath": 101,
+     "(no label)": 83,
+     "Laughter": 45,
+     "Agree": 9,
+     "Words": 6,
+     "Um": 6,
+     "Uh": 5,
+     "Noise": 2
+    },
+    "0.1": {
+     "Breath": 32,
+     "Laughter": 17,
+     "(no label)": 8,
+     "Um": 3,
+     "Uh": 1
+    },
+    "0.15": {
+     "Breath": 7,
+     "Laughter": 6,
+     "Uh": 1
+    },
+    "0.2": {
+     "Breath": 3,
+     "Laughter": 1
+    },
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "coughs": {
+    "0.05": {
+     "(no label)": 46,
+     "Laughter": 17,
+     "Noise": 8,
+     "Words": 5,
+     "Uh": 5,
+     "Breath": 3,
+     "Repetitions": 2,
+     "Agree": 2
+    },
+    "0.1": {
+     "(no label)": 22,
+     "Laughter": 11,
+     "Noise": 7,
+     "Words": 4,
+     "Agree": 2,
+     "Breath": 1,
+     "Uh": 1,
+     "Other": 1
+    },
+    "0.15": {
+     "(no label)": 13,
+     "Laughter": 7,
+     "Noise": 5,
+     "Words": 4,
+     "Agree": 1,
+     "Other": 1,
+     "Repetitions": 1
+    },
+    "0.2": {
+     "(no label)": 7,
+     "Laughter": 4,
+     "Noise": 4,
+     "Agree": 1,
+     "Other": 1,
+     "Words": 1,
+     "Repetitions": 1
+    },
+    "0.25": {
+     "(no label)": 5,
+     "Laughter": 3,
+     "Noise": 3,
+     "Agree": 1,
+     "Other": 1,
+     "Words": 1,
+     "Repetitions": 1
+    },
+    "0.3": {
+     "(no label)": 4,
+     "Noise": 3,
+     "Other": 1,
+     "Words": 1,
+     "Repetitions": 1
+    },
+    "0.35": {
+     "(no label)": 3,
+     "Noise": 3,
+     "Other": 1
+    },
+    "0.4": {
+     "(no label)": 2,
+     "Noise": 2,
+     "Other": 1
+    },
+    "0.45": {
+     "Noise": 2,
+     "Other": 1,
+     "(no label)": 1
+    },
+    "0.5": {
+     "Noise": 2,
+     "(no label)": 1
+    },
+    "0.55": {
+     "Noise": 2,
+     "(no label)": 1
+    },
+    "0.6": {
+     "Noise": 1
+    },
+    "0.65": {
+     "Noise": 1
+    },
+    "0.7": {
+     "Noise": 1
+    },
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "sneezes": {
+    "0.05": {
+     "(no label)": 28,
+     "Um": 2,
+     "Uh": 1,
+     "Breath": 1,
+     "Repetitions": 1,
+     "Words": 1,
+     "Noise": 1
+    },
+    "0.1": {
+     "(no label)": 9,
+     "Uh": 1,
+     "Breath": 1
+    },
+    "0.15": {
+     "(no label)": 3,
+     "Uh": 1
+    },
+    "0.2": {
+     "(no label)": 2
+    },
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "sniffs": {
+    "0.05": {
+     "(no label)": 90,
+     "Breath": 8,
+     "Um": 6,
+     "Agree": 2,
+     "Repetitions": 1
+    },
+    "0.1": {
+     "(no label)": 34,
+     "Breath": 3,
+     "Um": 2,
+     "Agree": 1
+    },
+    "0.15": {
+     "(no label)": 21,
+     "Breath": 2,
+     "Um": 2
+    },
+    "0.2": {
+     "(no label)": 9,
+     "Breath": 2,
+     "Um": 1
+    },
+    "0.25": {
+     "(no label)": 4,
+     "Breath": 1
+    },
+    "0.3": {
+     "(no label)": 2
+    },
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "clears throat": {
+    "0.05": {
+     "(no label)": 8,
+     "Agree": 6,
+     "Laughter": 5,
+     "Noise": 5,
+     "Words": 4,
+     "Repetitions": 2,
+     "Um": 1,
+     "Uh": 1
+    },
+    "0.1": {
+     "Noise": 3,
+     "Repetitions": 2,
+     "Agree": 1,
+     "Other": 1,
+     "Words": 1
+    },
+    "0.15": {
+     "Noise": 3,
+     "Repetitions": 1,
+     "Other": 1
+    },
+    "0.2": {
+     "Other": 1,
+     "Noise": 1
+    },
+    "0.25": {
+     "Noise": 1
+    },
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "breathes": {
+    "0.05": {
+     "(no label)": 12332,
+     "Um": 1646,
+     "Uh": 1173,
+     "Breath": 708,
+     "Words": 399,
+     "Agree": 350,
+     "Laughter": 292,
+     "Repetitions": 182
+    },
+    "0.1": {
+     "(no label)": 10717,
+     "Um": 1431,
+     "Uh": 1009,
+     "Breath": 708,
+     "Agree": 313,
+     "Words": 302,
+     "Laughter": 218,
+     "Repetitions": 122
+    },
+    "0.15": {
+     "(no label)": 9976,
+     "Um": 1264,
+     "Uh": 918,
+     "Breath": 701,
+     "Agree": 284,
+     "Words": 252,
+     "Laughter": 165,
+     "Repetitions": 97
+    },
+    "0.2": {
+     "(no label)": 9495,
+     "Um": 1153,
+     "Uh": 838,
+     "Breath": 694,
+     "Agree": 259,
+     "Words": 217,
+     "Laughter": 128,
+     "Repetitions": 76
+    },
+    "0.25": {
+     "(no label)": 9161,
+     "Um": 1029,
+     "Uh": 756,
+     "Breath": 683,
+     "Agree": 241,
+     "Words": 182,
+     "Laughter": 101,
+     "Repetitions": 63
+    },
+    "0.3": {
+     "(no label)": 8837,
+     "Um": 919,
+     "Uh": 678,
+     "Breath": 668,
+     "Agree": 219,
+     "Words": 164,
+     "Laughter": 80,
+     "Repetitions": 51
+    },
+    "0.35": {
+     "(no label)": 8580,
+     "Um": 804,
+     "Breath": 659,
+     "Uh": 613,
+     "Agree": 197,
+     "Words": 142,
+     "Laughter": 66,
+     "Repetitions": 42
+    },
+    "0.4": {
+     "(no label)": 8284,
+     "Um": 716,
+     "Breath": 647,
+     "Uh": 526,
+     "Agree": 166,
+     "Words": 121,
+     "Laughter": 52,
+     "Noise": 39
+    },
+    "0.45": {
+     "(no label)": 7871,
+     "Um": 634,
+     "Breath": 615,
+     "Uh": 454,
+     "Agree": 146,
+     "Words": 105,
+     "Laughter": 41,
+     "Noise": 35
+    },
+    "0.5": {
+     "(no label)": 7376,
+     "Breath": 591,
+     "Um": 547,
+     "Uh": 380,
+     "Agree": 116,
+     "Words": 82,
+     "Noise": 33,
+     "Laughter": 27
+    },
+    "0.55": {
+     "(no label)": 6745,
+     "Breath": 555,
+     "Um": 453,
+     "Uh": 305,
+     "Agree": 91,
+     "Words": 63,
+     "Noise": 26,
+     "Laughter": 17
+    },
+    "0.6": {
+     "(no label)": 5920,
+     "Breath": 515,
+     "Um": 362,
+     "Uh": 237,
+     "Agree": 64,
+     "Words": 49,
+     "Noise": 23,
+     "Repetitions": 14
+    },
+    "0.65": {
+     "(no label)": 4790,
+     "Breath": 466,
+     "Um": 258,
+     "Uh": 163,
+     "Agree": 47,
+     "Words": 37,
+     "Noise": 18,
+     "Repetitions": 11
+    },
+    "0.7": {
+     "(no label)": 3431,
+     "Breath": 376,
+     "Um": 176,
+     "Uh": 100,
+     "Agree": 27,
+     "Words": 23,
+     "Noise": 11,
+     "Repetitions": 6
+    },
+    "0.75": {
+     "(no label)": 2035,
+     "Breath": 235,
+     "Um": 91,
+     "Uh": 51,
+     "Agree": 12,
+     "Words": 11,
+     "Repetitions": 5,
+     "Noise": 4
+    },
+    "0.8": {
+     "(no label)": 982,
+     "Breath": 79,
+     "Um": 35,
+     "Uh": 16,
+     "Words": 4,
+     "Repetitions": 2,
+     "Agree": 2
+    },
+    "0.85": {
+     "(no label)": 300,
+     "Breath": 14,
+     "Um": 8,
+     "Words": 2,
+     "Uh": 1
+    },
+    "0.9": {
+     "(no label)": 11
+    },
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "cries": {
+    "0.05": {
+     "(no label)": 6,
+     "Laughter": 3,
+     "Breath": 2
+    },
+    "0.1": {
+     "Laughter": 3,
+     "Breath": 1
+    },
+    "0.15": {
+     "Laughter": 1
+    },
+    "0.2": {
+     "Laughter": 1
+    },
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "hums": {
+    "0.05": {
+     "(no label)": 4,
+     "Noise": 1,
+     "Agree": 1,
+     "Um": 1
+    },
+    "0.1": {
+     "(no label)": 1
+    },
+    "0.15": {},
+    "0.2": {},
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "screams": {
+    "0.05": {},
+    "0.1": {},
+    "0.15": {},
+    "0.2": {},
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "groans": {
+    "0.05": {
+     "(no label)": 2,
+     "Uh": 1,
+     "Repetitions": 1
+    },
+    "0.1": {},
+    "0.15": {},
+    "0.2": {},
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "grunts": {
+    "0.05": {
+     "Um": 1,
+     "Uh": 1,
+     "Repetitions": 1,
+     "Agree": 1
+    },
+    "0.1": {},
+    "0.15": {},
+    "0.2": {},
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "snorts": {
+    "0.05": {},
+    "0.1": {},
+    "0.15": {},
+    "0.2": {},
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "yawns": {
+    "0.05": {},
+    "0.1": {},
+    "0.15": {},
+    "0.2": {},
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "whisper": {
+    "0.05": {
+     "(no label)": 100,
+     "Um": 3,
+     "Music": 3,
+     "Words": 2,
+     "Uh": 2,
+     "Repetitions": 1,
+     "Agree": 1,
+     "Breath": 1
+    },
+    "0.1": {
+     "(no label)": 49,
+     "Music": 1,
+     "Uh": 1,
+     "Noise": 1,
+     "Um": 1
+    },
+    "0.15": {
+     "(no label)": 27,
+     "Uh": 1,
+     "Noise": 1
+    },
+    "0.2": {
+     "(no label)": 16,
+     "Uh": 1,
+     "Noise": 1
+    },
+    "0.25": {
+     "(no label)": 8,
+     "Noise": 1
+    },
+    "0.3": {
+     "(no label)": 5,
+     "Noise": 1
+    },
+    "0.35": {
+     "(no label)": 3,
+     "Noise": 1
+    },
+    "0.4": {
+     "(no label)": 2,
+     "Noise": 1
+    },
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "shout": {
+    "0.05": {
+     "(no label)": 7,
+     "Words": 1
+    },
+    "0.1": {
+     "(no label)": 3
+    },
+    "0.15": {
+     "(no label)": 2
+    },
+    "0.2": {},
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   },
+   "sings": {
+    "0.05": {
+     "Music": 3,
+     "(no label)": 1,
+     "Repetitions": 1
+    },
+    "0.1": {},
+    "0.15": {},
+    "0.2": {},
+    "0.25": {},
+    "0.3": {},
+    "0.35": {},
+    "0.4": {},
+    "0.45": {},
+    "0.5": {},
+    "0.55": {},
+    "0.6": {},
+    "0.65": {},
+    "0.7": {},
+    "0.75": {},
+    "0.8": {},
+    "0.85": {},
+    "0.9": {},
+    "0.95": {},
+    "0.97": {},
+    "0.98": {},
+    "0.99": {},
+    "0.995": {},
+    "0.998": {},
+    "0.999": {}
+   }
+  },
+  "Laughter": {
+   "0.05": {
+    "events": 818,
+    "right": 337,
+    "wrong": 162,
+    "refs": 579,
+    "found": 560,
+    "labelled": 499,
+    "precision": 0.6754,
+    "recall": 0.9672
+   },
+   "0.1": {
+    "events": 677,
+    "right": 335,
+    "wrong": 120,
+    "refs": 579,
+    "found": 548,
+    "labelled": 455,
+    "precision": 0.7363,
+    "recall": 0.9465
+   },
+   "0.15": {
+    "events": 609,
+    "right": 332,
+    "wrong": 90,
+    "refs": 579,
+    "found": 538,
+    "labelled": 422,
+    "precision": 0.7867,
+    "recall": 0.9292
+   },
+   "0.2": {
+    "events": 580,
+    "right": 337,
+    "wrong": 70,
+    "refs": 579,
+    "found": 534,
+    "labelled": 407,
+    "precision": 0.828,
+    "recall": 0.9223
+   },
+   "0.25": {
+    "events": 521,
+    "right": 326,
+    "wrong": 51,
+    "refs": 579,
+    "found": 516,
+    "labelled": 377,
+    "precision": 0.8647,
+    "recall": 0.8912
+   },
+   "0.3": {
+    "events": 485,
+    "right": 307,
+    "wrong": 44,
+    "refs": 579,
+    "found": 487,
+    "labelled": 351,
+    "precision": 0.8746,
+    "recall": 0.8411
+   },
+   "0.35": {
+    "events": 422,
+    "right": 287,
+    "wrong": 35,
+    "refs": 579,
+    "found": 456,
+    "labelled": 322,
+    "precision": 0.8913,
+    "recall": 0.7876
+   },
+   "0.4": {
+    "events": 358,
+    "right": 256,
+    "wrong": 27,
+    "refs": 579,
+    "found": 410,
+    "labelled": 283,
+    "precision": 0.9046,
+    "recall": 0.7081
+   },
+   "0.45": {
+    "events": 276,
+    "right": 210,
+    "wrong": 18,
+    "refs": 579,
+    "found": 347,
+    "labelled": 228,
+    "precision": 0.9211,
+    "recall": 0.5993
+   },
+   "0.5": {
+    "events": 204,
+    "right": 162,
+    "wrong": 6,
+    "refs": 579,
+    "found": 277,
+    "labelled": 168,
+    "precision": 0.9643,
+    "recall": 0.4784
+   },
+   "0.55": {
+    "events": 155,
+    "right": 124,
+    "wrong": 4,
+    "refs": 579,
+    "found": 210,
+    "labelled": 128,
+    "precision": 0.9688,
+    "recall": 0.3627
+   },
+   "0.6": {
+    "events": 102,
+    "right": 83,
+    "wrong": 3,
+    "refs": 579,
+    "found": 138,
+    "labelled": 86,
+    "precision": 0.9651,
+    "recall": 0.2383
+   },
+   "0.65": {
+    "events": 61,
+    "right": 50,
+    "wrong": 0,
+    "refs": 579,
+    "found": 86,
+    "labelled": 50,
+    "precision": 1.0,
+    "recall": 0.1485
+   },
+   "0.7": {
+    "events": 30,
+    "right": 27,
+    "wrong": 0,
+    "refs": 579,
+    "found": 51,
+    "labelled": 27,
+    "precision": 1.0,
+    "recall": 0.0881
+   },
+   "0.75": {
+    "events": 16,
+    "right": 14,
+    "wrong": 0,
+    "refs": 579,
+    "found": 24,
+    "labelled": 14,
+    "precision": 1.0,
+    "recall": 0.0415
+   },
+   "0.8": {
+    "events": 4,
+    "right": 3,
+    "wrong": 0,
+    "refs": 579,
+    "found": 6,
+    "labelled": 3,
+    "precision": 1.0,
+    "recall": 0.0104
+   },
+   "0.85": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 579,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.9": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 579,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 579,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 579,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 579,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 579,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 579,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 579,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 579,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "Breath": {
+   "0.05": {
+    "events": 16986,
+    "right": 708,
+    "wrong": 3905,
+    "refs": 732,
+    "found": 727,
+    "labelled": 4613,
+    "precision": 0.1535,
+    "recall": 0.9932
+   },
+   "0.1": {
+    "events": 14743,
+    "right": 708,
+    "wrong": 3287,
+    "refs": 732,
+    "found": 724,
+    "labelled": 3995,
+    "precision": 0.1772,
+    "recall": 0.9891
+   },
+   "0.15": {
+    "events": 13589,
+    "right": 701,
+    "wrong": 2888,
+    "refs": 732,
+    "found": 715,
+    "labelled": 3589,
+    "precision": 0.1953,
+    "recall": 0.9768
+   },
+   "0.2": {
+    "events": 12784,
+    "right": 694,
+    "wrong": 2574,
+    "refs": 732,
+    "found": 708,
+    "labelled": 3268,
+    "precision": 0.2124,
+    "recall": 0.9672
+   },
+   "0.25": {
+    "events": 12158,
+    "right": 683,
+    "wrong": 2298,
+    "refs": 732,
+    "found": 696,
+    "labelled": 2981,
+    "precision": 0.2291,
+    "recall": 0.9508
+   },
+   "0.3": {
+    "events": 11570,
+    "right": 668,
+    "wrong": 2051,
+    "refs": 732,
+    "found": 680,
+    "labelled": 2719,
+    "precision": 0.2457,
+    "recall": 0.929
+   },
+   "0.35": {
+    "events": 11068,
+    "right": 659,
+    "wrong": 1817,
+    "refs": 732,
+    "found": 670,
+    "labelled": 2476,
+    "precision": 0.2662,
+    "recall": 0.9153
+   },
+   "0.4": {
+    "events": 10521,
+    "right": 647,
+    "wrong": 1579,
+    "refs": 732,
+    "found": 658,
+    "labelled": 2226,
+    "precision": 0.2907,
+    "recall": 0.8989
+   },
+   "0.45": {
+    "events": 9875,
+    "right": 615,
+    "wrong": 1379,
+    "refs": 732,
+    "found": 623,
+    "labelled": 1994,
+    "precision": 0.3084,
+    "recall": 0.8511
+   },
+   "0.5": {
+    "events": 9130,
+    "right": 591,
+    "wrong": 1156,
+    "refs": 732,
+    "found": 599,
+    "labelled": 1747,
+    "precision": 0.3383,
+    "recall": 0.8183
+   },
+   "0.55": {
+    "events": 8234,
+    "right": 555,
+    "wrong": 929,
+    "refs": 732,
+    "found": 561,
+    "labelled": 1484,
+    "precision": 0.374,
+    "recall": 0.7664
+   },
+   "0.6": {
+    "events": 7164,
+    "right": 515,
+    "wrong": 724,
+    "refs": 732,
+    "found": 521,
+    "labelled": 1239,
+    "precision": 0.4157,
+    "recall": 0.7117
+   },
+   "0.65": {
+    "events": 5771,
+    "right": 466,
+    "wrong": 513,
+    "refs": 732,
+    "found": 471,
+    "labelled": 979,
+    "precision": 0.476,
+    "recall": 0.6434
+   },
+   "0.7": {
+    "events": 4140,
+    "right": 376,
+    "wrong": 331,
+    "refs": 732,
+    "found": 378,
+    "labelled": 707,
+    "precision": 0.5318,
+    "recall": 0.5164
+   },
+   "0.75": {
+    "events": 2437,
+    "right": 235,
+    "wrong": 166,
+    "refs": 732,
+    "found": 237,
+    "labelled": 401,
+    "precision": 0.586,
+    "recall": 0.3238
+   },
+   "0.8": {
+    "events": 1118,
+    "right": 79,
+    "wrong": 57,
+    "refs": 732,
+    "found": 80,
+    "labelled": 136,
+    "precision": 0.5809,
+    "recall": 0.1093
+   },
+   "0.85": {
+    "events": 324,
+    "right": 14,
+    "wrong": 10,
+    "refs": 732,
+    "found": 14,
+    "labelled": 24,
+    "precision": 0.5833,
+    "recall": 0.0191
+   },
+   "0.9": {
+    "events": 11,
+    "right": 0,
+    "wrong": 0,
+    "refs": 732,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 732,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 732,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 732,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 732,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 732,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 732,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "events": 0,
+    "right": 0,
+    "wrong": 0,
+    "refs": 732,
+    "found": 0,
+    "labelled": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  }
+ },
+ "ami": {
+  "meetings": 16,
+  "laugh": {
+   "0.05": {
+    "events": 648,
+    "right": 333,
+    "marks": 763,
+    "found": 484,
+    "marks_in_speech": 611,
+    "found_in_speech": 404,
+    "precision": 0.5139,
+    "recall": 0.6343,
+    "recall_in_speech": 0.6612
+   },
+   "0.1": {
+    "events": 559,
+    "right": 290,
+    "marks": 763,
+    "found": 411,
+    "marks_in_speech": 611,
+    "found_in_speech": 349,
+    "precision": 0.5188,
+    "recall": 0.5387,
+    "recall_in_speech": 0.5712
+   },
+   "0.15": {
+    "events": 506,
+    "right": 265,
+    "marks": 763,
+    "found": 357,
+    "marks_in_speech": 611,
+    "found_in_speech": 306,
+    "precision": 0.5237,
+    "recall": 0.4679,
+    "recall_in_speech": 0.5008
+   },
+   "0.2": {
+    "events": 455,
+    "right": 223,
+    "marks": 763,
+    "found": 296,
+    "marks_in_speech": 611,
+    "found_in_speech": 260,
+    "precision": 0.4901,
+    "recall": 0.3879,
+    "recall_in_speech": 0.4255
+   },
+   "0.25": {
+    "events": 373,
+    "right": 184,
+    "marks": 763,
+    "found": 248,
+    "marks_in_speech": 611,
+    "found_in_speech": 215,
+    "precision": 0.4933,
+    "recall": 0.325,
+    "recall_in_speech": 0.3519
+   },
+   "0.3": {
+    "events": 273,
+    "right": 136,
+    "marks": 763,
+    "found": 178,
+    "marks_in_speech": 611,
+    "found_in_speech": 160,
+    "precision": 0.4982,
+    "recall": 0.2333,
+    "recall_in_speech": 0.2619
+   },
+   "0.35": {
+    "events": 186,
+    "right": 95,
+    "marks": 763,
+    "found": 136,
+    "marks_in_speech": 611,
+    "found_in_speech": 121,
+    "precision": 0.5108,
+    "recall": 0.1782,
+    "recall_in_speech": 0.198
+   },
+   "0.4": {
+    "events": 116,
+    "right": 61,
+    "marks": 763,
+    "found": 101,
+    "marks_in_speech": 611,
+    "found_in_speech": 89,
+    "precision": 0.5259,
+    "recall": 0.1324,
+    "recall_in_speech": 0.1457
+   },
+   "0.45": {
+    "events": 77,
+    "right": 45,
+    "marks": 763,
+    "found": 79,
+    "marks_in_speech": 611,
+    "found_in_speech": 67,
+    "precision": 0.5844,
+    "recall": 0.1035,
+    "recall_in_speech": 0.1097
+   },
+   "0.5": {
+    "events": 57,
+    "right": 39,
+    "marks": 763,
+    "found": 67,
+    "marks_in_speech": 611,
+    "found_in_speech": 59,
+    "precision": 0.6842,
+    "recall": 0.0878,
+    "recall_in_speech": 0.0966
+   },
+   "0.55": {
+    "events": 41,
+    "right": 35,
+    "marks": 763,
+    "found": 58,
+    "marks_in_speech": 611,
+    "found_in_speech": 52,
+    "precision": 0.8537,
+    "recall": 0.076,
+    "recall_in_speech": 0.0851
+   },
+   "0.6": {
+    "events": 27,
+    "right": 24,
+    "marks": 763,
+    "found": 44,
+    "marks_in_speech": 611,
+    "found_in_speech": 42,
+    "precision": 0.8889,
+    "recall": 0.0577,
+    "recall_in_speech": 0.0687
+   },
+   "0.65": {
+    "events": 16,
+    "right": 15,
+    "marks": 763,
+    "found": 23,
+    "marks_in_speech": 611,
+    "found_in_speech": 22,
+    "precision": 0.9375,
+    "recall": 0.0301,
+    "recall_in_speech": 0.036
+   },
+   "0.7": {
+    "events": 5,
+    "right": 5,
+    "marks": 763,
+    "found": 11,
+    "marks_in_speech": 611,
+    "found_in_speech": 10,
+    "precision": 1.0,
+    "recall": 0.0144,
+    "recall_in_speech": 0.0164
+   },
+   "0.75": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.8": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.85": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.9": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.95": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.97": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.98": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.99": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.995": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.998": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.999": {
+    "events": 0,
+    "right": 0,
+    "marks": 763,
+    "found": 0,
+    "marks_in_speech": 611,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   }
+  },
+  "cough": {
+   "0.05": {
+    "events": 76,
+    "right": 28,
+    "marks": 78,
+    "found": 28,
+    "marks_in_speech": 50,
+    "found_in_speech": 13,
+    "precision": 0.3684,
+    "recall": 0.359,
+    "recall_in_speech": 0.26
+   },
+   "0.1": {
+    "events": 42,
+    "right": 20,
+    "marks": 78,
+    "found": 20,
+    "marks_in_speech": 50,
+    "found_in_speech": 10,
+    "precision": 0.4762,
+    "recall": 0.2564,
+    "recall_in_speech": 0.2
+   },
+   "0.15": {
+    "events": 27,
+    "right": 17,
+    "marks": 78,
+    "found": 17,
+    "marks_in_speech": 50,
+    "found_in_speech": 8,
+    "precision": 0.6296,
+    "recall": 0.2179,
+    "recall_in_speech": 0.16
+   },
+   "0.2": {
+    "events": 22,
+    "right": 14,
+    "marks": 78,
+    "found": 14,
+    "marks_in_speech": 50,
+    "found_in_speech": 6,
+    "precision": 0.6364,
+    "recall": 0.1795,
+    "recall_in_speech": 0.12
+   },
+   "0.25": {
+    "events": 12,
+    "right": 8,
+    "marks": 78,
+    "found": 8,
+    "marks_in_speech": 50,
+    "found_in_speech": 6,
+    "precision": 0.6667,
+    "recall": 0.1026,
+    "recall_in_speech": 0.12
+   },
+   "0.3": {
+    "events": 9,
+    "right": 6,
+    "marks": 78,
+    "found": 6,
+    "marks_in_speech": 50,
+    "found_in_speech": 5,
+    "precision": 0.6667,
+    "recall": 0.0769,
+    "recall_in_speech": 0.1
+   },
+   "0.35": {
+    "events": 7,
+    "right": 4,
+    "marks": 78,
+    "found": 4,
+    "marks_in_speech": 50,
+    "found_in_speech": 3,
+    "precision": 0.5714,
+    "recall": 0.0513,
+    "recall_in_speech": 0.06
+   },
+   "0.4": {
+    "events": 5,
+    "right": 4,
+    "marks": 78,
+    "found": 4,
+    "marks_in_speech": 50,
+    "found_in_speech": 3,
+    "precision": 0.8,
+    "recall": 0.0513,
+    "recall_in_speech": 0.06
+   },
+   "0.45": {
+    "events": 4,
+    "right": 3,
+    "marks": 78,
+    "found": 3,
+    "marks_in_speech": 50,
+    "found_in_speech": 2,
+    "precision": 0.75,
+    "recall": 0.0385,
+    "recall_in_speech": 0.04
+   },
+   "0.5": {
+    "events": 3,
+    "right": 2,
+    "marks": 78,
+    "found": 2,
+    "marks_in_speech": 50,
+    "found_in_speech": 2,
+    "precision": 0.6667,
+    "recall": 0.0256,
+    "recall_in_speech": 0.04
+   },
+   "0.55": {
+    "events": 1,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.6": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.65": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.7": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.75": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.8": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.85": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.9": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.95": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.97": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.98": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.99": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.995": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.998": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   },
+   "0.999": {
+    "events": 0,
+    "right": 0,
+    "marks": 78,
+    "found": 0,
+    "marks_in_speech": 50,
+    "found_in_speech": 0,
+    "precision": null,
+    "recall": 0.0,
+    "recall_in_speech": 0.0
+   }
+  }
+ },
+ "nvtts": {
+  "clips": 3970,
+  "hours": 10.32,
+  "refs": {
+   "breath": 4921,
+   "cough": 221,
+   "laugh": 1196,
+   "groan": 259,
+   "throat_clear": 112,
+   "sniff": 201,
+   "sneeze": 11
+  },
+  "laughs": {
+   "0.05": {
+    "ref": 1196,
+    "found": 811,
+    "hyp": 1175,
+    "right": 811,
+    "precision": 0.6902,
+    "recall": 0.6781
+   },
+   "0.1": {
+    "ref": 1196,
+    "found": 705,
+    "hyp": 917,
+    "right": 701,
+    "precision": 0.7644,
+    "recall": 0.5895
+   },
+   "0.15": {
+    "ref": 1196,
+    "found": 614,
+    "hyp": 785,
+    "right": 613,
+    "precision": 0.7809,
+    "recall": 0.5134
+   },
+   "0.2": {
+    "ref": 1196,
+    "found": 540,
+    "hyp": 667,
+    "right": 540,
+    "precision": 0.8096,
+    "recall": 0.4515
+   },
+   "0.25": {
+    "ref": 1196,
+    "found": 473,
+    "hyp": 570,
+    "right": 472,
+    "precision": 0.8281,
+    "recall": 0.3955
+   },
+   "0.3": {
+    "ref": 1196,
+    "found": 430,
+    "hyp": 505,
+    "right": 429,
+    "precision": 0.8495,
+    "recall": 0.3595
+   },
+   "0.35": {
+    "ref": 1196,
+    "found": 364,
+    "hyp": 426,
+    "right": 369,
+    "precision": 0.8662,
+    "recall": 0.3043
+   },
+   "0.4": {
+    "ref": 1196,
+    "found": 308,
+    "hyp": 354,
+    "right": 309,
+    "precision": 0.8729,
+    "recall": 0.2575
+   },
+   "0.45": {
+    "ref": 1196,
+    "found": 244,
+    "hyp": 277,
+    "right": 243,
+    "precision": 0.8773,
+    "recall": 0.204
+   },
+   "0.5": {
+    "ref": 1196,
+    "found": 195,
+    "hyp": 209,
+    "right": 194,
+    "precision": 0.9282,
+    "recall": 0.163
+   },
+   "0.55": {
+    "ref": 1196,
+    "found": 136,
+    "hyp": 149,
+    "right": 136,
+    "precision": 0.9128,
+    "recall": 0.1137
+   },
+   "0.6": {
+    "ref": 1196,
+    "found": 94,
+    "hyp": 104,
+    "right": 93,
+    "precision": 0.8942,
+    "recall": 0.0786
+   },
+   "0.65": {
+    "ref": 1196,
+    "found": 54,
+    "hyp": 58,
+    "right": 53,
+    "precision": 0.9138,
+    "recall": 0.0452
+   },
+   "0.7": {
+    "ref": 1196,
+    "found": 30,
+    "hyp": 32,
+    "right": 30,
+    "precision": 0.9375,
+    "recall": 0.0251
+   },
+   "0.75": {
+    "ref": 1196,
+    "found": 14,
+    "hyp": 15,
+    "right": 14,
+    "precision": 0.9333,
+    "recall": 0.0117
+   },
+   "0.8": {
+    "ref": 1196,
+    "found": 8,
+    "hyp": 9,
+    "right": 8,
+    "precision": 0.8889,
+    "recall": 0.0067
+   },
+   "0.85": {
+    "ref": 1196,
+    "found": 1,
+    "hyp": 1,
+    "right": 1,
+    "precision": 1.0,
+    "recall": 0.0008
+   },
+   "0.9": {
+    "ref": 1196,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "ref": 1196,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "ref": 1196,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "ref": 1196,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "ref": 1196,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "ref": 1196,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "ref": 1196,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "ref": 1196,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "breathes": {
+   "0.05": {
+    "ref": 4921,
+    "found": 4759,
+    "hyp": 11229,
+    "right": 4801,
+    "precision": 0.4276,
+    "recall": 0.9671
+   },
+   "0.1": {
+    "ref": 4921,
+    "found": 4799,
+    "hyp": 10038,
+    "right": 4823,
+    "precision": 0.4805,
+    "recall": 0.9752
+   },
+   "0.15": {
+    "ref": 4921,
+    "found": 4820,
+    "hyp": 9628,
+    "right": 4900,
+    "precision": 0.5089,
+    "recall": 0.9795
+   },
+   "0.2": {
+    "ref": 4921,
+    "found": 4813,
+    "hyp": 9345,
+    "right": 4973,
+    "precision": 0.5322,
+    "recall": 0.9781
+   },
+   "0.25": {
+    "ref": 4921,
+    "found": 4781,
+    "hyp": 9089,
+    "right": 4996,
+    "precision": 0.5497,
+    "recall": 0.9716
+   },
+   "0.3": {
+    "ref": 4921,
+    "found": 4707,
+    "hyp": 8751,
+    "right": 4944,
+    "precision": 0.565,
+    "recall": 0.9565
+   },
+   "0.35": {
+    "ref": 4921,
+    "found": 4605,
+    "hyp": 8346,
+    "right": 4847,
+    "precision": 0.5808,
+    "recall": 0.9358
+   },
+   "0.4": {
+    "ref": 4921,
+    "found": 4491,
+    "hyp": 7946,
+    "right": 4727,
+    "precision": 0.5949,
+    "recall": 0.9126
+   },
+   "0.45": {
+    "ref": 4921,
+    "found": 4347,
+    "hyp": 7434,
+    "right": 4558,
+    "precision": 0.6131,
+    "recall": 0.8834
+   },
+   "0.5": {
+    "ref": 4921,
+    "found": 4135,
+    "hyp": 6773,
+    "right": 4296,
+    "precision": 0.6343,
+    "recall": 0.8403
+   },
+   "0.55": {
+    "ref": 4921,
+    "found": 3845,
+    "hyp": 5998,
+    "right": 3948,
+    "precision": 0.6582,
+    "recall": 0.7813
+   },
+   "0.6": {
+    "ref": 4921,
+    "found": 3325,
+    "hyp": 4939,
+    "right": 3370,
+    "precision": 0.6823,
+    "recall": 0.6757
+   },
+   "0.65": {
+    "ref": 4921,
+    "found": 2579,
+    "hyp": 3611,
+    "right": 2598,
+    "precision": 0.7195,
+    "recall": 0.5241
+   },
+   "0.7": {
+    "ref": 4921,
+    "found": 1734,
+    "hyp": 2310,
+    "right": 1730,
+    "precision": 0.7489,
+    "recall": 0.3524
+   },
+   "0.75": {
+    "ref": 4921,
+    "found": 934,
+    "hyp": 1174,
+    "right": 914,
+    "precision": 0.7785,
+    "recall": 0.1898
+   },
+   "0.8": {
+    "ref": 4921,
+    "found": 347,
+    "hyp": 429,
+    "right": 336,
+    "precision": 0.7832,
+    "recall": 0.0705
+   },
+   "0.85": {
+    "ref": 4921,
+    "found": 71,
+    "hyp": 83,
+    "right": 68,
+    "precision": 0.8193,
+    "recall": 0.0144
+   },
+   "0.9": {
+    "ref": 4921,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "ref": 4921,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "ref": 4921,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "ref": 4921,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "ref": 4921,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "ref": 4921,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "ref": 4921,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "ref": 4921,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "coughs": {
+   "0.05": {
+    "ref": 221,
+    "found": 215,
+    "hyp": 1121,
+    "right": 215,
+    "precision": 0.1918,
+    "recall": 0.9729
+   },
+   "0.1": {
+    "ref": 221,
+    "found": 213,
+    "hyp": 1011,
+    "right": 210,
+    "precision": 0.2077,
+    "recall": 0.9638
+   },
+   "0.15": {
+    "ref": 221,
+    "found": 203,
+    "hyp": 828,
+    "right": 200,
+    "precision": 0.2415,
+    "recall": 0.9186
+   },
+   "0.2": {
+    "ref": 221,
+    "found": 187,
+    "hyp": 625,
+    "right": 185,
+    "precision": 0.296,
+    "recall": 0.8462
+   },
+   "0.25": {
+    "ref": 221,
+    "found": 172,
+    "hyp": 493,
+    "right": 170,
+    "precision": 0.3448,
+    "recall": 0.7783
+   },
+   "0.3": {
+    "ref": 221,
+    "found": 154,
+    "hyp": 376,
+    "right": 151,
+    "precision": 0.4016,
+    "recall": 0.6968
+   },
+   "0.35": {
+    "ref": 221,
+    "found": 138,
+    "hyp": 296,
+    "right": 135,
+    "precision": 0.4561,
+    "recall": 0.6244
+   },
+   "0.4": {
+    "ref": 221,
+    "found": 109,
+    "hyp": 220,
+    "right": 106,
+    "precision": 0.4818,
+    "recall": 0.4932
+   },
+   "0.45": {
+    "ref": 221,
+    "found": 91,
+    "hyp": 160,
+    "right": 86,
+    "precision": 0.5375,
+    "recall": 0.4118
+   },
+   "0.5": {
+    "ref": 221,
+    "found": 75,
+    "hyp": 115,
+    "right": 71,
+    "precision": 0.6174,
+    "recall": 0.3394
+   },
+   "0.55": {
+    "ref": 221,
+    "found": 65,
+    "hyp": 86,
+    "right": 61,
+    "precision": 0.7093,
+    "recall": 0.2941
+   },
+   "0.6": {
+    "ref": 221,
+    "found": 43,
+    "hyp": 49,
+    "right": 39,
+    "precision": 0.7959,
+    "recall": 0.1946
+   },
+   "0.65": {
+    "ref": 221,
+    "found": 22,
+    "hyp": 23,
+    "right": 18,
+    "precision": 0.7826,
+    "recall": 0.0995
+   },
+   "0.7": {
+    "ref": 221,
+    "found": 9,
+    "hyp": 10,
+    "right": 8,
+    "precision": 0.8,
+    "recall": 0.0407
+   },
+   "0.75": {
+    "ref": 221,
+    "found": 2,
+    "hyp": 4,
+    "right": 2,
+    "precision": 0.5,
+    "recall": 0.009
+   },
+   "0.8": {
+    "ref": 221,
+    "found": 2,
+    "hyp": 3,
+    "right": 2,
+    "precision": 0.6667,
+    "recall": 0.009
+   },
+   "0.85": {
+    "ref": 221,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.9": {
+    "ref": 221,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "ref": 221,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "ref": 221,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "ref": 221,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "ref": 221,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "ref": 221,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "ref": 221,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "ref": 221,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "clears throat": {
+   "0.05": {
+    "ref": 112,
+    "found": 88,
+    "hyp": 231,
+    "right": 87,
+    "precision": 0.3766,
+    "recall": 0.7857
+   },
+   "0.1": {
+    "ref": 112,
+    "found": 61,
+    "hyp": 98,
+    "right": 61,
+    "precision": 0.6224,
+    "recall": 0.5446
+   },
+   "0.15": {
+    "ref": 112,
+    "found": 38,
+    "hyp": 47,
+    "right": 38,
+    "precision": 0.8085,
+    "recall": 0.3393
+   },
+   "0.2": {
+    "ref": 112,
+    "found": 21,
+    "hyp": 23,
+    "right": 21,
+    "precision": 0.913,
+    "recall": 0.1875
+   },
+   "0.25": {
+    "ref": 112,
+    "found": 8,
+    "hyp": 9,
+    "right": 8,
+    "precision": 0.8889,
+    "recall": 0.0714
+   },
+   "0.3": {
+    "ref": 112,
+    "found": 2,
+    "hyp": 2,
+    "right": 2,
+    "precision": 1.0,
+    "recall": 0.0179
+   },
+   "0.35": {
+    "ref": 112,
+    "found": 2,
+    "hyp": 2,
+    "right": 2,
+    "precision": 1.0,
+    "recall": 0.0179
+   },
+   "0.4": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.45": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.5": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.55": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.6": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.65": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.7": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.75": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.8": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.85": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.9": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "ref": 112,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "sniffs": {
+   "0.05": {
+    "ref": 201,
+    "found": 192,
+    "hyp": 386,
+    "right": 193,
+    "precision": 0.5,
+    "recall": 0.9552
+   },
+   "0.1": {
+    "ref": 201,
+    "found": 175,
+    "hyp": 271,
+    "right": 175,
+    "precision": 0.6458,
+    "recall": 0.8706
+   },
+   "0.15": {
+    "ref": 201,
+    "found": 155,
+    "hyp": 195,
+    "right": 155,
+    "precision": 0.7949,
+    "recall": 0.7711
+   },
+   "0.2": {
+    "ref": 201,
+    "found": 97,
+    "hyp": 115,
+    "right": 97,
+    "precision": 0.8435,
+    "recall": 0.4826
+   },
+   "0.25": {
+    "ref": 201,
+    "found": 77,
+    "hyp": 85,
+    "right": 77,
+    "precision": 0.9059,
+    "recall": 0.3831
+   },
+   "0.3": {
+    "ref": 201,
+    "found": 47,
+    "hyp": 48,
+    "right": 47,
+    "precision": 0.9792,
+    "recall": 0.2338
+   },
+   "0.35": {
+    "ref": 201,
+    "found": 25,
+    "hyp": 25,
+    "right": 25,
+    "precision": 1.0,
+    "recall": 0.1244
+   },
+   "0.4": {
+    "ref": 201,
+    "found": 8,
+    "hyp": 8,
+    "right": 8,
+    "precision": 1.0,
+    "recall": 0.0398
+   },
+   "0.45": {
+    "ref": 201,
+    "found": 2,
+    "hyp": 2,
+    "right": 2,
+    "precision": 1.0,
+    "recall": 0.01
+   },
+   "0.5": {
+    "ref": 201,
+    "found": 1,
+    "hyp": 1,
+    "right": 1,
+    "precision": 1.0,
+    "recall": 0.005
+   },
+   "0.55": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.6": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.65": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.7": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.75": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.8": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.85": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.9": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "ref": 201,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "sneezes": {
+   "0.05": {
+    "ref": 11,
+    "found": 9,
+    "hyp": 242,
+    "right": 8,
+    "precision": 0.0331,
+    "recall": 0.8182
+   },
+   "0.1": {
+    "ref": 11,
+    "found": 9,
+    "hyp": 169,
+    "right": 8,
+    "precision": 0.0473,
+    "recall": 0.8182
+   },
+   "0.15": {
+    "ref": 11,
+    "found": 7,
+    "hyp": 107,
+    "right": 6,
+    "precision": 0.0561,
+    "recall": 0.6364
+   },
+   "0.2": {
+    "ref": 11,
+    "found": 6,
+    "hyp": 67,
+    "right": 5,
+    "precision": 0.0746,
+    "recall": 0.5455
+   },
+   "0.25": {
+    "ref": 11,
+    "found": 5,
+    "hyp": 37,
+    "right": 4,
+    "precision": 0.1081,
+    "recall": 0.4545
+   },
+   "0.3": {
+    "ref": 11,
+    "found": 5,
+    "hyp": 21,
+    "right": 4,
+    "precision": 0.1905,
+    "recall": 0.4545
+   },
+   "0.35": {
+    "ref": 11,
+    "found": 5,
+    "hyp": 12,
+    "right": 4,
+    "precision": 0.3333,
+    "recall": 0.4545
+   },
+   "0.4": {
+    "ref": 11,
+    "found": 4,
+    "hyp": 7,
+    "right": 3,
+    "precision": 0.4286,
+    "recall": 0.3636
+   },
+   "0.45": {
+    "ref": 11,
+    "found": 4,
+    "hyp": 6,
+    "right": 3,
+    "precision": 0.5,
+    "recall": 0.3636
+   },
+   "0.5": {
+    "ref": 11,
+    "found": 2,
+    "hyp": 4,
+    "right": 2,
+    "precision": 0.5,
+    "recall": 0.1818
+   },
+   "0.55": {
+    "ref": 11,
+    "found": 1,
+    "hyp": 3,
+    "right": 1,
+    "precision": 0.3333,
+    "recall": 0.0909
+   },
+   "0.6": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.65": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.7": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.75": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.8": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.85": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.9": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "ref": 11,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "groans": {
+   "0.05": {
+    "ref": 259,
+    "found": 122,
+    "hyp": 210,
+    "right": 119,
+    "precision": 0.5667,
+    "recall": 0.471
+   },
+   "0.1": {
+    "ref": 259,
+    "found": 99,
+    "hyp": 150,
+    "right": 99,
+    "precision": 0.66,
+    "recall": 0.3822
+   },
+   "0.15": {
+    "ref": 259,
+    "found": 75,
+    "hyp": 104,
+    "right": 75,
+    "precision": 0.7212,
+    "recall": 0.2896
+   },
+   "0.2": {
+    "ref": 259,
+    "found": 61,
+    "hyp": 75,
+    "right": 56,
+    "precision": 0.7467,
+    "recall": 0.2355
+   },
+   "0.25": {
+    "ref": 259,
+    "found": 43,
+    "hyp": 49,
+    "right": 38,
+    "precision": 0.7755,
+    "recall": 0.166
+   },
+   "0.3": {
+    "ref": 259,
+    "found": 26,
+    "hyp": 33,
+    "right": 23,
+    "precision": 0.697,
+    "recall": 0.1004
+   },
+   "0.35": {
+    "ref": 259,
+    "found": 20,
+    "hyp": 22,
+    "right": 16,
+    "precision": 0.7273,
+    "recall": 0.0772
+   },
+   "0.4": {
+    "ref": 259,
+    "found": 13,
+    "hyp": 16,
+    "right": 11,
+    "precision": 0.6875,
+    "recall": 0.0502
+   },
+   "0.45": {
+    "ref": 259,
+    "found": 6,
+    "hyp": 8,
+    "right": 5,
+    "precision": 0.625,
+    "recall": 0.0232
+   },
+   "0.5": {
+    "ref": 259,
+    "found": 5,
+    "hyp": 5,
+    "right": 4,
+    "precision": 0.8,
+    "recall": 0.0193
+   },
+   "0.55": {
+    "ref": 259,
+    "found": 2,
+    "hyp": 3,
+    "right": 2,
+    "precision": 0.6667,
+    "recall": 0.0077
+   },
+   "0.6": {
+    "ref": 259,
+    "found": 1,
+    "hyp": 2,
+    "right": 1,
+    "precision": 0.5,
+    "recall": 0.0039
+   },
+   "0.65": {
+    "ref": 259,
+    "found": 1,
+    "hyp": 1,
+    "right": 1,
+    "precision": 1.0,
+    "recall": 0.0039
+   },
+   "0.7": {
+    "ref": 259,
+    "found": 1,
+    "hyp": 1,
+    "right": 1,
+    "precision": 1.0,
+    "recall": 0.0039
+   },
+   "0.75": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.8": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.85": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.9": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "grunts": {
+   "0.05": {
+    "ref": 259,
+    "found": 12,
+    "hyp": 21,
+    "right": 11,
+    "precision": 0.5238,
+    "recall": 0.0463
+   },
+   "0.1": {
+    "ref": 259,
+    "found": 4,
+    "hyp": 9,
+    "right": 3,
+    "precision": 0.3333,
+    "recall": 0.0154
+   },
+   "0.15": {
+    "ref": 259,
+    "found": 1,
+    "hyp": 2,
+    "right": 1,
+    "precision": 0.5,
+    "recall": 0.0039
+   },
+   "0.2": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.25": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.3": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.35": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.4": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.45": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.5": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.55": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.6": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.65": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.7": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.75": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.8": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.85": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.9": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.95": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.97": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.98": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.99": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.995": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.998": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   },
+   "0.999": {
+    "ref": 259,
+    "found": 0,
+    "hyp": 0,
+    "right": 0,
+    "precision": null,
+    "recall": 0.0
+   }
+  }
+ }
+}

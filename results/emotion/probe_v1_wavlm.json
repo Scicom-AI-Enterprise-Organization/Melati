@@ -1,0 +1,280 @@
+{
+ "encoder": "wavlm",
+ "n": 44133,
+ "layers": 25,
+ "dim": 1024,
+ "train_corpora": [
+  "cafe",
+  "crema_d",
+  "emns",
+  "emozionalmente",
+  "enterface",
+  "jl_corpus",
+  "mesd",
+  "nvtts_expresso",
+  "oreau",
+  "pavoque",
+  "ravdess",
+  "resd",
+  "subesco"
+ ],
+ "held_out_corpora": [
+  "nemo",
+  "nvtts_voxceleb"
+ ],
+ "loco": {
+  "cafe": {
+   "n": 936,
+   "acc": 0.6528,
+   "uar": 0.6379,
+   "recall": {
+    "neutral": 0.4444,
+    "happy": 0.4028,
+    "sad": 0.7917,
+    "angry": 0.9444,
+    "surprised": 0.4653,
+    "fearful": 0.7917,
+    "disgusted": 0.625
+   }
+  },
+  "crema_d": {
+   "n": 7442,
+   "acc": 0.5337,
+   "uar": 0.5396,
+   "recall": {
+    "neutral": 0.7755,
+    "happy": 0.4319,
+    "sad": 0.3997,
+    "angry": 0.7891,
+    "fearful": 0.7191,
+    "disgusted": 0.122
+   }
+  },
+  "emns": {
+   "n": 1063,
+   "acc": 0.5042,
+   "uar": 0.4506,
+   "recall": {
+    "neutral": 0.3221,
+    "happy": 0.8435,
+    "sad": 0.78,
+    "angry": 0.5489,
+    "surprised": 0.0392,
+    "disgusted": 0.1697
+   }
+  },
+  "emozionalmente": {
+   "n": 6902,
+   "acc": 0.5539,
+   "uar": 0.5539,
+   "recall": {
+    "neutral": 0.6795,
+    "happy": 0.642,
+    "sad": 0.5172,
+    "angry": 0.6734,
+    "surprised": 0.1105,
+    "fearful": 0.5538,
+    "disgusted": 0.7008
+   }
+  },
+  "enterface": {
+   "n": 1257,
+   "acc": 0.4407,
+   "uar": 0.441,
+   "recall": {
+    "happy": 0.5459,
+    "sad": 0.6762,
+    "angry": 0.3714,
+    "surprised": 0.1571,
+    "fearful": 0.3286,
+    "disgusted": 0.5667
+   }
+  },
+  "jl_corpus": {
+   "n": 1440,
+   "acc": 0.5771,
+   "uar": 0.5813,
+   "recall": {
+    "neutral": 0.95,
+    "happy": 0.5563,
+    "sad": 0.3625,
+    "angry": 0.9875,
+    "fearful": 0.05
+   }
+  },
+  "mesd": {
+   "n": 862,
+   "acc": 0.4594,
+   "uar": 0.4593,
+   "recall": {
+    "neutral": 0.6364,
+    "happy": 0.5972,
+    "sad": 0.4306,
+    "angry": 0.1958,
+    "fearful": 0.2778,
+    "disgusted": 0.6181
+   }
+  },
+  "nvtts_expresso": {
+   "n": 1235,
+   "acc": 0.5619,
+   "uar": 0.4368,
+   "recall": {
+    "neutral": 0.0412,
+    "happy": 0.5333,
+    "sad": 0.8,
+    "surprised": 0.16,
+    "disgusted": 0.6494
+   }
+  },
+  "oreau": {
+   "n": 502,
+   "acc": 0.4283,
+   "uar": 0.4282,
+   "recall": {
+    "neutral": 0.6901,
+    "happy": 0.5417,
+    "sad": 0.5,
+    "angry": 0.3836,
+    "surprised": 0.375,
+    "fearful": 0.1127,
+    "disgusted": 0.3944
+   }
+  },
+  "pavoque": {
+   "n": 4867,
+   "acc": 0.8256,
+   "uar": 0.6397,
+   "recall": {
+    "neutral": 0.9882,
+    "happy": 0.5736,
+    "sad": 0.1151,
+    "angry": 0.8819
+   }
+  },
+  "ravdess": {
+   "n": 1440,
+   "acc": 0.666,
+   "uar": 0.6701,
+   "recall": {
+    "neutral": 0.6076,
+    "happy": 0.6042,
+    "sad": 0.5052,
+    "angry": 0.9479,
+    "surprised": 0.599,
+    "fearful": 0.849,
+    "disgusted": 0.5781
+   }
+  },
+  "resd": {
+   "n": 1396,
+   "acc": 0.308,
+   "uar": 0.3375,
+   "recall": {
+    "neutral": 0.1152,
+    "happy": 0.1034,
+    "sad": 0.4506,
+    "angry": 0.6758,
+    "fearful": 0.4798,
+    "disgusted": 0.2
+   }
+  },
+  "subesco": {
+   "n": 7000,
+   "acc": 0.5636,
+   "uar": 0.5636,
+   "recall": {
+    "neutral": 0.828,
+    "happy": 0.607,
+    "sad": 0.563,
+    "angry": 0.868,
+    "surprised": 0.611,
+    "fearful": 0.303,
+    "disgusted": 0.165
+   }
+  }
+ },
+ "held_out": {
+  "nemo": {
+   "n": 4481,
+   "acc": 0.5135,
+   "uar": 0.5005,
+   "recall": {
+    "neutral": 0.7899,
+    "happy": 0.3445,
+    "sad": 0.6632,
+    "angry": 0.6262,
+    "surprised": 0.0179,
+    "fearful": 0.5611
+   }
+  },
+  "nvtts_voxceleb": {
+   "n": 3310,
+   "acc": 0.5,
+   "uar": 0.4151,
+   "recall": {
+    "neutral": 0.4833,
+    "happy": 0.5763,
+    "sad": 0.1856
+   }
+  },
+  "all": {
+   "n": 7791,
+   "acc": 0.5078,
+   "uar": 0.4757,
+   "recall": {
+    "neutral": 0.5629,
+    "happy": 0.47,
+    "sad": 0.6097,
+    "angry": 0.6283,
+    "surprised": 0.0221,
+    "fearful": 0.561
+   }
+  }
+ },
+ "loco_mean_uar": 0.5184,
+ "thresholds": {
+  "happy": {
+   "threshold": 0.57,
+   "recall": 0.3366,
+   "precision_at_prior": 0.7529,
+   "n_pos": 1634
+  },
+  "sad": {
+   "threshold": 0.82,
+   "recall": 0.067,
+   "precision_at_prior": 0.7771,
+   "n_pos": 866
+  },
+  "angry": null,
+  "surprised": null,
+  "fearful": null
+ },
+ "layer_mix": [
+  0.0355,
+  0.0324,
+  0.0337,
+  0.0378,
+  0.0381,
+  0.0422,
+  0.0508,
+  0.0481,
+  0.0474,
+  0.0513,
+  0.0515,
+  0.0538,
+  0.053,
+  0.0493,
+  0.0358,
+  0.0298,
+  0.0291,
+  0.0288,
+  0.0289,
+  0.0283,
+  0.0289,
+  0.0301,
+  0.0454,
+  0.0344,
+  0.0556
+ ]
+}

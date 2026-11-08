@@ -1,0 +1,7 @@
+{"step": -1, "args": {"pool": "clean", "init": "melati:/mnt/data/melati/models/audioset/big_from_v1/best.pt", "out": "/mnt/data/melati/models/audioset/frames1_fw0", "epochs": "5.0", "batch": "24", "lr": "1e-05", "frame_weight": "0.0", "wd": "0.05", "warmup": "300", "ema": "0.9995", "eval_every": "1000", "workers": "6", "seed": "0"}}
+{"step": 0, "frame_map": 0.0809, "clip_map": 0.5054}
+{"step": 1000, "frame_map": 0.081, "clip_map": 0.5086, "loss": 0.0106, "min": 8.0}
+{"step": 2000, "frame_map": 0.0797, "clip_map": 0.5102, "loss": 0.01051, "min": 17.7}
+{"step": 3000, "frame_map": 0.0783, "clip_map": 0.5111, "loss": 0.01051, "min": 27.3}
+{"step": 4000, "frame_map": 0.077, "clip_map": 0.5115, "loss": 0.01049, "min": 37.0}
+{"step": 4730, "frame_map": 0.0762, "clip_map": 0.5118, "loss": 0.01048, "min": 44.4}

@@ -1,0 +1,12 @@
+{
+ "clips": 16896,
+ "classes_labelled": 381,
+ "classes_shared": 364,
+ "pretrainedsed": {
+  "shared": 0.4261
+ },
+ "/mnt/data/melati/models/audioset/frames1/best.pt": {
+  "shared": 0.4102,
+  "labelled": 0.4053
+ }
+}

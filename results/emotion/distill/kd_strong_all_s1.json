@@ -1,0 +1,90 @@
+{
+ "teacher": "strong",
+ "lam": 1.0,
+ "encoder": "whisper",
+ "manifest": "/mnt/data/melati/emo/manifest.jsonl",
+ "pool_clips": 30000,
+ "train_corpora": [
+  "ased",
+  "cafe",
+  "crema_d",
+  "emns",
+  "emodb",
+  "emovdb",
+  "emozionalmente",
+  "enterface",
+  "expresso",
+  "jl_corpus",
+  "meld",
+  "mesd",
+  "nvtts_expresso",
+  "oreau",
+  "pavoque",
+  "ravdess",
+  "resd",
+  "shemo",
+  "subesco",
+  "turevdb",
+  "urdu"
+ ],
+ "held_out": {
+  "nemo": {
+   "n": 4481,
+   "acc": 0.6117,
+   "uar": 0.5988,
+   "recall": {
+    "neutral": 0.8109,
+    "happy": 0.8999,
+    "sad": 0.7256,
+    "angry": 0.5407,
+    "surprised": 0.0777,
+    "fearful": 0.538
+   }
+  },
+  "nvtts_voxceleb": {
+   "n": 3310,
+   "acc": 0.7076,
+   "uar": 0.5727,
+   "recall": {
+    "neutral": 0.7466,
+    "happy": 0.652,
+    "sad": 0.3196
+   }
+  },
+  "all": {
+   "n": 7791,
+   "acc": 0.6524,
+   "uar": 0.5617,
+   "recall": {
+    "neutral": 0.7633,
+    "happy": 0.7656,
+    "sad": 0.6801,
+    "angry": 0.5423,
+    "surprised": 0.0811,
+    "fearful": 0.5379
+   }
+  }
+ },
+ "thresholds_cv": {
+  "happy": {
+   "recall": 0.2857,
+   "precision_at_prior": 0.7652
+  },
+  "sad": {
+   "recall": 0.2395,
+   "precision_at_prior": 0.7333
+  },
+  "angry": {
+   "recall": 0.34,
+   "precision_at_prior": 0.7562
+  },
+  "surprised": {
+   "recall": 0.1065,
+   "precision_at_prior": 0.8676
+  },
+  "fearful": {
+   "recall": 0.274,
+   "precision_at_prior": 0.773
+  }
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "clips": 515,
+ "kinds": {
+  "breathes": 150,
+  "filler": 150,
+  "laughs": 150,
+  "control": 60,
+  "coughs": 5
+ },
+ "languages": {
+  "ms": 476,
+  "en": 28,
+  "ta": 9,
+  "zh": 2
+ },
+ "recordings": 225,
+ "recordings_scanned": 1039,
+ "candidates": {
+  "control": 7522,
+  "filler": 14102,
+  "breathes": 2746,
+  "laughs": 2265,
+  "coughs": 7
+ }
+}

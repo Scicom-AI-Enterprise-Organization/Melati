@@ -1,0 +1,333 @@
+{
+ "clips": 75632,
+ "undecodable_dropped": 2,
+ "train": {
+  "clips": 67841,
+  "corpora": 21,
+  "languages": [
+   "am",
+   "bn",
+   "de",
+   "en",
+   "es",
+   "fa",
+   "fr",
+   "it",
+   "ru",
+   "tr",
+   "ur"
+  ]
+ },
+ "held_out": {
+  "clips": 7791,
+  "corpora": [
+   "nemo",
+   "nvtts_voxceleb"
+  ]
+ },
+ "per_corpus": {
+  "ased": {
+   "n": 2474,
+   "lang": "am",
+   "split": "train",
+   "labels": {
+    "neutral": 522,
+    "fearful": 510,
+    "happy": 486,
+    "sad": 470,
+    "angry": 486
+   }
+  },
+  "cafe": {
+   "n": 936,
+   "lang": "fr",
+   "split": "train",
+   "labels": {
+    "angry": 144,
+    "disgusted": 144,
+    "fearful": 144,
+    "happy": 144,
+    "neutral": 72,
+    "sad": 144,
+    "surprised": 144
+   }
+  },
+  "crema_d": {
+   "n": 7442,
+   "lang": "en",
+   "split": "train",
+   "labels": {
+    "angry": 1271,
+    "disgusted": 1271,
+    "fearful": 1271,
+    "happy": 1271,
+    "neutral": 1087,
+    "sad": 1271
+   }
+  },
+  "emns": {
+   "n": 1063,
+   "lang": "en",
+   "split": "train",
+   "labels": {
+    "happy": 313,
+    "neutral": 149,
+    "surprised": 153,
+    "disgusted": 165,
+    "sad": 150,
+    "angry": 133
+   }
+  },
+  "emodb": {
+   "n": 454,
+   "lang": "de",
+   "split": "train",
+   "labels": {
+    "happy": 71,
+    "neutral": 79,
+    "angry": 127,
+    "sad": 62,
+    "fearful": 69,
+    "disgusted": 46
+   }
+  },
+  "emovdb": {
+   "n": 5172,
+   "lang": "en",
+   "split": "train",
+   "labels": {
+    "happy": 1317,
+    "angry": 1268,
+    "disgusted": 1019,
+    "neutral": 1568
+   }
+  },
+  "emozionalmente": {
+   "n": 6902,
+   "lang": "it",
+   "split": "train",
+   "labels": {
+    "angry": 986,
+    "disgusted": 986,
+    "fearful": 986,
+    "happy": 986,
+    "neutral": 986,
+    "sad": 986,
+    "surprised": 986
+   }
+  },
+  "enterface": {
+   "n": 1257,
+   "lang": "en",
+   "split": "train",
+   "labels": {
+    "disgusted": 210,
+    "happy": 207,
+    "angry": 210,
+    "sad": 210,
+    "fearful": 210,
+    "surprised": 210
+   }
+  },
+  "expresso": {
+   "n": 4558,
+   "lang": "en",
+   "split": "train",
+   "labels": {
+    "neutral": 1519,
+    "happy": 1520,
+    "sad": 1519
+   }
+  },
+  "jl_corpus": {
+   "n": 1440,
+   "lang": "en",
+   "split": "train",
+   "labels": {
+    "fearful": 240,
+    "happy": 480,
+    "neutral": 240,
+    "sad": 240,
+    "angry": 240
+   }
+  },
+  "meld": {
+   "n": 13706,
+   "lang": "en",
+   "split": "train",
+   "labels": {
+    "sad": 1002,
+    "surprised": 1636,
+    "neutral": 6434,
+    "happy": 2308,
+    "angry": 1607,
+    "disgusted": 361,
+    "fearful": 358
+   }
+  },
+  "mesd": {
+   "n": 862,
+   "lang": "es",
+   "split": "train",
+   "labels": {
+    "angry": 143,
+    "sad": 144,
+    "disgusted": 144,
+    "neutral": 143,
+    "happy": 144,
+    "fearful": 144
+   }
+  },
+  "nemo": {
+   "n": 4481,
+   "lang": "pl",
+   "split": "test",
+   "labels": {
+    "surprised": 669,
+    "neutral": 809,
+    "sad": 769,
+    "happy": 749,
+    "fearful": 736,
+    "angry": 749
+   }
+  },
+  "nvtts_expresso": {
+   "n": 1235,
+   "lang": "en",
+   "split": "train",
+   "labels": {
+    "sad": 290,
+    "happy": 720,
+    "neutral": 97,
+    "surprised": 25,
+    "disgusted": 77,
+    "angry": 18,
+    "fearful": 8
+   }
+  },
+  "nvtts_voxceleb": {
+   "n": 3310,
+   "lang": "en",
+   "split": "test",
+   "labels": {
+    "neutral": 2309,
+    "sad": 97,
+    "happy": 885,
+    "angry": 7,
+    "fearful": 2,
+    "surprised": 9,
+    "disgusted": 1
+   }
+  },
+  "oreau": {
+   "n": 502,
+   "lang": "fr",
+   "split": "train",
+   "labels": {
+    "neutral": 71,
+    "surprised": 72,
+    "sad": 72,
+    "happy": 72,
+    "disgusted": 71,
+    "angry": 73,
+    "fearful": 71
+   }
+  },
+  "pavoque": {
+   "n": 4867,
+   "lang": "de",
+   "split": "train",
+   "labels": {
+    "angry": 601,
+    "happy": 584,
+    "neutral": 3126,
+    "sad": 556
+   }
+  },
+  "ravdess": {
+   "n": 1440,
+   "lang": "en",
+   "split": "train",
+   "labels": {
+    "neutral": 288,
+    "happy": 192,
+    "sad": 192,
+    "angry": 192,
+    "fearful": 192,
+    "disgusted": 192,
+    "surprised": 192
+   }
+  },
+  "resd": {
+   "n": 1396,
+   "lang": "ru",
+   "split": "train",
+   "labels": {
+    "happy": 416,
+    "disgusted": 185,
+    "angry": 219,
+    "fearful": 223,
+    "neutral": 191,
+    "sad": 162
+   }
+  },
+  "shemo": {
+   "n": 3000,
+   "lang": "fa",
+   "split": "train",
+   "labels": {
+    "angry": 1059,
+    "fearful": 38,
+    "happy": 201,
+    "neutral": 1028,
+    "sad": 449,
+    "surprised": 225
+   }
+  },
+  "subesco": {
+   "n": 7000,
+   "lang": "bn",
+   "split": "train",
+   "labels": {
+    "angry": 1000,
+    "disgusted": 1000,
+    "fearful": 1000,
+    "happy": 1000,
+    "neutral": 1000,
+    "sad": 1000,
+    "surprised": 1000
+   }
+  },
+  "turevdb": {
+   "n": 1735,
+   "lang": "tr",
+   "split": "train",
+   "labels": {
+    "angry": 487,
+    "neutral": 408,
+    "happy": 357,
+    "sad": 483
+   }
+  },
+  "urdu": {
+   "n": 400,
+   "lang": "ur",
+   "split": "train",
+   "labels": {
+    "angry": 100,
+    "happy": 100,
+    "neutral": 100,
+    "sad": 100
+   }
+  }
+ },
+ "per_label": {
+  "angry": 11120,
+  "disgusted": 5872,
+  "fearful": 6202,
+  "happy": 14523,
+  "neutral": 22226,
+  "sad": 10368,
+  "surprised": 5321
+ }
+}

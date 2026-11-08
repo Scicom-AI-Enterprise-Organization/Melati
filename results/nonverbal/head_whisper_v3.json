@@ -1,0 +1,316 @@
+{
+ "encoder": "whisper",
+ "labels": [
+  "speech",
+  "filler",
+  "breath",
+  "laugh",
+  "cough",
+  "sigh",
+  "sniff",
+  "throat clearing",
+  "sneeze",
+  "noise",
+  "other"
+ ],
+ "features": [
+  33,
+  1280
+ ],
+ "train": {
+  "podcastfillers/filler": 31962,
+  "podcastfillers/speech": 19449,
+  "podcastfillers/noise": 6622,
+  "podcastfillers/laugh": 5751,
+  "podcastfillers/breath": 7421,
+  "vocalsound/cough": 2578,
+  "vocalsound/laugh": 2578,
+  "vocalsound/sigh": 2578,
+  "vocalsound/sneeze": 2578,
+  "vocalsound/sniff": 2578,
+  "vocalsound/throat clearing": 2578,
+  "pf_cands2/breath": 6324,
+  "pf_cands2/filler": 20000,
+  "pf_cands2/laugh": 3709,
+  "pf_cands2/noise": 2809,
+  "pf_cands2/speech": 18200,
+  "nvtts_cands2/breath": 2826,
+  "nvtts_cands2/cough": 103,
+  "nvtts_cands2/laugh": 575,
+  "nvtts_cands2/other": 5947,
+  "nvtts_cands2/sneeze": 5,
+  "nvtts_cands2/sniff": 125,
+  "nvtts_cands2/throat clearing": 69
+ },
+ "validation_curve": [
+  [
+   1,
+   0.7871
+  ],
+  [
+   2,
+   0.7938
+  ],
+  [
+   3,
+   0.806
+  ],
+  [
+   4,
+   0.8089
+  ],
+  [
+   5,
+   0.813
+  ],
+  [
+   6,
+   0.8145
+  ],
+  [
+   7,
+   0.8195
+  ],
+  [
+   8,
+   0.814
+  ],
+  [
+   9,
+   0.8174
+  ],
+  [
+   10,
+   0.8197
+  ],
+  [
+   11,
+   0.8169
+  ],
+  [
+   12,
+   0.8213
+  ],
+  [
+   13,
+   0.8239
+  ],
+  [
+   14,
+   0.8244
+  ],
+  [
+   15,
+   0.8242
+  ],
+  [
+   16,
+   0.8233
+  ]
+ ],
+ "test": {
+  "all": {
+   "per_class": {
+    "speech": {
+     "n": 2341,
+     "precision": 0.8062,
+     "recall": 0.8244,
+     "f1": 0.8152,
+     "ap": 0.8876
+    },
+    "filler": {
+     "n": 5520,
+     "precision": 0.963,
+     "recall": 0.9013,
+     "f1": 0.9311,
+     "ap": 0.984
+    },
+    "breath": {
+     "n": 732,
+     "precision": 0.8564,
+     "recall": 0.8962,
+     "f1": 0.8758,
+     "ap": 0.9286
+    },
+    "laugh": {
+     "n": 1122,
+     "precision": 0.8811,
+     "recall": 0.9376,
+     "f1": 0.9085,
+     "ap": 0.971
+    },
+    "cough": {
+     "n": 543,
+     "precision": 0.8961,
+     "recall": 0.8895,
+     "f1": 0.8928,
+     "ap": 0.9377
+    },
+    "sigh": {
+     "n": 543,
+     "precision": 0.8937,
+     "recall": 0.9134,
+     "f1": 0.9035,
+     "ap": 0.9667
+    },
+    "sniff": {
+     "n": 543,
+     "precision": 0.8995,
+     "recall": 0.9061,
+     "f1": 0.9028,
+     "ap": 0.9579
+    },
+    "throat clearing": {
+     "n": 543,
+     "precision": 0.8972,
+     "recall": 0.884,
+     "f1": 0.8905,
+     "ap": 0.9458
+    },
+    "sneeze": {
+     "n": 543,
+     "precision": 0.9225,
+     "recall": 0.8987,
+     "f1": 0.9104,
+     "ap": 0.9663
+    },
+    "noise": {
+     "n": 1034,
+     "precision": 0.8317,
+     "recall": 0.8888,
+     "f1": 0.8593,
+     "ap": 0.9374
+    }
+   },
+   "macro_f1": 0.8889898153581589,
+   "accuracy": 0.8891,
+   "n": 13464
+  },
+  "podcastfillers": {
+   "per_class": {
+    "speech": {
+     "n": 2341,
+     "precision": 0.8065,
+     "recall": 0.8244,
+     "f1": 0.8154,
+     "ap": 0.8879
+    },
+    "filler": {
+     "n": 5520,
+     "precision": 0.963,
+     "recall": 0.9013,
+     "f1": 0.9311,
+     "ap": 0.9843
+    },
+    "breath": {
+     "n": 732,
+     "precision": 0.8632,
+     "recall": 0.8962,
+     "f1": 0.8794,
+     "ap": 0.9297
+    },
+    "laugh": {
+     "n": 579,
+     "precision": 0.8224,
+     "recall": 0.9119,
+     "f1": 0.8649,
+     "ap": 0.946
+    },
+    "noise": {
+     "n": 1034,
+     "precision": 0.8355,
+     "recall": 0.8888,
+     "f1": 0.8613,
+     "ap": 0.9383
+    }
+   },
+   "macro_f1": 0.8704035462103146,
+   "accuracy": 0.8826,
+   "n": 10206
+  },
+  "vocalsound": {
+   "per_class": {
+    "laugh": {
+     "n": 543,
+     "precision": 0.9493,
+     "recall": 0.965,
+     "f1": 0.9571,
+     "ap": 0.9876
+    },
+    "cough": {
+     "n": 543,
+     "precision": 0.8978,
+     "recall": 0.8895,
+     "f1": 0.8936,
+     "ap": 0.9404
+    },
+    "sigh": {
+     "n": 543,
+     "precision": 0.8969,
+     "recall": 0.9134,
+     "f1": 0.9051,
+     "ap": 0.9691
+    },
+    "sniff": {
+     "n": 543,
+     "precision": 0.9028,
+     "recall": 0.9061,
+     "f1": 0.9044,
+     "ap": 0.9601
+    },
+    "throat clearing": {
+     "n": 543,
+     "precision": 0.9108,
+     "recall": 0.884,
+     "f1": 0.8972,
+     "ap": 0.9503
+    },
+    "sneeze": {
+     "n": 543,
+     "precision": 0.9225,
+     "recall": 0.8987,
+     "f1": 0.9104,
+     "ap": 0.9685
+    }
+   },
+   "macro_f1": 0.9113099872467704,
+   "accuracy": 0.9095,
+   "n": 3258
+  }
+ },
+ "layer_mix": [
+  0.0186,
+  0.0241,
+  0.0198,
+  0.0222,
+  0.0224,
+  0.0228,
+  0.0259,
+  0.0292,
+  0.0319,
+  0.0358,
+  0.0355,
+  0.0271,
+  0.0372,
+  0.041,
+  0.038,
+  0.0399,
+  0.029,
+  0.03,
+  0.0334,
+  0.0388,
+  0.0342,
+  0.0301,
+  0.0298,
+  0.0316,
+  0.0336,
+  0.0331,
+  0.0317,
+  0.0315,
+  0.029,
+  0.0276,
+  0.0272,
+  0.0297,
+  0.0283
+ ]
+}

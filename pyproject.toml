@@ -1,0 +1,14 @@
+# Settings for the checks only (`ruff check .`, `pytest`): Melati is not a package to install. Its Python environments
+# are built by the deploy/box_*_setup.sh scripts, one per set of models whose pins conflict.
+[tool.ruff]
+line-length = 120
+extend-exclude = ["baselines", "results"]          # upstream Emilia-Pipe, kept as it was; results are data
+
+[tool.ruff.lint]
+# the house style, not defects: several imports on one line, short statements joined by `;`, `l` for a line, a lambda
+# given a name
+ignore = ["E401", "E702", "E731", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

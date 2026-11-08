@@ -1,0 +1,19 @@
+{
+ "split": "eval",
+ "clips": 17141,
+ "classes_scored": 527,
+ "models": {
+  "ced-base": 0.4997,
+  "eat-large": 0.4947,
+  "sslam": 0.4944,
+  "beats": 0.4835,
+  "melati:/mnt/data/melati/models/audioset/frames1_fw0/clip.pt": 0.5123,
+  "melati:/mnt/data/melati/models/audioset/v5_big6/best.pt": 0.5152
+ },
+ "averages": {
+  "beats + ced-base + eat-large + sslam": 0.52,
+  "beats + ced-base + eat-large + melati:/mnt/data/melati/models/audioset/frames1_fw0/clip.pt + sslam": 0.5215,
+  "beats + ced-base + eat-large + melati:/mnt/data/melati/models/audioset/v5_big6/best.pt + sslam": 0.5216,
+  "beats + ced-base + eat-large + melati:/mnt/data/melati/models/audioset/frames1_fw0/clip.pt + melati:/mnt/data/melati/models/audioset/v5_big6/best.pt + sslam": 0.5218
+ }
+}

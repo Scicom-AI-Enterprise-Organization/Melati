@@ -1,0 +1,128 @@
+{
+ "work": "/mnt/data/melati/bench/pf_test/work_nvrel4f",
+ "exported_with": {
+  "heads": [
+   "whisper"
+  ],
+  "variant": "{\"floor_db\": 2}",
+  "thresholds": {
+   "breath": 0.7
+  },
+  "thresholds_from": "/mnt/data/melati/results/nonverbal/gap_eval_rel4pf.json",
+  "frames": {
+   "laugh": 0.9,
+   "cough": 0.999
+  }
+ },
+ "laugh": {
+  "0.97": {
+   "recall": 0.5962,
+   "precision_labelled": 0.8681318681318682,
+   "pred": 251,
+   "ref": 265,
+   "recall_all": 0.2832
+  },
+  "0.9": {
+   "recall": 0.7073,
+   "precision_labelled": 0.7748091603053435,
+   "pred": 389,
+   "ref": 287,
+   "recall_all": 0.3661
+  },
+  "0.97+audioset_0.2": {
+   "recall": 0.7279,
+   "precision_labelled": 0.7955390334572491,
+   "pred": 413,
+   "ref": 294,
+   "recall_all": 0.3834
+  },
+  "0.97+audioset_0.3": {
+   "recall": 0.7079,
+   "precision_labelled": 0.8373983739837398,
+   "pred": 359,
+   "ref": 291,
+   "recall_all": 0.3696
+  },
+  "0.97+audioset_0.4": {
+   "recall": 0.6608,
+   "precision_labelled": 0.8552036199095022,
+   "pred": 326,
+   "ref": 286,
+   "recall_all": 0.3402
+  },
+  "0.97+audioset_0.5": {
+   "recall": 0.6272,
+   "precision_labelled": 0.8495145631067961,
+   "pred": 294,
+   "ref": 279,
+   "recall_all": 0.3161
+  },
+  "0.97+audioset_0.6": {
+   "recall": 0.6168,
+   "precision_labelled": 0.8666666666666667,
+   "pred": 272,
+   "ref": 274,
+   "recall_all": 0.3057
+  }
+ },
+ "others": {
+  "previous release": {
+   "recall": 0.5986,
+   "precision_labelled": 0.8585858585858586,
+   "pred": 267,
+   "ref": 284,
+   "recall_all": 0.3109
+  },
+  "Qwen3-Omni": {
+   "recall": 0.4682,
+   "precision_labelled": 0.9124087591240876,
+   "pred": 163,
+   "ref": 267,
+   "recall_all": 0.2245
+  }
+ },
+ "tags_per_hour": {
+  "0.97": {
+   "breathes": 162.78,
+   "laughs": 18.55,
+   "sniffs": 0.74,
+   "clears throat": 0.07
+  },
+  "0.9": {
+   "breathes": 162.7,
+   "laughs": 28.74,
+   "sniffs": 0.74,
+   "clears throat": 0.07
+  },
+  "0.97+audioset_0.2": {
+   "breathes": 162.68,
+   "laughs": 30.51,
+   "sniffs": 0.74,
+   "clears throat": 0.07
+  },
+  "0.97+audioset_0.3": {
+   "breathes": 162.71,
+   "laughs": 26.53,
+   "sniffs": 0.74,
+   "clears throat": 0.07
+  },
+  "0.97+audioset_0.4": {
+   "breathes": 162.72,
+   "laughs": 24.09,
+   "sniffs": 0.74,
+   "clears throat": 0.07
+  },
+  "0.97+audioset_0.5": {
+   "breathes": 162.74,
+   "laughs": 21.73,
+   "sniffs": 0.74,
+   "clears throat": 0.07
+  },
+  "0.97+audioset_0.6": {
+   "breathes": 162.76,
+   "laughs": 20.1,
+   "sniffs": 0.74,
+   "clears throat": 0.07
+  }
+ }
+}

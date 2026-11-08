@@ -1,0 +1,372 @@
+{
+ "source": "malaysia-ai/malaysian-podcast-youtube",
+ "source_recordings": 19092,
+ "blocks": 299,
+ "blocks_packed": 108,
+ "complete": false,
+ "release_recordings": 6912,
+ "release_source_hours": 833.2,
+ "empty_source_files": 50,
+ "failed_recordings": [],
+ "left_out": {
+  "language_fallback": {
+   "segments": 6939,
+   "hours": 4.02
+  },
+  "language_stray": {
+   "segments": 972,
+   "hours": 0.48
+  },
+  "no_text": {
+   "segments": 37,
+   "hours": 0.08
+  },
+  "wrong_script": {
+   "segments": 62,
+   "hours": 0.07
+  }
+ },
+ "recordings_with_rows": 6865,
+ "segments": 355477,
+ "hours": 591.4,
+ "speakers": 14686,
+ "hours_by_language": {
+  "ms": 565.16,
+  "en": 26.29
+ },
+ "segments_by_language": {
+  "ms": 326070,
+  "en": 29407
+ },
+ "duration_s": {
+  "1": 1.091,
+  "10": 1.479,
+  "50": 3.47,
+  "90": 15.569,
+  "99": 27.923
+ },
+ "duration_hist": [
+  1271,
+  82569,
+  68944,
+  47416,
+  32306,
+  21923,
+  15445,
+  11350,
+  8761,
+  6775,
+  5606,
+  4836,
+  4029,
+  3646,
+  3223,
+  3178,
+  2987,
+  2781,
+  2786,
+  2670,
+  2513,
+  2470,
+  2412,
+  2408,
+  2385,
+  2395,
+  2484,
+  2551,
+  2428,
+  929
+ ],
+ "events": {
+  "breathes": 30808,
+  "laughs": 17437,
+  "sniffs": 535,
+  "coughs": 121,
+  "clears throat": 51
+ },
+ "events_per_hour": {
+  "breathes": 52.09,
+  "laughs": 29.48,
+  "sniffs": 0.9,
+  "coughs": 0.2,
+  "clears throat": 0.09
+ },
+ "event_sources": {
+  "breathes/heads-gap": 30808,
+  "laughs/heads-frames": 9569,
+  "laughs/audioset": 7868,
+  "sniffs/audioset": 535,
+  "coughs/audioset": 94,
+  "clears throat/audioset": 51,
+  "coughs/heads-frames": 27
+ },
+ "delivery_spans": {
+  "whisper": 11
+ },
+ "delivery_per_hour": {
+  "whisper": 0.02
+ },
+ "laughs_over_speech": 5007,
+ "emotion_spans": {
+  "happy": 58315,
+  "angry": 19482,
+  "surprised": 3444,
+  "fearful": 2450,
+  "sad": 363
+ },
+ "emotion_segments": {
+  "neutral": 155726,
+  "happy": 130346,
+  "sad": 15171,
+  "angry": 36546,
+  "disgusted": 4633,
+  "surprised": 3982,
+  "fearful": 9073
+ },
+ "fillers": 119002,
+ "fillers_per_hour": 201.2,
+ "audio_version": {
+  "mix": 299028,
+  "vocal": 56449
+ },
+ "mos": {
+  "10": 2.554,
+  "25": 2.75,
+  "50": 2.943,
+  "75": 3.133,
+  "90": 3.316
+ },
+ "dnsmos": {
+  "10": 2.259,
+  "25": 2.59,
+  "50": 2.898,
+  "75": 3.152,
+  "90": 3.308
+ },
+ "mos_hist": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  5,
+  41,
+  155,
+  374,
+  761,
+  1407,
+  2521,
+  4231,
+  6756,
+  10854,
+  17453,
+  26989,
+  37703,
+  47195,
+  50312,
+  46395,
+  36849,
+  26713,
+  17604,
+  10677,
+  5896,
+  2935,
+  1208,
+  362,
+  67,
+  12,
+  2,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "dnsmos_hist": [
+  1110,
+  2961,
+  1284,
+  1174,
+  1188,
+  1374,
+  1513,
+  1871,
+  2660,
+  3592,
+  4925,
+  6870,
+  9385,
+  12915,
+  17094,
+  21568,
+  25665,
+  29272,
+  32178,
+  33656,
+  35766,
+  35927,
+  33724,
+  24694,
+  11199,
+  1850,
+  42,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "asr_looped": 8,
+ "squeezed": {
+  "segments": 4057,
+  "hours": 8.37
+ },
+ "edge_clipped": 94932,
+ "emilia_filter": {
+  "segments": 86074,
+  "hours": 180.59
+ },
+ "windowed": {
+  "recordings": 219,
+  "hours": 182.25
+ },
+ "examples": [
+  {
+   "id": "r416c336e96a5_0164",
+   "tagged_text": "<happy>Tapi bukan jari aku, tu jaring apa, kita pun tak [breathes] tahu.</happy> <fearful>Tak tahu, tapi air keluar daripada situ.</fearful>"
+  },
+  {
+   "id": "r416c336e96a5_0577",
+   "tagged_text": "<happy>Selalu, orang kata, munat mata nampak merah, kan? I rasa dia tak ada mata sebab [laughs] I tak dapat.</happy>"
+  },
+  {
+   "id": "r354843443e0b_0440",
+   "tagged_text": "<surprised>Artis yang berbakat, if you know that you are talented,</surprised> [breathes] prove to the people you are talented."
+  },
+  {
+   "id": "r2c9174e6e739_0523",
+   "tagged_text": "<happy>Boundary cannot be changed unless with the consent of DUNE,</happy> express consent, [breathes] than conference of rulers."
+  },
+  {
+   "id": "r492eb74db0ce_0388",
+   "tagged_text": "<happy>Orang kita ada this,</happy> [breathes]"
+  },
+  {
+   "id": "r460753240cb9_0029",
+   "tagged_text": "<happy>Nulah, bros, kuat dewa, man.</happy> [laughs]"
+  },
+  {
+   "id": "r0e09393cbb76_0552",
+   "tagged_text": "<happy>So, kat Malaysia tak banyak startup tau.</happy> [laughs]"
+  },
+  {
+   "id": "r3be8d03fc574_0153",
+   "tagged_text": "<angry>Lo pergi settle dengan Jamal. So, app tak nak keluar ni.</angry> [breathes] Dulu, kita panggil dia, sekejap, Mirah."
+  },
+  {
+   "id": "r4e9876b61683_0506",
+   "tagged_text": "<happy>Lepas tu, oh, ni, ha, Pidang Ditunggu Saloma. Tapi dia tak tengoklah ada beberapa gambar yang lain. [laughs] Hahaha.</happy>"
+  },
+  {
+   "id": "r1c6e8830f496_0360",
+   "tagged_text": "<surprised>Macam mana benda tu berlaku, Wak? [breathes] Magic, kan?</surprised>"
+  }
+ ],
+ "sound_tags": {
+  "music": 8578,
+  "beep": 105,
+  "bleat": 54,
+  "clapping": 38,
+  "cricket": 26,
+  "computer keyboard": 20,
+  "applause": 14,
+  "single-lens reflex camera": 6,
+  "crumpling": 5,
+  "boing": 5,
+  "moo": 4,
+  "plop": 3,
+  "car": 2,
+  "neigh": 2,
+  "electric shaver": 2,
+  "meow": 1,
+  "hiccup": 1,
+  "fart": 1,
+  "wind noise (microphone)": 1
+ },
+ "sound_tags_per_hour": {
+  "music": 14.5,
+  "computer keyboard": 0.03,
+  "clapping": 0.06,
+  "beep": 0.18,
+  "bleat": 0.09,
+  "car": 0.0,
+  "single-lens reflex camera": 0.01,
+  "meow": 0.0,
+  "applause": 0.02,
+  "plop": 0.01,
+  "hiccup": 0.0,
+  "fart": 0.0,
+  "crumpling": 0.01,
+  "boing": 0.01,
+  "cricket": 0.04,
+  "moo": 0.01,
+  "neigh": 0.0,
+  "wind noise (microphone)": 0.0,
+  "electric shaver": 0.0
+ },
+ "rows_with_sound_tags": 8792,
+ "sounds": {
+  "rows": 355477,
+  "heard_at_0.5": {
+   "Speech": 353590,
+   "Music": 77984,
+   "Male speech, man speaking": 30909,
+   "Female speech, woman speaking": 27626,
+   "Narration, monologue": 21611,
+   "Speech synthesizer": 5818,
+   "Conversation": 3927,
+   "Radio": 2056,
+   "Snicker": 1887,
+   "Chuckle, chortle": 1565,
+   "Sigh": 616,
+   "Single-lens reflex camera": 254,
+   "Clicking": 254,
+   "Male singing": 210,
+   "Beep, bleep": 175,
+   "Plop": 174,
+   "Mantra": 133,
+   "Vehicle": 133,
+   "Child speech, kid speaking": 127,
+   "Insect": 126,
+   "Guitar": 99,
+   "Whispering": 95,
+   "Groan": 89,
+   "Cricket": 88,
+   "Computer keyboard": 82,
+   "Ding": 82,
+   "Whoosh, swoosh, swish": 80,
+   "Musical instrument": 78,
+   "Whimper": 77,
+   "Gasp": 67
+  },
+  "music_rows": 77984,
+  "music_hours": 262.92,
+  "music_by_audio_version": {
+   "mix": 60176,
+   "vocal": 17808
+  }
+ },
+ "shards": 108,
+ "parquet_gib": 50.6
+}

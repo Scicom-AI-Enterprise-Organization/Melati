@@ -1,0 +1,24 @@
+{
+ "clips": 400,
+ "minutes": 66.3,
+ "encoders": {
+  "w2vbert": {
+   "one_at_a_time_s": 261.2,
+   "batched_s": 87.2,
+   "speedup": 3.0,
+   "feature_max_rel_diff": 0.00541,
+   "feature_min_cosine": 0.999848,
+   "prob_max_abs_diff": 0.00463,
+   "argmax_agree": 1.0
+  },
+  "wavlm": {
+   "one_at_a_time_s": 171.0,
+   "batched_s": 70.1,
+   "speedup": 2.44,
+   "feature_max_rel_diff": 0.00202,
+   "feature_min_cosine": 0.999701,
+   "prob_max_abs_diff": 0.00475,
+   "argmax_agree": 0.995
+  }
+ }
+}

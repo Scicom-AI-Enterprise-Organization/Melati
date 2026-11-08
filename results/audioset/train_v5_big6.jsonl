@@ -1,0 +1,8 @@
+{"step": 0, "map": 0.5118, "args": {"pool": "big6", "init": "melati:/mnt/data/melati/models/audioset/frames1_fw0/clip.pt", "out": "/mnt/data/melati/models/audioset/v5_big6", "epochs": "3.0", "batch": "24", "lr": "1e-05", "wd": "0.05", "warmup": "300", "mixup": "0.0", "alpha": "10.0", "hard": "0.0", "ema": "0.9995", "eval_every": "3000", "workers": "6", "seed": "0", "checkpoint": "1", "head_lr_mult": "20.0", "zero": "0"}}
+{"step": 3000, "epoch": 0.49, "loss": 0.0116, "lr": 9.349341975053593e-06, "map_ema": 0.5121, "map": 0.5104, "min": 24.4}
+{"step": 6000, "epoch": 0.99, "loss": 0.01156, "lr": 7.5667102463852314e-06, "map_ema": 0.5128, "map": 0.5109, "min": 48.8}
+{"step": 9000, "epoch": 1.48, "loss": 0.01156, "lr": 5.116058269907779e-06, "map_ema": 0.5135, "map": 0.5116, "min": 73.3}
+{"step": 12000, "epoch": 1.97, "loss": 0.01155, "lr": 2.6352005955595715e-06, "map_ema": 0.5142, "map": 0.5139, "min": 97.8}
+{"step": 15000, "epoch": 2.46, "loss": 0.01152, "lr": 7.698132051664236e-07, "map_ema": 0.5143, "map": 0.5141, "min": 122.2}
+{"step": 18000, "epoch": 2.96, "loss": 0.01152, "lr": 5.387808805594752e-09, "map_ema": 0.5145, "map": 0.5147, "min": 146.7}
+{"step": 18270, "epoch": 3.0, "loss": 0.01147, "lr": 0.0, "map_ema": 0.5147, "map": 0.5145, "min": 149.6}

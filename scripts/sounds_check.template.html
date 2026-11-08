@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Melati Sound Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* layout: one column of tag cards under a sticky progress bar; each card is clip, transcript, verdict */
+:root {
+  --bg: #f4f6f3; --surface: #ffffff; --raised: #eef2ee; --fg: #18211d; --muted: #59675f; --line: #d9e0db;
+  --accent: #2c6a58; --accent-ink: #ffffff;
+  --right: #1d7547; --wrong: #ad3328; --unsure: #8f5d00;
+  --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #111513; --surface: #181e1b; --raised: #202825; --fg: #e3eae6; --muted: #98a69f; --line: #2a3430;
+  --accent: #7fc3ad; --accent-ink: #0d1411; --right: #63cf97; --wrong: #f0897d; --unsure: #e0b257; color-scheme: dark } }
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 var(--sans); }
+.wrap { max-width: 780px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.intro { padding-block: 28px 18px; display: grid; gap: 10px; }
+h1 { margin: 0; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); max-width: 64ch; }
+.how { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
+.how li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; font-size: 0.86rem; color: var(--muted); min-width: 0; }
+.how b { display: block; color: var(--fg); font-weight: 600; }
+.how li.r b { color: var(--right); } .how li.w b { color: var(--wrong); } .how li.u b { color: var(--unsure); }
+.keys-help { margin: 0; font-size: 0.82rem; color: var(--muted); }
+.keys-help kbd { font: 0.78rem var(--mono); background: var(--raised); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; }
+
+.bar { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); padding-top: env(safe-area-inset-top, 0px); }
+.bar .wrap { padding-block: 10px; display: grid; gap: 8px; }
+.tally { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; font-variant-numeric: tabular-nums; }
+.tally .big { font-size: 1.05rem; font-weight: 600; }
+.tally .n { font-family: var(--mono); font-size: 0.86rem; }
+.tally .n.r { color: var(--right); } .tally .n.w { color: var(--wrong); } .tally .n.u { color: var(--unsure); }
+.meter { height: 6px; border-radius: 3px; background: var(--raised); overflow: hidden; display: flex; }
+.meter span { display: block; height: 100%; }
+.meter .r { background: var(--right); } .meter .w { background: var(--wrong); } .meter .u { background: var(--unsure); }
+.controls { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chipbtn { font: 500 0.82rem var(--sans); color: var(--fg); background: var(--raised); border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+.chipbtn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.chipbtn.tagchip { font-family: var(--mono); font-weight: 400; }
+.chipbtn .count { opacity: 0.75; margin-left: 4px; font-variant-numeric: tabular-nums; }
+.act { font: 600 0.82rem var(--sans); color: var(--accent-ink); background: var(--accent); border: 1px solid var(--accent); border-radius: 6px; padding: 5px 12px; cursor: pointer; }
+.act.quiet { color: var(--fg); background: var(--surface); border-color: var(--line); }
+.chipbtn:focus-visible, .act:focus-visible, .verdict button:focus-visible, .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.spacer { flex: 1; }
+.status { font-size: 0.82rem; color: var(--muted); flex-basis: 100%; }
+.status.err { color: var(--wrong); }
+#import-file { display: none; }
+
+main { padding-block: 16px 64px; display: grid; gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 14px 12px; display: grid; gap: 10px; min-width: 0; }
+.card.current { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.card.is-right { border-left: 4px solid var(--right); } .card.is-wrong { border-left: 4px solid var(--wrong); } .card.is-unsure { border-left: 4px solid var(--unsure); }
+.head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.tag { font: 500 0.92rem var(--mono); color: var(--accent); }
+.where { font-size: 0.86rem; color: var(--muted); }
+.facts { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+.fact { font: 0.76rem var(--mono); color: var(--muted); background: var(--raised); border-radius: 4px; padding: 2px 6px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.clip { display: grid; gap: 4px; }
+audio { width: 100%; height: 36px; }
+.track { position: relative; height: 10px; border-radius: 3px; background: var(--raised); }
+.track .span { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--accent) 35%, transparent); border-radius: 3px; }
+.track .tick { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--accent); }
+.track .head-pos { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--fg); opacity: 0.55; }
+.legend { display: flex; justify-content: space-between; gap: 8px; font: 0.74rem var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.text { margin: 0; font-size: 0.95rem; line-height: 1.55; overflow-wrap: anywhere; }
+.text mark { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); font: 500 0.9em var(--mono); padding: 0 3px; border-radius: 3px; }
+.text .other { color: var(--muted); font: 0.86em var(--mono); }
+.heard { font-size: 0.8rem; color: var(--muted); }
+.verdict { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.verdict button { font: 600 0.86rem var(--sans); border-radius: 6px; padding: 6px 14px; cursor: pointer; background: var(--surface); color: var(--fg); border: 1px solid var(--line); }
+.verdict button.r[aria-pressed="true"] { background: var(--right); border-color: var(--right); color: var(--surface); }
+.verdict button.w[aria-pressed="true"] { background: var(--wrong); border-color: var(--wrong); color: var(--surface); }
+.verdict button.u[aria-pressed="true"] { background: var(--unsure); border-color: var(--unsure); color: var(--surface); }
+.verdict .keys { font: 0.74rem var(--mono); color: var(--muted); margin-left: auto; }
+.empty { color: var(--muted); padding: 24px 0; text-align: center; }
+@media (max-width: 560px) {
+  .how { grid-template-columns: 1fr; }
+  .facts { margin-left: 0; }
+  .verdict .keys { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) { .card { transition: border-color 0.15s, box-shadow 0.15s; } }
+</style>
+</head>
+<body>
+
+<header class="wrap intro">
+  <h1>Melati Sound Check</h1>
+  <p class="lede">These are the AudioSet sound tags the pilot wrote into the transcripts of <span id="n-recs"></span> podcast recordings (<span id="n-hours"></span> hours): <span id="n-tags"></span> tags in <span id="n-rows"></span> rows<span id="n-sampled"></span>. Each clip is the row's own audio, from 3&nbsp;s before the tag to 7&nbsp;s after it; the bar under the player marks the tag (the line) and how long the models hear the sound (the shaded part).</p>
+  <ul class="how">
+    <li class="r"><b>Right</b>You hear that sound at the tag, or starting there.</li>
+    <li class="w"><b>Wrong</b>That sound is not there.</li>
+    <li class="u"><b>Can't tell</b>Too faint, or masked by the speech.</li>
+  </ul>
+  <p class="keys-help"><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> answer and move to the next tag · <kbd>j</kbd> <kbd>k</kbd> next and previous · <kbd>space</kbd> play or pause. Your answers stay in this browser; press <b>Export answers</b> when you are done and send the file back.</p>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="tally" aria-live="polite">
+      <span class="big" id="t-done"></span>
+      <span class="n r" id="t-r"></span><span class="n w" id="t-w"></span><span class="n u" id="t-u"></span>
+      <span class="spacer"></span>
+      <span class="big" id="t-prec"></span>
+    </div>
+    <div class="meter" aria-hidden="true"><span class="r" id="m-r"></span><span class="w" id="m-w"></span><span class="u" id="m-u"></span></div>
+    <div class="controls" id="tags" aria-label="Which sound"></div>
+    <div class="controls">
+      <button class="chipbtn" data-filter="todo" id="f-todo">To judge</button>
+      <button class="chipbtn" data-filter="all" id="f-all">All</button>
+      <button class="chipbtn" data-filter="right" id="f-right">Right</button>
+      <button class="chipbtn" data-filter="wrong" id="f-wrong">Wrong</button>
+      <button class="chipbtn" data-filter="unsure" id="f-unsure">Can't tell</button>
+      <span class="spacer"></span>
+      <button class="act" id="export" type="button">Export answers</button>
+      <button class="act quiet" id="import" type="button">Import</button>
+      <input type="file" id="import-file" accept="application/json,.json">
+      <span class="status" id="status"></span>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="list"></main>
+
+<script type="application/json" id="meta">__META__</script>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function () {
+  const ITEMS = JSON.parse(document.getElementById("data").textContent);
+  const META = JSON.parse(document.getElementById("meta").textContent);
+  const KEY = "melati-sound-check-v2";   // v2: tags at the 0.8 floor; a clip id can name another tag than in v1
+  const LABEL = { right: "Right", wrong: "Wrong", unsure: "Can't tell" };
+  const state = { verdicts: {}, filter: "todo", tag: "all", current: null, stored: true };
+  const byId = Object.fromEntries(ITEMS.map(it => [it.id, it]));
+  const cards = {};
+  const $ = id => document.getElementById(id);
+  const fmt = (x, d = 2) => (x == null ? "n/a" : Number(x).toFixed(d));
+  const status = $("status");
+
+  function say(text, err) { status.textContent = text; status.classList.toggle("err", !!err); }
+
+  function load() {
+    try {
+      const raw = localStorage.getItem(KEY);
+      if (raw) for (const [id, v] of Object.entries(JSON.parse(raw))) if (byId[id] && LABEL[v.verdict]) state.verdicts[id] = v;
+    } catch (e) { state.stored = false; }
+  }
+
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(state.verdicts)); }
+    catch (e) { state.stored = false; }
+  }
+
+  $("n-recs").textContent = META.recordings;
+  $("n-hours").textContent = META.hours;
+  $("n-tags").textContent = Object.values(META.tags).reduce((x, y) => x + y, 0);
+  $("n-rows").textContent = META.rows;
+  const cut = Object.keys(META.tags).filter(t => META.shown[t] < META.tags[t]);
+  $("n-sampled").textContent = cut.length ? "; of " + cut.map(t => "[" + t + "]").join(", ")
+    + " a random " + cut.map(t => META.shown[t]).join(", ") + " are here" : "";
+
+  function el(tag, cls, text) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function transcript(it) {
+    // the tagged text as written, the judged tag marked; scopes and other tags shown quietly, never as markup
+    const p = el("p", "text");
+    const want = "[" + it.tag + "]";
+    let marked = false;
+    for (const part of it.tagged_text.split(/(\[[^\]]+\]|<\/?[a-z ]+>)/)) {
+      if (!part) continue;
+      if (part === want && !marked) { p.appendChild(el("mark", null, part)); marked = true; }
+      else if (/^(\[[^\]]+\]|<\/?[a-z ]+>)$/.test(part)) p.appendChild(el("span", "other", part));
+      else p.appendChild(document.createTextNode(part));
+    }
+    return p;
+  }
+
+  function track(it) {
+    const [a, b] = it.clip, len = Math.max(b - a, 0.01);
+    const t = el("div", "track");
+    const span = el("div", "span");
+    span.style.left = (100 * Math.max(0, it.onset - a) / len) + "%";
+    span.style.width = (100 * Math.max(0, Math.min(it.end, b) - it.onset) / len) + "%";
+    const tick = el("div", "tick");
+    tick.style.left = "calc(" + (100 * (it.onset - a) / len) + "% - 1px)";
+    const pos = el("div", "head-pos");
+    pos.hidden = true;
+    t.append(span, tick, pos);
+    return { t, pos };
+  }
+
+  function build(it) {
+    const c = el("article", "card");
+    c.tabIndex = 0;
+    const head = el("div", "head");
+    head.append(el("span", "tag", "[" + it.tag + "]"),
+      el("span", "where", it.onset === 0 ? "from the row's start" : "at " + fmt(it.onset, 1) + " s into the row"));
+    const facts = el("div", "facts");
+    facts.append(el("span", "fact", "v4 " + fmt(it.v4)),
+      el("span", "fact", "frames " + fmt(it.frames_peak) + " ≥ " + fmt(it.threshold)),
+      el("span", "fact", it.audio_version === "mix" ? "original mix" : "separated"),
+      el("span", "fact", it.row));
+    head.append(facts);
+    const clip = el("div", "clip");
+    const audio = el("audio");
+    audio.controls = true; audio.preload = "none"; audio.src = it.audio;
+    const { t, pos } = track(it);
+    const [a, b] = it.clip;
+    const legend = el("div", "legend");
+    legend.append(el("span", null, fmt(a, 1) + " s"), el("span", null, "tag at " + fmt(it.onset - a, 1) + " s in the clip"), el("span", null, fmt(b, 1) + " s"));
+    audio.addEventListener("timeupdate", () => {
+      pos.hidden = false;
+      pos.style.left = (100 * audio.currentTime / Math.max(b - a, 0.01)) + "%";
+    });
+    audio.addEventListener("play", () => {
+      setCurrent(it.id, false);
+      for (const other of Object.values(cards)) if (other.audio !== audio) other.audio.pause();
+    });
+    clip.append(audio, t, legend);
+    const heard = el("div", "heard", "v4 hears: " + it.sounds.map(s => s.label + " " + fmt(s.p)).join(" · "));
+    const verdict = el("div", "verdict");
+    const buttons = {};
+    for (const [v, cls] of [["right", "r"], ["wrong", "w"], ["unsure", "u"]]) {
+      const btn = el("button", cls, LABEL[v]);
+      btn.type = "button";
+      btn.setAttribute("aria-pressed", "false");
+      btn.addEventListener("click", () => { setCurrent(it.id, false); judge(it.id, v); });
+      buttons[v] = btn;
+      verdict.append(btn);
+    }
+    verdict.append(el("span", "keys", "1 · 2 · 3"));
+    c.append(head, clip, transcript(it), heard, verdict);
+    c.addEventListener("click", () => setCurrent(it.id, false));
+    cards[it.id] = { el: c, audio, buttons };
+    return c;
+  }
+
+  const list = $("list");
+  for (const it of ITEMS) list.append(build(it));
+  const empty = el("p", "empty", "Nothing here under this filter.");
+  list.append(empty);
+
+  function verdictOf(id) { return state.verdicts[id] ? state.verdicts[id].verdict : null; }
+
+  function paintCard(id) {
+    const c = cards[id], v = verdictOf(id);
+    for (const [k, b] of Object.entries(c.buttons)) b.setAttribute("aria-pressed", String(k === v));
+    c.el.classList.toggle("is-right", v === "right");
+    c.el.classList.toggle("is-wrong", v === "wrong");
+    c.el.classList.toggle("is-unsure", v === "unsure");
+  }
+
+  function visible(id) {
+    const v = verdictOf(id);
+    if (state.tag !== "all" && byId[id].tag !== state.tag) return false;
+    return state.filter === "all" || (state.filter === "todo" ? !v : v === state.filter);
+  }
+
+  function applyFilter() {
+    let shown = 0;
+    for (const id of Object.keys(cards)) {
+      const on = visible(id) || id === state.current;
+      cards[id].el.hidden = !on;
+      shown += on;
+    }
+    empty.hidden = shown > 0;
+    for (const b of document.querySelectorAll(".chipbtn[data-filter]")) b.setAttribute("aria-pressed", String(b.dataset.filter === state.filter));
+    for (const b of document.querySelectorAll(".chipbtn[data-tag]")) b.setAttribute("aria-pressed", String(b.dataset.tag === state.tag));
+  }
+
+  function tally() {
+    // over the sound the tag filter picks, so choosing one reads its own precision
+    const n = { right: 0, wrong: 0, unsure: 0 };
+    const shown = ITEMS.filter(it => state.tag === "all" || it.tag === state.tag);
+    for (const it of shown) {
+      const v = verdictOf(it.id);
+      if (v) n[v] += 1;
+    }
+    const done = n.right + n.wrong + n.unsure, total = shown.length;
+    const which = state.tag === "all" ? "" : " [" + state.tag + "]";
+    $("t-done").textContent = done + " of " + total + which + " judged";
+    $("t-r").textContent = n.right + " right";
+    $("t-w").textContent = n.wrong + " wrong";
+    $("t-u").textContent = n.unsure + " can't tell";
+    const judged = n.right + n.wrong;
+    $("t-prec").textContent = judged ? "Precision " + Math.round(100 * n.right / judged) + "% of " + judged
+      : "Precision: judge a tag to start";
+    $("m-r").style.width = (100 * n.right / Math.max(total, 1)) + "%";
+    $("m-w").style.width = (100 * n.wrong / Math.max(total, 1)) + "%";
+    $("m-u").style.width = (100 * n.unsure / Math.max(total, 1)) + "%";
+  }
+
+  function setCurrent(id, scroll) {
+    if (state.current === id) return;
+    if (state.current && cards[state.current]) cards[state.current].el.classList.remove("current");
+    state.current = id;
+    if (id && cards[id]) {
+      cards[id].el.classList.add("current");
+      if (scroll) cards[id].el.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    }
+    applyFilter();
+  }
+
+  function nextOf(id, dir) {
+    const ids = ITEMS.map(it => it.id);
+    let i = ids.indexOf(id);
+    for (let k = 0; k < ids.length; k++) {
+      i = (i + dir + ids.length) % ids.length;
+      if (visible(ids[i])) return ids[i];
+    }
+    return null;
+  }
+
+  function stored() {
+    say(state.stored ? "Answers are kept in this browser. Export them when you are done."
+                     : "This browser will not keep the answers after the page closes: export them before you close it.", !state.stored);
+  }
+
+  function judge(id, v) {
+    if (verdictOf(id) === v) delete state.verdicts[id];        // pressing the chosen answer again takes it back
+    else {
+      state.verdicts[id] = { verdict: v, at: new Date().toISOString() };
+      if (state.filter === "todo") {                             // move on to the next tag still to judge
+        const next = nextOf(id, 1);
+        if (next) setCurrent(next, true);
+      }
+    }
+    save(); paintCard(id); tally(); applyFilter(); stored();
+  }
+
+  function answers() {
+    return { page: "melati-sound-check", version: 1, exported_at: new Date().toISOString(), tags: ITEMS.length,
+             answers: ITEMS.filter(it => verdictOf(it.id)).map(it => ({ id: it.id, row: it.row, tag: it.tag,
+               verdict: verdictOf(it.id), at: state.verdicts[it.id].at })) };
+  }
+
+  $("export").addEventListener("click", () => {
+    const data = answers();
+    const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 1)], { type: "application/json" }));
+    const a = document.createElement("a");
+    a.href = url; a.download = "melati-sound-check-answers.json";
+    document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+    say("Exported " + data.answers.length + " answers as melati-sound-check-answers.json (in your downloads).");
+  });
+
+  $("import").addEventListener("click", () => $("import-file").click());
+  $("import-file").addEventListener("change", async e => {
+    const f = e.target.files && e.target.files[0];
+    if (!f) return;
+    try {
+      const data = JSON.parse(await f.text());
+      let n = 0;
+      for (const a of data.answers || []) if (byId[a.id] && LABEL[a.verdict]) { state.verdicts[a.id] = { verdict: a.verdict, at: a.at }; n += 1; }
+      save();
+      for (const id of Object.keys(cards)) paintCard(id);
+      tally(); applyFilter();
+      say("Imported " + n + " answers from " + f.name + ".");
+    } catch (err) {
+      say("Could not read " + f.name + ": it is not an answers file this page exported.", true);
+    }
+    e.target.value = "";
+  });
+
+  function refocus() {
+    // a filter that hides the current card moves it to the first card left
+    if (!state.current || !visible(state.current)) {
+      const first = ITEMS.find(it => visible(it.id));
+      if (state.current && cards[state.current]) cards[state.current].el.classList.remove("current");
+      state.current = null;
+      if (first) setCurrent(first.id, false);
+    }
+    applyFilter();
+  }
+
+  for (const b of document.querySelectorAll(".chipbtn[data-filter]")) b.addEventListener("click", () => { state.filter = b.dataset.filter; refocus(); });
+
+  // one chip a sound, the most frequent first, with how many of its tags the page holds
+  const counts = {};
+  for (const it of ITEMS) counts[it.tag] = (counts[it.tag] || 0) + 1;
+  const tagbar = $("tags");
+  for (const [t, label, n] of [["all", "All sounds", ITEMS.length]].concat(
+      Object.entries(counts).sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0])).map(([t, n]) => [t, "[" + t + "]", n]))) {
+    const b = el("button", "chipbtn" + (t === "all" ? "" : " tagchip"), label);
+    b.type = "button"; b.dataset.tag = t;
+    b.append(el("span", "count", String(n)));
+    b.addEventListener("click", () => { state.tag = t; refocus(); tally(); });
+    tagbar.append(b);
+  }
+
+  document.addEventListener("keydown", e => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const id = state.current || (ITEMS.find(it => visible(it.id)) || {}).id;
+    if (!id) return;
+    const onButton = e.target && e.target.tagName === "BUTTON";
+    if (e.key === "1" || e.key === "2" || e.key === "3") {
+      setCurrent(id, false);
+      judge(id, { 1: "right", 2: "wrong", 3: "unsure" }[e.key]);
+    } else if (e.key === "j" || e.key === "k") {
+      const next = nextOf(id, e.key === "j" ? 1 : -1);
+      if (next) setCurrent(next, true);
+    } else if (e.key === " " && !onButton && e.target.tagName !== "AUDIO") {
+      e.preventDefault();
+      setCurrent(id, false);
+      const a = cards[id].audio;
+      if (a.paused) a.play().catch(() => {}); else a.pause();
+    }
+  });
+
+  load();
+  for (const id of Object.keys(cards)) paintCard(id);
+  tally();
+  const first = ITEMS.find(it => !verdictOf(it.id));
+  setCurrent(first ? first.id : ITEMS[0].id, false);
+  applyFilter();
+  stored();
+})();
+</script>
+</body>
+</html>

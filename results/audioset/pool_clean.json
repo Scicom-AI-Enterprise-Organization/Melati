@@ -1,0 +1,23 @@
+{
+ "name": "clean",
+ "sources": [
+  "strong_train",
+  "bal_train"
+ ],
+ "teachers": [
+  "ced-base",
+  "eat-large",
+  "sslam"
+ ],
+ "clips": 113520,
+ "hours": 311.3,
+ "dropped": {
+  "in_eval": 0,
+  "duplicate": 6786
+ },
+ "with_timed_events": 102123,
+ "by_source": {
+  "bal_train": 11397,
+  "strong_train": 102123
+ }
+}

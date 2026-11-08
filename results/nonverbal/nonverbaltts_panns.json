@@ -1,0 +1,1355 @@
+{
+ "n_clips": 359,
+ "reference_tags": {
+  "breath": 492,
+  "cough": 29,
+  "laugh": 56,
+  "groan": 3
+ },
+ "detector": "PANNs Cnn14_DecisionLevelMax",
+ "by_floor": {
+  "0.05": {
+   "breath": {
+    "precision": 1.0,
+    "recall": 0.0033,
+    "placement": 1.0,
+    "tp": 1,
+    "fp": 0,
+    "fn": 305
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 11,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.6667,
+    "recall": 0.069,
+    "placement": 0.5,
+    "tp": 2,
+    "fp": 1,
+    "fn": 27
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 12,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 1.0,
+    "recall": 0.1071,
+    "placement": 0.8333,
+    "tp": 6,
+    "fp": 0,
+    "fn": 50
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 24,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 5,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 2,
+    "fn": 0
+   }
+  },
+  "0.1": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 4,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.6667,
+    "recall": 0.069,
+    "placement": 0.5,
+    "tp": 2,
+    "fp": 1,
+    "fn": 27
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 3,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 1.0,
+    "recall": 0.0179,
+    "placement": 1.0,
+    "tp": 1,
+    "fp": 0,
+    "fn": 55
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 7,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 2,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 2,
+    "fn": 0
+   }
+  },
+  "0.15": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 3,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.6667,
+    "recall": 0.069,
+    "placement": 0.5,
+    "tp": 2,
+    "fp": 1,
+    "fn": 27
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 3,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   }
+  },
+  "0.2": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 2,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.5,
+    "recall": 0.0345,
+    "placement": 0.0,
+    "tp": 1,
+    "fp": 1,
+    "fn": 28
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   }
+  },
+  "0.25": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 1.0,
+    "recall": 0.0345,
+    "placement": 0.0,
+    "tp": 1,
+    "fp": 0,
+    "fn": 28
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.3": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 1.0,
+    "recall": 0.0345,
+    "placement": 0.0,
+    "tp": 1,
+    "fp": 0,
+    "fn": 28
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.35": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.4": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.45": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.5": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.55": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.6": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.65": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.7": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.75": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.8": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.85": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "0.9": {
+   "breath": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 306
+   },
+   "throat_clear": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "cough": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 29
+   },
+   "sigh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "laugh": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 56
+   },
+   "gasp": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "groan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "sniff": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   },
+   "sneeze": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "placement": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+   }
+  }
+ },
+ "chosen_floor": {
+  "laugh": {
+   "floor": 0.05,
+   "precision": 1.0,
+   "recall": 0.1071,
+   "placement": 0.8333,
+   "tp": 6,
+   "fp": 0,
+   "fn": 50
+  }
+ }
+}

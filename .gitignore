@@ -1,0 +1,28 @@
+# secrets and box config
+.env
+claude-ping.json
+scicom
+# environments and caches
+.venv*
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+# data never lives in git: audio, checkpoints, large tables
+*.wav
+*.flac
+*.mp3
+*.opus
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.zip
+*.parquet
+data/
+runs/
+wandb/
+asr/lexicon/*.csv
+
+# Inter, copied from TeX Live so card figures drawn on the box (no TeX there) use the paper's face (melati/plotstyle.py)
+fonts/

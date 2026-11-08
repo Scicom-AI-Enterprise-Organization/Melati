@@ -1,0 +1,2005 @@
+{
+ "clips": 16896,
+ "step_s": 0.16,
+ "classes_shared": 364,
+ "classes_labelled": 381,
+ "frame_map": {
+  "pretrainedsed": 0.4261,
+  "frame head (v3)": 0.4102,
+  "v4, 2 s windows": 0.297,
+  "pretrainedsed x v4 clip": 0.4208,
+  "frame head x v4 clip": 0.3936,
+  "mean of the two frame models": 0.441,
+  "mean of the two x v4 clip": 0.4138
+ },
+ "best": "mean of the two frame models",
+ "precision": 0.8,
+ "classes": {
+  "Speech": {
+   "positive_frames": 48720,
+   "positive_clips": 1700
+  },
+  "Male speech, man speaking": {
+   "threshold": 0.1204,
+   "recall": 0.9312,
+   "positive_frames": 130806,
+   "positive_clips": 5203
+  },
+  "Female speech, woman speaking": {
+   "threshold": 0.2229,
+   "recall": 0.7749,
+   "positive_frames": 46679,
+   "positive_clips": 2121
+  },
+  "Child speech, kid speaking": {
+   "threshold": 0.3929,
+   "recall": 0.3364,
+   "positive_frames": 11456,
+   "positive_clips": 596
+  },
+  "Conversation": {
+   "threshold": 0.8582,
+   "recall": 0.0062,
+   "positive_frames": 34064,
+   "positive_clips": 733
+  },
+  "Narration, monologue": {
+   "threshold": 0.1271,
+   "recall": 0.0043,
+   "positive_frames": 9529,
+   "positive_clips": 226
+  },
+  "Babbling": {
+   "threshold": 0.2983,
+   "recall": 0.1831,
+   "positive_frames": 1169,
+   "positive_clips": 70
+  },
+  "Speech synthesizer": {
+   "threshold": 0.311,
+   "recall": 0.0871,
+   "positive_frames": 4006,
+   "positive_clips": 163
+  },
+  "Shout": {
+   "positive_frames": 11168,
+   "positive_clips": 661
+  },
+  "Bellow": {
+   "positive_frames": 789,
+   "positive_clips": 31
+  },
+  "Whoop": {
+   "threshold": 0.3462,
+   "recall": 0.072,
+   "positive_frames": 4915,
+   "positive_clips": 234
+  },
+  "Yell": {
+   "positive_frames": 604,
+   "positive_clips": 24
+  },
+  "Battle cry": {
+   "threshold": 0.7722,
+   "recall": 0.0881,
+   "positive_frames": 1396,
+   "positive_clips": 29
+  },
+  "Children shouting": {
+   "positive_frames": 1143,
+   "positive_clips": 45
+  },
+  "Screaming": {
+   "threshold": 0.3673,
+   "recall": 0.2268,
+   "positive_frames": 2579,
+   "positive_clips": 153
+  },
+  "Whispering": {
+   "threshold": 0.1693,
+   "recall": 0.7386,
+   "positive_frames": 2303,
+   "positive_clips": 122
+  },
+  "Laughter": {
+   "threshold": 0.8442,
+   "recall": 0.0041,
+   "positive_frames": 14955,
+   "positive_clips": 1083
+  },
+  "Baby laughter": {
+   "threshold": 0.4812,
+   "recall": 0.6229,
+   "positive_frames": 2241,
+   "positive_clips": 78
+  },
+  "Giggle": {
+   "positive_frames": 940,
+   "positive_clips": 68
+  },
+  "Snicker": {
+   "positive_frames": 1287,
+   "positive_clips": 66
+  },
+  "Belly laugh": {
+   "positive_frames": 1117,
+   "positive_clips": 32
+  },
+  "Chuckle, chortle": {
+   "threshold": 0.0389,
+   "recall": 0.0021,
+   "positive_frames": 1920,
+   "positive_clips": 131
+  },
+  "Crying, sobbing": {
+   "threshold": 0.4968,
+   "recall": 0.0696,
+   "positive_frames": 2500,
+   "positive_clips": 93
+  },
+  "Baby cry, infant cry": {
+   "threshold": 0.2138,
+   "recall": 0.637,
+   "positive_frames": 1989,
+   "positive_clips": 64
+  },
+  "Whimper": {
+   "positive_frames": 427,
+   "positive_clips": 17
+  },
+  "Wail, moan": {
+   "threshold": 0.0533,
+   "recall": 0.0048,
+   "positive_frames": 419,
+   "positive_clips": 31
+  },
+  "Sigh": {
+   "positive_frames": 381,
+   "positive_clips": 63
+  },
+  "Singing": {
+   "positive_frames": 17749,
+   "positive_clips": 386
+  },
+  "Choir": {
+   "threshold": 0.5687,
+   "recall": 0.2787,
+   "positive_frames": 8210,
+   "positive_clips": 180
+  },
+  "Yodeling": {
+   "threshold": 0.2225,
+   "recall": 0.584,
+   "positive_frames": 1346,
+   "positive_clips": 32
+  },
+  "Chant": {
+   "threshold": 0.3732,
+   "recall": 0.4197,
+   "positive_frames": 1139,
+   "positive_clips": 20
+  },
+  "Mantra": {
+   "positive_frames": 1342,
+   "positive_clips": 26
+  },
+  "Male singing": {
+   "threshold": 0.1499,
+   "recall": 0.7676,
+   "positive_frames": 57159,
+   "positive_clips": 1384
+  },
+  "Female singing": {
+   "threshold": 0.2222,
+   "recall": 0.6667,
+   "positive_frames": 34241,
+   "positive_clips": 811
+  },
+  "Child singing": {
+   "threshold": 0.2812,
+   "recall": 0.5198,
+   "positive_frames": 6176,
+   "positive_clips": 142
+  },
+  "Synthetic singing": {
+   "threshold": 0.318,
+   "recall": 0.3332,
+   "positive_frames": 1840,
+   "positive_clips": 46
+  },
+  "Rapping": {
+   "threshold": 0.5182,
+   "recall": 0.3551,
+   "positive_frames": 3500,
+   "positive_clips": 68
+  },
+  "Humming": {
+   "threshold": 0.407,
+   "recall": 0.2865,
+   "positive_frames": 1040,
+   "positive_clips": 30
+  },
+  "Groan": {
+   "positive_frames": 1146,
+   "positive_clips": 70
+  },
+  "Grunt": {
+   "positive_frames": 1032,
+   "positive_clips": 40
+  },
+  "Whistling": {
+   "threshold": 0.3372,
+   "recall": 0.4271,
+   "positive_frames": 3409,
+   "positive_clips": 178
+  },
+  "Breathing": {
+   "threshold": 0.8577,
+   "recall": 0.0002,
+   "positive_frames": 13652,
+   "positive_clips": 1387
+  },
+  "Wheeze": {
+   "positive_frames": 435,
+   "positive_clips": 13
+  },
+  "Snoring": {
+   "threshold": 0.2281,
+   "recall": 0.704,
+   "positive_frames": 1277,
+   "positive_clips": 54
+  },
+  "Gasp": {
+   "positive_frames": 395,
+   "positive_clips": 75
+  },
+  "Pant": {
+   "threshold": 0.1516,
+   "recall": 0.2795,
+   "positive_frames": 1710,
+   "positive_clips": 65
+  },
+  "Snort": {
+   "positive_frames": 250,
+   "positive_clips": 19
+  },
+  "Cough": {
+   "threshold": 0.1821,
+   "recall": 0.6574,
+   "positive_frames": 1506,
+   "positive_clips": 151
+  },
+  "Throat clearing": {
+   "threshold": 0.1757,
+   "recall": 0.0195,
+   "positive_frames": 308,
+   "positive_clips": 46
+  },
+  "Sneeze": {
+   "threshold": 0.2614,
+   "recall": 0.4428,
+   "positive_frames": 402,
+   "positive_clips": 37
+  },
+  "Sniff": {
+   "threshold": 0.1669,
+   "recall": 0.0635,
+   "positive_frames": 362,
+   "positive_clips": 50
+  },
+  "Run": {
+   "threshold": 0.501,
+   "recall": 0.0208,
+   "positive_frames": 2405,
+   "positive_clips": 95
+  },
+  "Shuffle": {
+   "threshold": 0.4208,
+   "recall": 0.2624,
+   "positive_frames": 789,
+   "positive_clips": 25
+  },
+  "Walk, footsteps": {
+   "threshold": 0.4219,
+   "recall": 0.0555,
+   "positive_frames": 8285,
+   "positive_clips": 503
+  },
+  "Chewing, mastication": {
+   "threshold": 0.4347,
+   "recall": 0.2341,
+   "positive_frames": 2157,
+   "positive_clips": 64
+  },
+  "Biting": {
+   "positive_frames": 493,
+   "positive_clips": 31
+  },
+  "Gargling": {
+   "threshold": 0.0392,
+   "recall": 0.767,
+   "positive_frames": 854,
+   "positive_clips": 34
+  },
+  "Stomach rumble": {
+   "threshold": 0.4241,
+   "recall": 0.435,
+   "positive_frames": 492,
+   "positive_clips": 17
+  },
+  "Burping, eructation": {
+   "threshold": 0.2151,
+   "recall": 0.7963,
+   "positive_frames": 800,
+   "positive_clips": 46
+  },
+  "Hiccup": {
+   "threshold": 0.2723,
+   "recall": 0.4348,
+   "positive_frames": 322,
+   "positive_clips": 50
+  },
+  "Fart": {
+   "threshold": 0.3523,
+   "recall": 0.6111,
+   "positive_frames": 540,
+   "positive_clips": 49
+  },
+  "Hands": {
+   "threshold": 0.1459,
+   "recall": 0.0264,
+   "positive_frames": 984,
+   "positive_clips": 48
+  },
+  "Finger snapping": {
+   "threshold": 0.1016,
+   "recall": 0.449,
+   "positive_frames": 1412,
+   "positive_clips": 93
+  },
+  "Clapping": {
+   "threshold": 0.3701,
+   "recall": 0.196,
+   "positive_frames": 7057,
+   "positive_clips": 349
+  },
+  "Heart sounds, heartbeat": {
+   "positive_frames": 3322,
+   "positive_clips": 101
+  },
+  "Cheering": {
+   "threshold": 0.3163,
+   "recall": 0.1662,
+   "positive_frames": 11101,
+   "positive_clips": 315
+  },
+  "Applause": {
+   "threshold": 0.217,
+   "recall": 0.6564,
+   "positive_frames": 4206,
+   "positive_clips": 133
+  },
+  "Crowd": {
+   "threshold": 0.5757,
+   "recall": 0.1318,
+   "positive_frames": 20647,
+   "positive_clips": 413
+  },
+  "Hubbub, speech noise, speech babble": {
+   "threshold": 0.2949,
+   "recall": 0.4653,
+   "positive_frames": 20770,
+   "positive_clips": 417
+  },
+  "Children playing": {
+   "threshold": 0.1224,
+   "recall": 0.2656,
+   "positive_frames": 1713,
+   "positive_clips": 39
+  },
+  "Animal": {
+   "threshold": 0.3093,
+   "recall": 0.0009,
+   "positive_frames": 17453,
+   "positive_clips": 542
+  },
+  "Domestic animals, pets": {
+   "threshold": 0.0041,
+   "recall": 0.0013,
+   "positive_frames": 3001,
+   "positive_clips": 85
+  },
+  "Dog": {
+   "threshold": 0.4425,
+   "recall": 0.0107,
+   "positive_frames": 3631,
+   "positive_clips": 129
+  },
+  "Bark": {
+   "threshold": 0.448,
+   "recall": 0.3548,
+   "positive_frames": 2480,
+   "positive_clips": 161
+  },
+  "Yip": {
+   "threshold": 0.2401,
+   "recall": 0.0161,
+   "positive_frames": 498,
+   "positive_clips": 25
+  },
+  "Howl": {
+   "threshold": 0.7988,
+   "recall": 0.1427,
+   "positive_frames": 1402,
+   "positive_clips": 39
+  },
+  "Bow-wow": {
+   "positive_frames": 654,
+   "positive_clips": 34
+  },
+  "Growling": {
+   "threshold": 0.2572,
+   "recall": 0.5571,
+   "positive_frames": 2206,
+   "positive_clips": 84
+  },
+  "Whimper (dog)": {
+   "threshold": 0.2472,
+   "recall": 0.1446,
+   "positive_frames": 837,
+   "positive_clips": 29
+  },
+  "Cat": {
+   "positive_frames": 1178,
+   "positive_clips": 47
+  },
+  "Purr": {
+   "threshold": 0.2914,
+   "recall": 0.8903,
+   "positive_frames": 2134,
+   "positive_clips": 48
+  },
+  "Meow": {
+   "threshold": 0.2841,
+   "recall": 0.3572,
+   "positive_frames": 851,
+   "positive_clips": 46
+  },
+  "Hiss": {
+   "positive_frames": 1411,
+   "positive_clips": 52
+  },
+  "Caterwaul": {
+   "threshold": 0.171,
+   "recall": 0.5537,
+   "positive_frames": 1136,
+   "positive_clips": 41
+  },
+  "Livestock, farm animals, working animals": {
+   "positive_frames": 3565,
+   "positive_clips": 94
+  },
+  "Horse": {
+   "threshold": 0.1468,
+   "recall": 0.0176,
+   "positive_frames": 1137,
+   "positive_clips": 38
+  },
+  "Clip-clop": {
+   "threshold": 0.5981,
+   "recall": 0.2034,
+   "positive_frames": 1740,
+   "positive_clips": 51
+  },
+  "Neigh, whinny": {
+   "threshold": 0.1338,
+   "recall": 0.8424,
+   "positive_frames": 717,
+   "positive_clips": 44
+  },
+  "Cattle, bovinae": {
+   "threshold": 0.2097,
+   "recall": 0.0021,
+   "positive_frames": 480,
+   "positive_clips": 19
+  },
+  "Moo": {
+   "threshold": 0.1596,
+   "recall": 0.8262,
+   "positive_frames": 1191,
+   "positive_clips": 57
+  },
+  "Cowbell": {
+   "threshold": 0.3229,
+   "recall": 0.6051,
+   "positive_frames": 1555,
+   "positive_clips": 33
+  },
+  "Pig": {
+   "threshold": 0.3619,
+   "recall": 0.136,
+   "positive_frames": 500,
+   "positive_clips": 18
+  },
+  "Oink": {
+   "threshold": 0.6426,
+   "recall": 0.021,
+   "positive_frames": 1331,
+   "positive_clips": 55
+  },
+  "Goat": {
+   "threshold": 0.1882,
+   "recall": 0.0026,
+   "positive_frames": 384,
+   "positive_clips": 15
+  },
+  "Bleat": {
+   "threshold": 0.1899,
+   "recall": 0.7688,
+   "positive_frames": 2089,
+   "positive_clips": 96
+  },
+  "Sheep": {
+   "positive_frames": 427,
+   "positive_clips": 15
+  },
+  "Fowl": {
+   "positive_frames": 1527,
+   "positive_clips": 49
+  },
+  "Chicken, rooster": {
+   "positive_frames": 1086,
+   "positive_clips": 58
+  },
+  "Cluck": {
+   "threshold": 0.3438,
+   "recall": 0.1119,
+   "positive_frames": 956,
+   "positive_clips": 41
+  },
+  "Crowing, cock-a-doodle-doo": {
+   "threshold": 0.4612,
+   "recall": 0.5806,
+   "positive_frames": 999,
+   "positive_clips": 54
+  },
+  "Turkey": {
+   "threshold": 0.3569,
+   "recall": 0.0826,
+   "positive_frames": 605,
+   "positive_clips": 22
+  },
+  "Gobble": {
+   "threshold": 0.1483,
+   "recall": 0.3392,
+   "positive_frames": 1129,
+   "positive_clips": 39
+  },
+  "Quack": {
+   "threshold": 0.1706,
+   "recall": 0.2244,
+   "positive_frames": 780,
+   "positive_clips": 36
+  },
+  "Honk": {
+   "positive_frames": 1207,
+   "positive_clips": 37
+  },
+  "Wild animals": {
+   "threshold": 0.1841,
+   "recall": 0.0002,
+   "positive_frames": 5811,
+   "positive_clips": 133
+  },
+  "Roaring cats (lions, tigers)": {
+   "threshold": 0.1812,
+   "recall": 0.052,
+   "positive_frames": 1251,
+   "positive_clips": 41
+  },
+  "Roar": {
+   "threshold": 0.7024,
+   "recall": 0.0639,
+   "positive_frames": 1220,
+   "positive_clips": 41
+  },
+  "Bird": {
+   "positive_frames": 9198,
+   "positive_clips": 270
+  },
+  "Bird vocalization, bird call, bird song": {
+   "threshold": 0.5752,
+   "recall": 0.0102,
+   "positive_frames": 13326,
+   "positive_clips": 470
+  },
+  "Chirp, tweet": {
+   "threshold": 0.4048,
+   "recall": 0.012,
+   "positive_frames": 15328,
+   "positive_clips": 630
+  },
+  "Squawk": {
+   "threshold": 0.0655,
+   "recall": 0.0039,
+   "positive_frames": 768,
+   "positive_clips": 20
+  },
+  "Pigeon, dove": {
+   "threshold": 0.2487,
+   "recall": 0.0069,
+   "positive_frames": 1161,
+   "positive_clips": 28
+  },
+  "Coo": {
+   "threshold": 0.3092,
+   "recall": 0.5754,
+   "positive_frames": 1830,
+   "positive_clips": 57
+  },
+  "Crow": {
+   "positive_frames": 654,
+   "positive_clips": 25
+  },
+  "Caw": {
+   "threshold": 0.1367,
+   "recall": 0.6536,
+   "positive_frames": 1475,
+   "positive_clips": 76
+  },
+  "Owl": {
+   "positive_frames": 485,
+   "positive_clips": 25
+  },
+  "Hoot": {
+   "threshold": 0.1435,
+   "recall": 0.7143,
+   "positive_frames": 1064,
+   "positive_clips": 51
+  },
+  "Bird flight, flapping wings": {
+   "threshold": 0.3266,
+   "recall": 0.4677,
+   "positive_frames": 2149,
+   "positive_clips": 88
+  },
+  "Rodents, rats, mice": {
+   "threshold": 0.1639,
+   "recall": 0.4699,
+   "positive_frames": 1841,
+   "positive_clips": 53
+  },
+  "Mouse": {
+   "positive_frames": 762,
+   "positive_clips": 27
+  },
+  "Patter": {
+   "threshold": 0.3044,
+   "recall": 0.0908,
+   "positive_frames": 804,
+   "positive_clips": 21
+  },
+  "Insect": {
+   "threshold": 0.5941,
+   "recall": 0.0137,
+   "positive_frames": 5333,
+   "positive_clips": 114
+  },
+  "Cricket": {
+   "threshold": 0.1779,
+   "recall": 0.4445,
+   "positive_frames": 7671,
+   "positive_clips": 157
+  },
+  "Mosquito": {
+   "threshold": 0.113,
+   "recall": 0.569,
+   "positive_frames": 1058,
+   "positive_clips": 33
+  },
+  "Fly, housefly": {
+   "positive_frames": 938,
+   "positive_clips": 26
+  },
+  "Buzz": {
+   "positive_frames": 1702,
+   "positive_clips": 47
+  },
+  "Bee, wasp, etc.": {
+   "threshold": 0.5872,
+   "recall": 0.0293,
+   "positive_frames": 1399,
+   "positive_clips": 28
+  },
+  "Frog": {
+   "threshold": 0.5382,
+   "recall": 0.1019,
+   "positive_frames": 569,
+   "positive_clips": 19
+  },
+  "Croak": {
+   "threshold": 0.4976,
+   "recall": 0.0806,
+   "positive_frames": 992,
+   "positive_clips": 43
+  },
+  "Snake": {
+   "threshold": 0.0911,
+   "recall": 0.2438,
+   "positive_frames": 361,
+   "positive_clips": 11
+  },
+  "Rattle": {
+   "threshold": 0.5802,
+   "recall": 0.011,
+   "positive_frames": 1916,
+   "positive_clips": 66
+  },
+  "Whale vocalization": {
+   "threshold": 0.649,
+   "recall": 0.1064,
+   "positive_frames": 1306,
+   "positive_clips": 27
+  },
+  "Music": {
+   "threshold": 0.0591,
+   "recall": 0.9942,
+   "positive_frames": 380717,
+   "positive_clips": 6840
+  },
+  "Bell": {
+   "threshold": 0.3965,
+   "recall": 0.0953,
+   "positive_frames": 8247,
+   "positive_clips": 226
+  },
+  "Church bell": {
+   "threshold": 0.5388,
+   "recall": 0.272,
+   "positive_frames": 3666,
+   "positive_clips": 74
+  },
+  "Jingle bell": {
+   "threshold": 0.4169,
+   "recall": 0.1777,
+   "positive_frames": 2318,
+   "positive_clips": 46
+  },
+  "Bicycle bell": {
+   "threshold": 0.9058,
+   "recall": 0.0196,
+   "positive_frames": 1278,
+   "positive_clips": 45
+  },
+  "Tuning fork": {
+   "threshold": 0.3284,
+   "recall": 0.6398,
+   "positive_frames": 1896,
+   "positive_clips": 47
+  },
+  "Chime": {
+   "threshold": 0.2793,
+   "recall": 0.0027,
+   "positive_frames": 754,
+   "positive_clips": 19
+  },
+  "Wind chime": {
+   "threshold": 0.3152,
+   "recall": 0.5726,
+   "positive_frames": 1680,
+   "positive_clips": 34
+  },
+  "Change ringing (campanology)": {
+   "threshold": 0.5476,
+   "recall": 0.3462,
+   "positive_frames": 2426,
+   "positive_clips": 42
+  },
+  "Wind": {
+   "positive_frames": 24678,
+   "positive_clips": 499
+  },
+  "Wind noise (microphone)": {
+   "threshold": 0.3132,
+   "recall": 0.609,
+   "positive_frames": 30001,
+   "positive_clips": 804
+  },
+  "Thunderstorm": {
+   "threshold": 0.5649,
+   "recall": 0.0046,
+   "positive_frames": 1522,
+   "positive_clips": 43
+  },
+  "Thunder": {
+   "threshold": 0.323,
+   "recall": 0.3266,
+   "positive_frames": 2168,
+   "positive_clips": 62
+  },
+  "Water": {
+   "threshold": 0.6921,
+   "recall": 0.0013,
+   "positive_frames": 28125,
+   "positive_clips": 595
+  },
+  "Rain": {
+   "threshold": 0.4568,
+   "recall": 0.1141,
+   "positive_frames": 3235,
+   "positive_clips": 62
+  },
+  "Raindrop": {
+   "positive_frames": 1101,
+   "positive_clips": 22
+  },
+  "Rain on surface": {
+   "threshold": 0.6331,
+   "recall": 0.0695,
+   "positive_frames": 4631,
+   "positive_clips": 82
+  },
+  "Waterfall": {
+   "threshold": 0.2148,
+   "recall": 0.6036,
+   "positive_frames": 3638,
+   "positive_clips": 62
+  },
+  "Ocean": {
+   "positive_frames": 3667,
+   "positive_clips": 66
+  },
+  "Waves, surf": {
+   "threshold": 0.8401,
+   "recall": 0.0043,
+   "positive_frames": 3764,
+   "positive_clips": 78
+  },
+  "Steam": {
+   "positive_frames": 2875,
+   "positive_clips": 64
+  },
+  "Fire": {
+   "positive_frames": 2472,
+   "positive_clips": 57
+  },
+  "Crackle": {
+   "positive_frames": 1275,
+   "positive_clips": 35
+  },
+  "Vehicle": {
+   "positive_frames": 25656,
+   "positive_clips": 469
+  },
+  "Boat, Water vehicle": {
+   "threshold": 0.329,
+   "recall": 0.0029,
+   "positive_frames": 3488,
+   "positive_clips": 66
+  },
+  "Sailboat, sailing ship": {
+   "threshold": 0.2281,
+   "recall": 0.1305,
+   "positive_frames": 1556,
+   "positive_clips": 27
+  },
+  "Rowboat, canoe, kayak": {
+   "threshold": 0.3079,
+   "recall": 0.2922,
+   "positive_frames": 1797,
+   "positive_clips": 40
+  },
+  "Motorboat, speedboat": {
+   "threshold": 0.5151,
+   "recall": 0.0511,
+   "positive_frames": 3187,
+   "positive_clips": 55
+  },
+  "Ship": {
+   "positive_frames": 2138,
+   "positive_clips": 39
+  },
+  "Motor vehicle (road)": {
+   "threshold": 0.4709,
+   "recall": 0.0011,
+   "positive_frames": 16617,
+   "positive_clips": 314
+  },
+  "Car": {
+   "threshold": 0.6292,
+   "recall": 0.0839,
+   "positive_frames": 15288,
+   "positive_clips": 279
+  },
+  "Car alarm": {
+   "threshold": 0.2477,
+   "recall": 0.5694,
+   "positive_frames": 908,
+   "positive_clips": 35
+  },
+  "Power windows, electric windows": {
+   "threshold": 0.1616,
+   "recall": 0.6466,
+   "positive_frames": 682,
+   "positive_clips": 30
+  },
+  "Car passing by": {
+   "threshold": 0.3883,
+   "recall": 0.005,
+   "positive_frames": 2421,
+   "positive_clips": 97
+  },
+  "Race car, auto racing": {
+   "threshold": 0.4653,
+   "recall": 0.1293,
+   "positive_frames": 3550,
+   "positive_clips": 62
+  },
+  "Truck": {
+   "threshold": 0.5739,
+   "recall": 0.105,
+   "positive_frames": 6287,
+   "positive_clips": 106
+  },
+  "Air brake": {
+   "threshold": 0.6201,
+   "recall": 0.0769,
+   "positive_frames": 416,
+   "positive_clips": 51
+  },
+  "Air horn, truck horn": {
+   "threshold": 0.3553,
+   "recall": 0.4143,
+   "positive_frames": 1750,
+   "positive_clips": 84
+  },
+  "Reversing beeps": {
+   "threshold": 0.1956,
+   "recall": 0.6393,
+   "positive_frames": 1292,
+   "positive_clips": 43
+  },
+  "Ice cream truck, ice cream van": {
+   "threshold": 0.0143,
+   "recall": 0.9701,
+   "positive_frames": 2142,
+   "positive_clips": 38
+  },
+  "Bus": {
+   "threshold": 0.4595,
+   "recall": 0.0282,
+   "positive_frames": 2379,
+   "positive_clips": 42
+  },
+  "Emergency vehicle": {
+   "positive_frames": 1842,
+   "positive_clips": 38
+  },
+  "Police car (siren)": {
+   "positive_frames": 1499,
+   "positive_clips": 37
+  },
+  "Ambulance (siren)": {
+   "threshold": 0.3674,
+   "recall": 0.3448,
+   "positive_frames": 551,
+   "positive_clips": 12
+  },
+  "Fire engine, fire truck (siren)": {
+   "threshold": 0.8369,
+   "recall": 0.0674,
+   "positive_frames": 2136,
+   "positive_clips": 40
+  },
+  "Motorcycle": {
+   "threshold": 0.8047,
+   "recall": 0.0003,
+   "positive_frames": 3075,
+   "positive_clips": 56
+  },
+  "Traffic noise, roadway noise": {
+   "positive_frames": 6743,
+   "positive_clips": 120
+  },
+  "Rail transport": {
+   "positive_frames": 4301,
+   "positive_clips": 74
+  },
+  "Train": {
+   "positive_frames": 6737,
+   "positive_clips": 118
+  },
+  "Train whistle": {
+   "threshold": 0.191,
+   "recall": 0.5559,
+   "positive_frames": 2209,
+   "positive_clips": 75
+  },
+  "Train horn": {
+   "threshold": 0.3918,
+   "recall": 0.5214,
+   "positive_frames": 1377,
+   "positive_clips": 61
+  },
+  "Railroad car, train wagon": {
+   "positive_frames": 4546,
+   "positive_clips": 76
+  },
+  "Train wheels squealing": {
+   "threshold": 0.2355,
+   "recall": 0.7624,
+   "positive_frames": 1869,
+   "positive_clips": 63
+  },
+  "Subway, metro, underground": {
+   "threshold": 0.3435,
+   "recall": 0.5124,
+   "positive_frames": 1979,
+   "positive_clips": 36
+  },
+  "Aircraft": {
+   "positive_frames": 4017,
+   "positive_clips": 75
+  },
+  "Aircraft engine": {
+   "threshold": 0.3674,
+   "recall": 0.0126,
+   "positive_frames": 4675,
+   "positive_clips": 80
+  },
+  "Jet engine": {
+   "threshold": 0.3513,
+   "recall": 0.1751,
+   "positive_frames": 3192,
+   "positive_clips": 54
+  },
+  "Propeller, airscrew": {
+   "threshold": 0.3701,
+   "recall": 0.0213,
+   "positive_frames": 2959,
+   "positive_clips": 53
+  },
+  "Helicopter": {
+   "threshold": 0.359,
+   "recall": 0.5593,
+   "positive_frames": 2192,
+   "positive_clips": 43
+  },
+  "Fixed-wing aircraft, airplane": {
+   "positive_frames": 2819,
+   "positive_clips": 48
+  },
+  "Skateboard": {
+   "threshold": 0.431,
+   "recall": 0.5363,
+   "positive_frames": 1473,
+   "positive_clips": 42
+  },
+  "Engine": {
+   "threshold": 0.2882,
+   "recall": 0.0052,
+   "positive_frames": 24203,
+   "positive_clips": 437
+  },
+  "Light engine (high frequency)": {
+   "positive_frames": 1989,
+   "positive_clips": 39
+  },
+  "Dental drill, dentist's drill": {
+   "threshold": 0.0687,
+   "recall": 0.132,
+   "positive_frames": 553,
+   "positive_clips": 12
+  },
+  "Lawn mower": {
+   "threshold": 0.8135,
+   "recall": 0.0358,
+   "positive_frames": 1678,
+   "positive_clips": 33
+  },
+  "Chainsaw": {
+   "threshold": 0.1432,
+   "recall": 0.904,
+   "positive_frames": 2749,
+   "positive_clips": 53
+  },
+  "Medium engine (mid frequency)": {
+   "threshold": 0.7268,
+   "recall": 0.0053,
+   "positive_frames": 18432,
+   "positive_clips": 320
+  },
+  "Heavy engine (low frequency)": {
+   "threshold": 0.3473,
+   "recall": 0.0337,
+   "positive_frames": 10159,
+   "positive_clips": 170
+  },
+  "Engine knocking": {
+   "positive_frames": 3190,
+   "positive_clips": 59
+  },
+  "Engine starting": {
+   "threshold": 0.2256,
+   "recall": 0.6072,
+   "positive_frames": 1423,
+   "positive_clips": 83
+  },
+  "Idling": {
+   "threshold": 0.2562,
+   "recall": 0.0319,
+   "positive_frames": 5304,
+   "positive_clips": 97
+  },
+  "Accelerating, revving, vroom": {
+   "threshold": 0.4329,
+   "recall": 0.534,
+   "positive_frames": 14151,
+   "positive_clips": 453
+  },
+  "Door": {
+   "positive_frames": 993,
+   "positive_clips": 126
+  },
+  "Doorbell": {
+   "positive_frames": 988,
+   "positive_clips": 41
+  },
+  "Ding-dong": {
+   "threshold": 0.2422,
+   "recall": 0.1755,
+   "positive_frames": 735,
+   "positive_clips": 35
+  },
+  "Sliding door": {
+   "threshold": 0.4913,
+   "recall": 0.0795,
+   "positive_frames": 792,
+   "positive_clips": 34
+  },
+  "Slam": {
+   "threshold": 0.4216,
+   "recall": 0.0147,
+   "positive_frames": 273,
+   "positive_clips": 49
+  },
+  "Knock": {
+   "threshold": 0.5974,
+   "recall": 0.0989,
+   "positive_frames": 364,
+   "positive_clips": 33
+  },
+  "Tap": {
+   "threshold": 0.3166,
+   "recall": 0.0004,
+   "positive_frames": 9982,
+   "positive_clips": 1465
+  },
+  "Squeak": {
+   "threshold": 0.1679,
+   "recall": 0.3012,
+   "positive_frames": 1205,
+   "positive_clips": 82
+  },
+  "Cupboard open or close": {
+   "positive_frames": 222,
+   "positive_clips": 20
+  },
+  "Drawer open or close": {
+   "threshold": 0.2191,
+   "recall": 0.1954,
+   "positive_frames": 476,
+   "positive_clips": 35
+  },
+  "Dishes, pots, and pans": {
+   "threshold": 0.4695,
+   "recall": 0.0037,
+   "positive_frames": 1092,
+   "positive_clips": 74
+  },
+  "Cutlery, silverware": {
+   "positive_frames": 319,
+   "positive_clips": 29
+  },
+  "Chopping (food)": {
+   "threshold": 0.1324,
+   "recall": 0.5214,
+   "positive_frames": 936,
+   "positive_clips": 42
+  },
+  "Frying (food)": {
+   "threshold": 0.5464,
+   "recall": 0.045,
+   "positive_frames": 3068,
+   "positive_clips": 56
+  },
+  "Microwave oven": {
+   "threshold": 0.4041,
+   "recall": 0.391,
+   "positive_frames": 555,
+   "positive_clips": 14
+  },
+  "Water tap, faucet": {
+   "threshold": 0.4933,
+   "recall": 0.1667,
+   "positive_frames": 4032,
+   "positive_clips": 94
+  },
+  "Sink (filling or washing)": {
+   "threshold": 0.2715,
+   "recall": 0.1982,
+   "positive_frames": 2235,
+   "positive_clips": 55
+  },
+  "Bathtub (filling or washing)": {
+   "threshold": 0.4641,
+   "recall": 0.0855,
+   "positive_frames": 1543,
+   "positive_clips": 27
+  },
+  "Hair dryer": {
+   "threshold": 0.1211,
+   "recall": 0.8568,
+   "positive_frames": 2654,
+   "positive_clips": 51
+  },
+  "Toilet flush": {
+   "threshold": 0.3517,
+   "recall": 0.7639,
+   "positive_frames": 1279,
+   "positive_clips": 41
+  },
+  "Toothbrush": {
+   "threshold": 0.0884,
+   "recall": 0.1632,
+   "positive_frames": 1293,
+   "positive_clips": 34
+  },
+  "Electric toothbrush": {
+   "threshold": 0.1441,
+   "recall": 0.4315,
+   "positive_frames": 1328,
+   "positive_clips": 28
+  },
+  "Vacuum cleaner": {
+   "threshold": 0.3665,
+   "recall": 0.5695,
+   "positive_frames": 1970,
+   "positive_clips": 37
+  },
+  "Zipper (clothing)": {
+   "threshold": 0.0815,
+   "recall": 0.6195,
+   "positive_frames": 749,
+   "positive_clips": 50
+  },
+  "Keys jangling": {
+   "threshold": 0.5745,
+   "recall": 0.0032,
+   "positive_frames": 619,
+   "positive_clips": 38
+  },
+  "Coin (dropping)": {
+   "threshold": 0.3531,
+   "recall": 0.2743,
+   "positive_frames": 1039,
+   "positive_clips": 63
+  },
+  "Scissors": {
+   "threshold": 0.2595,
+   "recall": 0.0531,
+   "positive_frames": 1318,
+   "positive_clips": 61
+  },
+  "Electric shaver, electric razor": {
+   "threshold": 0.278,
+   "recall": 0.8163,
+   "positive_frames": 2439,
+   "positive_clips": 47
+  },
+  "Shuffling cards": {
+   "threshold": 0.205,
+   "recall": 0.3986,
+   "positive_frames": 1016,
+   "positive_clips": 53
+  },
+  "Typing": {
+   "threshold": 0.2488,
+   "recall": 0.0102,
+   "positive_frames": 1077,
+   "positive_clips": 33
+  },
+  "Typewriter": {
+   "threshold": 0.1355,
+   "recall": 0.722,
+   "positive_frames": 1259,
+   "positive_clips": 32
+  },
+  "Computer keyboard": {
+   "threshold": 0.2318,
+   "recall": 0.7187,
+   "positive_frames": 1898,
+   "positive_clips": 70
+  },
+  "Writing": {
+   "threshold": 0.3064,
+   "recall": 0.4497,
+   "positive_frames": 1152,
+   "positive_clips": 39
+  },
+  "Alarm": {
+   "threshold": 0.4219,
+   "recall": 0.0353,
+   "positive_frames": 4793,
+   "positive_clips": 130
+  },
+  "Telephone": {
+   "threshold": 0.0702,
+   "recall": 0.0054,
+   "positive_frames": 1477,
+   "positive_clips": 66
+  },
+  "Telephone bell ringing": {
+   "threshold": 0.3199,
+   "recall": 0.6299,
+   "positive_frames": 1540,
+   "positive_clips": 69
+  },
+  "Ringtone": {
+   "threshold": 0.3846,
+   "recall": 0.3011,
+   "positive_frames": 1900,
+   "positive_clips": 62
+  },
+  "Telephone dialing, DTMF": {
+   "threshold": 0.1381,
+   "recall": 0.6156,
+   "positive_frames": 705,
+   "positive_clips": 41
+  },
+  "Dial tone": {
+   "positive_frames": 434,
+   "positive_clips": 29
+  },
+  "Busy signal": {
+   "threshold": 0.3788,
+   "recall": 0.1649,
+   "positive_frames": 661,
+   "positive_clips": 40
+  },
+  "Alarm clock": {
+   "threshold": 0.5347,
+   "recall": 0.1218,
+   "positive_frames": 1938,
+   "positive_clips": 53
+  },
+  "Siren": {
+   "positive_frames": 6315,
+   "positive_clips": 142
+  },
+  "Civil defense siren": {
+   "threshold": 0.196,
+   "recall": 0.8868,
+   "positive_frames": 2703,
+   "positive_clips": 46
+  },
+  "Buzzer": {
+   "threshold": 0.1303,
+   "recall": 0.281,
+   "positive_frames": 548,
+   "positive_clips": 32
+  },
+  "Smoke detector, smoke alarm": {
+   "threshold": 0.1973,
+   "recall": 0.4178,
+   "positive_frames": 1065,
+   "positive_clips": 31
+  },
+  "Fire alarm": {
+   "threshold": 0.5267,
+   "recall": 0.3975,
+   "positive_frames": 1620,
+   "positive_clips": 40
+  },
+  "Foghorn": {
+   "threshold": 0.1735,
+   "recall": 0.7012,
+   "positive_frames": 1034,
+   "positive_clips": 32
+  },
+  "Whistle": {
+   "threshold": 0.2213,
+   "recall": 0.1423,
+   "positive_frames": 1659,
+   "positive_clips": 77
+  },
+  "Steam whistle": {
+   "positive_frames": 1835,
+   "positive_clips": 61
+  },
+  "Mechanisms": {
+   "threshold": 0.9294,
+   "recall": 0.0002,
+   "positive_frames": 108997,
+   "positive_clips": 2052
+  },
+  "Ratchet, pawl": {
+   "threshold": 0.556,
+   "recall": 0.0345,
+   "positive_frames": 1825,
+   "positive_clips": 59
+  },
+  "Clock": {
+   "threshold": 0.3099,
+   "recall": 0.0043,
+   "positive_frames": 2070,
+   "positive_clips": 41
+  },
+  "Tick": {
+   "positive_frames": 6296,
+   "positive_clips": 975
+  },
+  "Tick-tock": {
+   "threshold": 0.3021,
+   "recall": 0.0047,
+   "positive_frames": 1919,
+   "positive_clips": 53
+  },
+  "Gears": {
+   "positive_frames": 997,
+   "positive_clips": 31
+  },
+  "Pulleys": {
+   "positive_frames": 868,
+   "positive_clips": 25
+  },
+  "Sewing machine": {
+   "threshold": 0.1651,
+   "recall": 0.7671,
+   "positive_frames": 2018,
+   "positive_clips": 53
+  },
+  "Mechanical fan": {
+   "threshold": 0.3169,
+   "recall": 0.169,
+   "positive_frames": 4445,
+   "positive_clips": 79
+  },
+  "Air conditioning": {
+   "positive_frames": 1093,
+   "positive_clips": 19
+  },
+  "Cash register": {
+   "threshold": 0.3301,
+   "recall": 0.4718,
+   "positive_frames": 655,
+   "positive_clips": 32
+  },
+  "Printer": {
+   "threshold": 0.4147,
+   "recall": 0.6383,
+   "positive_frames": 1399,
+   "positive_clips": 31
+  },
+  "Camera": {
+   "positive_frames": 550,
+   "positive_clips": 53
+  },
+  "Single-lens reflex camera": {
+   "threshold": 0.1737,
+   "recall": 0.3694,
+   "positive_frames": 758,
+   "positive_clips": 72
+  },
+  "Tools": {
+   "positive_frames": 6251,
+   "positive_clips": 168
+  },
+  "Hammer": {
+   "threshold": 0.4464,
+   "recall": 0.2526,
+   "positive_frames": 1536,
+   "positive_clips": 79
+  },
+  "Jackhammer": {
+   "threshold": 0.1923,
+   "recall": 0.8634,
+   "positive_frames": 732,
+   "positive_clips": 16
+  },
+  "Sawing": {
+   "threshold": 0.3121,
+   "recall": 0.2602,
+   "positive_frames": 830,
+   "positive_clips": 26
+  },
+  "Filing (rasp)": {
+   "threshold": 0.4927,
+   "recall": 0.2032,
+   "positive_frames": 1201,
+   "positive_clips": 30
+  },
+  "Sanding": {
+   "threshold": 0.1843,
+   "recall": 0.6237,
+   "positive_frames": 1831,
+   "positive_clips": 41
+  },
+  "Power tool": {
+   "threshold": 0.1981,
+   "recall": 0.0937,
+   "positive_frames": 10019,
+   "positive_clips": 210
+  },
+  "Drill": {
+   "threshold": 0.3118,
+   "recall": 0.4104,
+   "positive_frames": 2556,
+   "positive_clips": 80
+  },
+  "Explosion": {
+   "positive_frames": 2174,
+   "positive_clips": 127
+  },
+  "Gunshot, gunfire": {
+   "threshold": 0.439,
+   "recall": 0.114,
+   "positive_frames": 2325,
+   "positive_clips": 140
+  },
+  "Machine gun": {
+   "threshold": 0.5911,
+   "recall": 0.1873,
+   "positive_frames": 1703,
+   "positive_clips": 68
+  },
+  "Fusillade": {
+   "threshold": 0.1464,
+   "recall": 0.0371,
+   "positive_frames": 1376,
+   "positive_clips": 38
+  },
+  "Artillery fire": {
+   "threshold": 0.3856,
+   "recall": 0.2571,
+   "positive_frames": 957,
+   "positive_clips": 49
+  },
+  "Cap gun": {
+   "threshold": 0.6387,
+   "recall": 0.0075,
+   "positive_frames": 532,
+   "positive_clips": 38
+  },
+  "Fireworks": {
+   "threshold": 0.2999,
+   "recall": 0.3899,
+   "positive_frames": 1467,
+   "positive_clips": 40
+  },
+  "Firecracker": {
+   "threshold": 0.7415,
+   "recall": 0.0069,
+   "positive_frames": 1603,
+   "positive_clips": 52
+  },
+  "Burst, pop": {
+   "positive_frames": 518,
+   "positive_clips": 34
+  },
+  "Eruption": {
+   "positive_frames": 592,
+   "positive_clips": 15
+  },
+  "Boom": {
+   "positive_frames": 1032,
+   "positive_clips": 64
+  },
+  "Wood": {
+   "positive_frames": 1589,
+   "positive_clips": 58
+  },
+  "Chop": {
+   "threshold": 0.3245,
+   "recall": 0.3655,
+   "positive_frames": 747,
+   "positive_clips": 47
+  },
+  "Splinter": {
+   "positive_frames": 943,
+   "positive_clips": 54
+  },
+  "Crack": {
+   "threshold": 0.0304,
+   "recall": 0.0406,
+   "positive_frames": 320,
+   "positive_clips": 32
+  },
+  "Glass": {
+   "threshold": 0.1469,
+   "recall": 0.3048,
+   "positive_frames": 1532,
+   "positive_clips": 70
+  },
+  "Liquid": {
+   "threshold": 0.1417,
+   "recall": 0.0025,
+   "positive_frames": 10170,
+   "positive_clips": 256
+  },
+  "Splash, splatter": {
+   "threshold": 0.6064,
+   "recall": 0.0873,
+   "positive_frames": 2074,
+   "positive_clips": 96
+  },
+  "Slosh": {
+   "positive_frames": 145,
+   "positive_clips": 7
+  },
+  "Squish": {
+   "threshold": 0.0144,
+   "recall": 0.1316,
+   "positive_frames": 228,
+   "positive_clips": 15
+  },
+  "Drip": {
+   "positive_frames": 843,
+   "positive_clips": 49
+  },
+  "Pour": {
+   "threshold": 0.4238,
+   "recall": 0.0887,
+   "positive_frames": 1375,
+   "positive_clips": 49
+  },
+  "Trickle, dribble": {
+   "positive_frames": 2953,
+   "positive_clips": 58
+  },
+  "Gush": {
+   "positive_frames": 1641,
+   "positive_clips": 33
+  },
+  "Fill (with liquid)": {
+   "threshold": 0.0952,
+   "recall": 0.1686,
+   "positive_frames": 2586,
+   "positive_clips": 60
+  },
+  "Spray": {
+   "threshold": 0.253,
+   "recall": 0.4309,
+   "positive_frames": 2481,
+   "positive_clips": 78
+  },
+  "Pump (liquid)": {
+   "threshold": 0.3505,
+   "recall": 0.061,
+   "positive_frames": 2067,
+   "positive_clips": 37
+  },
+  "Stir": {
+   "threshold": 0.2614,
+   "recall": 0.2792,
+   "positive_frames": 1397,
+   "positive_clips": 42
+  },
+  "Boiling": {
+   "threshold": 0.5391,
+   "recall": 0.129,
+   "positive_frames": 1613,
+   "positive_clips": 31
+  },
+  "Sonar": {
+   "threshold": 0.2005,
+   "recall": 0.5842,
+   "positive_frames": 707,
+   "positive_clips": 15
+  },
+  "Arrow": {
+   "threshold": 0.3129,
+   "recall": 0.1589,
+   "positive_frames": 409,
+   "positive_clips": 45
+  },
+  "Whoosh, swoosh, swish": {
+   "threshold": 0.205,
+   "recall": 0.0902,
+   "positive_frames": 1463,
+   "positive_clips": 144
+  },
+  "Thump, thud": {
+   "threshold": 0.4194,
+   "recall": 0.0067,
+   "positive_frames": 2694,
+   "positive_clips": 329
+  },
+  "Thunk": {
+   "positive_frames": 469,
+   "positive_clips": 62
+  },
+  "Electronic tuner": {
+   "positive_frames": 2118,
+   "positive_clips": 41
+  },
+  "Effects unit": {
+   "positive_frames": 6701,
+   "positive_clips": 116
+  },
+  "Chorus effect": {
+   "threshold": 0.2391,
+   "recall": 0.033,
+   "positive_frames": 4430,
+   "positive_clips": 80
+  },
+  "Basketball bounce": {
+   "threshold": 0.3595,
+   "recall": 0.2807,
+   "positive_frames": 1172,
+   "positive_clips": 63
+  },
+  "Bang": {
+   "positive_frames": 323,
+   "positive_clips": 24
+  },
+  "Slap, smack": {
+   "threshold": 0.1666,
+   "recall": 0.2041,
+   "positive_frames": 490,
+   "positive_clips": 63
+  },
+  "Whack, thwack": {
+   "threshold": 0.3157,
+   "recall": 0.0245,
+   "positive_frames": 978,
+   "positive_clips": 88
+  },
+  "Smash, crash": {
+   "positive_frames": 351,
+   "positive_clips": 21
+  },
+  "Breaking": {
+   "positive_frames": 1642,
+   "positive_clips": 108
+  },
+  "Bouncing": {
+   "positive_frames": 1307,
+   "positive_clips": 63
+  },
+  "Whip": {
+   "threshold": 0.3729,
+   "recall": 0.392,
+   "positive_frames": 903,
+   "positive_clips": 42
+  },
+  "Flap": {
+   "threshold": 0.0076,
+   "recall": 0.0494,
+   "positive_frames": 324,
+   "positive_clips": 12
+  },
+  "Scratch": {
+   "threshold": 0.3567,
+   "recall": 0.0691,
+   "positive_frames": 752,
+   "positive_clips": 28
+  },
+  "Scrape": {
+   "threshold": 0.2212,
+   "recall": 0.0038,
+   "positive_frames": 1570,
+   "positive_clips": 118
+  },
+  "Rub": {
+   "positive_frames": 1166,
+   "positive_clips": 74
+  },
+  "Roll": {
+   "positive_frames": 198,
+   "positive_clips": 10
+  },
+  "Crushing": {
+   "threshold": 0.2581,
+   "recall": 0.0005,
+   "positive_frames": 1896,
+   "positive_clips": 58
+  },
+  "Crumpling, crinkling": {
+   "threshold": 0.4828,
+   "recall": 0.4131,
+   "positive_frames": 4849,
+   "positive_clips": 165
+  },
+  "Tearing": {
+   "threshold": 0.193,
+   "recall": 0.026,
+   "positive_frames": 577,
+   "positive_clips": 29
+  },
+  "Beep, bleep": {
+   "threshold": 0.3158,
+   "recall": 0.1889,
+   "positive_frames": 4934,
+   "positive_clips": 380
+  },
+  "Ping": {
+   "positive_frames": 140,
+   "positive_clips": 14
+  },
+  "Ding": {
+   "threshold": 0.4241,
+   "recall": 0.0835,
+   "positive_frames": 958,
+   "positive_clips": 69
+  },
+  "Clang": {
+   "threshold": 0.4943,
+   "recall": 0.016,
+   "positive_frames": 499,
+   "positive_clips": 46
+  },
+  "Squeal": {
+   "positive_frames": 1357,
+   "positive_clips": 109
+  },
+  "Creak": {
+   "threshold": 0.1829,
+   "recall": 0.1176,
+   "positive_frames": 1131,
+   "positive_clips": 83
+  },
+  "Rustle": {
+   "threshold": 0.3314,
+   "recall": 0.0343,
+   "positive_frames": 4432,
+   "positive_clips": 109
+  },
+  "Whir": {
+   "threshold": 0.0577,
+   "recall": 0.2282,
+   "positive_frames": 1179,
+   "positive_clips": 28
+  },
+  "Clatter": {
+   "positive_frames": 310,
+   "positive_clips": 8
+  },
+  "Sizzle": {
+   "threshold": 0.521,
+   "recall": 0.1235,
+   "positive_frames": 2688,
+   "positive_clips": 53
+  },
+  "Clicking": {
+   "threshold": 0.2816,
+   "recall": 0.0224,
+   "positive_frames": 4321,
+   "positive_clips": 726
+  },
+  "Clickety-clack": {
+   "positive_frames": 2185,
+   "positive_clips": 55
+  },
+  "Rumble": {
+   "threshold": 0.2866,
+   "recall": 0.0575,
+   "positive_frames": 2591,
+   "positive_clips": 54
+  },
+  "Plop": {
+   "threshold": 0.2393,
+   "recall": 0.3003,
+   "positive_frames": 313,
+   "positive_clips": 68
+  },
+  "Jingle, tinkle": {
+   "positive_frames": 378,
+   "positive_clips": 10
+  },
+  "Hum": {
+   "positive_frames": 6807,
+   "positive_clips": 117
+  },
+  "Boing": {
+   "threshold": 0.5758,
+   "recall": 0.2128,
+   "positive_frames": 517,
+   "positive_clips": 56
+  },
+  "Crunch": {
+   "threshold": 0.4318,
+   "recall": 0.0102,
+   "positive_frames": 687,
+   "positive_clips": 34
+  },
+  "Sine wave": {
+   "threshold": 0.5067,
+   "recall": 0.4831,
+   "positive_frames": 2749,
+   "positive_clips": 65
+  },
+  "Chirp tone": {
+   "threshold": 0.5038,
+   "recall": 0.0037,
+   "positive_frames": 1092,
+   "positive_clips": 21
+  },
+  "Sound effect": {
+   "threshold": 0.6155,
+   "recall": 0.0464,
+   "positive_frames": 25063,
+   "positive_clips": 1147
+  },
+  "Pulse": {
+   "positive_frames": 294,
+   "positive_clips": 9
+  },
+  "Inside, small room": {
+   "positive_frames": 57031,
+   "positive_clips": 917
+  },
+  "Inside, large room or hall": {
+   "threshold": 0.1043,
+   "recall": 0.003,
+   "positive_frames": 17784,
+   "positive_clips": 287
+  },
+  "Inside, public space": {
+   "positive_frames": 2023,
+   "positive_clips": 34
+  },
+  "Outside, urban or manmade": {
+   "positive_frames": 20343,
+   "positive_clips": 327
+  },
+  "Reverberation": {
+   "positive_frames": 3595,
+   "positive_clips": 64
+  },
+  "Echo": {
+   "positive_frames": 2536,
+   "positive_clips": 48
+  },
+  "Noise": {
+   "threshold": 0.5872,
+   "recall": 0.0012,
+   "positive_frames": 13321,
+   "positive_clips": 304
+  },
+  "Environmental noise": {
+   "positive_frames": 1699,
+   "positive_clips": 31
+  },
+  "Static": {
+   "threshold": 0.2497,
+   "recall": 0.0135,
+   "positive_frames": 2663,
+   "positive_clips": 90
+  },
+  "Mains hum": {
+   "positive_frames": 7701,
+   "positive_clips": 142
+  },
+  "Distortion": {
+   "positive_frames": 5486,
+   "positive_clips": 104
+  },
+  "Cacophony": {
+   "positive_frames": 384,
+   "positive_clips": 7
+  },
+  "Television": {
+   "threshold": 0.5526,
+   "recall": 0.0957,
+   "positive_frames": 9620,
+   "positive_clips": 174
+  },
+  "Radio": {
+   "threshold": 0.2818,
+   "recall": 0.2976,
+   "positive_frames": 2305,
+   "positive_clips": 62
+  }
+ }
+}

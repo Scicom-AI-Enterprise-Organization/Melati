@@ -1,0 +1,64 @@
+{
+ "n_clips": 359,
+ "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+ "prompt_name": "breath",
+ "prompt": "Transcribe this audio verbatim, word for word, in the language spoken, keeping fillers such as \"um\" and \"uh\". Mark every non-verbal sound the speaker makes at the point where it happens, with one of these tags: [breath] for an audible breath, usually an inhalation before or between phrases; [laughs] for laughter or a chuckle, including laughing while speaking; [coughs]; [sighs]; [sniffs]; [clears throat]; [gasps]; [cries]; [groans]; [sneezes]; [yawns]. Tag only sounds you can clearly hear, never guess. Output only the tagged transcript.",
+ "per_class": {
+  "breath": {
+   "precision": 0.8667,
+   "recall": 0.1275,
+   "placement": 0.439,
+   "tp": 39,
+   "fp": 6,
+   "fn": 267,
+   "placed": 41,
+   "placed_ok": 18
+  },
+  "cough": {
+   "precision": 0.25,
+   "recall": 0.1724,
+   "placement": 1.0,
+   "tp": 5,
+   "fp": 15,
+   "fn": 24,
+   "placed": 5,
+   "placed_ok": 5
+  },
+  "throat_clear": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "placement": 0.0,
+   "tp": 0,
+   "fp": 41,
+   "fn": 0
+  },
+  "laugh": {
+   "precision": 0.7333,
+   "recall": 0.3929,
+   "placement": 0.7391,
+   "tp": 22,
+   "fp": 8,
+   "fn": 34,
+   "placed": 23,
+   "placed_ok": 17
+  },
+  "sigh": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "placement": 0.0,
+   "tp": 0,
+   "fp": 8,
+   "fn": 0
+  },
+  "groan": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "placement": 0.0,
+   "tp": 0,
+   "fp": 0,
+   "fn": 3,
+   "placed": 0,
+   "placed_ok": 0
+  }
+ }
+}

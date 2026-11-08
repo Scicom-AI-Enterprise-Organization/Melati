@@ -1,0 +1,35 @@
+{
+  "run_dir": "${MELATI_DATA}/serve_omni",
+  "endpoints": "${MELATI_DATA}/serve_omni/endpoints.json",
+  "startup_timeout_s": 1800,
+  "env": {
+    "HF_HOME": "${MELATI_DATA}/hf",
+    "HF_HUB_DISABLE_XET": "1",
+    "VLLM_CONFIGURE_LOGGING": "1"
+  },
+  "services": {
+    "omni": {
+      "kind": "vllm",
+      "venv": "${MELATI_ROOT}/.venv-diar",
+      "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "served_name": "melati-omni",
+      "port": 17800,
+      "replicas": [
+        [
+          2
+        ]
+      ],
+      "gpu_memory_utilization": 0.7,
+      "args": [
+        "--dtype",
+        "bfloat16",
+        "--max-model-len",
+        32768,
+        "--max-num-seqs",
+        64,
+        "--limit-mm-per-prompt",
+        "{\"audio\": 1, \"image\": 0, \"video\": 0}"
+      ]
+    }
+  }
+}

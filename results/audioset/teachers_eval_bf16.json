@@ -1,0 +1,40 @@
+{
+ "split": "eval",
+ "clips": 17141,
+ "classes_scored": 527,
+ "models": {
+  "ced-base": 0.4988,
+  "eat-large": 0.4941,
+  "eat-base": 0.4898,
+  "sslam": 0.494,
+  "ast": 0.4565
+ },
+ "averages": {
+  "ast + ced-base": 0.4994,
+  "ast + eat-base": 0.4986,
+  "ast + eat-large": 0.5033,
+  "ast + sslam": 0.5004,
+  "ced-base + eat-base": 0.5094,
+  "ced-base + eat-large": 0.514,
+  "ced-base + sslam": 0.5116,
+  "eat-base + eat-large": 0.5033,
+  "eat-base + sslam": 0.5039,
+  "eat-large + sslam": 0.5082,
+  "ast + ced-base + eat-base": 0.5096,
+  "ast + ced-base + eat-large": 0.5134,
+  "ast + ced-base + sslam": 0.5108,
+  "ast + eat-base + eat-large": 0.5087,
+  "ast + eat-base + sslam": 0.5074,
+  "ast + eat-large + sslam": 0.5113,
+  "ced-base + eat-base + eat-large": 0.5144,
+  "ced-base + eat-base + sslam": 0.513,
+  "ced-base + eat-large + sslam": 0.5165,
+  "eat-base + eat-large + sslam": 0.5095,
+  "ast + ced-base + eat-base + eat-large": 0.5149,
+  "ast + ced-base + eat-base + sslam": 0.5133,
+  "ast + ced-base + eat-large + sslam": 0.5164,
+  "ast + eat-base + eat-large + sslam": 0.5128,
+  "ced-base + eat-base + eat-large + sslam": 0.516,
+  "ast + ced-base + eat-base + eat-large + sslam": 0.5167
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "{\"floor_db\": 2}": {
+  "thresholds": {
+   "breath": {
+    "threshold": 0.7,
+    "precision": 0.8136,
+    "recall": 0.4404,
+    "hyp": 59,
+    "ref": 109
+   },
+   "laugh": {
+    "threshold": 0.7,
+    "precision": 0.8156,
+    "recall": 0.7644,
+    "hyp": 179,
+    "ref": 191
+   }
+  },
+  "chosen_on": "pf_cands2 validation",
+  "target": 0.8
+ }
+}

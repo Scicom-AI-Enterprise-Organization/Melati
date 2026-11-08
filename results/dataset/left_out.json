@@ -1,0 +1,429 @@
+{
+ "recordings": 7640,
+ "left_out": {
+  "language_fallback": {
+   "rows": 7519,
+   "hours": 4.28
+  },
+  "language_stray": {
+   "rows": 1060,
+   "hours": 0.52
+  },
+  "no_text": {
+   "rows": 43,
+   "hours": 0.1
+  },
+  "wrong_script": {
+   "rows": 73,
+   "hours": 0.08
+  }
+ },
+ "left_out_by_language": {
+  "language_fallback ta (heard None)": {
+   "rows": 1835,
+   "hours": 1.27
+  },
+  "language_fallback ta (heard id)": {
+   "rows": 944,
+   "hours": 0.49
+  },
+  "language_stray zh (heard zh)": {
+   "rows": 576,
+   "hours": 0.27
+  },
+  "language_fallback ta (heard ar)": {
+   "rows": 524,
+   "hours": 0.54
+  },
+  "language_fallback ta (heard tl)": {
+   "rows": 521,
+   "hours": 0.25
+  },
+  "language_fallback ta (heard ko)": {
+   "rows": 498,
+   "hours": 0.23
+  },
+  "language_fallback ta (heard es)": {
+   "rows": 498,
+   "hours": 0.23
+  },
+  "language_stray ta (heard ta)": {
+   "rows": 484,
+   "hours": 0.25
+  },
+  "language_fallback ta (heard ja)": {
+   "rows": 390,
+   "hours": 0.19
+  },
+  "language_fallback ta (heard th)": {
+   "rows": 205,
+   "hours": 0.1
+  },
+  "language_fallback ta (heard pt)": {
+   "rows": 200,
+   "hours": 0.09
+  },
+  "language_fallback ta (heard hi)": {
+   "rows": 187,
+   "hours": 0.09
+  },
+  "language_fallback ta (heard tr)": {
+   "rows": 171,
+   "hours": 0.08
+  },
+  "language_fallback ta (heard ru)": {
+   "rows": 160,
+   "hours": 0.07
+  },
+  "language_fallback ta (heard ur)": {
+   "rows": 148,
+   "hours": 0.08
+  },
+  "language_fallback ta (heard it)": {
+   "rows": 117,
+   "hours": 0.06
+  },
+  "language_fallback ta (heard fr)": {
+   "rows": 117,
+   "hours": 0.05
+  },
+  "language_fallback ta (heard vi)": {
+   "rows": 114,
+   "hours": 0.05
+  },
+  "language_fallback zh (heard None)": {
+   "rows": 101,
+   "hours": 0.05
+  },
+  "language_fallback ta (heard ro)": {
+   "rows": 74,
+   "hours": 0.03
+  },
+  "language_fallback ta (heard sw)": {
+   "rows": 62,
+   "hours": 0.03
+  },
+  "language_fallback ta (heard ne)": {
+   "rows": 57,
+   "hours": 0.03
+  },
+  "language_fallback ta (heard el)": {
+   "rows": 55,
+   "hours": 0.03
+  },
+  "language_fallback ta (heard da)": {
+   "rows": 54,
+   "hours": 0.03
+  },
+  "wrong_script en (heard ar)": {
+   "rows": 52,
+   "hours": 0.05
+  },
+  "language_fallback zh (heard id)": {
+   "rows": 49,
+   "hours": 0.02
+  },
+  "language_fallback ta (heard de)": {
+   "rows": 43,
+   "hours": 0.02
+  },
+  "language_fallback zh (heard ko)": {
+   "rows": 37,
+   "hours": 0.02
+  },
+  "language_fallback ta (heard sv)": {
+   "rows": 33,
+   "hours": 0.01
+  },
+  "no_text en (heard en)": {
+   "rows": 31,
+   "hours": 0.02
+  },
+  "language_fallback ta (heard cs)": {
+   "rows": 28,
+   "hours": 0.01
+  },
+  "language_fallback ta (heard nl)": {
+   "rows": 24,
+   "hours": 0.01
+  },
+  "language_fallback ta (heard pl)": {
+   "rows": 23,
+   "hours": 0.01
+  },
+  "language_fallback ta (heard kn)": {
+   "rows": 20,
+   "hours": 0.01
+  },
+  "language_fallback ta (heard fi)": {
+   "rows": 19,
+   "hours": 0.01
+  },
+  "language_fallback ta (heard he)": {
+   "rows": 19,
+   "hours": 0.01
+  },
+  "language_fallback zh (heard ja)": {
+   "rows": 15,
+   "hours": 0.01
+  },
+  "language_fallback zh (heard es)": {
+   "rows": 13,
+   "hours": 0.01
+  },
+  "language_fallback ta (heard ca)": {
+   "rows": 13,
+   "hours": 0.01
+  },
+  "language_fallback ta (heard hu)": {
+   "rows": 12,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard fa)": {
+   "rows": 12,
+   "hours": 0.01
+  },
+  "language_fallback ta (heard cy)": {
+   "rows": 12,
+   "hours": 0.01
+  },
+  "language_fallback ta (heard et)": {
+   "rows": 12,
+   "hours": 0.01
+  },
+  "wrong_script ms (heard ms)": {
+   "rows": 12,
+   "hours": 0.02
+  },
+  "language_fallback zh (heard tl)": {
+   "rows": 10,
+   "hours": 0.01
+  },
+  "no_text ms (heard ms)": {
+   "rows": 10,
+   "hours": 0.08
+  },
+  "language_fallback zh (heard ar)": {
+   "rows": 10,
+   "hours": 0.01
+  },
+  "language_fallback zh (heard pt)": {
+   "rows": 8,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard kk)": {
+   "rows": 6,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard th)": {
+   "rows": 6,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard sk)": {
+   "rows": 5,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard da)": {
+   "rows": 5,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard no)": {
+   "rows": 4,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard bg)": {
+   "rows": 3,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard is)": {
+   "rows": 3,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard mr)": {
+   "rows": 3,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard vi)": {
+   "rows": 3,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard mi)": {
+   "rows": 3,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard ru)": {
+   "rows": 3,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard fr)": {
+   "rows": 3,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard hi)": {
+   "rows": 3,
+   "hours": 0.0
+  },
+  "wrong_script en (heard ur)": {
+   "rows": 3,
+   "hours": 0.0
+  },
+  "wrong_script ms (heard ar)": {
+   "rows": 2,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard ro)": {
+   "rows": 2,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard af)": {
+   "rows": 2,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard gl)": {
+   "rows": 2,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard lt)": {
+   "rows": 2,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard el)": {
+   "rows": 2,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard ur)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard hr)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard tr)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard mk)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard fa)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard nl)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard lv)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard mi)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "no_text en (heard fr)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard sl)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard af)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard ne)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "wrong_script en (heard ru)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard de)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "wrong_script en (heard id)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback ta (heard bs)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard no)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "wrong_script en (heard en)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "language_fallback zh (heard sv)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "wrong_script en (heard fi)": {
+   "rows": 1,
+   "hours": 0.0
+  },
+  "no_text en (heard ne)": {
+   "rows": 1,
+   "hours": 0.0
+  }
+ },
+ "kept_by_language": {
+  "ms": {
+   "rows": 355529,
+   "hours": 619.09
+  },
+  "en": {
+   "rows": 33309,
+   "hours": 29.52
+  }
+ },
+ "kept_by_language_heard": {
+  "ms (heard ms)": {
+   "rows": 347145,
+   "hours": 613.27
+  },
+  "en (heard en)": {
+   "rows": 32337,
+   "hours": 28.97
+  },
+  "ms (heard id)": {
+   "rows": 5375,
+   "hours": 4.35
+  },
+  "ms (heard other)": {
+   "rows": 2634,
+   "hours": 1.26
+  },
+  "en (heard id)": {
+   "rows": 459,
+   "hours": 0.27
+  },
+  "en (heard other)": {
+   "rows": 393,
+   "hours": 0.19
+  },
+  "ms (heard None)": {
+   "rows": 375,
+   "hours": 0.21
+  },
+  "en (heard None)": {
+   "rows": 120,
+   "hours": 0.09
+  }
+ },
+ "squeezed_words": {
+  "0": 368879,
+  "1": 15511,
+  "2": 2516,
+  "3+": 1932
+ }
+}

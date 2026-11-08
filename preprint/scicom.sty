@@ -1,0 +1,215 @@
+% scicom.sty: the Scicom preprint style.
+%
+%   \documentclass[10pt]{article}
+%   \usepackage{amsmath}
+%   \usepackage{scicom}
+%   \title{...}  \scauthor{Name}{email}  \scaffiliation{...}  \scdate{Month Year}  \scshorttitle{...}
+%
+% Builds with LuaLaTeX (OpenType fonts through fontspec) or pdfLaTeX, which is all arXiv runs. pdfLaTeX uses only
+% Type 1 fonts that TeX Live itself ships, since arXiv's compile did not find font files sent with the source: Inter
+% (inter package), Noto Sans Mono in place of JetBrains Mono (the closest in TeX Live), and Inter's maths letters,
+% digits and Greek in place of Fira Math. The look follows Scicom's design tokens, carried over to print:
+%   type     Inter for text and headings (semibold for weight), JetBrains Mono for code, labels and table heads
+%            with its programming ligatures off, as on the platform; Fira Math for mathematics
+%   colour   the logo's navy and orange for headings, the platform's light-theme tokens for text, muted text,
+%            borders and surfaces, its primary text blue for links, and its validated chart palette (--series-*)
+%   labels   the group label (a small coloured tick and an UPPERCASE mono title) for subsections, the
+%            abstract and float labels; table heads are UPPERCASE mono on a muted band, as on the platform
+%   spacing  generous leading for Inter's tall x-height, block paragraphs separated by space (no indent)
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{scicom}[2026/10/19 Scicom preprint style]
+
+\RequirePackage{iftex}
+\RequirePackage{etoolbox}
+\newif\ifsc@otf   % OpenType fonts (LuaLaTeX, XeLaTeX), or their Type 1 versions (pdfLaTeX, which arXiv runs)
+\iftutex\sc@otftrue\else\sc@otffalse\fi
+
+% ---------------------------------------------------------------------------------------------------- page
+\RequirePackage[a4paper, textwidth=148mm, top=26mm, bottom=30mm, headheight=14pt, headsep=9mm,
+                footskip=13mm]{geometry}
+
+% ---------------------------------------------------------------------------------------------------- colour
+\RequirePackage[table]{xcolor}
+\definecolor{scBrand}{HTML}{183B8D}     % logo navy
+\definecolor{scOrange}{HTML}{F58220}    % logo orange
+\definecolor{scPrimary}{HTML}{3B82F6}   % platform --primary (light)
+\definecolor{scLink}{HTML}{1E40AF}      % platform primary text (--sidebar-accent-foreground)
+\definecolor{scFg}{HTML}{18181B}        % --foreground
+\definecolor{scText}{HTML}{3F3F46}      % gray-700: captions and secondary text
+\definecolor{scMuted}{HTML}{6B7280}     % --muted-foreground
+\definecolor{scBorder}{HTML}{E5E7EB}    % --border
+\definecolor{scRule}{HTML}{D4D4D8}      % gray-300: rules that must survive print
+\definecolor{scBand}{HTML}{F3F4F6}      % bg-muted/50: table head band
+\definecolor{scCard}{HTML}{F9FAFB}      % --card
+% chart palette (--series-1..8, light), in the platform's fixed order
+\definecolor{scSeriesA}{HTML}{3B82F6}
+\definecolor{scSeriesB}{HTML}{0095A2}
+\definecolor{scSeriesC}{HTML}{21763C}
+\definecolor{scSeriesD}{HTML}{C67700}
+\definecolor{scSeriesE}{HTML}{7A4ABA}
+\definecolor{scSeriesF}{HTML}{D44D8C}
+\definecolor{scSeriesG}{HTML}{79821D}
+\definecolor{scSeriesH}{HTML}{414AA1}
+\definecolor{scGood}{HTML}{107823}
+\definecolor{scWarn}{HTML}{885E00}
+\definecolor{scBad}{HTML}{C2272D}
+
+% ---------------------------------------------------------------------------------------------------- type
+\ifsc@otf
+\RequirePackage{fontspec}
+\RequirePackage{unicode-math}
+\setmainfont{Inter}[Extension=.otf, UprightFont=*-Regular, ItalicFont=*-Italic, BoldFont=*-SemiBold,
+  BoldItalicFont=*-SemiBoldItalic, FontFace={m}{n}{*-Regular}, FontFace={mb}{n}{*-Medium},
+  FontFace={mb}{it}{*-MediumItalic}, Numbers=Lining]
+\setsansfont{Inter}[Extension=.otf, UprightFont=*-Regular, ItalicFont=*-Italic, BoldFont=*-SemiBold,
+  BoldItalicFont=*-SemiBoldItalic, Numbers=Lining]
+% the platform turns JetBrains Mono's ligatures off: mono text is literal ([S01], ->, !=)
+\setmonofont{JetBrainsMono}[Extension=.otf, UprightFont=*-Regular, ItalicFont=*-Italic, BoldFont=*-SemiBold,
+  BoldItalicFont=*-SemiBoldItalic, Contextuals=NoAlternate, Ligatures=NoCommon, Scale=0.92]
+\setmathfont{FiraMath-Regular.otf}[Scale=MatchLowercase]
+\newcommand*{\scmedium}{\fontseries{mb}\selectfont}
+\newcommand*{\sctabular}{\addfontfeatures{Numbers={Monospaced,Lining}}}   % aligned digits in tables
+% letter-spacing for the mono labels, in percent of the font size (fontspec's unit)
+\newcommand*{\sc@lslabel}{\addfontfeatures{LetterSpace=6}}
+\newcommand*{\sc@lshead}[1]{{\addfontfeatures{LetterSpace=5}#1}}
+\else
+% pdfLaTeX: the same faces as Type 1 fonts. Inter's figures are lining and proportional in text (Inter-LF) and
+% tabular in tables (Inter-TLF); semibold is the bold in every family, as in the OpenType branch.
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}   % only for the maths symbols Inter lacks: Latin Modern's scale to 9.5 pt, Computer Modern's do not
+\RequirePackage[sfdefault, semibold, proportional, math]{inter}
+\def\bfseries@rm{sb}\def\bfseries@sf{sb}
+% Noto Sans Mono for JetBrains Mono: the same widths and square shapes, lining tabular figures, semibold for bold
+\RequirePackage[scale=0.92, lining, tabular, semibold]{noto-mono}
+\newcommand*{\scmedium}{\fontseries{medium}\selectfont}
+\newcommand*{\sctabular}{\fontfamily{Inter-TLF}\selectfont}
+% letter-spacing for the mono labels through microtype, in thousandths of an em: the OpenType branch's 6 and 5 %
+\RequirePackage{microtype}
+\microtypesetup{letterspace=60}
+\newcommand*{\sc@lslabel}{\lsstyle}
+\newcommand*{\sc@lshead}[1]{\textls[50]{#1}}
+\fi
+
+% sizes: Inter's x-height is tall, so a 9.5 pt body reads like 10.5 pt of a book face, and needs open leading
+\renewcommand\normalsize{\@setfontsize\normalsize{9.5}{14.2}%
+  \abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@ \abovedisplayshortskip \z@ \@plus3\p@
+  \belowdisplayshortskip 5\p@ \@plus3\p@ \@minus3\p@ \belowdisplayskip \abovedisplayskip
+  \let\@listi\@listI}
+\renewcommand\small{\@setfontsize\small{8.5}{12.6}}
+\renewcommand\footnotesize{\@setfontsize\footnotesize{8}{11.6}}
+\renewcommand\scriptsize{\@setfontsize\scriptsize{7}{9.5}}
+\renewcommand\tiny{\@setfontsize\tiny{6}{7.5}}
+\renewcommand\large{\@setfontsize\large{11}{15}}
+\renewcommand\Large{\@setfontsize\Large{13}{17}}
+\renewcommand\LARGE{\@setfontsize\LARGE{16}{20}}
+\renewcommand\huge{\@setfontsize\huge{20}{24.5}}
+\renewcommand\Huge{\@setfontsize\Huge{24}{29}}
+\normalsize
+\AtBeginDocument{\color{scFg}}
+
+\RequirePackage[skip=6.5pt plus 1.5pt, indent=0pt]{parskip}
+% left-aligned text, as on the platform (and no rivers in a sans face); hyphenation stays on
+\RequirePackage[document]{ragged2e}
+\setlength{\RaggedRightRightskip}{0pt plus 4em}
+\setlength{\emergencystretch}{1.5em}
+\hfuzz=0.5pt   % microtype's protrusion leaves ragged lines a fraction of a point over: not worth a warning
+
+% ---------------------------------------------------------------------------------------------------- labels
+% the group label: a 3 x 14 px coloured tick, then an UPPERCASE mono title
+\newcommand*{\sctick}[1][scOrange]{{\color{#1}\rule[-0.18em]{2.2pt}{0.95em}}\hspace{0.55em}}
+\newcommand*{\sc@labelsize}{\ttfamily\fontsize{7.6}{10}\selectfont}
+\newcommand*{\sclabelfont}{\sc@labelsize\sc@lslabel}   % in horizontal mode: microtype's spacing starts a paragraph
+\newcommand*{\sclabel}[1]{{\sclabelfont\MakeUppercase{#1}}}
+\newcommand*{\scgrouplabel}[2][scOrange]{\sctick[#1]\sclabel{#2}}
+
+% ---------------------------------------------------------------------------------------------------- headings
+\RequirePackage[explicit]{titlesec}
+\titleformat{\section}{\fontsize{13}{17}\selectfont\bfseries\color{scBrand}}
+  {\makebox[1.6em][l]{\color{scOrange}\thesection}}{0pt}{#1}
+\titlespacing*{\section}{0pt}{20pt plus 4pt minus 2pt}{5pt plus 1pt}
+\titleformat{\subsection}{\sc@labelsize\color{scFg}}
+  {\sctick{\color{scMuted}\sc@lslabel\thesubsection}\hspace{0.9em}}{0pt}{{\sc@lslabel\MakeUppercase{#1}}}
+\titlespacing*{\subsection}{0pt}{14pt plus 3pt minus 2pt}{4pt plus 1pt}
+\titleformat{\subsubsection}[runin]{\bfseries\color{scFg}}{}{0pt}{#1.}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt}{0.6em}
+
+% ---------------------------------------------------------------------------------------------------- floats
+\RequirePackage{caption}
+\DeclareCaptionFont{sctext}{\color{scText}}
+\DeclareCaptionLabelFormat{sclabel}{{\sclabelfont\color{scBrand}\MakeUppercase{#1\ #2}}}
+\captionsetup{font={small,sctext}, labelformat=sclabel, labelsep=quad, justification=raggedright,
+  singlelinecheck=false, skip=6pt}
+\captionsetup[table]{position=top}
+
+\RequirePackage{booktabs}
+\setlength{\heavyrulewidth}{0.7pt}
+\setlength{\lightrulewidth}{0.45pt}
+\setlength{\cmidrulewidth}{0.45pt}
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{1.32}
+\arrayrulecolor{scRule}
+% a table head cell, UPPERCASE mono on the band; a head row starts with \schead
+\newcommand*{\scth}[1]{{\ttfamily\fontsize{6.6}{8.5}\selectfont\color{scMuted}\sc@lshead{\MakeUppercase{#1}}}}
+\newcommand*{\schead}{\rowcolor{scBand}}
+\AtBeginEnvironment{tabular}{\sctabular}
+
+% ---------------------------------------------------------------------------------------------------- title block
+\RequirePackage{graphicx}
+\RequirePackage{tcolorbox}
+\tcbuselibrary{skins}
+\newcommand*{\sc@authors}{}
+\newcommand*{\sc@affiliation}{}
+\newcommand*{\sc@date}{\today}
+\newcommand*{\sc@shorttitle}{}
+% one block per author: the name, and the email under it; blocks sit side by side and wrap
+\newcommand*{\sc@authorblock}[2]{%
+  \begin{tabular}[t]{@{}l@{}}%
+    {\fontsize{10.5}{14}\selectfont\scmedium\color{scFg}#1}\\[-1pt]%
+    {\ttfamily\footnotesize\color{scMuted}#2}%
+  \end{tabular}}
+\newcommand*{\scauthor}[2]{%
+  \ifx\sc@authors\@empty\else\g@addto@macro\sc@authors{\hspace{2.4em}}\fi
+  \g@addto@macro\sc@authors{\sc@authorblock{#1}{#2}}}
+\newcommand*{\scaffiliation}[1]{\renewcommand*{\sc@affiliation}{#1}}
+\newcommand*{\scdate}[1]{\renewcommand*{\sc@date}{#1}}
+\newcommand*{\scshorttitle}[1]{\renewcommand*{\sc@shorttitle}{#1}}
+\renewcommand*{\maketitle}{%
+  \thispagestyle{scfirst}%
+  \noindent\raisebox{-0.25\height}{\includegraphics[height=8.5mm]{img/scicom-logo.png}}\hfill
+    {\sclabelfont\color{scMuted}\MakeUppercase{Preprint\hspace{0.8em}\textbullet\hspace{0.8em}\sc@date}}\par
+  \vspace{4pt}{\color{scBorder}\rule{\linewidth}{0.6pt}}\par
+  \vspace{16pt}%
+  {\raggedright\fontsize{21}{26}\selectfont\bfseries\color{scFg}\@title\par}%
+  \vspace{12pt}%
+  {\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.15}\noindent\sc@authors\par}%
+  \vspace{5pt}%
+  {\small\color{scText}\sc@affiliation\par}%
+  \vspace{12pt}}
+
+\renewenvironment{abstract}{%
+  \tcolorbox[enhanced, colback=scCard, colframe=scBorder, boxrule=0.6pt, arc=4.5pt,
+    left=11pt, right=11pt, top=9pt, bottom=10pt, before skip=0pt, after skip=10pt]%
+  \scgrouplabel[scBrand]{Abstract}\par\vspace{5pt}\small\color{scFg}}%
+  {\endtcolorbox}
+
+% ---------------------------------------------------------------------------------------------------- page style
+\RequirePackage{fancyhdr}
+\fancypagestyle{scicom}{%
+  \fancyhf{}%
+  \fancyhead[L]{\sclabelfont\color{scMuted}\MakeUppercase{\sc@shorttitle}}%
+  \fancyhead[R]{\sclabelfont\color{scMuted}\MakeUppercase{Scicom (MSC) Berhad}}%
+  \fancyfoot[R]{\sclabelfont\color{scMuted}\thepage}%
+  \renewcommand{\headrule}{{\color{scBorder}\hrule height 0.6pt}}%
+  \renewcommand{\footrulewidth}{0pt}}
+\fancypagestyle{scfirst}{%
+  \fancyhf{}%
+  \fancyfoot[L]{\sclabelfont\color{scMuted}\MakeUppercase{Scicom (MSC) Berhad\hspace{0.8em}\textbullet\hspace{0.8em}%
+    Preprint}}%
+  \fancyfoot[R]{\sclabelfont\color{scMuted}\thepage}%
+  \renewcommand{\headrule}{}\renewcommand{\footrulewidth}{0pt}}
+\pagestyle{scicom}
+
+% ---------------------------------------------------------------------------------------------------- misc
+\renewcommand{\footnoterule}{\kern-3pt{\color{scBorder}\hrule width 0.3\columnwidth height 0.6pt}\kern 2.4pt}
+\AtBeginDocument{\@ifpackageloaded{natbib}{\renewcommand{\bibfont}{\small}\setlength{\bibsep}{3pt plus 1pt}}{}}

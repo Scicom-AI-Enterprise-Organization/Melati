@@ -1,0 +1,41 @@
+{
+  "run_dir": "${MELATI_DATA}/serve_pilot5",
+  "endpoints": "${MELATI_DATA}/serve_pilot5/endpoints.json",
+  "startup_timeout_s": 1500,
+  "env": {
+    "HF_HOME": "${MELATI_DATA}/hf",
+    "HF_HUB_DISABLE_XET": "1",
+    "VLLM_CONFIGURE_LOGGING": "1"
+  },
+  "services": {
+    "diar": {
+      "kind": "vllm",
+      "venv": "${MELATI_ROOT}/.venv-diar",
+      "model": "Scicom-intl/Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged",
+      "served_name": "melati-diar",
+      "port": 18220,
+      "replicas": [
+        [
+          5
+        ]
+      ],
+      "gpu_memory_utilization": 0.25,
+      "env": {
+        "VLLM_MAX_AUDIO_DECODE_DURATION_S": 7200,
+        "VLLM_MAX_AUDIO_CLIP_FILESIZE_MB": 256,
+        "VLLM_MAX_AUDIO_DECODE_BYTES": 536870912
+      },
+      "args": [
+        "--trust-remote-code",
+        "--max-model-len",
+        131072,
+        "--max-num-batched-tokens",
+        65536,
+        "--limit-mm-per-prompt",
+        "{\"audio\": 1}",
+        "--allowed-local-media-path",
+        "${MELATI_DATA}"
+      ]
+    }
+  }
+}

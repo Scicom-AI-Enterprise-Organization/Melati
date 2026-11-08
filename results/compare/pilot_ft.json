@@ -1,0 +1,299 @@
+{
+ "recordings": 200,
+ "input_hours": 21.104,
+ "not_processed_by_emilia": [],
+ "pipelines": {
+  "emilia": {
+   "yield": {
+    "recordings_with_output": 104,
+    "segments": 1717,
+    "hours": 5.358,
+    "share_of_input": 0.2539,
+    "duration_s": {
+     "10": 4.38,
+     "50": 9.796,
+     "90": 19.413,
+     "99": 30.0
+    },
+    "share_ge_29_5s": 0.0309,
+    "share_lt_3s": 0.0,
+    "languages": {
+     "ms": 1715,
+     "en": 2
+    }
+   },
+   "audio": {
+    "files": 1500,
+    "codecs": {
+     "mp3": 1500
+    },
+    "sample_rates": {
+     "24000": 1500
+    },
+    "bitrate_kbps": {
+     "10": 32.0,
+     "50": 32.0,
+     "90": 32.0
+    },
+    "cutoff_khz": {
+     "10": 8.355,
+     "50": 8.379,
+     "90": 8.402
+    },
+    "lufs": {
+     "5": -21.603,
+     "50": -17.71,
+     "95": -14.204
+    },
+    "lufs_iqr": 3.25,
+    "peak_db": {
+     "5": -0.85,
+     "50": -0.356,
+     "95": 0.287
+    },
+    "share_peak_at_full_scale": 0.2053,
+    "share_over_full_scale": 0.1333,
+    "decoded_minus_stated_ms": {
+     "5": -0.0,
+     "50": 0.0,
+     "95": 0.0
+    },
+    "share_start_inside_sound": 0.308,
+    "share_end_inside_sound": 0.242
+   },
+   "code_switch": {
+    "malay_segments": 1314,
+    "english_word_share": 0.0941,
+    "share_code_switched": 0.3973
+   }
+  },
+  "melati_all": {
+   "yield": {
+    "recordings_with_output": 199,
+    "segments": 7800,
+    "hours": 15.261,
+    "share_of_input": 0.7231,
+    "duration_s": {
+     "10": 1.485,
+     "50": 4.066,
+     "90": 18.854,
+     "99": 28.207
+    },
+    "share_ge_29_5s": 0.0001,
+    "share_lt_3s": 0.3838,
+    "languages": {
+     "ms": 6850,
+     "en": 753,
+     "ta": 179,
+     "zh": 18
+    }
+   },
+   "audio": {
+    "files": 1500,
+    "codecs": {
+     "flac": 1500
+    },
+    "sample_rates": {
+     "24000": 1500
+    },
+    "bitrate_kbps": {
+     "10": null,
+     "50": null,
+     "90": null
+    },
+    "cutoff_khz": {
+     "10": 11.613,
+     "50": 11.719,
+     "90": 11.801
+    },
+    "lufs": {
+     "5": -32.31,
+     "50": -23.939,
+     "95": -20.705
+    },
+    "lufs_iqr": 3.99,
+    "peak_db": {
+     "5": -16.167,
+     "50": -7.901,
+     "95": -3.161
+    },
+    "share_peak_at_full_scale": 0.0,
+    "share_over_full_scale": 0.0,
+    "decoded_minus_stated_ms": {
+     "5": -0.042,
+     "50": 0.0,
+     "95": 0.042
+    },
+    "share_start_inside_sound": 0.31,
+    "share_end_inside_sound": 0.338
+   },
+   "code_switch": {
+    "malay_segments": 6377,
+    "english_word_share": 0.0881,
+    "share_code_switched": 0.2884
+   }
+  },
+  "melati_emilia_filter": {
+   "yield": {
+    "recordings_with_output": 111,
+    "segments": 1594,
+    "hours": 4.017,
+    "share_of_input": 0.1904,
+    "duration_s": {
+     "10": 3.583,
+     "50": 6.761,
+     "90": 18.491,
+     "99": 28.275
+    },
+    "share_ge_29_5s": 0.0,
+    "share_lt_3s": 0.0,
+    "languages": {
+     "ms": 1402,
+     "en": 191,
+     "ta": 1
+    }
+   },
+   "audio": {
+    "files": 1500,
+    "codecs": {
+     "flac": 1500
+    },
+    "sample_rates": {
+     "24000": 1500
+    },
+    "bitrate_kbps": {
+     "10": null,
+     "50": null,
+     "90": null
+    },
+    "cutoff_khz": {
+     "10": 11.637,
+     "50": 11.742,
+     "90": 11.801
+    },
+    "lufs": {
+     "5": -30.658,
+     "50": -24.168,
+     "95": -21.889
+    },
+    "lufs_iqr": 3.26,
+    "peak_db": {
+     "5": -12.82,
+     "50": -8.2,
+     "95": -2.228
+    },
+    "share_peak_at_full_scale": 0.0,
+    "share_over_full_scale": 0.0,
+    "decoded_minus_stated_ms": {
+     "5": -0.042,
+     "50": 0.0,
+     "95": 0.042
+    },
+    "share_start_inside_sound": 0.2273,
+    "share_end_inside_sound": 0.2347
+   },
+   "code_switch": {
+    "malay_segments": 1291,
+    "english_word_share": 0.0833,
+    "share_code_switched": 0.3385
+   }
+  }
+ },
+ "edges_by_alignment": {
+  "emilia": {
+   "aligned": 1494,
+   "of": 1500,
+   "share_first_word_at_cut": 0.3133,
+   "share_last_word_at_cut": 0.1058,
+   "share_either": 0.3936
+  },
+  "melati_all": {
+   "aligned": 1499,
+   "of": 1499,
+   "share_first_word_at_cut": 0.1868,
+   "share_last_word_at_cut": 0.1501,
+   "share_either": 0.3015
+  },
+  "melati_emilia_filter": {
+   "aligned": 1500,
+   "of": 1500,
+   "share_first_word_at_cut": 0.164,
+   "share_last_word_at_cut": 0.1627,
+   "share_either": 0.2913
+  }
+ },
+ "nonverbal": {
+  "recordings": 200,
+  "floor": 0.3,
+  "source_events": {
+   "laugh": 113,
+   "breath": 2,
+   "throat_clear": 2,
+   "sigh": 1,
+   "hum": 5,
+   "gasp": 7
+  },
+  "emilia": {
+   "laugh": {
+    "inside_kept": 0.0177,
+    "still_audible": 0.0177
+   },
+   "breath": {
+    "inside_kept": 0.0,
+    "still_audible": 0.0
+   },
+   "throat_clear": {
+    "inside_kept": 0.0,
+    "still_audible": 0.0
+   },
+   "sigh": {
+    "inside_kept": 0.0,
+    "still_audible": 0.0
+   },
+   "hum": {
+    "inside_kept": 0.0,
+    "still_audible": 0.0
+   },
+   "gasp": {
+    "inside_kept": 0.0,
+    "still_audible": 0.0
+   }
+  },
+  "melati_all": {
+   "laugh": {
+    "inside_kept": 0.2566,
+    "still_audible": 0.2478,
+    "tagged": 0.2389
+   },
+   "breath": {
+    "inside_kept": 0.0,
+    "still_audible": 0.0,
+    "tagged": 0.0
+   },
+   "throat_clear": {
+    "inside_kept": 0.5,
+    "still_audible": 0.0,
+    "tagged": 0.0
+   },
+   "sigh": {
+    "inside_kept": 1.0,
+    "still_audible": 1.0,
+    "tagged": 0.0
+   },
+   "hum": {
+    "inside_kept": 0.0,
+    "still_audible": 0.0,
+    "tagged": 0.0
+   },
+   "gasp": {
+    "inside_kept": 0.1429,
+    "still_audible": 0.1429,
+    "tagged": 0.0
+   }
+  }
+ },
+ "throughput": {
+  "melati": null,
+  "emilia": null
+ }
+}

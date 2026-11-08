@@ -1,0 +1,114 @@
+{
+ "encoder": "w2vbert",
+ "n": 36686,
+ "layers": 25,
+ "dim": 1024,
+ "train_corpora": [
+  "emns",
+  "emovdb",
+  "emozionalmente",
+  "expresso",
+  "jl_corpus",
+  "mesd",
+  "oreau",
+  "resd",
+  "subesco"
+ ],
+ "held_out_corpora": [
+  "nemo",
+  "nvtts_voxceleb"
+ ],
+ "loco": {},
+ "held_out": {
+  "nemo": {
+   "n": 4481,
+   "acc": 0.5584,
+   "uar": 0.5441,
+   "recall": {
+    "neutral": 0.8035,
+    "happy": 0.6782,
+    "sad": 0.8244,
+    "angry": 0.5487,
+    "surprised": 0.0389,
+    "fearful": 0.3709
+   }
+  },
+  "nvtts_voxceleb": {
+   "n": 3310,
+   "acc": 0.4453,
+   "uar": 0.3956,
+   "recall": {
+    "neutral": 0.411,
+    "happy": 0.5593,
+    "sad": 0.2165
+   }
+  },
+  "all": {
+   "n": 7791,
+   "acc": 0.5103,
+   "uar": 0.4743,
+   "recall": {
+    "neutral": 0.5128,
+    "happy": 0.6138,
+    "sad": 0.7564,
+    "angry": 0.5516,
+    "surprised": 0.0413,
+    "fearful": 0.3699
+   }
+  }
+ },
+ "thresholds": {
+  "happy": {
+   "threshold": 0.6,
+   "recall": 0.4113,
+   "precision_at_prior": 0.7525,
+   "n_pos": 1634
+  },
+  "sad": {
+   "threshold": 0.89,
+   "recall": 0.2564,
+   "precision_at_prior": 0.7694,
+   "n_pos": 866
+  },
+  "angry": null,
+  "surprised": {
+   "threshold": 0.3,
+   "recall": 0.0339,
+   "precision_at_prior": 0.8089,
+   "n_pos": 678
+  },
+  "fearful": {
+   "threshold": 0.92,
+   "recall": 0.0136,
+   "precision_at_prior": 1.0,
+   "n_pos": 738
+  }
+ },
+ "layer_mix": [
+  0.035,
+  0.0369,
+  0.0332,
+  0.0346,
+  0.032,
+  0.0367,
+  0.0347,
+  0.0348,
+  0.0391,
+  0.0404,
+  0.0431,
+  0.039,
+  0.0363,
+  0.036,
+  0.0422,
+  0.0458,
+  0.0505,
+  0.057,
+  0.056,
+  0.0526,
+  0.0458,
+  0.0364,
+  0.0328,
+  0.0348,
+  0.0342
+ ]
+}

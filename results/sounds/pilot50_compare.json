@@ -1,0 +1,510 @@
+{
+ "recordings": 356,
+ "rows": 22392,
+ "rows_only_in_one": 0,
+ "models": {
+  "v4": "Scicom-intl/Melati-AudioSet-EAT-Large@78248ff107120278b14465c301a20b57223d6b28",
+  "ensemble": "Scicom-intl/Melati-AudioSet-Ensemble@b3175658f59fea64ecddee98661ec1dabb0f59a5"
+ },
+ "sides": {
+  "v4": {
+   "inline_tags": 469,
+   "rows_with_inline_tags": 460,
+   "rows_with_a_sound_beyond_speech_p0.5": 4371,
+   "labels_per_row_p0.1": 3.35
+  },
+  "ensemble": {
+   "inline_tags": 640,
+   "rows_with_inline_tags": 632,
+   "rows_with_a_sound_beyond_speech_p0.5": 4372,
+   "labels_per_row_p0.1": 3.82
+  }
+ },
+ "inline_by_tag": {
+  "music": {
+   "rows_v4": 453,
+   "rows_ensemble": 626,
+   "rows_both": 437
+  },
+  "clapping": {
+   "rows_v4": 4,
+   "rows_ensemble": 3,
+   "rows_both": 3
+  },
+  "applause": {
+   "rows_v4": 2,
+   "rows_ensemble": 2,
+   "rows_both": 2
+  },
+  "single-lens reflex camera": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "beep": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  }
+ },
+ "inline_where_they_differ": {
+  "music only by ensemble": {
+   "rows": 189,
+   "p_v4 quartiles": [
+    0.736,
+    0.766,
+    0.788
+   ],
+   "p_ensemble quartiles": [
+    0.812,
+    0.825,
+    0.846
+   ]
+  },
+  "music only by v4": {
+   "rows": 16,
+   "p_v4 quartiles": [
+    0.808,
+    0.817,
+    0.833
+   ],
+   "p_ensemble quartiles": [
+    0.774,
+    0.785,
+    0.796
+   ]
+  },
+  "clapping only by v4": {
+   "rows": 1,
+   "p_v4 quartiles": [
+    0.564
+   ],
+   "p_ensemble quartiles": [
+    0.471
+   ]
+  }
+ },
+ "by_segment_length": {
+  "0-3 s": {
+   "rows": 10354,
+   "Music p0.5 v4": 507,
+   "Music p0.5 ensemble": 534,
+   "Music p0.8 v4": 11,
+   "Music p0.8 ensemble": 75,
+   "Silence p0.1 v4": 12,
+   "Silence p0.1 ensemble": 10055,
+   "Silence p0.5 v4": 0,
+   "Silence p0.5 ensemble": 211
+  },
+  "3-6 s": {
+   "rows": 6384,
+   "Music p0.5 v4": 826,
+   "Music p0.5 ensemble": 847,
+   "Music p0.8 v4": 115,
+   "Music p0.8 ensemble": 237,
+   "Silence p0.1 v4": 6,
+   "Silence p0.1 ensemble": 5243,
+   "Silence p0.5 v4": 0,
+   "Silence p0.5 ensemble": 6
+  },
+  "6-10 s": {
+   "rows": 2565,
+   "Music p0.5 v4": 634,
+   "Music p0.5 ensemble": 635,
+   "Music p0.8 v4": 147,
+   "Music p0.8 ensemble": 226,
+   "Silence p0.1 v4": 0,
+   "Silence p0.1 ensemble": 298,
+   "Silence p0.5 v4": 0,
+   "Silence p0.5 ensemble": 0
+  },
+  "10- s": {
+   "rows": 3089,
+   "Music p0.5 v4": 1919,
+   "Music p0.5 ensemble": 1920,
+   "Music p0.8 v4": 682,
+   "Music p0.8 ensemble": 774,
+   "Silence p0.1 v4": 0,
+   "Silence p0.1 ensemble": 0,
+   "Silence p0.5 v4": 0,
+   "Silence p0.5 ensemble": 0
+  }
+ },
+ "labels_p0.5": {
+  "Music": {
+   "rows_v4": 3886,
+   "rows_ensemble": 3936,
+   "rows_both": 3757
+  },
+  "Silence": {
+   "rows_v4": 0,
+   "rows_ensemble": 217,
+   "rows_both": 0
+  },
+  "Radio": {
+   "rows_v4": 125,
+   "rows_ensemble": 29,
+   "rows_both": 28
+  },
+  "Snicker": {
+   "rows_v4": 124,
+   "rows_ensemble": 61,
+   "rows_both": 58
+  },
+  "Chuckle, chortle": {
+   "rows_v4": 107,
+   "rows_ensemble": 22,
+   "rows_both": 21
+  },
+  "Sigh": {
+   "rows_v4": 36,
+   "rows_ensemble": 35,
+   "rows_both": 25
+  },
+  "Male singing": {
+   "rows_v4": 21,
+   "rows_ensemble": 17,
+   "rows_both": 17
+  },
+  "Plop": {
+   "rows_v4": 15,
+   "rows_ensemble": 14,
+   "rows_both": 12
+  },
+  "Insect": {
+   "rows_v4": 11,
+   "rows_ensemble": 14,
+   "rows_both": 11
+  },
+  "Mosquito": {
+   "rows_v4": 9,
+   "rows_ensemble": 14,
+   "rows_both": 7
+  },
+  "Single-lens reflex camera": {
+   "rows_v4": 12,
+   "rows_ensemble": 12,
+   "rows_both": 10
+  },
+  "Whispering": {
+   "rows_v4": 12,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Fly, housefly": {
+   "rows_v4": 5,
+   "rows_ensemble": 8,
+   "rows_both": 5
+  },
+  "Whimper": {
+   "rows_v4": 8,
+   "rows_ensemble": 7,
+   "rows_both": 5
+  },
+  "Gasp": {
+   "rows_v4": 8,
+   "rows_ensemble": 5,
+   "rows_both": 5
+  },
+  "Boing": {
+   "rows_v4": 6,
+   "rows_ensemble": 7,
+   "rows_both": 6
+  },
+  "Mantra": {
+   "rows_v4": 6,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Hiccup": {
+   "rows_v4": 6,
+   "rows_ensemble": 3,
+   "rows_both": 3
+  },
+  "Beep, bleep": {
+   "rows_v4": 6,
+   "rows_ensemble": 6,
+   "rows_both": 6
+  },
+  "Clapping": {
+   "rows_v4": 6,
+   "rows_ensemble": 4,
+   "rows_both": 4
+  },
+  "Writing": {
+   "rows_v4": 5,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Clicking": {
+   "rows_v4": 5,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Whoosh, swoosh, swish": {
+   "rows_v4": 4,
+   "rows_ensemble": 3,
+   "rows_both": 3
+  },
+  "Music for children": {
+   "rows_v4": 4,
+   "rows_ensemble": 3,
+   "rows_both": 1
+  },
+  "Grunt": {
+   "rows_v4": 4,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Cricket": {
+   "rows_v4": 4,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Female singing": {
+   "rows_v4": 3,
+   "rows_ensemble": 3,
+   "rows_both": 3
+  },
+  "Sneeze": {
+   "rows_v4": 3,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Throat clearing": {
+   "rows_v4": 1,
+   "rows_ensemble": 2,
+   "rows_both": 1
+  },
+  "Stomach rumble": {
+   "rows_v4": 2,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Humming": {
+   "rows_v4": 2,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Musical instrument": {
+   "rows_v4": 2,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Zipper (clothing)": {
+   "rows_v4": 2,
+   "rows_ensemble": 2,
+   "rows_both": 2
+  },
+  "Singing bowl": {
+   "rows_v4": 2,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Snake": {
+   "rows_v4": 2,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Applause": {
+   "rows_v4": 2,
+   "rows_ensemble": 2,
+   "rows_both": 2
+  },
+  "Chink, clink": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Pig": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Groan": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Outside, urban or manmade": {
+   "rows_v4": 0,
+   "rows_ensemble": 1,
+   "rows_both": 0
+  },
+  "Guitar": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 0
+  },
+  "Coin (dropping)": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Pant": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Typewriter": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Slap, smack": {
+   "rows_v4": 0,
+   "rows_ensemble": 1,
+   "rows_both": 0
+  },
+  "Laughter": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Gobble": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Turkey": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Fowl": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Piano": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Throbbing": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Giggle": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Timpani": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Clip-clop": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Ukulele": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Typing": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Computer keyboard": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Spray": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 0
+  },
+  "Burping, eructation": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Cough": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Breathing": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Finger snapping": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Hair dryer": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Civil defense siren": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Siren": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Telephone bell ringing": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Electric shaver, electric razor": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Television": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Ringtone": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Tick-tock": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Tick": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Slam": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Shatter": {
+   "rows_v4": 1,
+   "rows_ensemble": 0,
+   "rows_both": 0
+  },
+  "Bleat": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  },
+  "Sheep": {
+   "rows_v4": 1,
+   "rows_ensemble": 1,
+   "rows_both": 1
+  }
+ }
+}

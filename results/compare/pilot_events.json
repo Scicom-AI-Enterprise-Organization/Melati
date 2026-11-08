@@ -1,0 +1,73 @@
+{
+ "qwen3_omni": {
+  "work": "/mnt/data/melati/pilot/work_rel",
+  "segments": 7954,
+  "hours": 15.51,
+  "events": {
+   "laughs": 361,
+   "coughs": 7
+  },
+  "per_hour": {
+   "laughs": 23.3,
+   "coughs": 0.5
+  }
+ },
+ "head_old_rule": {
+  "work": "/mnt/data/melati/pilot/work_nvwhisper",
+  "segments": 7954,
+  "hours": 15.53,
+  "events": {
+   "laughs": 560,
+   "breathes": 547,
+   "coughs": 1
+  },
+  "per_hour": {
+   "laughs": 36.1,
+   "breathes": 35.2,
+   "coughs": 0.1
+  }
+ },
+ "head_vocalsound": {
+  "work": "/mnt/data/melati/pilot/work_nvwhisper3",
+  "segments": 7954,
+  "hours": 15.53,
+  "events": {
+   "breathes": 643,
+   "laughs": 549,
+   "coughs": 10
+  },
+  "per_hour": {
+   "breathes": 41.4,
+   "laughs": 35.3,
+   "coughs": 0.6
+  }
+ },
+ "head": {
+  "work": "/mnt/data/melati/pilot/work_nvrel4",
+  "segments": 7954,
+  "hours": 15.54,
+  "events": {
+   "breathes": 976,
+   "laughs": 590
+  },
+  "per_hour": {
+   "breathes": 62.8,
+   "laughs": 38.0
+  }
+ },
+ "head_rel2": {
+  "work": "/mnt/data/melati/pilot/work_nvrel2",
+  "segments": 7954,
+  "hours": 15.53,
+  "events": {
+   "breathes": 658,
+   "laughs": 496,
+   "coughs": 3
+  },
+  "per_hour": {
+   "breathes": 42.4,
+   "laughs": 31.9,
+   "coughs": 0.2
+  }
+ }
+}

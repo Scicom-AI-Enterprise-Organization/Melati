@@ -1,0 +1,398 @@
+{
+ "encoder": "wavlm",
+ "n": 75634,
+ "layers": 25,
+ "dim": 1024,
+ "train_corpora": [
+  "ased",
+  "cafe",
+  "crema_d",
+  "emns",
+  "emodb",
+  "emovdb",
+  "emozionalmente",
+  "enterface",
+  "expresso",
+  "jl_corpus",
+  "meld",
+  "mesd",
+  "nvtts_expresso",
+  "oreau",
+  "pavoque",
+  "ravdess",
+  "resd",
+  "shemo",
+  "subesco",
+  "turevdb",
+  "urdu"
+ ],
+ "held_out_corpora": [
+  "nemo",
+  "nvtts_voxceleb"
+ ],
+ "loco": {
+  "ased": {
+   "n": 2474,
+   "acc": 0.5631,
+   "uar": 0.5656,
+   "recall": {
+    "neutral": 0.3621,
+    "happy": 0.6646,
+    "sad": 0.6,
+    "angry": 0.5679,
+    "fearful": 0.6333
+   }
+  },
+  "cafe": {
+   "n": 936,
+   "acc": 0.6774,
+   "uar": 0.6657,
+   "recall": {
+    "neutral": 0.5139,
+    "happy": 0.4722,
+    "sad": 0.7847,
+    "angry": 0.9306,
+    "surprised": 0.6042,
+    "fearful": 0.7083,
+    "disgusted": 0.6458
+   }
+  },
+  "crema_d": {
+   "n": 7442,
+   "acc": 0.5083,
+   "uar": 0.5057,
+   "recall": {
+    "neutral": 0.3974,
+    "happy": 0.4076,
+    "sad": 0.9402,
+    "angry": 0.8017,
+    "fearful": 0.3729,
+    "disgusted": 0.1141
+   }
+  },
+  "emns": {
+   "n": 1063,
+   "acc": 0.5353,
+   "uar": 0.4994,
+   "recall": {
+    "neutral": 0.8121,
+    "happy": 0.7923,
+    "sad": 0.3267,
+    "angry": 0.7669,
+    "surprised": 0.0196,
+    "disgusted": 0.2788
+   }
+  },
+  "emodb": {
+   "n": 454,
+   "acc": 0.8833,
+   "uar": 0.8597,
+   "recall": {
+    "neutral": 0.9494,
+    "happy": 0.9155,
+    "sad": 0.9839,
+    "angry": 0.9764,
+    "fearful": 0.6377,
+    "disgusted": 0.6957
+   }
+  },
+  "emovdb": {
+   "n": 5172,
+   "acc": 0.8161,
+   "uar": 0.8193,
+   "recall": {
+    "neutral": 0.7347,
+    "happy": 0.8026,
+    "angry": 0.9598,
+    "disgusted": 0.7802
+   }
+  },
+  "emozionalmente": {
+   "n": 6902,
+   "acc": 0.5283,
+   "uar": 0.5283,
+   "recall": {
+    "neutral": 0.8722,
+    "happy": 0.7738,
+    "sad": 0.4493,
+    "angry": 0.7272,
+    "surprised": 0.1247,
+    "fearful": 0.3154,
+    "disgusted": 0.4351
+   }
+  },
+  "enterface": {
+   "n": 1257,
+   "acc": 0.3477,
+   "uar": 0.3481,
+   "recall": {
+    "happy": 0.5169,
+    "sad": 0.3429,
+    "angry": 0.4143,
+    "surprised": 0.1857,
+    "fearful": 0.2429,
+    "disgusted": 0.3857
+   }
+  },
+  "expresso": {
+   "n": 4558,
+   "acc": 0.511,
+   "uar": 0.5109,
+   "recall": {
+    "neutral": 0.2857,
+    "happy": 0.7829,
+    "sad": 0.4641
+   }
+  },
+  "jl_corpus": {
+   "n": 1440,
+   "acc": 0.6333,
+   "uar": 0.6054,
+   "recall": {
+    "neutral": 0.8167,
+    "happy": 0.7729,
+    "sad": 0.5167,
+    "angry": 0.9125,
+    "fearful": 0.0083
+   }
+  },
+  "meld": {
+   "n": 13708,
+   "acc": 0.2256,
+   "uar": 0.2156,
+   "recall": {
+    "neutral": 0.1165,
+    "happy": 0.6274,
+    "sad": 0.2355,
+    "angry": 0.3093,
+    "surprised": 0.0642,
+    "fearful": 0.1257,
+    "disgusted": 0.0305
+   }
+  },
+  "mesd": {
+   "n": 862,
+   "acc": 0.464,
+   "uar": 0.464,
+   "recall": {
+    "neutral": 0.5734,
+    "happy": 0.5069,
+    "sad": 0.7014,
+    "angry": 0.3427,
+    "fearful": 0.1181,
+    "disgusted": 0.5417
+   }
+  },
+  "nvtts_expresso": {
+   "n": 1235,
+   "acc": 0.7126,
+   "uar": 0.5278,
+   "recall": {
+    "neutral": 0.3196,
+    "happy": 0.7389,
+    "sad": 0.8759,
+    "surprised": 0.12,
+    "disgusted": 0.5844
+   }
+  },
+  "oreau": {
+   "n": 502,
+   "acc": 0.4303,
+   "uar": 0.4304,
+   "recall": {
+    "neutral": 0.7324,
+    "happy": 0.6944,
+    "sad": 0.375,
+    "angry": 0.3288,
+    "surprised": 0.3472,
+    "fearful": 0.1972,
+    "disgusted": 0.338
+   }
+  },
+  "pavoque": {
+   "n": 4867,
+   "acc": 0.8377,
+   "uar": 0.6704,
+   "recall": {
+    "neutral": 0.984,
+    "happy": 0.5753,
+    "sad": 0.2104,
+    "angry": 0.9118
+   }
+  },
+  "ravdess": {
+   "n": 1440,
+   "acc": 0.6632,
+   "uar": 0.6654,
+   "recall": {
+    "neutral": 0.6319,
+    "happy": 0.5417,
+    "sad": 0.4479,
+    "angry": 0.9583,
+    "surprised": 0.5417,
+    "fearful": 0.8438,
+    "disgusted": 0.6927
+   }
+  },
+  "resd": {
+   "n": 1396,
+   "acc": 0.3603,
+   "uar": 0.3873,
+   "recall": {
+    "neutral": 0.4084,
+    "happy": 0.2139,
+    "sad": 0.5556,
+    "angry": 0.6986,
+    "fearful": 0.2691,
+    "disgusted": 0.1784
+   }
+  },
+  "shemo": {
+   "n": 3000,
+   "acc": 0.6183,
+   "uar": 0.5607,
+   "recall": {
+    "neutral": 0.6021,
+    "happy": 0.8259,
+    "sad": 0.3341,
+    "angry": 0.8244,
+    "surprised": 0.0933,
+    "fearful": 0.6842
+   }
+  },
+  "subesco": {
+   "n": 7000,
+   "acc": 0.5479,
+   "uar": 0.5479,
+   "recall": {
+    "neutral": 0.944,
+    "happy": 0.699,
+    "sad": 0.691,
+    "angry": 0.942,
+    "surprised": 0.115,
+    "fearful": 0.381,
+    "disgusted": 0.063
+   }
+  },
+  "turevdb": {
+   "n": 1735,
+   "acc": 0.4357,
+   "uar": 0.4244,
+   "recall": {
+    "neutral": 0.3284,
+    "happy": 0.3221,
+    "sad": 0.7039,
+    "angry": 0.3429
+   }
+  },
+  "urdu": {
+   "n": 400,
+   "acc": 0.5225,
+   "uar": 0.5225,
+   "recall": {
+    "neutral": 0.3,
+    "happy": 0.57,
+    "sad": 0.34,
+    "angry": 0.88
+   }
+  }
+ },
+ "held_out": {
+  "nemo": {
+   "n": 4481,
+   "acc": 0.5436,
+   "uar": 0.5296,
+   "recall": {
+    "neutral": 0.9258,
+    "happy": 0.4539,
+    "sad": 0.6996,
+    "angry": 0.5714,
+    "surprised": 0.1016,
+    "fearful": 0.4253
+   }
+  },
+  "nvtts_voxceleb": {
+   "n": 3310,
+   "acc": 0.5429,
+   "uar": 0.4738,
+   "recall": {
+    "neutral": 0.5505,
+    "happy": 0.5514,
+    "sad": 0.3196
+   }
+  },
+  "all": {
+   "n": 7791,
+   "acc": 0.5433,
+   "uar": 0.485,
+   "recall": {
+    "neutral": 0.6479,
+    "happy": 0.5067,
+    "sad": 0.657,
+    "angry": 0.5728,
+    "surprised": 0.1003,
+    "fearful": 0.4255
+   }
+  }
+ },
+ "loco_mean_uar": 0.5393,
+ "thresholds": {
+  "happy": {
+   "threshold": 0.5,
+   "recall": 0.3476,
+   "precision_at_prior": 0.7528,
+   "n_pos": 1634
+  },
+  "sad": {
+   "threshold": 0.82,
+   "recall": 0.2344,
+   "precision_at_prior": 0.7599,
+   "n_pos": 866
+  },
+  "angry": {
+   "threshold": 0.84,
+   "recall": 0.1627,
+   "precision_at_prior": 0.7508,
+   "n_pos": 756
+  },
+  "surprised": {
+   "threshold": 0.32,
+   "recall": 0.1047,
+   "precision_at_prior": 0.751,
+   "n_pos": 678
+  },
+  "fearful": {
+   "threshold": 0.92,
+   "recall": 0.0122,
+   "precision_at_prior": 1.0,
+   "n_pos": 738
+  }
+ },
+ "layer_mix": [
+  0.0333,
+  0.0299,
+  0.0324,
+  0.0408,
+  0.0404,
+  0.049,
+  0.0585,
+  0.0531,
+  0.052,
+  0.057,
+  0.0548,
+  0.0608,
+  0.0572,
+  0.0499,
+  0.0315,
+  0.0241,
+  0.0237,
+  0.0223,
+  0.0221,
+  0.0213,
+  0.0221,
+  0.0238,
+  0.0437,
+  0.0299,
+  0.0662
+ ]
+}

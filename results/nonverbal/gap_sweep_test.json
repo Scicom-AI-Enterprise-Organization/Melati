@@ -1,0 +1,74 @@
+{
+ "{}": {
+  "candidates": 876,
+  "per_clip": 2.44,
+  "candidate_recall": {
+   "breath": 0.541,
+   "cough": 1.0,
+   "laugh": 0.768
+  }
+ },
+ "{\"floor_db\": 4}": {
+  "candidates": 1073,
+  "per_clip": 2.99,
+  "candidate_recall": {
+   "breath": 0.722,
+   "cough": 1.0,
+   "laugh": 0.786
+  }
+ },
+ "{\"floor_db\": 3}": {
+  "candidates": 1191,
+  "per_clip": 3.32,
+  "candidate_recall": {
+   "breath": 0.825,
+   "cough": 1.0,
+   "laugh": 0.786
+  }
+ },
+ "{\"floor_db\": 2}": {
+  "candidates": 1308,
+  "per_clip": 3.64,
+  "candidate_recall": {
+   "breath": 0.909,
+   "cough": 1.0,
+   "laugh": 0.786
+  }
+ },
+ "{\"floor_db\": 3, \"min_active\": 0.05}": {
+  "candidates": 1366,
+  "per_clip": 3.81,
+  "candidate_recall": {
+   "breath": 0.878,
+   "cough": 1.0,
+   "laugh": 0.804
+  }
+ },
+ "{\"floor_db\": 3, \"min_active\": 0.04}": {
+  "candidates": 1431,
+  "per_clip": 3.99,
+  "candidate_recall": {
+   "breath": 0.904,
+   "cough": 1.0,
+   "laugh": 0.804
+  }
+ },
+ "{\"floor_db\": 2, \"min_active\": 0.04}": {
+  "candidates": 1527,
+  "per_clip": 4.25,
+  "candidate_recall": {
+   "breath": 0.947,
+   "cough": 1.0,
+   "laugh": 0.804
+  }
+ },
+ "{\"min_active\": 0.04}": {
+  "candidates": 1107,
+  "per_clip": 3.08,
+  "candidate_recall": {
+   "breath": 0.659,
+   "cough": 1.0,
+   "laugh": 0.786
+  }
+ }
+}

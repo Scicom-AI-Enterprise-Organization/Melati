@@ -1,0 +1,27 @@
+{
+ "name": "big",
+ "sources": [
+  "strong_train",
+  "bal_train",
+  "unbal_train"
+ ],
+ "teachers": [
+  "ced-base",
+  "eat-large",
+  "sslam"
+ ],
+ "clips": 730841,
+ "index_only": true,
+ "hours": 2011.1,
+ "dropped": {
+  "in_eval": 0,
+  "duplicate": 37424,
+  "unreadable_shards": 0
+ },
+ "with_timed_events": 102123,
+ "by_source": {
+  "bal_train": 11397,
+  "strong_train": 102123,
+  "unbal_train": 617321
+ }
+}

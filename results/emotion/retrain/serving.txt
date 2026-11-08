@@ -1,0 +1,5 @@
+h_whisper    same top class 1.000  max |dp| 0.0000  mean |dp| 0.00000
+h_whisper_ft same top class 1.000  max |dp| 0.0000  mean |dp| 0.00000
+h_w2vbert    same top class 1.000  max |dp| 0.0029  mean |dp| 0.00009
+h_wavlm      same top class 1.000  max |dp| 0.0005  mean |dp| 0.00000
+h_e2v        same top class 1.000  max |dp| 0.0000  mean |dp| 0.00000

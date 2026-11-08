@@ -1,0 +1,222 @@
+{
+  "lt": {
+    "n": 10,
+    "median_cer": 0.0568,
+    "mean_cer": 0.0702
+  },
+  "az": {
+    "n": 10,
+    "median_cer": 0.0419,
+    "mean_cer": 0.0377
+  },
+  "ne": {
+    "n": 10,
+    "median_cer": 0.1997,
+    "mean_cer": 0.2317
+  },
+  "am": {
+    "n": 10,
+    "median_cer": 1.2265,
+    "mean_cer": 1.2734
+  },
+  "my": {
+    "n": 10,
+    "median_cer": 0.8773,
+    "mean_cer": 0.907
+  },
+  "fi": {
+    "n": 10,
+    "median_cer": 0.0027,
+    "mean_cer": 0.0052
+  },
+  "sk": {
+    "n": 10,
+    "median_cer": 0.0244,
+    "mean_cer": 0.0356
+  },
+  "kn": {
+    "n": 10,
+    "median_cer": 0.2412,
+    "mean_cer": 0.2674
+  },
+  "th": {
+    "n": 10,
+    "median_cer": 0.0617,
+    "mean_cer": 0.085
+  },
+  "lo": {
+    "n": 10,
+    "median_cer": 1.0,
+    "mean_cer": 0.9891
+  },
+  "pl": {
+    "n": 10,
+    "median_cer": 0.009,
+    "mean_cer": 0.0352
+  },
+  "ta": {
+    "n": 10,
+    "median_cer": 0.1105,
+    "mean_cer": 0.1177
+  },
+  "ur": {
+    "n": 10,
+    "median_cer": 0.0793,
+    "mean_cer": 0.0762
+  },
+  "el": {
+    "n": 10,
+    "median_cer": 0.029,
+    "mean_cer": 0.0428
+  },
+  "vi": {
+    "n": 10,
+    "median_cer": 0.0417,
+    "mean_cer": 0.0396
+  },
+  "en": {
+    "n": 10,
+    "median_cer": 0.0094,
+    "mean_cer": 0.0351
+  },
+  "km": {
+    "n": 8,
+    "median_cer": 0.8404,
+    "mean_cer": 0.8518
+  },
+  "sd": {
+    "n": 8,
+    "median_cer": 1.0745,
+    "mean_cer": 1.0779
+  },
+  "te": {
+    "n": 8,
+    "median_cer": 1.0,
+    "mean_cer": 0.9187
+  },
+  "ml": {
+    "n": 8,
+    "median_cer": 1.0,
+    "mean_cer": 0.9733
+  },
+  "yo": {
+    "n": 8,
+    "median_cer": 0.4515,
+    "mean_cer": 0.4688
+  },
+  "pa": {
+    "n": 8,
+    "median_cer": 0.4492,
+    "mean_cer": 0.5656
+  },
+  "gu": {
+    "n": 8,
+    "median_cer": 0.3296,
+    "mean_cer": 0.3722
+  },
+  "mr": {
+    "n": 8,
+    "median_cer": 0.2839,
+    "mean_cer": 0.2914
+  },
+  "bn": {
+    "n": 8,
+    "median_cer": 0.3747,
+    "mean_cer": 0.3944
+  },
+  "ka": {
+    "n": 8,
+    "median_cer": 0.4039,
+    "mean_cer": 0.3891
+  },
+  "hy": {
+    "n": 8,
+    "median_cer": 0.1461,
+    "mean_cer": 0.2132
+  },
+  "kk": {
+    "n": 8,
+    "median_cer": 0.0578,
+    "mean_cer": 0.0623
+  },
+  "mn": {
+    "n": 8,
+    "median_cer": 0.2914,
+    "mean_cer": 0.3039
+  },
+  "ps": {
+    "n": 8,
+    "median_cer": 0.3549,
+    "mean_cer": 0.3896
+  },
+  "sn": {
+    "n": 8,
+    "median_cer": 0.2879,
+    "mean_cer": 0.4002
+  },
+  "so": {
+    "n": 8,
+    "median_cer": 0.3671,
+    "mean_cer": 0.3422
+  },
+  "ha": {
+    "n": 8,
+    "median_cer": 0.2676,
+    "mean_cer": 0.2539
+  },
+  "uz": {
+    "n": 8,
+    "median_cer": 0.2401,
+    "mean_cer": 0.254
+  },
+  "sl": {
+    "n": 8,
+    "median_cer": 0.0544,
+    "mean_cer": 0.0623
+  },
+  "et": {
+    "n": 8,
+    "median_cer": 0.0176,
+    "mean_cer": 0.0235
+  },
+  "ro": {
+    "n": 8,
+    "median_cer": 0.0256,
+    "mean_cer": 0.0348
+  },
+  "da": {
+    "n": 8,
+    "median_cer": 0.0336,
+    "mean_cer": 0.0465
+  },
+  "bg": {
+    "n": 8,
+    "median_cer": 0.0215,
+    "mean_cer": 0.0237
+  },
+  "sv": {
+    "n": 8,
+    "median_cer": 0.0321,
+    "mean_cer": 0.0598
+  },
+  "hu": {
+    "n": 8,
+    "median_cer": 0.0343,
+    "mean_cer": 0.045
+  },
+  "nl": {
+    "n": 8,
+    "median_cer": 0.0037,
+    "mean_cer": 0.0102
+  },
+  "it": {
+    "n": 8,
+    "median_cer": 0.0,
+    "mean_cer": 0.0077
+  },
+  "tr": {
+    "n": 8,
+    "median_cer": 0.008,
+    "mean_cer": 0.0203
+  }
+}

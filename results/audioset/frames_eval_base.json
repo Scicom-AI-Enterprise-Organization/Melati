@@ -1,0 +1,8 @@
+{
+ "clips": 16896,
+ "classes_labelled": 381,
+ "classes_shared": 364,
+ "pretrainedsed": {
+  "shared": 0.4261
+ }
+}

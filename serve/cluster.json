@@ -1,0 +1,174 @@
+{
+  "run_dir": "${MELATI_DATA}/serve",
+  "endpoints": "${MELATI_DATA}/serve/endpoints.json",
+  "startup_timeout_s": 1500,
+  "env": {
+    "HF_HOME": "${MELATI_DATA}/hf",
+    "HF_HUB_DISABLE_XET": "1",
+    "VLLM_CONFIGURE_LOGGING": "1"
+  },
+  "services": {
+    "asr": {
+      "kind": "vllm",
+      "venv": "${MELATI_ROOT}/.venv-vllm",
+      "model": "Scicom-intl/Melati-Whisper-Large-V3",
+      "served_name": "melati-asr",
+      "port": 18100,
+      "replicas": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          4
+        ],
+        null
+      ],
+      "gpu_memory_utilization": 0.17,
+      "args": [
+        "--revision",
+        "cdbb981c6ce8d87b338ed9503ef9a51f24a2a6aa",
+        "--tokenizer-revision",
+        "cdbb981c6ce8d87b338ed9503ef9a51f24a2a6aa",
+        "--max-num-seqs",
+        256,
+        "--dtype",
+        "bfloat16",
+        "--max-num-batched-tokens",
+        49152,
+        "--kv-cache-memory-bytes",
+        12884901888
+      ]
+    },
+    "diar": {
+      "kind": "vllm",
+      "venv": "${MELATI_ROOT}/.venv-diar",
+      "model": "Scicom-intl/Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged",
+      "served_name": "melati-diar",
+      "port": 18200,
+      "replicas": [
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "gpu_memory_utilization": 0.25,
+      "env": {
+        "VLLM_MAX_AUDIO_DECODE_DURATION_S": 7200,
+        "VLLM_MAX_AUDIO_CLIP_FILESIZE_MB": 256,
+        "VLLM_MAX_AUDIO_DECODE_BYTES": 536870912
+      },
+      "args": [
+        "--trust-remote-code",
+        "--max-model-len",
+        131072,
+        "--max-num-batched-tokens",
+        65536,
+        "--limit-mm-per-prompt",
+        "{\"audio\": 1}",
+        "--allowed-local-media-path",
+        "${MELATI_DATA}",
+        "--kv-cache-memory-bytes",
+        38654705664
+      ]
+    },
+    "front": {
+      "kind": "app",
+      "app": "serve.front_server:app",
+      "port": 18300,
+      "replicas": [
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "env": {
+        "SEP_MAX_BATCH": 16,
+        "SED_MAX_BATCH": 16
+      }
+    },
+    "align": {
+      "kind": "app",
+      "app": "serve.align_server:app",
+      "port": 18400,
+      "replicas": [
+        null,
+        [
+          1
+        ],
+        [
+          5
+        ]
+      ],
+      "env": {
+        "MAX_BATCH": 32
+      },
+      "venv": "${MELATI_ROOT}/.venv-align"
+    },
+    "mos": {
+      "kind": "app",
+      "app": "server:app",
+      "cwd": "${MELATI_ROOT}/ext/SOTA-MOS/serving",
+      "port": 18500,
+      "pythonpath": "${MELATI_ROOT}/ext/SOTA-MOS:${MELATI_ROOT}/ext/SOTA-MOS/serving",
+      "replicas": [
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "env": {
+        "SYSTEM": "${MELATI_DATA}/models/sotamos/model/system.json",
+        "MAX_BATCH": 16,
+        "PP_WORKERS": 16
+      }
+    },
+    "tag": {
+      "kind": "app",
+      "app": "serve.tag_server:app",
+      "port": 18600,
+      "replicas": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "env": {
+        "EMOTION_MODELS": "meralion,e2v,h_whisper,h_whisper_ft,h_w2vbert,h_wavlm,h_e2v,nv_whisper,nvf_whisper",
+        "MAX_BATCH": 32,
+        "DNSMOS_THREADS": 8
+      }
+    }
+  }
+}

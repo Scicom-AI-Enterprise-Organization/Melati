@@ -1,0 +1,40 @@
+{
+ "run_dir": "${MELATI_DATA}/serve_sounds_ens",
+ "endpoints": "${MELATI_DATA}/serve_sounds_ens/endpoints.json",
+ "startup_timeout_s": 900,
+ "env": {
+  "HF_HOME": "${MELATI_DATA}/hf",
+  "HF_HUB_DISABLE_XET": "1"
+ },
+ "services": {
+  "sounds": {
+   "kind": "app",
+   "app": "serve.sounds_server:app",
+   "venv": "${MELATI_ROOT}/.venv-sed",
+   "port": 18710,
+   "replicas": [
+    [
+     2
+    ],
+    [
+     0
+    ],
+    [
+     1
+    ],
+    [
+     4
+    ],
+    [
+     5
+    ]
+   ],
+   "env": {
+    "SOUNDS_MODEL": "Scicom-intl/Melati-AudioSet-Ensemble",
+    "SOUNDS_REVISION": "b3175658f59fea64ecddee98661ec1dabb0f59a5",
+    "MAX_BATCH": 64,
+    "SOUNDS_FILL": "native"
+   }
+  }
+ }
+}

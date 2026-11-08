@@ -1,0 +1,95 @@
+{
+ "repo": "Scicom-intl/Melati-AudioSet-Ensemble",
+ "revision": "e29b80b44fe316559e5d67cdcb85eefa74c0bdd9",
+ "versions": {
+  "torch": "2.15.0",
+  "torchaudio": null,
+  "transformers": null,
+  "timm": null,
+  "huggingface_hub": "2.3.0",
+  "safetensors": "0.8.0",
+  "numpy": "2.5.4",
+  "soundfile": "0.14.0"
+ },
+ "load_s": 173.4,
+ "device": "cuda",
+ "clips": 64,
+ "run_s": 15.4,
+ "members": {
+  "ced-base": {
+   "max_abs_diff": 0.05401,
+   "mean_abs_diff": 2.339140155527275e-05,
+   "ok": true
+  },
+  "eat-large": {
+   "max_abs_diff": 0.00024,
+   "mean_abs_diff": 8.006226153156604e-07,
+   "ok": true
+  },
+  "sslam": {
+   "max_abs_diff": 0.00025,
+   "mean_abs_diff": 7.90305023201654e-07,
+   "ok": true
+  },
+  "beats": {
+   "max_abs_diff": 0.00024,
+   "mean_abs_diff": 7.258196887960366e-07,
+   "ok": true
+  },
+  "melati-v3": {
+   "max_abs_diff": 0.00024,
+   "mean_abs_diff": 7.32620719645638e-07,
+   "ok": true
+  },
+  "melati-v4": {
+   "max_abs_diff": 0.00024,
+   "mean_abs_diff": 7.302529638764099e-07,
+   "ok": true
+  }
+ },
+ "ensemble_max_abs_diff": 0.00898,
+ "engine": {
+  "load_s": 10.6,
+  "members": {
+   "ced-base": {
+    "max_abs_diff": 0.05542,
+    "mean_abs_diff": 4.917479236610234e-05,
+    "ok": true
+   },
+   "eat-large": {
+    "max_abs_diff": 0.01485,
+    "mean_abs_diff": 4.3134383304277435e-05,
+    "ok": true
+   },
+   "sslam": {
+    "max_abs_diff": 0.00809,
+    "mean_abs_diff": 3.174514131387696e-05,
+    "ok": true
+   },
+   "beats": {
+    "max_abs_diff": 0.00684,
+    "mean_abs_diff": 1.9503950170474127e-05,
+    "ok": true
+   },
+   "melati-v3": {
+    "max_abs_diff": 0.01713,
+    "mean_abs_diff": 3.8566970033571124e-05,
+    "ok": true
+   },
+   "melati-v4": {
+    "max_abs_diff": 0.01919,
+    "mean_abs_diff": 3.8955135096330196e-05,
+    "ok": true
+   }
+  },
+  "http_max_abs_diff": 5e-05,
+  "http_tags": [
+   "Music",
+   "Speech",
+   "Maraca",
+   "Musical instrument",
+   "Rattle (instrument)"
+  ],
+  "ok": true
+ }
+}

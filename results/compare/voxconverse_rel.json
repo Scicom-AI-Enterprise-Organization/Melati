@@ -1,0 +1,275 @@
+{
+ "recordings": 12,
+ "input_hours": 2.31,
+ "not_processed_by_emilia": [],
+ "pipelines": {
+  "emilia": {
+   "yield": {
+    "recordings_with_output": 9,
+    "segments": 159,
+    "hours": 0.466,
+    "share_of_input": 0.2018,
+    "duration_s": {
+     "10": 4.655,
+     "50": 10.153,
+     "90": 17.046,
+     "99": 20.858
+    },
+    "share_ge_29_5s": 0.0,
+    "share_lt_3s": 0.0,
+    "languages": {
+     "en": 159
+    }
+   },
+   "audio": {
+    "files": 159,
+    "codecs": {
+     "mp3": 159
+    },
+    "sample_rates": {
+     "24000": 159
+    },
+    "bitrate_kbps": {
+     "10": 32.0,
+     "50": 32.0,
+     "90": 32.0
+    },
+    "cutoff_khz": {
+     "10": 8.297,
+     "50": 8.332,
+     "90": 8.355
+    },
+    "lufs": {
+     "5": -22.225,
+     "50": -17.557,
+     "95": -13.503
+    },
+    "lufs_iqr": 2.61,
+    "peak_db": {
+     "5": -0.833,
+     "50": -0.471,
+     "95": -0.055
+    },
+    "share_peak_at_full_scale": 0.0881,
+    "share_over_full_scale": 0.0377,
+    "decoded_minus_stated_ms": {
+     "5": -0.0,
+     "50": 0.0,
+     "95": 0.0
+    },
+    "share_start_inside_sound": 0.3836,
+    "share_end_inside_sound": 0.1698
+   },
+   "purity": {
+    "segments": 159,
+    "purity_weighted": 0.9653,
+    "share_purity_lt_0_9": 0.1447,
+    "share_second_speaker_ge_0_5s": 0.195,
+    "share_overlap_ge_0_2s": 0.1698,
+    "share_mostly_no_reference_speech": 0.0,
+    "single_speaker_speech_kept": 0.2224
+   },
+   "code_switch": {
+    "malay_segments": 0,
+    "english_word_share": null,
+    "share_code_switched": null
+   }
+  },
+  "melati_all": {
+   "yield": {
+    "recordings_with_output": 12,
+    "segments": 787,
+    "hours": 1.806,
+    "share_of_input": 0.7821,
+    "duration_s": {
+     "10": 1.58,
+     "50": 5.232,
+     "90": 20.918,
+     "99": 28.386
+    },
+    "share_ge_29_5s": 0.0,
+    "share_lt_3s": 0.2783,
+    "languages": {
+     "en": 771,
+     "ms": 7,
+     "ta": 7,
+     "zh": 2
+    }
+   },
+   "audio": {
+    "files": 787,
+    "codecs": {
+     "flac": 787
+    },
+    "sample_rates": {
+     "24000": 787
+    },
+    "bitrate_kbps": {
+     "10": null,
+     "50": null,
+     "90": null
+    },
+    "cutoff_khz": {
+     "10": 7.805,
+     "50": 7.84,
+     "90": 7.863
+    },
+    "lufs": {
+     "5": -30.097,
+     "50": -23.449,
+     "95": -21.009
+    },
+    "lufs_iqr": 2.45,
+    "peak_db": {
+     "5": -12.03,
+     "50": -8.633,
+     "95": -4.116
+    },
+    "share_peak_at_full_scale": 0.0,
+    "share_over_full_scale": 0.0,
+    "decoded_minus_stated_ms": {
+     "5": -0.042,
+     "50": 0.0,
+     "95": 0.042
+    },
+    "share_start_inside_sound": 0.4981,
+    "share_end_inside_sound": 0.4917
+   },
+   "purity": {
+    "segments": 783,
+    "purity_weighted": 0.9943,
+    "share_purity_lt_0_9": 0.0166,
+    "share_second_speaker_ge_0_5s": 0.0217,
+    "share_overlap_ge_0_2s": 0.0307,
+    "share_mostly_no_reference_speech": 0.0,
+    "single_speaker_speech_kept": 0.8719
+   },
+   "code_switch": {
+    "malay_segments": 1,
+    "english_word_share": 0.1,
+    "share_code_switched": 1.0
+   }
+  },
+  "melati_emilia_filter": {
+   "yield": {
+    "recordings_with_output": 8,
+    "segments": 165,
+    "hours": 0.429,
+    "share_of_input": 0.1859,
+    "duration_s": {
+     "10": 3.808,
+     "50": 6.735,
+     "90": 20.368,
+     "99": 28.007
+    },
+    "share_ge_29_5s": 0.0,
+    "share_lt_3s": 0.0,
+    "languages": {
+     "en": 160,
+     "ms": 4,
+     "zh": 1
+    }
+   },
+   "audio": {
+    "files": 165,
+    "codecs": {
+     "flac": 165
+    },
+    "sample_rates": {
+     "24000": 165
+    },
+    "bitrate_kbps": {
+     "10": null,
+     "50": null,
+     "90": null
+    },
+    "cutoff_khz": {
+     "10": 7.805,
+     "50": 7.84,
+     "90": 7.863
+    },
+    "lufs": {
+     "5": -33.135,
+     "50": -23.679,
+     "95": -21.818
+    },
+    "lufs_iqr": 2.7,
+    "peak_db": {
+     "5": -14.887,
+     "50": -6.628,
+     "95": -4.59
+    },
+    "share_peak_at_full_scale": 0.0,
+    "share_over_full_scale": 0.0,
+    "decoded_minus_stated_ms": {
+     "5": -0.042,
+     "50": 0.0,
+     "95": 0.042
+    },
+    "share_start_inside_sound": 0.2,
+    "share_end_inside_sound": 0.1939
+   },
+   "purity": {
+    "segments": 165,
+    "purity_weighted": 0.998,
+    "share_purity_lt_0_9": 0.0,
+    "share_second_speaker_ge_0_5s": 0.0061,
+    "share_overlap_ge_0_2s": 0.0182,
+    "share_mostly_no_reference_speech": 0.0,
+    "single_speaker_speech_kept": 0.2112
+   },
+   "code_switch": {
+    "malay_segments": 0,
+    "english_word_share": null,
+    "share_code_switched": null
+   }
+  }
+ },
+ "edges_by_alignment": {
+  "emilia": {
+   "aligned": 159,
+   "of": 159,
+   "share_first_word_at_cut": 0.3711,
+   "share_last_word_at_cut": 0.0943,
+   "share_either": 0.4465
+  },
+  "melati_all": {
+   "aligned": 787,
+   "of": 787,
+   "share_first_word_at_cut": 0.0915,
+   "share_last_word_at_cut": 0.0368,
+   "share_either": 0.1233
+  },
+  "melati_emilia_filter": {
+   "aligned": 165,
+   "of": 165,
+   "share_first_word_at_cut": 0.0848,
+   "share_last_word_at_cut": 0.0364,
+   "share_either": 0.1152
+  }
+ },
+ "nonverbal": {
+  "recordings": 12,
+  "floor": 0.3,
+  "source_events": {
+   "laugh": 15
+  },
+  "emilia": {
+   "laugh": {
+    "inside_kept": 0.0,
+    "still_audible": 0.0
+   }
+  },
+  "melati_all": {
+   "laugh": {
+    "inside_kept": 0.0,
+    "still_audible": 0.0,
+    "tagged": 0.0
+   }
+  }
+ },
+ "throughput": {
+  "melati": null,
+  "emilia": null
+ }
+}
