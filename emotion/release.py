@@ -68,7 +68,7 @@ def numbers():
     uar = {"MERaLiON-SER": cur["meralion"]["held_out"]["all"]["uar"],
            "emotion2vec+ large": cur["e2v"]["held_out"]["all"]["uar"],
            "the two averaged": cur["meralion+e2v"]["held_out"]["all"]["uar"],
-           "Whisper head, all 21 corpora (Melati internal)": full["held_out"]["all"]["uar"],
+           "Whisper head, all 21 corpora (Melati-Emotion-Heads)": full["held_out"]["all"]["uar"],
            "this model": rel["held_out"]["all"]["uar"]}
     return rel, full, cur, cv_rel, cv_old, uar
 
@@ -84,7 +84,7 @@ def figures(out: Path, rel, cv_rel, cv_old, uar):
         (out / "figures").mkdir(parents=True, exist_ok=True)
         fig.savefig(out / "figures" / name, dpi=st.CARD_DPI, bbox_inches="tight", facecolor="white", edgecolor="none")
         plt.close(fig)
-    # 1. held-out UAR: the released classifiers (grey), the old tagger (amber), Melati's internal head, this model
+    # 1. held-out UAR: the released classifiers (grey), the old tagger (amber), the pipeline's own head, this model
     names = list(uar)
     cols = [st.RULE, st.RULE, st.S4, st.S5, st.S1]
     fig, ax = plt.subplots(figsize=(6.4, 0.42 * len(names) + 0.8))
@@ -186,8 +186,9 @@ tags:
 # Melati emotion classifier (Whisper-large-v3)
 
 Which of seven emotions ({", ".join(cfg['labels'])}) a stretch of speech carries. Melati's speech-data pipeline
-puts emotion scopes into podcast transcripts (`<happy>...</happy>`); this is the classifier behind them that can be
-released, trained only on corpora whose licence allows it.
+puts emotion scopes into podcast transcripts (`<happy>...</happy>`); this is its Whisper head trained only on the
+corpora whose licence explicitly allows a derivative. The five heads the pipeline runs, trained on all 21 corpora, are
+[Melati-Emotion-Heads](https://huggingface.co/Scicom-intl/Melati-Emotion-Heads).
 
 One checkpoint: the encoder of [openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) (float16) and a
 small head trained on its frozen features (float32): every encoder layer mean-pooled over the clip's own frames, a
@@ -259,9 +260,10 @@ Disgust has no held-out examples, so it has no threshold and is never returned.
 |---|---|---|
 {train_rows}
 
-Corpora are weighted equally in the loss, and classes equally within each corpus. Melati's internal pipeline also
-trains on corpora that cannot be redistributed this way ({EXCLUDED}); that head scores
-{full['held_out']['all']['uar']:.3f} on the same held-out clips.
+Corpora are weighted equally in the loss, and classes equally within each corpus. The heads Melati's pipeline runs,
+[Melati-Emotion-Heads](https://huggingface.co/Scicom-intl/Melati-Emotion-Heads), also train on corpora whose licences
+do not explicitly allow a derivative ({EXCLUDED}); their Whisper head scores {full['held_out']['all']['uar']:.3f} on the
+same held-out clips.
 
 ## Limitations
 

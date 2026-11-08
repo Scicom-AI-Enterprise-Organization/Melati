@@ -21,6 +21,10 @@
       ],
       "gpu_memory_utilization": 0.7,
       "args": [
+        "--tokenizer-revision",
+        "26291f793822fb6be9555850f06dfe95f2d7e695",
+        "--revision",
+        "26291f793822fb6be9555850f06dfe95f2d7e695",
         "--dtype",
         "bfloat16",
         "--max-model-len",

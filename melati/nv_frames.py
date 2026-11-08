@@ -13,6 +13,8 @@ import os
 
 import numpy as np
 
+from melati import pins
+
 MELATI_DATA = os.environ.get("MELATI_DATA", "/root/melati/data")   # data, models, results: deploy/env.sh
 
 SR = 16000
@@ -29,8 +31,9 @@ def encoder(device="cuda", numpy=True):
     over five encoder frames is taken in float16, as the training features were."""
     import torch
     from transformers import WhisperFeatureExtractor, WhisperModel
-    fe = WhisperFeatureExtractor.from_pretrained("openai/whisper-large-v3")
-    enc = WhisperModel.from_pretrained("openai/whisper-large-v3", dtype=torch.float16).encoder.to(device).eval()
+    name = "openai/whisper-large-v3"
+    fe = WhisperFeatureExtractor.from_pretrained(name, revision=pins.rev(name))
+    enc = WhisperModel.from_pretrained(name, revision=pins.rev(name), dtype=torch.float16).encoder.to(device).eval()
 
     def run(batch):
         with torch.inference_mode():

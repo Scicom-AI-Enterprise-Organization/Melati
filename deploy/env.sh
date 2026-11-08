@@ -17,6 +17,14 @@ MELATI_DATA=${MELATI_DATA:-$MELATI_ROOT/data}
 MELATI_LOGS=${MELATI_LOGS:-$MELATI_ROOT/logs}
 export MELATI_REPO MELATI_ROOT MELATI_DATA MELATI_LOGS
 mkdir -p "$MELATI_LOGS" 2>/dev/null || true
+# every model and checkout at the revision melati/pins.py names, so a setup run later gets what the dataset was
+# made with
+pin() { python3 "$MELATI_REPO/melati/pins.py" "$1"; }
+checkout() {                                    # $1 a git URL, $2 the folder to hold it at its pinned commit
+    [ -d "$2/.git" ] || git clone -q "$1" "$2"
+    git -C "$2" checkout -q "$(pin "$1")" 2>/dev/null \
+        || { git -C "$2" fetch -q origin && git -C "$2" checkout -q "$(pin "$1")"; }
+}
 MIRROR=()
 if [ -n "${PIP_MIRROR:-}" ]; then
     MIRROR=(--index-url "$PIP_MIRROR" --index-strategy unsafe-best-match)

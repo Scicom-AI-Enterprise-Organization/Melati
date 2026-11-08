@@ -30,26 +30,37 @@ python scripts/full_progress.py ...      # how far it is; scripts/cluster_load.p
 
 ## Models
 
-Every model the pipeline runs is public except two sets of weights you train yourself (see Getting started): the five
-emotion heads and the frame head behind the inline sound tags. Each card states its licence in full.
+Every model the pipeline runs is public except one you train yourself (see Getting started): the frame head behind the
+inline sound tags. Each card has the full evaluation and the licence; the headline numbers are here, each beside what
+its card compares it with.
 
 Released with Melati:
 
-| model | what it does | stage | licence |
-|---|---|---|---|
-| [Melati-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-Whisper-Large-V3) | transcription that writes nothing over audio with no speech in it | asr, fill | CC BY-NC 4.0 |
-| [Melati-NonVerbal-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-NonVerbal-Whisper-Large-V3) | breaths, laughs and coughs, with their times | tag | non-commercial research |
-| [Melati-Emotion-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-Emotion-Whisper-Large-V3) | seven emotions: the Whisper emotion head, retrained on the corpora whose licence allows a release | not run: the pipeline's heads train on more corpora | non-commercial research |
-| [Melati-AudioSet-EAT-Large](https://huggingface.co/Scicom-intl/Melati-AudioSet-EAT-Large) | which of AudioSet's 527 sounds a clip holds | sounds | MIT |
-| [Melati-AudioSet-Ensemble](https://huggingface.co/Scicom-intl/Melati-AudioSet-Ensemble) | six AudioSet taggers averaged | sounds, with `serve/cluster_sounds_ensemble.json` | MIT |
+| model | what it does | stage | how well | licence |
+|---|---|---|---|---|
+| [Melati-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-Whisper-Large-V3) | transcription that writes nothing over audio with no speech in it | asr, fill | words written over 0.0% of silent clips and 1.3% of music (whisper-large-v3: 61.9%, 99.0%); Malaysian speech WER 21.6% (23.4%) | CC BY-NC 4.0 |
+| [Melati-NonVerbal-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-NonVerbal-Whisper-Large-V3) | breaths, laughs and coughs, with their times | tag | PodcastFillers' test episodes: 70% of breaths found at 83% precision, 71% of laughs at 77%; AMI's test meetings: 35% of coughs at 84% | non-commercial research |
+| [Melati-Emotion-Heads](https://huggingface.co/Scicom-intl/Melati-Emotion-Heads) | seven emotions: the five heads averaged with MERaLiON-SER and emotion2vec+ | tag | UAR on 7,791 held-out clips 0.485 to 0.557 a head, 0.598 the seven averaged (the two public classifiers: 0.529); each tag at 72 to 84% precision | non-commercial research, and each training corpus's own terms |
+| [Melati-Emotion-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-Emotion-Whisper-Large-V3) | seven emotions: the Whisper head trained on the nine corpora whose licence explicitly allows a derivative | not run | UAR 0.538 on the same clips | non-commercial research |
+| [Melati-AudioSet-EAT-Large](https://huggingface.co/Scicom-intl/Melati-AudioSet-EAT-Large) | which of AudioSet's 527 sounds a clip holds | sounds | mAP 0.515 on AudioSet's evaluation set; 0.512 for v4, which the sounds stage pins (EAT-large: 0.495) | MIT |
+| [Melati-AudioSet-Ensemble](https://huggingface.co/Scicom-intl/Melati-AudioSet-Ensemble) | six AudioSet taggers averaged | not run: on podcasts it tags more sounds than EAT-Large | mAP 0.522 | MIT |
 
 Scicom's models it runs:
 
-| model | what it does | stage | licence |
-|---|---|---|---|
-| [Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged](https://huggingface.co/Scicom-intl/Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged) | speaker turns | diar | CC BY-NC 4.0 |
-| [Where-Words-Begin-and-End-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Where-Words-Begin-and-End-Whisper-Large-V3) | where every word starts and ends | align | CC BY-NC 4.0 |
-| [SOTA-MOS](https://huggingface.co/Scicom-intl/SOTA-MOS) | mean opinion score, 1 to 5 | quality | MIT |
+| model | what it does | stage | how well | licence |
+|---|---|---|---|---|
+| [Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged](https://huggingface.co/Scicom-intl/Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged) | speaker turns | diar | DER 8.7% on hand-marked call-centre calls, 14.5% on CallHome English (pyannote community-1: 25.3%, 19.4%) | CC BY-NC 4.0 |
+| [Where-Words-Begin-and-End-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Where-Words-Begin-and-End-Whisper-Large-V3) | where every word starts and ends | align | word-boundary error 11.7 ms on FA-Bench's TIMIT core test (MFA 3.4: 21.8 ms), 16.0 ms on Switchboard's phone calls (36.5 ms) | CC BY-NC 4.0 |
+| [SOTA-MOS](https://huggingface.co/Scicom-intl/SOTA-MOS) | mean opinion score, 1 to 5 | quality | AudioMOS 2025 Track 3: SRCC 0.803 by clip and 0.968 by system (the challenge's winner: 0.742, 0.955) | MIT |
+
+<p>
+  <img src="https://huggingface.co/Scicom-intl/Melati-Whisper-Large-V3/resolve/cdbb981c6ce8d87b338ed9503ef9a51f24a2a6aa/figures/hallucination.png" width="49%" alt="Melati-Whisper-Large-V3: clips with any words written over audio with no speech in it">
+  <img src="https://huggingface.co/Scicom-intl/Melati-NonVerbal-Whisper-Large-V3/resolve/24e22aab38b70a73c901784ed407fec083772d4e/figures/podcastfillers.png" width="49%" alt="Melati-NonVerbal-Whisper-Large-V3: laughs and breaths found, and how precise, on PodcastFillers' test episodes">
+  <img src="https://huggingface.co/Scicom-intl/Melati-Emotion-Whisper-Large-V3/resolve/7eaf9692a2f4ce7b124944d3419a94cf274a9f5c/figures/held_out.png" width="49%" alt="Emotion: unweighted average recall on 7,791 held-out clips">
+  <img src="https://huggingface.co/Scicom-intl/Melati-AudioSet-EAT-Large/resolve/82762af3cdcfae80bbc964074184c0ffe962f90b/figures/map.png" width="49%" alt="Melati-AudioSet-EAT-Large: mAP on AudioSet's evaluation set">
+  <img src="https://huggingface.co/Scicom-intl/Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged/resolve/6b30eed0c28a4dc0003b8dc1f11ee95ed2637a4a/figures/results.png" width="49%" alt="Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged: DER on every test set">
+  <img src="https://huggingface.co/Scicom-intl/Where-Words-Begin-and-End-Whisper-Large-V3/resolve/618763b1ed3ae17cb9a2062d6d4d0de436828c7a/figures/fabench.png" width="49%" alt="Where-Words-Begin-and-End-Whisper-Large-V3: word-boundary error on FA-Bench's TIMIT core test">
+</p>
 
 And from elsewhere: [DBS-TIGER-DnR](https://huggingface.co/JusperLee/DBS-TIGER-DnR) separates speech from music and
 effects where [PANNs Cnn14](https://zenodo.org/records/3987831) hears background (front), [Silero
@@ -57,7 +68,7 @@ VAD](https://github.com/snakers4/silero-vad) finds the pauses segments are cut i
 [DNSMOS](https://github.com/microsoft/DNS-Challenge) scores quality beside SOTA-MOS, and
 [MERaLiON-SER](https://huggingface.co/MERaLiON/MERaLiON-SER-v1) and
 [emotion2vec+](https://huggingface.co/emotion2vec/emotion2vec_plus_large) are two of the seven emotion models. The
-other five, Melati's emotion heads, read [whisper-large-v3](https://huggingface.co/openai/whisper-large-v3),
+other five, Melati-Emotion-Heads, read [whisper-large-v3](https://huggingface.co/openai/whisper-large-v3),
 Melati-Whisper-Large-V3, [w2v-BERT 2.0](https://huggingface.co/facebook/w2v-bert-2.0),
 [WavLM-large](https://huggingface.co/microsoft/wavlm-large) and emotion2vec+'s features; the non-verbal heads read
 whisper-large-v3.
@@ -126,17 +137,17 @@ $MELATI_ROOT/.venv-melati/bin/python -m pytest tests/
 released together as [Melati-NonVerbal-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-NonVerbal-Whisper-Large-V3)
 for `AutoModel`, while the pipeline reads each from its own file under `$MELATI_DATA/models`. `nonverbal/from_release.py`
 writes those files from the release (`deploy/box_melati_setup.sh` runs it; with `--check` it compares them with the
-release on a GPU). `deploy/box_nv_rel4.sh` and `deploy/box_nv_frames3.sh` train them again.
+release on a GPU). `deploy/box_nv_rel4.sh` and `deploy/box_nv_frames3.sh` train them again. The five emotion heads
+are [Melati-Emotion-Heads](https://huggingface.co/Scicom-intl/Melati-Emotion-Heads), which `deploy/box_melati_setup.sh`
+downloads into `$MELATI_DATA/models/ser_heads`; `deploy/box_emo_setup.sh`, then `deploy/box_emo_retrain.sh` train them
+again (it downloads the corpora, about 28 GB). A cluster that serves only MERaLiON-SER and emotion2vec+ still tags
+emotion, at the thresholds measured for that pair, which hold the seven models' precision for happy, angry and
+surprised only. Every download is at the revision `melati/pins.py` names.
 
-**What you train yourself.** Two sets of weights the pipeline reads are not on the Hub:
-
-- the five emotion heads (`melati/ser.py`), since several of their 21 training corpora forbid passing a derivative on:
-  `deploy/box_emo_setup.sh`, then `deploy/box_emo_retrain.sh`, which downloads the corpora (about 28 GB). Without
-  them the tag server serves only MERaLiON-SER and emotion2vec+, and the export tags their average at the thresholds
-  measured for that pair, which hold the seven models' precision for happy, angry and surprised only;
-- the frame head behind the inline sound tags (`serve/sounds_server.py`, `FRAMES_CKPT`), trained beside the AudioSet
-  tagger's v3 by `audioset/frames_train.py` (`deploy/box_audioset_frames.sh`), which needs AudioSet itself. Without
-  it the sounds stage still gives every segment its sounds (the `sounds` column) and writes no inline sound tags.
+**What you train yourself.** One set of weights the pipeline reads is not on the Hub: the frame head behind the inline
+sound tags (`serve/sounds_server.py`, `FRAMES_CKPT`), trained beside the AudioSet tagger's v3 by
+`audioset/frames_train.py` (`deploy/box_audioset_frames.sh`), which needs AudioSet itself. Without it the sounds stage
+still gives every segment its sounds (the `sounds` column) and writes no inline sound tags.
 
 These are the scripts that made the released models, run in order on one machine; they have not been run again from a
 clean start. With every model in place, list the recordings (`python -m melati.sources --dir <audio> --list
@@ -166,8 +177,10 @@ chosen on separate clips; the thresholds live in `melati/stage_export.py`.
   trained on every openly downloadable EmoBox corpus plus CAMEO, Expresso and MELD; the seven models (these five, and
   MERaLiON-SER and emotion2vec+) are averaged. `emotion/fetch_corpora.py`, `build_manifest.py`, `extract.py`,
   `probe.py`, `ensemble.py`; MER2023 (gated) through `emotion/fetch_mer2023.py` and `deploy/box_emo_mer2023.sh`.
-  The Whisper head retrained on only the nine corpora whose licence allows a release (six languages) is released for
-  non-commercial research as
+  The five heads are released for non-commercial research as
+  [Scicom-intl/Melati-Emotion-Heads](https://huggingface.co/Scicom-intl/Melati-Emotion-Heads)
+  (`deploy/box_emo_release_heads.sh`, card `emotion/heads_card.py`), and the Whisper head retrained on only the nine
+  corpora whose licence explicitly allows a derivative (six languages) as
   [Scicom-intl/Melati-Emotion-Whisper-Large-V3](https://huggingface.co/Scicom-intl/Melati-Emotion-Whisper-Large-V3)
   (`deploy/box_emo_release_head.sh`, `emotion/release.py`; helper `emotion/hf/melati_emotion.py`).
 - **Non-verbal** (`nonverbal/`): two heads on the frozen Whisper-large-v3 encoder.

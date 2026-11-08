@@ -21,6 +21,10 @@
       ],
       "gpu_memory_utilization": 0.3,
       "args": [
+        "--tokenizer-revision",
+        "06f233fe06e710322aca913c1bc4249a0d71fce1",
+        "--revision",
+        "06f233fe06e710322aca913c1bc4249a0d71fce1",
         "--max-num-seqs",
         256,
         "--dtype",
@@ -45,6 +49,10 @@
         "VLLM_MAX_AUDIO_DECODE_BYTES": 536870912
       },
       "args": [
+        "--tokenizer-revision",
+        "6b30eed0c28a4dc0003b8dc1f11ee95ed2637a4a",
+        "--revision",
+        "6b30eed0c28a4dc0003b8dc1f11ee95ed2637a4a",
         "--trust-remote-code",
         "--max-model-len",
         131072,

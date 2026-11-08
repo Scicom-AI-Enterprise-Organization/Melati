@@ -26,7 +26,8 @@ SR = 16000
 class Aligner:
     def __init__(self, repo: str = REPO, device: str = "cuda"):
         from huggingface_hub import snapshot_download
-        path = snapshot_download(repo)
+        from melati import pins
+        path = snapshot_download(repo, revision=pins.rev(repo))
         sys.path.insert(0, path)
         # The release was saved with transformers 5 and the aligner service runs on it
         # (deploy/box_align_setup.sh). On transformers 4 the repository's tokenizer.json-only layout

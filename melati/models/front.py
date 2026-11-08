@@ -16,6 +16,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
+from melati import pins
 from melati.sed import GROUPS
 
 MELATI_DATA = os.environ.get("MELATI_DATA", "/root/melati/data")   # data, models, results: deploy/env.sh
@@ -57,7 +58,7 @@ class PANNsSED:
 class DBSSeparator:
     def __init__(self, repo="JusperLee/DBS-TIGER-DnR", device="cuda"):
         from dbs.models import DBSTIGER
-        self.model = DBSTIGER.from_pretrained(repo).to(device).eval()
+        self.model = DBSTIGER.from_pretrained(repo, revision=pins.rev(repo)).to(device).eval()
         self.device = device
         torch.backends.cuda.matmul.allow_tf32 = True
         torch.backends.cudnn.allow_tf32 = True

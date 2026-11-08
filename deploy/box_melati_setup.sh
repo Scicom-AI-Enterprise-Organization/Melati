@@ -21,21 +21,24 @@ V=$MELATI_ROOT/.venv-melati
 [ -d "$V" ] || uv venv --python 3.12 "$V"
 uv pip install --python "$V/bin/python" "torch==2.8.0" "torchaudio==2.8.0" "torchvision==0.23.0" \
   --index-url https://download.pytorch.org/whl/cu128 2>&1 | tail -1
+# exact versions where a release changes what is computed: the VAD model segments ship inside silero-vad, soxr
+# resamples every stage's audio, pyloudnorm sets each recording's gain
 uv pip install --python "$V/bin/python" "${MIRROR[@]}" "transformers==4.57.1" "numpy>=1.26,<2.3" scipy pandas scikit-learn \
-  soundfile soxr pyloudnorm pyarrow "huggingface_hub[hf_transfer]" einops rotary-embedding-torch safetensors \
-  fastapi "uvicorn[standard]" python-multipart httpx requests aiohttp tqdm pyyaml matplotlib onnxruntime \
-  silero-vad librosa timm omegaconf "peft==0.17.1" wordfreq 2>&1 | tail -1
+  soundfile "soxr==1.1.0" "pyloudnorm==0.2.0" pyarrow "huggingface_hub[hf_transfer]" einops rotary-embedding-torch \
+  safetensors fastapi "uvicorn[standard]" python-multipart httpx requests aiohttp tqdm pyyaml matplotlib onnxruntime \
+  "silero-vad==6.2.3" librosa timm omegaconf "peft==0.17.1" wordfreq 2>&1 | tail -1
 
-# emotion2vec+ runs through FunASR; the pins keep it from moving torch or transformers underneath
+# emotion2vec+ runs through FunASR, at the release the emotion heads and their thresholds were measured with; the pins
+# keep it from moving torch or transformers underneath
 printf 'torch==2.8.0\ntorchaudio==2.8.0\ntransformers==4.57.1\nnumpy<2.3\n' > /tmp/melati_pins.txt
-uv pip install --python "$V/bin/python" "${MIRROR[@]}" -c /tmp/melati_pins.txt funasr modelscope panns-inference \
-  torchlibrosa "datasets==4.1.1" 2>&1 | tail -1
+uv pip install --python "$V/bin/python" "${MIRROR[@]}" -c /tmp/melati_pins.txt "funasr==1.4.21" modelscope \
+  "panns-inference==0.1.1" torchlibrosa "datasets==4.1.1" 2>&1 | tail -1
 
-[ -d "$EXT/dbs" ] || git clone -q https://github.com/JusperLee/Dynamic-Band-Splitting "$EXT/dbs"
+checkout https://github.com/JusperLee/Dynamic-Band-Splitting "$EXT/dbs"
 uv pip install --python "$V/bin/python" --no-deps -e "$EXT/dbs" 2>&1 | tail -1
-[ -d "$EXT/SOTA-MOS" ] || git clone -q https://github.com/Scicom-AI-Enterprise-Organization/SOTA-MOS "$EXT/SOTA-MOS"
+checkout https://github.com/Scicom-AI-Enterprise-Organization/SOTA-MOS "$EXT/SOTA-MOS"
 uv pip install --python "$V/bin/python" --no-deps -e "$EXT/SOTA-MOS" 2>&1 | tail -1
-[ -d "$EXT/faster-UTMOSv2" ] || git clone -q https://github.com/Scicom-AI-Enterprise-Organization/faster-UTMOSv2 "$EXT/faster-UTMOSv2"
+checkout https://github.com/Scicom-AI-Enterprise-Organization/faster-UTMOSv2 "$EXT/faster-UTMOSv2"
 uv pip install --python "$V/bin/python" --no-deps -e "$EXT/faster-UTMOSv2" 2>&1 | tail -1
 
 W=$MELATI_ROOT/.venv-vllm
@@ -44,14 +47,15 @@ uv pip install --python "$W/bin/python" "${MIRROR[@]}" "vllm==0.17.1" 2>&1 | tai
 uv pip install --python "$W/bin/python" "${MIRROR[@]}" soundfile soxr librosa pyarrow "huggingface_hub[hf_transfer]" 2>&1 | tail -1
 
 HF=$V/bin/hf
-$HF download Scicom-intl/SOTA-MOS --include "model/*" --local-dir "$M/sotamos" 2>&1 | tail -1
-# the released ASR at the revision serve/cluster.json serves
-$HF download Scicom-intl/Melati-Whisper-Large-V3 --revision cdbb981c6ce8d87b338ed9503ef9a51f24a2a6aa 2>&1 | tail -1
-for repo in JusperLee/DBS-TIGER-DnR JusperLee/DBS-BSRNN-DnR \
+# SOTA-MOS's ensemble (model/system.json and its fold heads), which the mos service reads
+$HF download Scicom-intl/SOTA-MOS --revision "$(pin Scicom-intl/SOTA-MOS)" --include "model/*" \
+  --local-dir "$M/sotamos" 2>&1 | tail -1
+for repo in Scicom-intl/Melati-Whisper-Large-V3 JusperLee/DBS-TIGER-DnR JusperLee/DBS-BSRNN-DnR \
             Scicom-intl/Where-Words-Begin-and-End-Whisper-Large-V3 \
             Scicom-intl/Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged \
-            openai/whisper-large-v3 openai/whisper-medium; do
-  $HF download "$repo" 2>&1 | tail -1
+            openai/whisper-large-v3 openai/whisper-medium \
+            MERaLiON/MERaLiON-SER-v1 emotion2vec/emotion2vec_plus_large; do
+  $HF download "$repo" --revision "$(pin "$repo")" 2>&1 | tail -1
 done
 # PANNs Cnn14 (the front stage's sound events, melati/sed.py) and DNSMOS (serve/tag_server.py): about 330 MB
 fetch() {                                      # $1 the file, $2 its source; a failed fetch leaves nothing behind
@@ -64,6 +68,9 @@ fetch "$M/panns/class_labels_indices.csv" \
     https://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/class_labels_indices.csv
 fetch "$M/dnsmos/sig_bak_ovr.onnx" \
     https://github.com/microsoft/DNS-Challenge/raw/82f1b17e7776a43eee395d0f45bae8abb700ad00/DNSMOS/DNSMOS/sig_bak_ovr.onnx
+# the five emotion heads (h_whisper ... h_e2v, melati/ser.py), a few MB, into the folder the tag server reads them from
+$HF download Scicom-intl/Melati-Emotion-Heads --revision "$(pin Scicom-intl/Melati-Emotion-Heads)" --include "*.pt" \
+  --local-dir "$M/ser_heads" 2>&1 | tail -1
 # the non-verbal heads (nv_whisper, nvf_whisper), out of their public release (1.3 GB) into the files the tag server reads
 if [ ! -s "$M/nv_heads/whisper.pt" ] || [ ! -s "$M/nv_frames/whisper.pt" ]; then
     "$V/bin/python" "$MELATI_REPO/nonverbal/from_release.py"

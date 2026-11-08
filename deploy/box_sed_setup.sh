@@ -8,7 +8,7 @@ set -eu
 . "$(dirname "${BASH_SOURCE[0]}")/env.sh"
 E=$MELATI_ROOT/ext/PretrainedSED
 V=$MELATI_ROOT/.venv-sed
-[ -d $E ] || git clone -q https://github.com/fschmid56/PretrainedSED.git $E
+checkout https://github.com/fschmid56/PretrainedSED "$E"
 [ -x $V/bin/python ] || uv venv -q $V --python 3.12
 # one resolution, torch pinned: a second `uv pip install` let timm's torchvision pull torch 2.14 over torchaudio 2.8;
 # setuptools<81 keeps pkg_resources, which dcase_util (under sed_scores_eval) imports; pyarrow<19 still runs on

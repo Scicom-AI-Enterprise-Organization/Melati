@@ -69,19 +69,19 @@ DEFAULTS = {
     "sed_tags": False,
     "sed_scale": 1.0,              # x the detector's sensitive-profile thresholds (stored at 0.5)
     "sed_min_p": {},               # per-class probability floors, from scripts/eval_nonverbal.py
-    # emotion: the average of seven models, Melati's five heads (melati/ser.py, trained on 21 corpora, retrained on
-    # 2026-11-04 after the box lost the first ones) and the two released classifiers, and only the labels whose
-    # precision was measured on held-out speech (nEMO and NonverbalTTS's VoxCeleb half, 7,791 clips no model trained
-    # on): each threshold is the lowest giving 0.75 precision at an assumed podcast rate
-    # (results/emotion/retrain/ensemble_all.json; chosen on one half and measured on the other it holds 0.72-0.84,
+    # emotion: the average of seven models, Melati's five heads (melati/ser.py, Scicom-intl/Melati-Emotion-Heads:
+    # trained on 21 corpora, retrained on 2026-11-04 after the box lost the first ones) and the two released
+    # classifiers, and only the labels whose precision was measured on held-out speech (nEMO and NonverbalTTS's VoxCeleb
+    # half, 7,791 clips no model trained on): each threshold is the lowest giving 0.75 precision at an assumed podcast
+    # rate (results/emotion/retrain/ensemble_all.json; chosen on one half and measured on the other it holds 0.72-0.84,
     # recall happy 56%, sad 51%, angry 40%, surprised 13%, fearful 30%). Disgusted has no held-out positives and is
-    # never tagged; every label's probability is still in the manifest. The published dataset was tagged by the
-    # first heads at happy 0.51, angry 0.48 and fearful 0.44 (results/dataset/export_config.json).
+    # never tagged; every label's probability is still in the manifest. The published dataset was tagged by the first
+    # heads at happy 0.51, angry 0.48 and fearful 0.44 (results/dataset/export_config.json).
     "emotion_models": ["h_whisper", "h_whisper_ft", "h_w2vbert", "h_wavlm", "h_e2v", "meralion", "e2v"],
     "emotion_thresholds": {"happy": 0.52, "sad": 0.64, "angry": 0.50, "surprised": 0.30, "fearful": 0.43},
     # where only some of the models tagged a segment, the thresholds measured the same way for that set: the two
-    # released classifiers, alone and together (results/emotion/retrain/current.json), are what a reader without the
-    # five heads can serve, and together they tag only happy, angry and surprised. Any other set is not tagged.
+    # released classifiers, alone and together (results/emotion/retrain/current.json), are what a cluster without the
+    # five heads serves, and together they tag only happy, angry and surprised. Any other set is not tagged.
     "emotion_set_thresholds": {"meralion+e2v": {"happy": 0.88, "angry": 0.51, "surprised": 0.44},
                                "meralion": {"angry": 0.88, "surprised": 0.90}, "e2v": {"surprised": 0.49}},
     "emotion_default_threshold": None,  # a label without a measured threshold is not tagged

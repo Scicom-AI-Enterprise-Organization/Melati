@@ -24,12 +24,14 @@ import os
 
 import numpy as np
 
+from melati import pins
+
 SR = 16000
 MAX_S = 30.0
 LABELS = ("neutral", "happy", "sad", "angry", "surprised", "fearful", "disgusted")
 DATA = os.environ.get("MELATI_DATA", "/root/melati/data")        # data, models, results: deploy/env.sh
 WHISPER_FT = os.environ.get("MELATI_SER_WHISPER_FT", "Scicom-intl/Melati-Whisper-Large-V3")
-WHISPER_FT_REVISION = os.environ.get("MELATI_SER_WHISPER_FT_REVISION", "cdbb981c6ce8d87b338ed9503ef9a51f24a2a6aa")
+WHISPER_FT_REVISION = os.environ.get("MELATI_SER_WHISPER_FT_REVISION") or pins.rev(WHISPER_FT)
 HEADS_DIR = os.environ.get("MELATI_SER_HEADS", f"{DATA}/models/ser_heads")
 NV_HEADS_DIR = os.environ.get("MELATI_NV_HEADS", f"{DATA}/models/nv_heads")
 
@@ -37,7 +39,7 @@ NV_HEADS_DIR = os.environ.get("MELATI_NV_HEADS", f"{DATA}/models/nv_heads")
 def whisper_encoder(name, device="cuda", revision=None):
     import torch
     from transformers import WhisperFeatureExtractor, WhisperModel
-    revision = None if os.path.isdir(name) else revision                # a local folder has no revisions
+    revision = None if os.path.isdir(name) else revision or pins.rev(name)    # a local folder has no revisions
     fe = WhisperFeatureExtractor.from_pretrained(name, revision=revision)
     enc = WhisperModel.from_pretrained(name, revision=revision, dtype=torch.float16).encoder.to(device).eval()
 
@@ -61,8 +63,8 @@ def hf_ssl(name, device="cuda", batched=True, max_batch=16, max_ratio=1.3):
     mostly waiting on hundreds of small kernels; w2v-BERT was the slowest model in the tag server by four times."""
     import torch
     from transformers import AutoFeatureExtractor, AutoModel
-    fe = AutoFeatureExtractor.from_pretrained(name)
-    model = AutoModel.from_pretrained(name, dtype=torch.float16).to(device).eval()
+    fe = AutoFeatureExtractor.from_pretrained(name, revision=pins.rev(name))
+    model = AutoModel.from_pretrained(name, revision=pins.rev(name), dtype=torch.float16).to(device).eval()
     to_dev = lambda inp: {k: (v.to(device).half() if v.is_floating_point() else v.to(device))  # noqa: E731
                           for k, v in inp.items()}
 
@@ -111,8 +113,8 @@ def ast_encoder(name="MIT/ast-finetuned-audioset-10-10-0.4593", device="cuda"):
     the CLS and distillation tokens) and patch t covers frames [10 t, 10 t + 16)."""
     import torch
     from transformers import ASTFeatureExtractor, ASTModel
-    fe = ASTFeatureExtractor.from_pretrained(name)
-    model = ASTModel.from_pretrained(name, dtype=torch.float16).to(device).eval()
+    fe = ASTFeatureExtractor.from_pretrained(name, revision=pins.rev(name))
+    model = ASTModel.from_pretrained(name, revision=pins.rev(name), dtype=torch.float16).to(device).eval()
     c = model.config
     f_dim = (c.num_mel_bins - c.patch_size) // c.frequency_stride + 1
     t_dim = (c.max_length - c.patch_size) // c.time_stride + 1
@@ -132,7 +134,7 @@ def ast_encoder(name="MIT/ast-finetuned-audioset-10-10-0.4593", device="cuda"):
 
 def e2v_embedding(device="cuda"):
     from funasr import AutoModel                      # as melati/emotion.py loads it for its own predictions
-    m = AutoModel(model="emotion2vec/emotion2vec_plus_large", hub="hf", device=device, disable_update=True)
+    m = AutoModel(model=pins.local("emotion2vec/emotion2vec_plus_large"), hub="hf", device=device, disable_update=True)
 
     def run(batch):
         res = m.generate([np.asarray(x, np.float32) for x in batch], granularity="utterance",

@@ -23,11 +23,11 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from melati import nv_frames as NF  # noqa: E402
-from melati import ser  # noqa: E402
+from melati import pins, ser  # noqa: E402
 from melati.nv_gaps import HEAD_LABELS, clip_of  # noqa: E402
 
 REPO = "Scicom-intl/Melati-NonVerbal-Whisper-Large-V3"
-REVISION = "24e22aab38b70a73c901784ed407fec083772d4e"
+REVISION = pins.rev(REPO)
 # the gap head's tensors in the release, by their names in the pipeline's head (melati.ser.head_module)
 GAP = {"mix": "layer_mix", "net.0.weight": "head_norm.weight", "net.0.bias": "head_norm.bias",
        "net.1.weight": "head_fc1.weight", "net.1.bias": "head_fc1.bias", "net.4.weight": "head_out.weight",

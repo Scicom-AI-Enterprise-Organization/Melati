@@ -15,6 +15,8 @@ from __future__ import annotations
 
 import numpy as np
 
+from melati import pins
+
 LABELS = ("neutral", "happy", "sad", "angry", "surprised", "fearful", "disgusted")
 SR = 16000
 
@@ -24,8 +26,8 @@ class Meralion:
 
     def __init__(self, device="cuda", repo="MERaLiON/MERaLiON-SER-v1"):
         from transformers import AutoModel, AutoProcessor
-        self.proc = AutoProcessor.from_pretrained(repo, trust_remote_code=True)
-        self.model = AutoModel.from_pretrained(repo, trust_remote_code=True).to(device).eval()
+        self.proc = AutoProcessor.from_pretrained(repo, trust_remote_code=True, revision=pins.rev(repo))
+        self.model = AutoModel.from_pretrained(repo, trust_remote_code=True, revision=pins.rev(repo)).to(device).eval()
         self.device = device
         id2label = getattr(self.model.config, "id2label", None) or {}
         # the card's usage code and its prose list the classes in different orders: trust the config
@@ -62,7 +64,8 @@ class Emotion2Vec:
 
     def __init__(self, device="cuda", repo="emotion2vec/emotion2vec_plus_large"):
         from funasr import AutoModel
-        self.model = AutoModel(model=repo, hub="hf" if "/" in repo and not repo.startswith("iic") else "ms",
+        hub = "hf" if "/" in repo and not repo.startswith("iic") else "ms"
+        self.model = AutoModel(model=pins.local(repo) if hub == "hf" and pins.rev(repo) else repo, hub=hub,
                                device=device, disable_update=True)
 
     def __call__(self, clips):
