@@ -26,6 +26,14 @@ def test_the_cluster_configs_serve_every_vllm_model_at_its_pin():
                     assert args[args.index(flag) + 1] == pins.rev(svc["model"]), (path.name, name, flag)
 
 
+def test_the_sounds_clusters_serve_their_tagger_at_its_pin():
+    for path in sorted(ROOT.glob("serve/cluster*.json")):
+        for name, svc in json.loads(path.read_text())["services"].items():
+            env = svc.get("env") or {}
+            if "SOUNDS_MODEL" in env:
+                assert env.get("SOUNDS_REVISION") == pins.rev(env["SOUNDS_MODEL"]), (path.name, name)
+
+
 def test_the_setup_scripts_download_and_check_out_pinned_revisions_only():
     for path in SETUP:
         text = path.read_text()

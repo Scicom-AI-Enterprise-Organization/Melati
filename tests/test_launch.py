@@ -13,6 +13,8 @@ def test_a_retired_replica_keeps_its_port_and_runs_nothing():
 def test_a_config_names_its_paths_by_variable(tmp_path, monkeypatch):
     monkeypatch.setenv("MELATI_DATA", "/data/melati")
     monkeypatch.delenv("MELATI_ROOT", raising=False)
+    monkeypatch.setattr(launch, "MELATI_ROOT", "/root/melati")      # its default, read at import from a shell that
+                                                                    # may export its own (the README's setup does)
     cfg = tmp_path / "cluster.json"
     cfg.write_text('{"run_dir": "${MELATI_DATA}/serve", "services": {"mos": {"venv": "${MELATI_ROOT}/.venv-melati", '
                    '"args": ["--path", "${MELATI_DATA}"], "port": 1, "replicas": [[0]]}}}')

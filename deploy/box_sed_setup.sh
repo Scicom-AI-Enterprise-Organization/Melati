@@ -17,11 +17,14 @@ checkout https://github.com/fschmid56/PretrainedSED "$E"
 # at the tag servers' versions)
 uv pip install -q --python $V/bin/python "torch==2.8.0" "torchaudio==2.8.0" "torchvision==0.23.0" "numpy<2" cython \
     "setuptools<81" wheel librosa pandas timm nnAudio "av>=10.0.0" "h5py>=3.8.0" "jsonpickle>=3.0.1" \
-    "transformers==4.46.3" "fastapi==0.159.1" "uvicorn==0.54.0" \
+    "transformers==4.46.3" "fastapi==0.159.1" "uvicorn==0.54.0" "huggingface_hub[hf_transfer]" \
     intervaltree more-itertools soundfile "pyarrow<19" "datasets<4" soxr pyloudnorm matplotlib "pytorch-lightning>=2.0.0" \
     scikit-learn
 # sed_scores_eval's build needs numpy and does not declare it
 uv pip install -q --python $V/bin/python --no-build-isolation "sed_scores_eval==0.0.3"
+# Melati's AudioSet tagger, which the sounds service loads when it starts (serve/cluster_sounds.json), at its pin
+HF_HOME=$MELATI_DATA/hf $V/bin/hf download Scicom-intl/Melati-AudioSet-EAT-Large --revision \
+    "$(pin Scicom-intl/Melati-AudioSet-EAT-Large)" 2>&1 | tail -1
 cd $E
 CUDA_VISIBLE_DEVICES=${GPU:-1} $V/bin/python inference.py --cuda --model_name=BEATs \
     --audio_file=test_files/752547__iscence__milan_metro_coming_in_station.wav | tail -12

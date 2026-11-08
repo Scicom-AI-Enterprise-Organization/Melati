@@ -26,7 +26,7 @@ uv pip install --python "$V/bin/python" "torch==2.8.0" "torchaudio==2.8.0" "torc
 uv pip install --python "$V/bin/python" "${MIRROR[@]}" "transformers==4.57.1" "numpy>=1.26,<2.3" scipy pandas scikit-learn \
   soundfile "soxr==1.1.0" "pyloudnorm==0.2.0" pyarrow "huggingface_hub[hf_transfer]" einops rotary-embedding-torch \
   safetensors fastapi "uvicorn[standard]" python-multipart httpx requests aiohttp tqdm pyyaml matplotlib onnxruntime \
-  "silero-vad==6.2.3" librosa timm omegaconf "peft==0.17.1" wordfreq 2>&1 | tail -1
+  "silero-vad==6.2.3" librosa timm omegaconf "peft==0.17.1" wordfreq pytest 2>&1 | tail -1
 
 # emotion2vec+ runs through FunASR, at the release the emotion heads and their thresholds were measured with; the pins
 # keep it from moving torch or transformers underneath
@@ -50,10 +50,12 @@ HF=$V/bin/hf
 # SOTA-MOS's ensemble (model/system.json and its fold heads), which the mos service reads
 $HF download Scicom-intl/SOTA-MOS --revision "$(pin Scicom-intl/SOTA-MOS)" --include "model/*" \
   --local-dir "$M/sotamos" 2>&1 | tail -1
+# whisper-large-v3's configs, vocabulary and fp16 weights, which its loaders read: 3 GB of the repo's 25
+$HF download openai/whisper-large-v3 --revision "$(pin openai/whisper-large-v3)" --include "*.json" "*.txt" \
+  model.safetensors 2>&1 | tail -1
 for repo in Scicom-intl/Melati-Whisper-Large-V3 JusperLee/DBS-TIGER-DnR JusperLee/DBS-BSRNN-DnR \
             Scicom-intl/Where-Words-Begin-and-End-Whisper-Large-V3 \
             Scicom-intl/Who-Spoke-When-Over-the-Phone-Whisper-Large-V3-Merged \
-            openai/whisper-large-v3 openai/whisper-medium \
             MERaLiON/MERaLiON-SER-v1 emotion2vec/emotion2vec_plus_large; do
   $HF download "$repo" --revision "$(pin "$repo")" 2>&1 | tail -1
 done

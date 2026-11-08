@@ -48,6 +48,9 @@ STAGES = ("front", "diar", "seg", "asr", "align", "quality", "tag", "sounds", "f
 OUTPUT = {"front": "sep.json", "diar": "diar.json", "seg": "segments.jsonl", "asr": "asr.jsonl",
           "align": "align.jsonl", "quality": "mos.jsonl", "tag": "tags.jsonl", "sounds": "sounds.jsonl",
           "fill": "fill.jsonl", "export": "export.jsonl"}
+# the services each stage calls through melati.client; seg and export need none
+SERVICES = {"front": ("front",), "diar": ("diar",), "seg": (), "asr": ("asr",), "align": ("align",),
+            "quality": ("mos", "tag"), "tag": ("tag",), "sounds": ("sounds",), "fill": ("asr",), "export": ()}
 
 # Stage A separates only where PANNs hears background (music, singing, crowd, broadcast media, noise):
 # DBS-TIGER runs at 14 to 15x realtime per GPU whatever the batch (scripts/profile_sep.py), about 160

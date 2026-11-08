@@ -95,10 +95,15 @@ pieces of many recordings.
 | export | FLAC 24 kHz + one manifest row per segment, nothing filtered | MP3 at 32 kbit/s, filtered |
 
 ```bash
-python serve/launch.py up --config serve/cluster.json
-python -m melati.run --sources sources.jsonl --work work/ --out export/
+python serve/launch.py up --config serve/cluster.json            # every model but the sound tagger
+python serve/launch.py up --config serve/cluster_sounds.json     # the sound tagger, for the sounds stage
+python -m melati.run --sources sources.jsonl --work work/ --out export/ \
+    --endpoints $MELATI_DATA/serve/endpoints.json $MELATI_DATA/serve_sounds/endpoints.json
 python -m melati.run --sources sources.jsonl --work work/ --out export/ --assemble
 ```
+
+Without the second cluster the sounds stage is left out and the rows carry no sounds; any other stage whose service is
+not up stops the run before it starts.
 
 Every stage resumes by output existence and writes atomically, and every threshold lives in one export config, so a
 subset is a query rather than a re-run.
@@ -131,6 +136,7 @@ bash deploy/box_diar_setup.sh      # .venv-diar (the diarization model's vLLM)
 bash deploy/box_align_setup.sh     # .venv-align (word times)
 bash deploy/box_sed_setup.sh       # .venv-sed (the sound tagger)
 $MELATI_ROOT/.venv-melati/bin/python -m pytest tests/
+bash deploy/box_smoke.sh 0 0       # one recording through every stage, on GPU 0: a few minutes
 ```
 
 **Released weights, in the pipeline's files.** The non-verbal gap and frame heads (`nv_whisper`, `nvf_whisper`) are
@@ -149,9 +155,11 @@ sound tags (`serve/sounds_server.py`, `FRAMES_CKPT`), trained beside the AudioSe
 `audioset/frames_train.py` (`deploy/box_audioset_frames.sh`), which needs AudioSet itself. Without it the sounds stage
 still gives every segment its sounds (the `sounds` column) and writes no inline sound tags.
 
-These are the scripts that made the released models, run in order on one machine; they have not been run again from a
-clean start. With every model in place, list the recordings (`python -m melati.sources --dir <audio> --list
-sources.jsonl`) and run the commands above.
+The setup and the smoke run were checked from a clean start on 2026-11-08, with no Hugging Face token: the four
+environments, the tests, every service healthy, and a VoxConverse recording through all ten stages into 14 exported
+rows. The scripts that trained the released models ran in order on one machine and have not been run again from a
+clean start. To run your own recordings, list them (`python -m melati.sources --dir <audio> --list sources.jsonl`) and
+run the commands above.
 
 ## Checks
 
@@ -221,8 +229,8 @@ chosen on separate clips; the thresholds live in `melati/stage_export.py`.
 | `nonverbal/` | the non-verbal heads: training clips (PodcastFillers, AMI, COUGHVID, Coswara), gap candidates, the gap and frame heads, their evaluations on NonverbalTTS, AMI and PodcastFillers |
 | `serve/` | the model servers, the dynamic batcher, `launch.py` and the cluster config |
 | `baselines/emilia_upstream/` | upstream Emilia-Pipe, unchanged, for the comparison |
-| `scripts/` | experiments and audits that produce `results/` |
-| `deploy/` | box scripts: environments, data fetches, runs; their settings in `deploy/env.sh` |
+| `scripts/` | experiments and audits that produce `results/`, indexed in `scripts/README.md` |
+| `deploy/` | box scripts: environments, data fetches, runs; their settings in `deploy/env.sh`, the ones to start with in `deploy/README.md` |
 | `results/` | aggregate JSON the paper reads |
 | `preprint/` | the paper |
 | `tests/` | `pytest tests/` |

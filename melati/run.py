@@ -28,12 +28,28 @@ from melati import pipeline as P
 MELATI_DATA = os.environ.get("MELATI_DATA", "/root/melati/data")   # data, models, results: deploy/env.sh
 
 
+def servable(stages, count):
+    """The stages a cluster can run, `count(service)` being its replicas of each. The sound tagger has a cluster of its
+    own (serve/cluster_sounds.json), so without it the sounds stage is left out and the export writes no sounds; any
+    other stage whose service is missing stops the run before it starts, instead of failing every recording there."""
+    missing = {s: [v for v in P.SERVICES[s] if not count(v)] for s in stages}
+    missing = {s: v for s, v in missing.items() if v}
+    if any(s != "sounds" for s in missing):
+        raise SystemExit("no replica of " + "; ".join(f"{', '.join(v)} (stage {s})" for s, v in missing.items()) +
+                         " in the endpoints: start its cluster (serve/launch.py up) or leave the stage out (--stages)")
+    if missing:
+        print("[run] no sounds service in the endpoints: the sounds stage is left out "
+              "(serve/cluster_sounds.json serves it)", flush=True)
+    return tuple(s for s in stages if s not in missing)
+
+
 async def main_async(args):
     from melati.client import Client, Endpoints
     recs = [json.loads(l) for l in args.sources.open()]
     if args.limit:
         recs = recs[: args.limit]
-    stages = tuple(args.stages)
+    ep = Endpoints(args.endpoints)
+    stages = servable(tuple(args.stages), ep.count)
     todo = [r for r in recs if not all((args.work / r["id"] / P.OUTPUT[s]).exists() for s in stages)]
     print(f"[run] {len(todo)}/{len(recs)} recordings need {', '.join(stages)}", flush=True)
     for r in todo:
@@ -41,7 +57,7 @@ async def main_async(args):
     limits = dict(kv.split("=") for kv in args.limits) if args.limits else {}
     cfg = json.loads(args.export_config.read_text()) if args.export_config else {}
     with ProcessPoolExecutor(args.cpu_workers) as cpu, ThreadPoolExecutor(args.io_workers) as io:
-        async with Client(Endpoints(args.endpoints), {k: int(v) for k, v in limits.items()}) as client:
+        async with Client(ep, {k: int(v) for k, v in limits.items()}) as client:
             ctx = P.Ctx(work=args.work, client=client, cpu=cpu, io=io, allowed=tuple(args.allowed),
                         emotion_models=tuple(args.emotion_models), nv_models=tuple(args.nv_models),
                         nv_frame_models=tuple(args.nv_frame_models), out=args.out,

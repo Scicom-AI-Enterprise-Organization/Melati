@@ -16,7 +16,6 @@ import sys
 
 HUB = {      # Hugging Face model repositories
     "openai/whisper-large-v3": "06f233fe06e710322aca913c1bc4249a0d71fce1",
-    "openai/whisper-medium": "abdf7c39ab9d0397620ccaea8974cc764cd0953e",
     "facebook/w2v-bert-2.0": "da985ba0987f70aaeb84a80f2851cfac8c697a7b",
     "microsoft/wavlm-large": "c1423ed94bb01d80a3f5ce5bc39f6026a0f4828c",
     "MIT/ast-finetuned-audioset-10-10-0.4593": "f826b80d28226b62986cc218e5cec390b1096902",
@@ -31,6 +30,9 @@ HUB = {      # Hugging Face model repositories
     "Scicom-intl/Melati-Whisper-Large-V3": "cdbb981c6ce8d87b338ed9503ef9a51f24a2a6aa",
     "Scicom-intl/Melati-NonVerbal-Whisper-Large-V3": "24e22aab38b70a73c901784ed407fec083772d4e",
     "Scicom-intl/Melati-Emotion-Heads": "ea304af6989e54228323e29ed942b3ec76ee6f90",
+    "Scicom-intl/Melati-AudioSet-EAT-Large": "78248ff107120278b14465c301a20b57223d6b28",       # v4
+    "Scicom-intl/Melati-AudioSet-Ensemble": "b3175658f59fea64ecddee98661ec1dabb0f59a5",
+    "diarizers-community/voxconverse": "3acfa1b45ca4b7419aee999d67d94c617f9c9d47",   # a dataset: box_smoke.sh
 }
 GIT = {      # code the setup scripts check out
     "https://github.com/JusperLee/Dynamic-Band-Splitting": "ff526463a58ee0278e7bd05c4b8bce112b743e34",
